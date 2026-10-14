@@ -33,15 +33,17 @@ Menu
 
 **F1 First look (research mode).** Home, enter ZIP, Ballot appears with a research-mode banner and the coverage label for each county. Conditional items show a "Depends on your district" tag. The voter taps "Narrow my ballot", picks State House 10, and conditional items for other districts disappear. (REQ-01, REQ-04, REQ-20)
 
-**F2 Deciding a measure.** On Ballot, tap a measure. Item detail shows the certified ballot text and a link to the official analysis, official links first, then the support and oppose row, then explainers. Set Yes / Undecided / No. Add a note. Back to Ballot; the item shows the choice and the progress count updates. (REQ-06 to REQ-09, REQ-11, REQ-12)
+**F2 Deciding a measure.** On Ballot, tap a measure. Item detail shows the certified ballot text and a link to the official analysis, official links first, then the support and oppose row, then explainers. Set Yes / Undecided / No. Add a note. The progress bar at the top updates as soon as the choice is set. Back to Ballot; the item shows the choice. (REQ-06 to REQ-09, REQ-11, REQ-12)
 
-**F3 Choosing candidates.** Tap a contest with "Vote for up to 5". Select candidates; at the limit, other checkboxes stay enabled but tapping one shows "You can choose up to 5. Unselect one first." Ranked-choice contests show a rank picker per candidate instead. (REQ-10)
+**F3 Choosing candidates.** Tap a contest with "Vote for up to 5". Select candidates; at the limit, other checkboxes stay enabled but tapping one shows "You can choose up to 5. Unselect one first." (REQ-10)
+
+**F3b Ranking candidates (R1).** Tap a ranked-choice contest. The voter can open "How ranked choice works here" to read the official instructions and a counting example. Tap "Rank 1st" on a candidate, then "Rank 2nd" on another, and so on. "Your ranking" fills in at the top, where Move up, Move down and Remove adjust it; ranks always stay 1st, 2nd, 3rd with no gaps. (REQ-10)
 
 **F4 Taking it with you.** From Ballot, tap "Write out my ballot". Toggle notes and undecided. Copy, print or save. The voting basics reminder sits at the bottom. (REQ-13, REQ-14)
 
-**F5 Moving devices (R1).** Menu, Your data, "Save to file". On the other device, Home, "Open a saved file". Ballot restores. (REQ-18)
+**F5 Backing up and moving devices (R1).** Menu, Your data, "Save to file". The save sheet shows a five-word code and the file downloads. Same browser later: Home, "Open a saved file", the ballot restores with no code. Another device or browser: Home, "Open a saved file", enter the code, the ballot restores. (REQ-18)
 
-**F6 Shared computer.** On Home, "Using a shared computer?" turns on private session before anything is stored. A persistent strip says "Private session: nothing is saved". (REQ-17)
+**F6 Shared computer.** On Home, "Using a shared computer?" turns on private session before anything is stored. A persistent strip says "Private session: nothing is kept on this computer." Once there is a decision or note, it adds "Closing this tab erases your choices. Write out your ballot first." In Release 1 the second sentence becomes "Write out your ballot or save to file first." Trying to close or leave the page also triggers the browser's own "Leave site?" prompt where the browser supports it. (REQ-17)
 
 **F7 Leaving no trace.** Menu, Your data, "Clear everything", confirm. Returns to an empty Home. (REQ-16)
 
@@ -76,7 +78,9 @@ States: empty (above); invalid ZIP (inline "Enter a 5-digit ZIP code"); loading 
 Purpose: the whole ballot at a glance, in printed order.
 ```
 ┌──────────────────────────────┐
-│ ← 80302          12 of 41 ✓  │
+│ ← 80302    12 of 41 decided  │
+│ ████████░░░░░░░░░░░░░░░░░░░░ │
+├──────────────────────────────┤
 │ ▌Research mode: items for    │
 │ ▌everywhere in this ZIP.     │
 │ ▌[Narrow my ballot]          │
@@ -96,7 +100,7 @@ Purpose: the whole ballot at a glance, in printed order.
 │ [Write out my ballot]        │
 └──────────────────────────────┘
 ```
-States: loading (skeleton rows in group order); partial coverage (county label "Statewide items only. Local items for this county aren't verified yet." with link to the county clerk's sample ballot); multiple counties in one ZIP (one coverage line per county); offline (works from cache, small "Offline" chip); data updated since last visit ("Ballot data updated Oct 14. 1 item changed." links to changelog).
+The top three lines are the ProgressBar. It stays pinned to the top while the list scrolls; everything below the divider scrolls under it. States: loading (skeleton rows in group order); partial coverage (county label "Statewide items only. Local items for this county aren't verified yet." with link to the county clerk's sample ballot); multiple counties in one ZIP (one coverage line per county); offline (works from cache, small "Offline" chip); data updated since last visit ("Ballot data updated Oct 14. 1 item changed." links to changelog).
 
 ### S3 Narrow my ballot (bottom sheet)
 Pickers for county, city or town, and each district type present in the ZIP. Each picker has "Not sure" as the default. A live count: "Showing 34 of 41 items". (REQ-04)
@@ -131,12 +135,41 @@ Pickers for county, city or town, and each district type present in the ZIP. Eac
 │ · verified Sept 28           │
 └──────────────────────────────┘
 ```
-The ballot text is quoted exactly as certified, in a quote block, with no summary or description written by the project (critique D3). The three-position control is a radio group styled as a segmented control; Undecided is the default and visually neutral. For and Against columns are equal width with identical styling. (REQ-06 to REQ-09, REQ-11, REQ-21)
+The same ProgressBar is pinned above the item header, so the count moves the moment Yes or No is chosen. The ballot text is quoted exactly as certified, in a quote block, with no summary or description written by the project (critique D3). The three-position control is a radio group styled as a segmented control; Undecided is the default and visually neutral. For and Against columns are equal width with identical styling. (REQ-06 to REQ-09, REQ-11, REQ-21)
 
 Retention variant: the header shows the judge's name and court as printed. Official sources list "Judicial performance evaluation ↗" first, linking to the Colorado Office of Judicial Performance Evaluation page for that judge. The app does not quote or display the evaluation's finding (critique D4). There is no Campaigns row. (REQ-06, REQ-09)
 
 ### S5 Item detail, candidate contest
-Header shows "Vote for up to N". Candidate rows in official order with identical layout: name, party label as text (or "No party"), links. Checkbox on the right. Write-in line at the end if allowed, with a text field. Ranked-choice variant: a rank select (1st, 2nd, ...) per row instead of a checkbox, unique ranks enforced. (REQ-10, NFR-06)
+ProgressBar pinned at top, as on S4. Header shows "Vote for up to N". Candidate rows in official order with identical layout: name, party label as text (or "No party"), links. Checkbox on the right. Write-in line at the end if allowed, with a text field. (REQ-10, NFR-06)
+
+Ranked-choice variant (R1):
+```
+┌──────────────────────────────┐
+│ ← Ballot               Mayor │
+│ Rank up to 5. 1st is the one │
+│ you want most.               │
+│ ▸ How ranked choice works    │
+│   here (official)            │
+│ YOUR RANKING                 │
+│ 1st  Name Two     ↑ ↓ Remove │
+│ 2nd  Name One     ↑ ↓ Remove │
+│ CANDIDATES (ballot order)    │
+│ Name One     No party   2nd  │
+│ Name Two     No party   1st  │
+│ Name Three   No party        │
+│              [Rank 3rd]      │
+│ Write-in [__________]        │
+│              [Rank 3rd]      │
+└──────────────────────────────┘
+```
+- Header says "Rank up to N" from `max_ranks`, never "Vote for".
+- Candidates stay in official ballot order with identical rows (NFR-06). Each unranked row has one button labeled with the next free rank ("Rank 3rd"); a ranked row shows its rank as text. When all ranks are used, the buttons are replaced by "All 5 ranks used".
+- "Your ranking" lists the voter's order. Move up, Move down and Remove are buttons, not drag-and-drop, so they work with screen readers and one thumb. Removing a candidate moves everyone below up one rank.
+- Duplicate and skipped ranks cannot be created, so the plan never spoils a ranking on paper.
+- "How ranked choice works here" is a disclosure, closed by default after the first visit to any ranked contest. Inside: the jurisdiction's official instructions, quoted as published, with a source link (AC-47), then "See a counting example".
+- Counting example: a step-through with fictional candidates labeled Candidate A, B and C and a fixed set of 100 example ballots. Round 1 shows first choices; the last-place candidate is eliminated; those ballots move to their next choice, and one with no next choice is shown as no longer counting; the next round repeats until a winner meets the official threshold. The multi-winner variant also shows surplus transfer. A banner on every step: "Example only. These are not real candidates or results." Never uses real names, polling or the voter's ranking (AC-48).
+- Counts as decided once a 1st choice is ranked (REQ-12).
+- Pilot fallback, only if a ranked contest appears in pilot data: the instructions disclosure, then "Ranking isn't available in this test version. Mark your rankings on your paper ballot." The item is left out of the progress count.
 
 ### S6 Write out my ballot
 ```
@@ -146,6 +179,10 @@ Header shows "Vote for up to N". Candidate rows in official order with identical
 │ [ ] Include undecided        │
 │ FEDERAL                      │
 │ US Rep CD2 ....... Candidate │
+│ CITY                         │
+│ Mayor (ranked)               │
+│  1st .............. Name Two │
+│  2nd .............. Name One │
 │ MEASURES                     │
 │ Amend. 79 ............... YES│
 │ Prop. 131 ................ NO│
@@ -157,13 +194,35 @@ Header shows "Vote for up to N". Candidate rows in official order with identical
 │ Find a drop box ↗            │
 └──────────────────────────────┘
 ```
-Print stylesheet: no header, menu or buttons; 11 pt monospace columns; fits a typical ballot on one or two pages. (REQ-13, REQ-14)
+Save writes a readable text file, because the write-out is meant to be read. Under the Save button: "Anyone who opens this file can read it. To keep a private backup, use Save to file in Your data." Print stylesheet: no header, menu or buttons; 11 pt monospace columns; fits a typical ballot on one or two pages. Ranked contests list one line per rank, in rank order, to match the ranking columns on the paper ballot (AC-49). (REQ-10, REQ-13, REQ-14)
 
 ### S7 Your data
-Lists what is stored on this device and its size. Actions: Save to file (R1), Open file (R1), Send to phone by QR (R1), Private session toggle, Clear everything (destructive, confirm dialog with the exact list of what will be deleted). (REQ-16 to REQ-19)
+Lists what is stored on this device and its size. Actions: Save to file (R1), Open file (R1), Send to phone by QR (R1), Private session toggle, Clear everything (destructive, confirm dialog with the exact list of what will be deleted, including "the key that opens your saved files on this browser without a code"). (REQ-16 to REQ-19)
+
+Save to file sheet (R1):
+```
+┌──────────────────────────────┐
+│ Your file is encrypted       │
+│ Your code:                   │
+│ maple orbit crane tulip      │
+│ harbor              [Copy]   │
+│ You won't need it on this    │
+│ browser. You will need it    │
+│ anywhere else, or if this    │
+│ browser's data is cleared.   │
+│ We can't recover a lost code.│
+│ Don't send the code with the │
+│ file.                        │
+│ [ ] I've saved the code      │
+│ [Done]                       │
+└──────────────────────────────┘
+```
+Done stays disabled until the box is checked. In private session mode the second sentence reads "You'll need it to open this file anywhere, including here after this session ends."
+
+Open file: if the file opens with this browser's key, the ballot restores at once. Otherwise a code field appears ("Enter the five-word code shown when this file was saved"). Wrong code: "That code doesn't open this file. Check the words and try again." Existing data is untouched until a file opens. Restoring replaces the current ballot after a confirm that names what will be replaced.
 
 ### S8 Privacy, Corrections, Voting basics
-Plain pages. Privacy explains that every visitor downloads the same ballot data for the whole state, so the site cannot tell which county or ZIP was looked up (critique D2). Corrections (R1) shows the changelog newest first and "Report an error" with two choices side by side: email ("the project will see your email address") and a public GitHub issue ("public, needs a GitHub account") (critique D6). (REQ-22, REQ-23, REQ-14)
+Plain pages. Privacy explains that saved files are encrypted, that this browser can reopen its own files without the code, and that Clear everything removes that ability. It also explains that every visitor downloads the same ballot data for the whole state, so the site cannot tell which county or ZIP was looked up (critique D2). Corrections (R1) shows the changelog newest first and "Report an error" with two choices side by side: email ("the project will see your email address") and a public GitHub issue ("public, needs a GitHub account") (critique D6). (REQ-22, REQ-23, REQ-14)
 
 ### S9 Not in Colorado
 Single message and the state's official link. No ballot content. (REQ-02)
@@ -173,20 +232,28 @@ Single message and the state's official link. No ballot content. (REQ-02)
 
 ## Components
 
+- **ProgressBar:** sticky header with back link, "X of Y decided" as text, and a native progress element. One line of text plus a thin bar, no more than 56 px tall at default text size so the ballot keeps most of a 360 px screen. Neutral color, no celebration animation. Shared by S2, S4 and S5. (REQ-12)
 - **ItemRow:** title, current choice summary, conditional tag, chevron. One shared component for all item kinds.
 - **TriState:** radio group (Yes, Undecided, No) rendered as a segmented control.
-- **CandidateList:** checkbox list with limit enforcement and live status text; ranked variant.
+- **CandidateList:** checkbox list with limit enforcement and live status text.
+- **RankedList (R1):** candidate rows with "Rank Nth" buttons, plus the "Your ranking" list with Move up, Move down and Remove.
+- **RcvInstructions (R1):** disclosure with official instructions, source link, and the entry point to the counting example.
+- **CountingExample (R1):** static step-through of fictional rounds with Previous and Next, and the "Example only" banner on every step.
 - **SidesRow:** two equal columns for For and Against, always rendered together.
 - **CoverageLabel:** status, date, source link; two variants.
 - **ProvenanceLine:** source link and verified date.
 - **NoteField:** autosaving textarea with "Saved on this device" status.
-- **PrivacyStrip:** visible only in private session mode.
+- **PrivacyStrip:** visible only in private session mode, pinned directly under the ProgressBar. First line always: "Private session: nothing is kept on this computer." Second line once there is a decision or note: the erase warning from F6, with "Write out your ballot" (and "save to file" in R1) as links. Never mentions saving without saying where.
 
 ## Accessibility
 
 Target: WCAG 2.2 AA. (NFR-05)
 - All controls are native inputs or ARIA patterns with a known screen-reader behavior (radio group, checkbox).
 - Limit messages for candidate contests are announced via a polite live region.
+- Ranking changes are announced via a polite live region ("Name Three ranked 3rd", "Name One moved to 1st"). Rank buttons and move buttons include the candidate name in their accessible name ("Move Name Two down"). After Remove, focus moves to the next row in Your ranking, or to the candidate list if it is empty.
+- The counting example is a sequence of plain text tables, one per round, so each round reads in order with a screen reader; no information is shown only by bar length or color.
+- The progress count is announced via a polite live region only when it changes, never on scroll. The progress element has an accessible name ("Ballot progress: 12 of 41 decided").
+- At 200 percent text size, the ProgressBar stops being sticky and scrolls with the page, so it never covers more than a small part of the screen.
 - Visible focus at 3:1 contrast; focus order follows printed ballot order.
 - Tap targets at least 44 by 44 px.
 - No information conveyed by color alone; chosen state also shown as text ("Yes").
@@ -198,6 +265,7 @@ Target: WCAG 2.2 AA. (NFR-05)
 - Plain language at about an 8th grade reading level. Use the official names of contests and measures exactly.
 - Never evaluative words about measures or candidates ("good", "important", "controversial"). Measures show only certified ballot text and links; the app writes no measure descriptions of its own.
 - Party labels as the ballot prints them; no colors, logos or icons for parties.
+- Ranked choice is explained only by the jurisdiction's official instructions and the fictional counting example. No statements about whether ranked choice is good or bad, and no strategy advice ("rank everyone", "don't rank more than").
 - Privacy wording is literal: "saved on this device", never "saved" alone; "private plan, not a ballot".
 - Conditional items: "Depends on your district: State House District 10", never "may not apply to you".
 - Errors are short and say what to do next.
@@ -215,15 +283,15 @@ Target: WCAG 2.2 AA. (NFR-05)
 | REQ-07 | S4 SidesRow |
 | REQ-08 | S4 certified ballot text and official analysis link |
 | REQ-09 | S4 TriState |
-| REQ-10 | F3, S5 |
+| REQ-10 | F3, F3b, S5 and ranked variant, S6 ranked lines |
 | REQ-11 | S4 NoteField |
-| REQ-12 | S2 header count |
+| REQ-12 | ProgressBar on S2, S4, S5; F2 |
 | REQ-13 | F4, S6 |
 | REQ-14 | S1 footer, S6, S8 |
 | REQ-15 | NoteField status, S1 returning state |
 | REQ-16 | F7, S7 |
-| REQ-17 | F6, PrivacyStrip |
-| REQ-18 | F5, S7 |
+| REQ-17 | F6, PrivacyStrip, leave-page prompt |
+| REQ-18 | F5, S7 save sheet and open flow, S6 plain-file note, S8 |
 | REQ-19 | S7 (R1) |
 | REQ-20 | S2 CoverageLabel |
 | REQ-21 | ProvenanceLine on S4, S5 |
@@ -238,4 +306,5 @@ Target: WCAG 2.2 AA. (NFR-05)
 - Should the ballot open collapsed by group on long ballots (50+ items), or always expanded? Needs user testing.
 - Where should "Narrow my ballot" live after it is used: persistent chip summary at top of Ballot?
 - Should the write-out offer a "Save as image" for the phone lock screen at the vote center?
+- Should the ranked-choice counting example be reviewed by each jurisdiction's election office before release, since it is the one piece of explanatory text the project writes?
 - Visual identity: needs a name and look that reads civic and neutral, not partisan colors. Red and blue are excluded.
