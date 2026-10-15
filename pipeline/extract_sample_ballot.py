@@ -25,6 +25,14 @@ SECTIONS = {
 }
 NOISE = re.compile(r"^(\d{1,2}|[1-9](st|nd|rd|th)|Choice|Sample Ballot|YES|NO|\(Vote YES or NO\))$"
                    r"|compiled ballot content|^every ballot|Not an official ballot")
+BOILERPLATE = re.compile(
+    r"^(Mark both sides|Sample Ballot for|SAMPLE BALLOT|Larimer County, Colorado|Boulder County, Colorado|Tuesday, November"
+    r"|WARNING:|falsely makes|conviction, to|upon conviction|To vote for|for or against a measure|completely fill in"
+    r"|your choice\.|If a race includes|write-in candidate by|left of the line|eligible write-in|To make a correction"
+    r"|bold line through|then fill in the oval|only candidate in a race|Ballot questions referred|or any political subdivision"
+    r"|ballot questions initiated|numerically\.|\"amendment\" proposes|constitution, and a ballot|\"proposition\" proposes"
+    r"|Revised Statutes\. A|question is a vote|or existing circumstances|on any ballot question is|current law or existing"
+    r"|State of Colorado$|\(Vote YES or NO\)$)", re.I)
 VOTE_WORDS = {"One": 1, "Two": 2, "Three": 3, "Four": 4, "Five": 5, "Six": 6, "Seven": 7, "Eight": 8, "Nine": 9}
 
 notes: list[str] = []
@@ -48,7 +56,7 @@ def lines_of(path: str) -> list[str]:
         body = re.split(r"^\d+\s*$\n(?=.*(compiled ballot content|Boulder County compiled))", page, flags=re.M)[0]
         for l in body.splitlines():
             l = clean(l)
-            if l and not NOISE.search(l):
+            if l and not NOISE.search(l) and not BOILERPLATE.match(l):
                 out.append(l)
         out.append("<<PAGE>>")
     return out
@@ -70,6 +78,10 @@ def vote_for(text: str) -> int | None:
     return VOTE_WORDS.get(w) or (int(w) if w.isdigit() else None)
 
 
+def norm_title(s: str) -> str:
+    return re.sub(r"\s*([/-])\s*", r"\1", clean(s).lower())
+
+
 def match_statewide(title: str, sw: list[dict], kind: str) -> str | None:
     t = clean(title).lower()
     for it in sw:
@@ -77,9 +89,9 @@ def match_statewide(title: str, sw: list[dict], kind: str) -> str | None:
             continue
         if kind == "retention" and it["judge"].lower() in t:
             return it["id"]
-        if kind == "measure" and t.startswith(it["title"].lower() + " "):
+        if kind == "measure" and clean(t).startswith(it["title"].lower() + " "):
             return it["id"]
-        if kind == "candidate_contest" and clean(it["title"]).lower() == t:
+        if kind == "candidate_contest" and norm_title(it["title"]) == norm_title(title):
             return it["id"]
     return None
 
@@ -97,6 +109,9 @@ def contest_start(lines: list[str], k: int) -> str | None:
         return "inline"
     if re.match(r"^(District \w+\s*)?\(Vote for", nxt) and "?" not in l:
         return "wrapped"
+    if re.match(r"^\(Vote for", nxt2) and "?" not in l + nxt and not split_party(l)[1] \
+            and (l.endswith((" ", "-")) or l.rstrip().endswith(("States", "-", "of", "the")) or nxt.startswith(("Congress", "Congressional", "District"))):
+        return "wrapped2"
     if l.endswith("Candidates") and (re.match(r"^\w+ to be Elected$", nxt) or nxt.startswith("Following are")):
         return "paragraph"
     if nxt.startswith("Vote for not more than") or nxt2.startswith("Vote for not more than"):
@@ -111,6 +126,8 @@ def read_contest(lines: list[str], i: int, kind: str) -> tuple[str, int | None, 
         closed = re.search(r"\(Vote for[^)]*\)", l)
         phrase = l if closed else l + " " + lines[i + 1]
         return clean(l.split("(Vote for")[0]).rstrip(" -"), vote_for(phrase), None, i + 1 if closed else i + 2
+    if kind == "wrapped2":
+        return clean(f"{l} {lines[i + 1]}").rstrip(" -"), vote_for(lines[i + 2]), None, i + 3
     if kind == "wrapped":
         district = lines[i + 1].split("(Vote for")[0]
         return clean(f"{l} {district}").rstrip(" -"), vote_for(lines[i + 1]), None, i + 2
@@ -150,8 +167,24 @@ def looks_like_name(l: str) -> bool:
     return 1 <= len(l.split()) <= 6 and l[0].isupper() and not l.endswith((".", ",", "?"))
 
 
-STATE_MEASURE = re.compile(r"^(Amendment|Proposition) (\w+) \((CONSTITUTIONAL|STATUTORY)\)$")
+STATE_MEASURE = re.compile(r"(?:^|\s)((Amendment|Proposition) (\w+) \((CONSTITUTIONAL|STATUTORY)\))$")
+COURT_HEADER = re.compile(r"^(Colorado Supreme Court Justice|Colorado Court of Appeals Judge|District Court Judge"
+                          r"|County Court Judge)\b")
 LOCAL_MEASURE = re.compile(r"^(.*?)\s*Ballot (Issue|Question) (\w+)$")
+
+
+def group_for(title: str, section: str) -> str:
+    """Group from the title; some ballots print section headers out of reading order."""
+    if section == "measures":
+        return "measures"
+    if re.match(r"^(\w+ County |County )(Commissioner|Clerk|Treasurer|Assessor|Sheriff|Surveyor|Coroner)", title):
+        return "county"
+    if re.match(r"^(City|Town) of |^Proposed Municipality", title) or re.search(r"\b(Mayor|Mayoral|Council)\b", title):
+        return "city"
+    if re.match(r"^Regional Transportation", title) or \
+            re.search(r"(Fire|Metropolitan|Water|Sanitation|School|Library|Recreation|Park).* District", title):
+        return "special_districts"
+    return section
 
 
 def split_choices(rest: list[str]) -> tuple[list[str], str]:
@@ -169,9 +202,13 @@ def split_choices(rest: list[str]) -> tuple[list[str], str]:
     return [re.sub(r";( or)?$|\.$", "", j) for j in joined], ""
 
 
+def is_section(l: str) -> bool:
+    return l in SECTIONS or bool(re.fullmatch(r"[A-Z][A-Za-z ]* Ballot Measures", l))
+
+
 def stops(lines: list[str], k: int) -> bool:
     l = lines[k]
-    return l in SECTIONS or bool(STATE_MEASURE.match(l) or LOCAL_MEASURE.match(l)) or \
+    return is_section(l) or bool(STATE_MEASURE.search(l) or LOCAL_MEASURE.match(l)) or bool(COURT_HEADER.match(l)) or \
         l.startswith(("Shall Justice", "Shall Judge")) or contest_start(lines, k) is not None
 
 
@@ -190,12 +227,16 @@ def extract(lines: list[str], sw: list[dict], fips: str, sample_url: str) -> lis
 
     while i < len(lines):
         l = lines[i]
-        if l in SECTIONS:
-            group = SECTIONS[l]
+        if is_section(l):
+            group = SECTIONS.get(l, "measures")
             i += 1
             continue
-        ms, ml = STATE_MEASURE.match(l), LOCAL_MEASURE.match(l)
-        if group == "measures" and (ms or ml):
+        if COURT_HEADER.match(l) and "(Vote for" not in l:
+            i += 1
+            continue
+        ms = STATE_MEASURE.search(l)
+        ml = None if ms else LOCAL_MEASURE.match(l)
+        if ms or ml:
             j = i + 1
             body: list[str] = []
             while j < len(lines) and not stops(lines, j):
@@ -208,22 +249,38 @@ def extract(lines: list[str], sw: list[dict], fips: str, sample_url: str) -> lis
             ml = LOCAL_MEASURE.match(l) if ml else None
             heading_prefix = next_prefix
             if ms:
-                sid = match_statewide(l, sw, "measure")
+                sid = match_statewide(ms.group(1), sw, "measure")
                 ballot.append({"statewide": sid or f"CHECK: no statewide match for {l}"})
                 if not sid:
                     notes.append(f"{l}: no statewide match")
             else:
-                who, letter = ml.group(1), ml.group(3)
-                who = re.sub(r" of (Boulder|Larimer) County$", "", who) if " District of " in f"{who} " else who
+                who, kind_word, letter = ml.group(1), ml.group(2), ml.group(3)
+                # Trust a heading prefix like "City of Boulder" or "Timberline Fire Protection District".
+                # Two-column ballots can leave debris like "District No. 2" instead; then use the text.
+                core = re.sub(r"District of \w+ County$", "District", who)
+                trusted = (len(who.split()) >= 2 and not who.startswith("District")
+                           and not re.search(r"[a-z][A-Z]", who)
+                           and len(re.findall(r"\b(County|District|Town of|City of)\b", core)) <= 1)
+                title, district = clean(l), None
+                if not trusted:
+                    found = jurisdiction_in_text(text)
+                    if found:
+                        district, name = found
+                        title = f"{name} Ballot {kind_word} {letter}"
+                        notes.append(f"{clean(l)}: jurisdiction taken from its text: {name}; CHECK the printed name")
+                        who = name
+                    else:
+                        title = f"Ballot {kind_word} {letter}"
+                        notes.append(f"{clean(l)}: no jurisdiction found; CHECK")
+                else:
+                    who = re.sub(r" of (Boulder|Larimer) County$", "", who) if " District of " in f"{who} " else who
+                    district = district_for(who)
                 item = {"id": f"{slug(who) or 'district'}-{letter.lower()}", "kind": "measure",
-                        "group": "measures", "district_id": district_for(who or text), "title": clean(l),
+                        "group": "measures", "district_id": district, "title": title,
                         "ballot_text": {"text": text, "source": sample_url}}
                 if choices and choices != DEFAULT_CHOICES:
                     item["choices"] = choices
                     notes.append(f"{clean(l)}: choices {choices}")
-                if not who:
-                    notes.append(f"{clean(l)}: no jurisdiction in its heading; district {item['district_id']} "
-                                 "taken from its text")
                 add_local(item)
             i = j
             continue
@@ -264,8 +321,7 @@ def extract(lines: list[str], sw: list[dict], fips: str, sample_url: str) -> lis
         if sid:
             ballot.append({"statewide": sid})
         else:
-            item = {"id": slug(title), "kind": "candidate_contest",
-                    "group": "special_districts" if title.startswith("Regional Transportation") else group,
+            item = {"id": slug(title), "kind": "candidate_contest", "group": group_for(title, group),
                     "district_id": district_for(title), "title": title, "candidates": cands, "write_in": write_in}
             if ranked:
                 item.update({"ranked": True, "max_ranks": ranked["max_ranks"], "seats": ranked["seats"],
@@ -279,6 +335,25 @@ def extract(lines: list[str], sw: list[dict], fips: str, sample_url: str) -> lis
                 notes.append(f"{title}: looks statewide but has no statewide match; CHECK")
         i = k
     return ballot
+
+
+def jurisdiction_in_text(text: str) -> tuple[str | None, str] | None:
+    """(district id, name) from "SHALL <JURISDICTION> TAXES/DEBT ..." style ballot text, if found."""
+    up = clean(text).upper()
+    m = re.search(r"BOUNDARIES OF THE PROPOSED ([A-Z][A-Z .\-]+?DISTRICT(?: NO\. ?[A-Z0-9-]+)?)\b", up) or \
+        re.search(r"SHALL (?:THE )?((?:CITY|TOWN) OF [A-Z ]+?|[A-Z][A-Z .\-]*?(?:COUNTY|DISTRICT(?: NO\. ?[A-Z0-9-]+)?"
+                  r"(?: \([A-Z ]+\))?))(?: TAXES| DEBT| BE | WAIVE)", up)
+    if not m:
+        return None
+    name = m.group(1).strip()
+    if re.fullmatch(r"[A-Z]+ COUNTY", name):
+        return None, name.title()
+    pretty = re.sub(r"\bNo\b", "No.", name.title().replace("No.", "No")).replace("No..", "No.")
+    pretty = re.sub(r"\b(Re-\w+)\b", lambda x: x.group(1).upper().replace("RE-", "RE-"), pretty)
+    m2 = re.match(r"^(City|Town) Of (.+)$", pretty)
+    if m2:
+        return "city-" + slug(m2.group(2)), f"{m2.group(1)} of {m2.group(2)}"
+    return slug(pretty), pretty
 
 
 def district_for(text: str) -> str | None:

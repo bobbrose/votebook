@@ -334,11 +334,11 @@ ballot:
 - statewide: proposition-135
 - statewide: proposition-136
 - statewide: proposition-137
-- id: county-ballot-measures-boulder-county-1a
+- id: boulder-county-1a
   kind: measure
   group: measures
   district_id: null
-  title: County Ballot Measures Boulder County Ballot Issue 1A
+  title: Boulder County Ballot Issue 1A
   ballot_text:
     text: 'EARLY CHILDHOOD CARE AND EDUCATION MILL LEVY INCREASE AND VOTER-APPROVED REVENUE CHANGE SHALL BOULDER
       COUNTY TAXES BE INCREASED $30,000,000 ANNUALLY (IN TAX COLLECTION YEAR 2027), AND BY SUCH ADDITIONAL AMOUNTS
