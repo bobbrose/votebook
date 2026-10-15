@@ -54,7 +54,7 @@ Research
 - REQ-08: Each measure shows its official ballot text exactly as certified (Blue Book ballot title for statewide measures, the county's published ballot question for local measures) and links to the official analysis. The app shows no summary or description written by the project.
 
 Decisions and notes
-- REQ-09: Measures and judicial retentions have a three-position control: Yes, Undecided (default), No.
+- REQ-09: Measures and judicial retentions have a three-position control: Yes, Undecided (default), No. When the ballot prints other labels for the two choices (for example "For Incorporation" and "Against Incorporation"), the control and the write-out use the printed labels. A question that offers more than two options is a pick-one control, with Undecided as the default.
 - REQ-10: Candidate contests allow selecting candidates up to the contest's vote limit and prevent selecting more. Ranked-choice contests instead let the voter rank candidates, including a write-in where the ballot allows one, up to the number of rankings the official ballot allows, with no duplicate or skipped ranks. Each ranked-choice contest shows the jurisdiction's official instructions for marking and counting, linked to their source, and offers a counting example that uses only fictional candidates. Ranked-choice contests that elect more than one seat use the matching official instructions and example.
 - REQ-11: The voter can add a free-text note to any item.
 - REQ-12: The ballot shows progress: how many items are decided out of the total shown, as a count and a progress bar that stay visible at the top of the screen while the voter scrolls the ballot or an item. A measure or retention counts as decided when set to Yes or No; a candidate contest counts as decided when at least one candidate or write-in is chosen.
@@ -108,6 +108,8 @@ Research
 
 Decisions
 - AC-12: WHEN a measure or retention item is first shown, the system SHALL set its control to Undecided. (REQ-09)
+- AC-51: WHEN a measure's ballot prints choice labels other than Yes and No, the system SHALL use those labels in its control and in the write-out. (REQ-09, REQ-13)
+- AC-52: WHEN a measure offers more than two choices, the system SHALL let the voter pick exactly one of them or leave it Undecided. (REQ-09)
 - AC-13: IF a voter tries to select more candidates than the vote limit, THEN the system SHALL keep the selection unchanged and say how many may be chosen. (REQ-10)
 - AC-14: WHEN a contest is ranked-choice, the system SHALL let the voter rank candidates in consecutive order starting at 1st, up to the contest's ranking limit, and SHALL NOT allow two candidates the same rank or one candidate more than one rank. (REQ-10)
 - AC-47: WHEN a voter opens a ranked-choice contest, the system SHALL show the jurisdiction's official ranked-choice instructions with a link to their source. (REQ-10)
@@ -178,5 +180,5 @@ Quality
 - Q4: Can the Secretary of State or clerks share ballot data or precinct ballot styles directly?
 - Q5: Who would sit on a cross-spectrum review panel for project-written measure descriptions, and what is the process? Until a panel exists, REQ-08 limits measures to official text (critique D3). No panel members are identified yet.
 - Q6: Resolved (critique D6). "Report an error" offers both email and a public GitHub issue, and the privacy page explains what each exposes. Applies from Release 1.
-- Q7: Who hosts and funds it, and does the host's logging meet NFR-01?
+- Q7: Host is Vercel (owner decision, 2026-10-14). Open: who funds it, and does Vercel's request logging meet NFR-01? M4 checks and the privacy page discloses it.
 - Q8: Lessons from Searchboard are still unwritten in the vision.

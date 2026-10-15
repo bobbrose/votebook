@@ -39,35 +39,45 @@ All files carry `schema_version`, `data_version` and `election_id` so multiple e
 
 ```jsonc
 // data/2026-11-03/zip-index.json
-{ "schema_version": 1, "election_id": "co-2026-11-03",
-  "zips": { "80302": { "counties": ["08013"], "districts": { "co-house": ["10","13"], "co-senate": ["18"] } } } }
+{ "schema_version": 1, "data_version": "2026.10.15-1", "election_id": "co-2026-11-03",
+  "zips": { "80302": { "counties": ["08013"],
+                       "districts": { "congressional": ["co-cd-2"], "state_senate": ["co-senate-15", "co-senate-18"],
+                                      "state_house": ["co-house-10", "co-house-12", "co-house-49"], "place": ["city-boulder"] } } },
+  "other_states": { "840": "UT" },                       // first three ZIP digits -> state, for REQ-02
+  "states": { "UT": { "name": "Utah", "election_site": "https://..." } } }
 
-// data/2026-11-03/counties.json holds { "schema_version": 1, "data_version": "...", "counties": { "08013": <county object>, ... } }
-// County object for Boulder (built from sources/co-2026-11-03/08013.yaml):
-{ "schema_version": 1, "data_version": "2026.10.12-1", "county_fips": "08013",
-  "coverage": { "status": "verified_complete", "source": "https://...boulder sample ballot.pdf", "verified_at": "2026-09-28", "verified_by": "reviewer-id" },
-  "districts": [ { "id": "co-house-10", "type": "state_house", "name": "State House District 10",
-                   "geometry_ref": "boundaries/08013.topojson#co-house-10" } ],
-  "items": [
-    { "id": "boulder-city-2c", "kind": "measure", "group": "city", "ballot_order": 4120,
-      "district_id": "city-boulder", "title": "Ballot Question 2C",
-      "ballot_text": { "text": "Shall the City of Boulder ...", "source": "https://...boulder sample ballot.pdf" },
-      "links": { "official": [ {"label": "Full text", "url": "..."} ], "explainers": [],
-                 "support": {"label": "...", "url": "..."}, "oppose": null },
-      "provenance": { "source": "https://...", "verified_at": "2026-09-28" } },
-    { "id": "boulder-council", "kind": "candidate_contest", "group": "city", "ballot_order": 4010,
-      "district_id": "city-boulder", "title": "City Council", "vote_for": 5, "ranked": false,
-      "candidates": [ { "name": "...", "party": null, "order": 1, "links": [ {"label": "Campaign site", "url": "..."} ] } ],
-      "write_in": true, "provenance": { "source": "...", "verified_at": "2026-09-28" } },
-    { "id": "boulder-mayor", "kind": "candidate_contest", "group": "city", "ballot_order": 4005,
-      "district_id": "city-boulder", "title": "Mayor", "ranked": true, "max_ranks": 5, "seats": 1,
-      "rcv_instructions": { "text": "Rank the candidates in order of preference ...", "source": "https://...city of boulder voter instructions" },
-      "candidates": [ { "id": "cand-a", "name": "...", "party": null, "order": 1, "links": [] } ],
-      "write_in": true, "provenance": { "source": "...", "verified_at": "2026-09-28" } }
-  ] }
+// data/2026-11-03/statewide.json: items in printed order; ballot_order is spaced 1000 apart
+{ "schema_version": 1, "data_version": "...", "election_id": "co-2026-11-03", "districts": [], "items": [ <item>, ... ] }
+
+// data/2026-11-03/counties.json: every county, so every visitor fetches the same file (critique D2)
+{ "schema_version": 1, "data_version": "...", "election_id": "co-2026-11-03",
+  "counties": { "08013": {
+    "county_fips": "08013", "name": "Boulder",
+    "coverage": { "status": "verified_complete", "source": "https://...boulder sample ballot.pdf",
+                  "verified_at": "2026-10-15", "verified_by": "Name" },     // or { "status": "statewide_only" }
+    "statewide_order": [ "us-senate", "us-house-cd-2", ... ],   // statewide items on this county's ballots, in printed order
+    "districts": [ { "id": "city-boulder", "type": "city", "name": "City of Boulder" } ],
+    "items": [                                                 // local items; ballot_order falls between statewide items
+      { "id": "city-of-boulder-2l", "kind": "measure", "group": "measures", "ballot_order": 37010,
+        "district_id": "city-boulder", "title": "City of Boulder Ballot Question 2L",
+        "ballot_text": { "text": "Shall the City Charter be amended ...", "source": "https://...sample ballot.pdf" },
+        "choices": [ "For the Measure", "Against the Measure" ],   // only when the ballot does not print YES/FOR, NO/AGAINST
+        "links": { "official": [], "explainers": [], "support": null, "oppose": null },
+        "provenance": { "source": "https://...sample ballot.pdf", "verified_at": "2026-10-15" } },
+      { "id": "city-of-boulder-council-candidates", "kind": "candidate_contest", "group": "city", "ballot_order": 15020,
+        "district_id": "city-boulder", "title": "City of Boulder Council Candidates", "vote_for": 5, "ranked": false,
+        "candidates": [ { "id": "cand-lee-gilbert", "name": "Lee Gilbert", "party": null, "order": 1, "links": [] } ],
+        "write_in": false, "links": { ... }, "provenance": { ... } },
+      { "id": "city-of-boulder-mayoral-candidates", "kind": "candidate_contest", "group": "city", "ballot_order": 15010,
+        "district_id": "city-boulder", "title": "City of Boulder Mayoral Candidates", "ranked": true, "max_ranks": 6, "seats": 1,
+        "rcv_instructions": { "text": "Rank candidates in the order of your preference ...", "source": "https://...sample ballot.pdf" },
+        "candidates": [ ... ], "write_in": false, "links": { ... }, "provenance": { ... } }
+    ] } } }
 ```
 
-`statewide.json` has the same `items` shape with `group` in federal, state, judges (statewide courts) and measures. `kind` is one of `measure`, `retention`, `candidate_contest`. A ranked contest has `ranked: true`, `max_ranks` (the number of ranking columns on the printed ballot), `seats` (1 for single-winner) and `rcv_instructions`, copied from the jurisdiction's official voter instructions; it has no `vote_for`. Every `measure` carries `ballot_text` copied from the certified source; there is no field for project-written descriptions (critique D3). Every `retention` item has a `links.official` entry labeled "Judicial performance evaluation" pointing to the Colorado Office of Judicial Performance Evaluation page for that judge, and no field for the evaluation's finding (critique D4).
+The app builds a county's ballot from `statewide_order` plus that county's `items`, sorted by `ballot_order`. A ZIP in several counties shows each county's ballot items, with one coverage label per county. District ids are `co-cd-N`, `co-senate-N`, `co-house-N`, `city-<name>` (from Census places) and a slug of the district's printed name for special districts. `provenance.verified_at` and `coverage` come from the signed verification record, never from source files.
+
+`statewide.json` has the same `items` shape with `group` in federal, state, judges (statewide courts) and measures. `kind` is one of `measure`, `retention`, `candidate_contest`. A ranked contest has `ranked: true`, `max_ranks` (the number of ranking columns on the printed ballot), `seats` (1 for single-winner) and `rcv_instructions`, copied from the jurisdiction's official voter instructions; it has no `vote_for`. Every `measure` carries `ballot_text` copied from the certified source; there is no field for project-written descriptions (critique D3). When the certified title includes a table (Colorado requires one for income tax changes, as in Amendment 87), `ballot_text.table` holds its caption, header, rows and note. `choices` is present only when the ballot prints labels other than YES/FOR and NO/AGAINST: two labels take the yes and no positions; more than two make a pick-one question (REQ-09). Every `retention` item has a `links.official` entry labeled "Judicial performance evaluation" pointing to the Colorado Office of Judicial Performance Evaluation page for that judge, and no field for the evaluation's finding (critique D4).
 
 User data (device only):
 
@@ -95,11 +105,11 @@ The header carries no election, ZIP, date or device identifier.
 ## Components
 
 ### C1 Data pipeline (`pipeline/`)
-Python 3.12. Source YAML per county under `sources/<election>/<fips>.yaml`, written by AI extraction from the sample ballot PDF, then corrected by a person. A verification record (`verification/<fips>.yaml`) lists the sample ballot URL, checker, date, and counts of contests and questions per group as read from the PDF. The compiler validates against JSON Schema, checks that item counts per group equal the verification record, assigns ballot order, checks every measure's `ballot_text` against the certified text recorded in the verification record, checks every retention item has its evaluation link, checks every ranked contest has `rcv_instructions` with a source, `max_ranks` and `seats`, concatenates county files into `counties.json` and fails if it exceeds the size budget, emits JSON, SHA-256 hashes (`hashes.txt`) and appends `CHANGELOG.md` entries from the git diff of source YAML.
+Python 3.12, managed with uv. Extraction drafts the sources: `pipeline/import_sos.py` drafts `sources/<election>/statewide.yaml` from the Secretary of State's official candidate list, party drawing and certified measures page, and `pipeline/extract_sample_ballot.py` drafts `sources/<election>/<fips>.yaml` from a county's compiled sample ballot PDF. A county file lists the full ballot in printed order, referring to statewide items by id. A person corrects the drafts. A verification record (`verification/statewide.yaml`, `verification/<fips>.yaml`), filled in by people only, lists the source, checker, date, group counts in printed order as read from the source, each measure's certified text copied independently from the source, and a second person's spot check of at least 10 percent of items. Items get their verified date from this record. The compiler validates against JSON Schema, checks that group order and counts equal the verification record and that statewide references appear in statewide order, checks the spot check (second person, at least 10 percent), assigns ballot order, checks every measure's `ballot_text` against the certified text recorded in the verification record, checks every retention item has its evaluation link, checks every ranked contest has `rcv_instructions` with a source, `max_ranks` and `seats`, concatenates county files into `counties.json` and fails if it exceeds the size budget, emits JSON, the published schemas, `manifest.json`, SHA-256 hashes (`hashes.txt`) and `CHANGELOG.md` entries for every item added, removed or changed since the last build. `--check` fails if committed `data/` differs from what the sources compile to.
 Implements: REQ-05, REQ-06 (retention links), REQ-08, REQ-10 (ranked contest fields), REQ-20, REQ-21, REQ-22 (changelog), NFR-01 (same files for everyone), NFR-06, NFR-07.
 
 ### C2 ZIP index builder (`pipeline/zip_index.py`)
-Intersects Census ZCTA polygons with county and district boundaries at build time. Outputs which counties and which districts each ZIP touches. ZCTAs approximate USPS ZIPs; the caveat is shown in research mode. Also holds a small table of non-Colorado ZIP prefixes to state election sites.
+Intersects Census cartographic ZCTA polygons with county, congressional, state senate, state house and place boundaries, and writes `sources/<election>/geo.json` (committed, so builds need no network). A ZIP touches a district when the overlap is at least 0.5 percent of the ZIP or 20 percent of the district; erring toward inclusion only adds items labeled "Depends on your district". ZCTAs approximate USPS ZIPs; the caveat is shown in research mode. Also derives a table of non-Colorado ZIP prefixes to states, and `sources/states.yaml` gives each state's election site. Special district boundaries (RTD, fire, metro and school districts) are not intersected, so their items always show as conditional.
 Implements: REQ-01, REQ-02.
 
 ### C3 Ballot resolver (`app/src/resolve.ts`)
@@ -155,7 +165,7 @@ Implements: REQ-22.
 | REQ-06 | C1, C4 | Component tests AC-08, AC-41; pipeline retention link check |
 | REQ-07 | C4 | Component test AC-09 |
 | REQ-08 | C1, C4 | Pipeline fails on ballot text mismatch (AC-11); component test AC-10 |
-| REQ-09 | C4 | Component test AC-12 |
+| REQ-09 | C1, C4 | Component tests AC-12, AC-51, AC-52; schema check of `choices` |
 | REQ-10 | C1, C3, C4 | Unit tests on ranking functions AC-14; component tests AC-13, AC-47, AC-48; e2e write-out AC-49; pipeline check AC-50 |
 | REQ-11 | C4, C5 | e2e AC-15 |
 | REQ-12 | C4 | Component test AC-16; e2e scroll test at 360 px AC-42 |
@@ -202,7 +212,7 @@ Threats and mitigations:
 |---|---|---|
 | Data validation | Python, jsonschema, custom order and count checks | AC-07, AC-11, AC-27, AC-28, AC-37, AC-50 |
 | Unit | Vitest | Resolver (AC-01, AC-02, AC-06), ranking (AC-14), portability (AC-24, AC-25, AC-43), storage |
-| Component | Vitest + Testing Library | AC-08 to AC-10, AC-12, AC-13, AC-16, AC-20, AC-41, AC-47, AC-48 |
+| Component | Vitest + Testing Library | AC-08 to AC-10, AC-12, AC-13, AC-16, AC-20, AC-41, AC-47, AC-48, AC-51, AC-52 |
 | End to end | Playwright (mobile Chromium, WebKit) | Flows AC-01 to AC-07, AC-15, AC-17 to AC-19, AC-21 to AC-23, AC-34, AC-39, AC-42, AC-44 to AC-46, AC-49 (a fresh browser context stands in for another browser) |
 | Privacy guard | Playwright route handler that fails the test on any off-origin request or any request whose URL or body contains the test ZIP, coordinates or note text; a second test looks up ZIPs in different counties and asserts identical request lists | AC-05, AC-26, AC-32, AC-33, AC-40 |
 | Accessibility | axe-core in Playwright, manual screen-reader script | AC-36 |
@@ -212,10 +222,10 @@ Threats and mitigations:
 
 ## Tooling and deployment
 
-- Node 22, TypeScript 5, Vite 6, Preact 10, Vitest, Playwright, Lighthouse CI. Python 3.12 for the pipeline (jsonschema, pyyaml, shapely for build-time geometry).
+- Node 22, TypeScript 5, Vite 6, Preact 10, Vitest, Playwright, Lighthouse CI. Python 3.12 for the pipeline via uv (jsonschema, pyyaml, shapely and pyshp for build-time geometry, openpyxl for the Secretary of State's spreadsheets).
 - Monorepo: `pipeline/`, `sources/`, `verification/`, `app/`, `data/` (build output, committed for transparency).
 - CI on GitHub Actions: pipeline validate, unit, component, e2e with privacy guard, axe, Lighthouse, hash publish.
-- Deploy: static host from the `main` branch build, after CI passes. Host to be chosen against Q7 criteria: logging control, custom headers, no injected scripts.
+- Deploy: Vercel (owner decision, 2026-10-14), static output from the `main` branch build after CI passes. Headers via `vercel.json`. Vercel Web Analytics and Speed Insights stay off (they inject scripts). Vercel keeps its own request logs; M4 records what it logs and for how long, and the privacy page says so (NFR-01, Q7).
 
 ## Risks
 

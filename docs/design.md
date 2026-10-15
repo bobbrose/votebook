@@ -137,6 +137,8 @@ Pickers for county, city or town, and each district type present in the ZIP. Eac
 ```
 The same ProgressBar is pinned above the item header, so the count moves the moment Yes or No is chosen. The ballot text is quoted exactly as certified, in a quote block, with no summary or description written by the project (critique D3). The three-position control is a radio group styled as a segmented control; Undecided is the default and visually neutral. For and Against columns are equal width with identical styling. (REQ-06 to REQ-09, REQ-11, REQ-21)
 
+Choices variant: when the ballot prints labels other than Yes and No ("For the Measure" / "Against the Measure", "For Incorporation" / "Against Incorporation"), the segmented control shows those labels, with Undecided in the middle as usual. A question with more than two options (Boulder County Question 201) shows a radio list of the printed options plus Undecided first, selected by default. The write-out and Ballot row show the printed label. (REQ-09, AC-51, AC-52)
+
 Retention variant: the header shows the judge's name and court as printed. Official sources list "Judicial performance evaluation ↗" first, linking to the Colorado Office of Judicial Performance Evaluation page for that judge. The app does not quote or display the evaluation's finding (critique D4). There is no Campaigns row. (REQ-06, REQ-09)
 
 ### S5 Item detail, candidate contest
@@ -234,7 +236,8 @@ Single message and the state's official link. No ballot content. (REQ-02)
 
 - **ProgressBar:** sticky header with back link, "X of Y decided" as text, and a native progress element. One line of text plus a thin bar, no more than 56 px tall at default text size so the ballot keeps most of a 360 px screen. Neutral color, no celebration animation. Shared by S2, S4 and S5. (REQ-12)
 - **ItemRow:** title, current choice summary, conditional tag, chevron. One shared component for all item kinds.
-- **TriState:** radio group (Yes, Undecided, No) rendered as a segmented control.
+- **TriState:** radio group (Yes, Undecided, No) rendered as a segmented control; takes printed labels when a measure has its own.
+- **PickOne:** radio list for questions with more than two printed options, Undecided first and selected by default.
 - **CandidateList:** checkbox list with limit enforcement and live status text.
 - **RankedList (R1):** candidate rows with "Rank Nth" buttons, plus the "Your ranking" list with Move up, Move down and Remove.
 - **RcvInstructions (R1):** disclosure with official instructions, source link, and the entry point to the counting example.
@@ -282,7 +285,7 @@ Target: WCAG 2.2 AA. (NFR-05)
 | REQ-06 | F2, S4 source order, S4 retention variant |
 | REQ-07 | S4 SidesRow |
 | REQ-08 | S4 certified ballot text and official analysis link |
-| REQ-09 | S4 TriState |
+| REQ-09 | S4 TriState, choices variant, PickOne |
 | REQ-10 | F3, F3b, S5 and ranked variant, S6 ranked lines |
 | REQ-11 | S4 NoteField |
 | REQ-12 | ProgressBar on S2, S4, S5; F2 |
