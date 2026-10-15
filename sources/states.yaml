@@ -1,0 +1,170 @@
+# Election sites for ZIP codes outside Colorado (REQ-02, AC-03).
+# Each links to the state's page on vote.gov, the U.S. government's official voter site,
+# which links on to the state's own election office. Generated from the Census state list.
+# vote.gov blocks automated checks, so a person must click through these before the pilot.
+
+AK:
+  name: Alaska
+  election_site: https://vote.gov/register/alaska
+AL:
+  name: Alabama
+  election_site: https://vote.gov/register/alabama
+AR:
+  name: Arkansas
+  election_site: https://vote.gov/register/arkansas
+AS:
+  name: American Samoa
+  election_site: https://vote.gov/register/american-samoa
+AZ:
+  name: Arizona
+  election_site: https://vote.gov/register/arizona
+CA:
+  name: California
+  election_site: https://vote.gov/register/california
+CT:
+  name: Connecticut
+  election_site: https://vote.gov/register/connecticut
+DC:
+  name: District of Columbia
+  election_site: https://vote.gov/register/district-of-columbia
+DE:
+  name: Delaware
+  election_site: https://vote.gov/register/delaware
+FL:
+  name: Florida
+  election_site: https://vote.gov/register/florida
+GA:
+  name: Georgia
+  election_site: https://vote.gov/register/georgia
+GU:
+  name: Guam
+  election_site: https://vote.gov/register/guam
+HI:
+  name: Hawaii
+  election_site: https://vote.gov/register/hawaii
+IA:
+  name: Iowa
+  election_site: https://vote.gov/register/iowa
+ID:
+  name: Idaho
+  election_site: https://vote.gov/register/idaho
+IL:
+  name: Illinois
+  election_site: https://vote.gov/register/illinois
+IN:
+  name: Indiana
+  election_site: https://vote.gov/register/indiana
+KS:
+  name: Kansas
+  election_site: https://vote.gov/register/kansas
+KY:
+  name: Kentucky
+  election_site: https://vote.gov/register/kentucky
+LA:
+  name: Louisiana
+  election_site: https://vote.gov/register/louisiana
+MA:
+  name: Massachusetts
+  election_site: https://vote.gov/register/massachusetts
+MD:
+  name: Maryland
+  election_site: https://vote.gov/register/maryland
+ME:
+  name: Maine
+  election_site: https://vote.gov/register/maine
+MI:
+  name: Michigan
+  election_site: https://vote.gov/register/michigan
+MN:
+  name: Minnesota
+  election_site: https://vote.gov/register/minnesota
+MO:
+  name: Missouri
+  election_site: https://vote.gov/register/missouri
+MP:
+  name: Commonwealth of the Northern Mariana Islands
+  election_site: https://vote.gov/register/commonwealth-of-the-northern-mariana-islands
+MS:
+  name: Mississippi
+  election_site: https://vote.gov/register/mississippi
+MT:
+  name: Montana
+  election_site: https://vote.gov/register/montana
+NC:
+  name: North Carolina
+  election_site: https://vote.gov/register/north-carolina
+ND:
+  name: North Dakota
+  election_site: https://vote.gov/register/north-dakota
+NE:
+  name: Nebraska
+  election_site: https://vote.gov/register/nebraska
+NH:
+  name: New Hampshire
+  election_site: https://vote.gov/register/new-hampshire
+NJ:
+  name: New Jersey
+  election_site: https://vote.gov/register/new-jersey
+NM:
+  name: New Mexico
+  election_site: https://vote.gov/register/new-mexico
+NV:
+  name: Nevada
+  election_site: https://vote.gov/register/nevada
+NY:
+  name: New York
+  election_site: https://vote.gov/register/new-york
+OH:
+  name: Ohio
+  election_site: https://vote.gov/register/ohio
+OK:
+  name: Oklahoma
+  election_site: https://vote.gov/register/oklahoma
+OR:
+  name: Oregon
+  election_site: https://vote.gov/register/oregon
+PA:
+  name: Pennsylvania
+  election_site: https://vote.gov/register/pennsylvania
+PR:
+  name: Puerto Rico
+  election_site: https://vote.gov/register/puerto-rico
+RI:
+  name: Rhode Island
+  election_site: https://vote.gov/register/rhode-island
+SC:
+  name: South Carolina
+  election_site: https://vote.gov/register/south-carolina
+SD:
+  name: South Dakota
+  election_site: https://vote.gov/register/south-dakota
+TN:
+  name: Tennessee
+  election_site: https://vote.gov/register/tennessee
+TX:
+  name: Texas
+  election_site: https://vote.gov/register/texas
+UT:
+  name: Utah
+  election_site: https://vote.gov/register/utah
+VA:
+  name: Virginia
+  election_site: https://vote.gov/register/virginia
+VI:
+  name: United States Virgin Islands
+  election_site: https://vote.gov/register/us-virgin-islands
+VT:
+  name: Vermont
+  election_site: https://vote.gov/register/vermont
+WA:
+  name: Washington
+  election_site: https://vote.gov/register/washington
+WI:
+  name: Wisconsin
+  election_site: https://vote.gov/register/wisconsin
+WV:
+  name: West Virginia
+  election_site: https://vote.gov/register/west-virginia
+WY:
+  name: Wyoming
+  election_site: https://vote.gov/register/wyoming

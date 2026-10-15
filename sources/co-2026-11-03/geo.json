@@ -1,0 +1,12504 @@
+{
+ "generated_from": [
+  "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_cd119_500k.zip",
+  "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_500k.zip",
+  "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_08_place_500k.zip",
+  "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip",
+  "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_08_sldl_500k.zip",
+  "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_08_sldu_500k.zip",
+  "https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip"
+ ],
+ "thresholds": {
+  "min_share_of_zip": 0.005,
+  "min_share_of_district": 0.2
+ },
+ "counties": {
+  "08001": {
+   "name": "Adams",
+   "districts": [
+    "co-cd-4",
+    "co-cd-6",
+    "co-cd-8",
+    "co-house-24",
+    "co-house-29",
+    "co-house-31",
+    "co-house-32",
+    "co-house-33",
+    "co-house-34",
+    "co-house-35",
+    "co-house-36",
+    "co-house-48",
+    "co-house-56",
+    "co-senate-13",
+    "co-senate-19",
+    "co-senate-21",
+    "co-senate-24",
+    "co-senate-25",
+    "co-senate-28"
+   ]
+  },
+  "08003": {
+   "name": "Alamosa",
+   "districts": [
+    "co-cd-3",
+    "co-house-62",
+    "co-senate-6"
+   ]
+  },
+  "08005": {
+   "name": "Arapahoe",
+   "districts": [
+    "co-cd-1",
+    "co-cd-4",
+    "co-cd-6",
+    "co-house-3",
+    "co-house-36",
+    "co-house-37",
+    "co-house-38",
+    "co-house-40",
+    "co-house-41",
+    "co-house-42",
+    "co-house-56",
+    "co-house-61",
+    "co-house-9",
+    "co-senate-16",
+    "co-senate-21",
+    "co-senate-26",
+    "co-senate-27",
+    "co-senate-28",
+    "co-senate-29",
+    "co-senate-32"
+   ]
+  },
+  "08007": {
+   "name": "Archuleta",
+   "districts": [
+    "co-cd-3",
+    "co-house-59",
+    "co-senate-6"
+   ]
+  },
+  "08009": {
+   "name": "Baca",
+   "districts": [
+    "co-cd-4",
+    "co-house-47",
+    "co-senate-35"
+   ]
+  },
+  "08011": {
+   "name": "Bent",
+   "districts": [
+    "co-cd-4",
+    "co-house-47",
+    "co-senate-35"
+   ]
+  },
+  "08013": {
+   "name": "Boulder",
+   "districts": [
+    "co-cd-2",
+    "co-house-10",
+    "co-house-11",
+    "co-house-12",
+    "co-house-19",
+    "co-house-49",
+    "co-senate-15",
+    "co-senate-17",
+    "co-senate-18"
+   ]
+  },
+  "08014": {
+   "name": "Broomfield",
+   "districts": [
+    "co-cd-2",
+    "co-cd-7",
+    "co-house-12",
+    "co-house-33",
+    "co-senate-17",
+    "co-senate-25"
+   ]
+  },
+  "08015": {
+   "name": "Chaffee",
+   "districts": [
+    "co-cd-7",
+    "co-house-13",
+    "co-house-60",
+    "co-senate-4"
+   ]
+  },
+  "08017": {
+   "name": "Cheyenne",
+   "districts": [
+    "co-cd-4",
+    "co-house-56",
+    "co-senate-35"
+   ]
+  },
+  "08019": {
+   "name": "Clear Creek",
+   "districts": [
+    "co-cd-2",
+    "co-house-49",
+    "co-senate-8"
+   ]
+  },
+  "08021": {
+   "name": "Conejos",
+   "districts": [
+    "co-cd-3",
+    "co-house-62",
+    "co-senate-6"
+   ]
+  },
+  "08023": {
+   "name": "Costilla",
+   "districts": [
+    "co-cd-3",
+    "co-house-62",
+    "co-senate-6"
+   ]
+  },
+  "08025": {
+   "name": "Crowley",
+   "districts": [
+    "co-cd-4",
+    "co-house-47",
+    "co-senate-35"
+   ]
+  },
+  "08027": {
+   "name": "Custer",
+   "districts": [
+    "co-cd-7",
+    "co-house-60",
+    "co-senate-4"
+   ]
+  },
+  "08029": {
+   "name": "Delta",
+   "districts": [
+    "co-cd-3",
+    "co-house-54",
+    "co-house-58",
+    "co-senate-5",
+    "co-senate-7"
+   ]
+  },
+  "08031": {
+   "name": "Denver",
+   "districts": [
+    "co-cd-1",
+    "co-house-1",
+    "co-house-2",
+    "co-house-3",
+    "co-house-4",
+    "co-house-5",
+    "co-house-6",
+    "co-house-7",
+    "co-house-8",
+    "co-house-9",
+    "co-senate-26",
+    "co-senate-31",
+    "co-senate-32",
+    "co-senate-33",
+    "co-senate-34"
+   ]
+  },
+  "08033": {
+   "name": "Dolores",
+   "districts": [
+    "co-cd-3",
+    "co-house-58",
+    "co-senate-6"
+   ]
+  },
+  "08035": {
+   "name": "Douglas",
+   "districts": [
+    "co-cd-4",
+    "co-cd-6",
+    "co-house-39",
+    "co-house-43",
+    "co-house-44",
+    "co-house-45",
+    "co-house-61",
+    "co-senate-2",
+    "co-senate-27",
+    "co-senate-30",
+    "co-senate-4"
+   ]
+  },
+  "08037": {
+   "name": "Eagle",
+   "districts": [
+    "co-cd-2",
+    "co-cd-3",
+    "co-house-26",
+    "co-house-57",
+    "co-senate-5",
+    "co-senate-8"
+   ]
+  },
+  "08039": {
+   "name": "Elbert",
+   "districts": [
+    "co-cd-4",
+    "co-house-56",
+    "co-senate-35"
+   ]
+  },
+  "08041": {
+   "name": "El Paso",
+   "districts": [
+    "co-cd-4",
+    "co-cd-5",
+    "co-house-14",
+    "co-house-15",
+    "co-house-16",
+    "co-house-17",
+    "co-house-18",
+    "co-house-20",
+    "co-house-21",
+    "co-house-22",
+    "co-house-56",
+    "co-senate-10",
+    "co-senate-11",
+    "co-senate-12",
+    "co-senate-35",
+    "co-senate-9"
+   ]
+  },
+  "08043": {
+   "name": "Fremont",
+   "districts": [
+    "co-cd-7",
+    "co-house-60",
+    "co-senate-4"
+   ]
+  },
+  "08045": {
+   "name": "Garfield",
+   "districts": [
+    "co-cd-3",
+    "co-house-57",
+    "co-senate-5",
+    "co-senate-8"
+   ]
+  },
+  "08047": {
+   "name": "Gilpin",
+   "districts": [
+    "co-cd-2",
+    "co-house-49",
+    "co-senate-8"
+   ]
+  },
+  "08049": {
+   "name": "Grand",
+   "districts": [
+    "co-cd-2",
+    "co-house-13",
+    "co-senate-8"
+   ]
+  },
+  "08051": {
+   "name": "Gunnison",
+   "districts": [
+    "co-cd-3",
+    "co-house-58",
+    "co-senate-5"
+   ]
+  },
+  "08053": {
+   "name": "Hinsdale",
+   "districts": [
+    "co-cd-3",
+    "co-house-58",
+    "co-senate-5"
+   ]
+  },
+  "08055": {
+   "name": "Huerfano",
+   "districts": [
+    "co-cd-3",
+    "co-house-47",
+    "co-house-62",
+    "co-senate-35"
+   ]
+  },
+  "08057": {
+   "name": "Jackson",
+   "districts": [
+    "co-cd-2",
+    "co-house-13",
+    "co-senate-8"
+   ]
+  },
+  "08059": {
+   "name": "Jefferson",
+   "districts": [
+    "co-cd-2",
+    "co-cd-6",
+    "co-cd-7",
+    "co-house-23",
+    "co-house-24",
+    "co-house-25",
+    "co-house-27",
+    "co-house-28",
+    "co-house-29",
+    "co-house-30",
+    "co-house-35",
+    "co-house-38",
+    "co-senate-16",
+    "co-senate-19",
+    "co-senate-20",
+    "co-senate-22",
+    "co-senate-4"
+   ]
+  },
+  "08061": {
+   "name": "Kiowa",
+   "districts": [
+    "co-cd-4",
+    "co-house-47",
+    "co-senate-35"
+   ]
+  },
+  "08063": {
+   "name": "Kit Carson",
+   "districts": [
+    "co-cd-4",
+    "co-house-56",
+    "co-senate-35"
+   ]
+  },
+  "08065": {
+   "name": "Lake",
+   "districts": [
+    "co-cd-7",
+    "co-house-13",
+    "co-senate-4"
+   ]
+  },
+  "08067": {
+   "name": "La Plata",
+   "districts": [
+    "co-cd-3",
+    "co-house-59",
+    "co-senate-6"
+   ]
+  },
+  "08069": {
+   "name": "Larimer",
+   "districts": [
+    "co-cd-2",
+    "co-cd-4",
+    "co-cd-8",
+    "co-house-49",
+    "co-house-51",
+    "co-house-52",
+    "co-house-53",
+    "co-house-64",
+    "co-house-65",
+    "co-senate-14",
+    "co-senate-15",
+    "co-senate-23"
+   ]
+  },
+  "08071": {
+   "name": "Las Animas",
+   "districts": [
+    "co-cd-3",
+    "co-house-47",
+    "co-senate-35"
+   ]
+  },
+  "08073": {
+   "name": "Lincoln",
+   "districts": [
+    "co-cd-4",
+    "co-house-56",
+    "co-senate-35"
+   ]
+  },
+  "08075": {
+   "name": "Logan",
+   "districts": [
+    "co-cd-4",
+    "co-house-63",
+    "co-senate-1"
+   ]
+  },
+  "08077": {
+   "name": "Mesa",
+   "districts": [
+    "co-cd-3",
+    "co-house-54",
+    "co-house-55",
+    "co-senate-7"
+   ]
+  },
+  "08079": {
+   "name": "Mineral",
+   "districts": [
+    "co-cd-3",
+    "co-house-62",
+    "co-senate-6"
+   ]
+  },
+  "08081": {
+   "name": "Moffat",
+   "districts": [
+    "co-cd-3",
+    "co-house-26",
+    "co-senate-8"
+   ]
+  },
+  "08083": {
+   "name": "Montezuma",
+   "districts": [
+    "co-cd-3",
+    "co-house-58",
+    "co-house-59",
+    "co-senate-6"
+   ]
+  },
+  "08085": {
+   "name": "Montrose",
+   "districts": [
+    "co-cd-3",
+    "co-house-58",
+    "co-senate-5",
+    "co-senate-6"
+   ]
+  },
+  "08087": {
+   "name": "Morgan",
+   "districts": [
+    "co-cd-4",
+    "co-house-63",
+    "co-senate-1"
+   ]
+  },
+  "08089": {
+   "name": "Otero",
+   "districts": [
+    "co-cd-3",
+    "co-house-47",
+    "co-senate-35"
+   ]
+  },
+  "08091": {
+   "name": "Ouray",
+   "districts": [
+    "co-cd-3",
+    "co-house-58",
+    "co-senate-6"
+   ]
+  },
+  "08093": {
+   "name": "Park",
+   "districts": [
+    "co-cd-7",
+    "co-house-13",
+    "co-senate-4"
+   ]
+  },
+  "08095": {
+   "name": "Phillips",
+   "districts": [
+    "co-cd-4",
+    "co-house-63",
+    "co-senate-1"
+   ]
+  },
+  "08097": {
+   "name": "Pitkin",
+   "districts": [
+    "co-cd-3",
+    "co-house-57",
+    "co-senate-5"
+   ]
+  },
+  "08099": {
+   "name": "Prowers",
+   "districts": [
+    "co-cd-4",
+    "co-house-47",
+    "co-senate-35"
+   ]
+  },
+  "08101": {
+   "name": "Pueblo",
+   "districts": [
+    "co-cd-3",
+    "co-house-46",
+    "co-house-47",
+    "co-house-60",
+    "co-house-62",
+    "co-senate-3"
+   ]
+  },
+  "08103": {
+   "name": "Rio Blanco",
+   "districts": [
+    "co-cd-3",
+    "co-house-26",
+    "co-senate-8"
+   ]
+  },
+  "08105": {
+   "name": "Rio Grande",
+   "districts": [
+    "co-cd-3",
+    "co-house-62",
+    "co-senate-6"
+   ]
+  },
+  "08107": {
+   "name": "Routt",
+   "districts": [
+    "co-cd-2",
+    "co-house-26",
+    "co-senate-8"
+   ]
+  },
+  "08109": {
+   "name": "Saguache",
+   "districts": [
+    "co-cd-3",
+    "co-house-62",
+    "co-senate-6"
+   ]
+  },
+  "08111": {
+   "name": "San Juan",
+   "districts": [
+    "co-cd-3",
+    "co-house-59",
+    "co-senate-6"
+   ]
+  },
+  "08113": {
+   "name": "San Miguel",
+   "districts": [
+    "co-cd-3",
+    "co-house-58",
+    "co-senate-6"
+   ]
+  },
+  "08115": {
+   "name": "Sedgwick",
+   "districts": [
+    "co-cd-4",
+    "co-house-63",
+    "co-senate-1"
+   ]
+  },
+  "08117": {
+   "name": "Summit",
+   "districts": [
+    "co-cd-2",
+    "co-house-13",
+    "co-senate-8"
+   ]
+  },
+  "08119": {
+   "name": "Teller",
+   "districts": [
+    "co-cd-7",
+    "co-house-60",
+    "co-senate-4"
+   ]
+  },
+  "08121": {
+   "name": "Washington",
+   "districts": [
+    "co-cd-4",
+    "co-house-63",
+    "co-senate-1"
+   ]
+  },
+  "08123": {
+   "name": "Weld",
+   "districts": [
+    "co-cd-2",
+    "co-cd-4",
+    "co-cd-8",
+    "co-house-19",
+    "co-house-48",
+    "co-house-50",
+    "co-house-63",
+    "co-house-64",
+    "co-house-65",
+    "co-senate-1",
+    "co-senate-13",
+    "co-senate-17",
+    "co-senate-23"
+   ]
+  },
+  "08125": {
+   "name": "Yuma",
+   "districts": [
+    "co-cd-4",
+    "co-house-63",
+    "co-senate-1"
+   ]
+  }
+ },
+ "zips": {
+  "69168": {
+   "counties": [
+    "08115"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80002": {
+   "counties": [
+    "08001",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-19",
+     "co-senate-20",
+     "co-senate-21",
+     "co-senate-22"
+    ],
+    "state_house": [
+     "co-house-23",
+     "co-house-24",
+     "co-house-35"
+    ],
+    "place": [
+     "city-arvada",
+     "city-berkley",
+     "city-fairmount",
+     "city-wheat-ridge"
+    ]
+   }
+  },
+  "80003": {
+   "counties": [
+    "08001",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-19",
+     "co-senate-21",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-24",
+     "co-house-27",
+     "co-house-29",
+     "co-house-35"
+    ],
+    "place": [
+     "city-arvada",
+     "city-berkley",
+     "city-westminster"
+    ]
+   }
+  },
+  "80004": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-19",
+     "co-senate-20"
+    ],
+    "state_house": [
+     "co-house-24"
+    ],
+    "place": [
+     "city-arvada",
+     "city-fairmount"
+    ]
+   }
+  },
+  "80005": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-19"
+    ],
+    "state_house": [
+     "co-house-24",
+     "co-house-27",
+     "co-house-29"
+    ],
+    "place": [
+     "city-arvada",
+     "city-westminster"
+    ]
+   }
+  },
+  "80007": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-19",
+     "co-senate-20"
+    ],
+    "state_house": [
+     "co-house-24",
+     "co-house-27"
+    ],
+    "place": [
+     "city-arvada",
+     "city-superior"
+    ]
+   }
+  },
+  "80010": {
+   "counties": [
+    "08001",
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28"
+    ],
+    "state_house": [
+     "co-house-36",
+     "co-house-42"
+    ],
+    "place": [
+     "city-aurora"
+    ]
+   }
+  },
+  "80011": {
+   "counties": [
+    "08001",
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28"
+    ],
+    "state_house": [
+     "co-house-36",
+     "co-house-42"
+    ],
+    "place": [
+     "city-aurora"
+    ]
+   }
+  },
+  "80012": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28",
+     "co-senate-29"
+    ],
+    "state_house": [
+     "co-house-41",
+     "co-house-42"
+    ],
+    "place": [
+     "city-aurora"
+    ]
+   }
+  },
+  "80013": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28",
+     "co-senate-29"
+    ],
+    "state_house": [
+     "co-house-36",
+     "co-house-40",
+     "co-house-41"
+    ],
+    "place": [
+     "city-aurora"
+    ]
+   }
+  },
+  "80014": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-26",
+     "co-senate-27",
+     "co-senate-29"
+    ],
+    "state_house": [
+     "co-house-3",
+     "co-house-37",
+     "co-house-40",
+     "co-house-41"
+    ],
+    "place": [
+     "city-aurora",
+     "city-denver",
+     "city-greenwood-village"
+    ]
+   }
+  },
+  "80015": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-27"
+    ],
+    "state_house": [
+     "co-house-40",
+     "co-house-61"
+    ],
+    "place": [
+     "city-aurora",
+     "city-centennial"
+    ]
+   }
+  },
+  "80016": {
+   "counties": [
+    "08005",
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-27"
+    ],
+    "state_house": [
+     "co-house-37",
+     "co-house-56",
+     "co-house-61"
+    ],
+    "place": [
+     "city-aurora",
+     "city-centennial",
+     "city-foxfield"
+    ]
+   }
+  },
+  "80017": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28",
+     "co-senate-29"
+    ],
+    "state_house": [
+     "co-house-36",
+     "co-house-41",
+     "co-house-42"
+    ],
+    "place": [
+     "city-aurora"
+    ]
+   }
+  },
+  "80018": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28"
+    ],
+    "state_house": [
+     "co-house-36"
+    ],
+    "place": [
+     "city-aetna-estates",
+     "city-aurora"
+    ]
+   }
+  },
+  "80019": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28"
+    ],
+    "state_house": [
+     "co-house-36"
+    ],
+    "place": [
+     "city-aurora"
+    ]
+   }
+  },
+  "80020": {
+   "counties": [
+    "08001",
+    "08013",
+    "08014",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-17",
+     "co-senate-18",
+     "co-senate-19",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-12",
+     "co-house-29",
+     "co-house-33"
+    ],
+    "place": [
+     "city-broomfield",
+     "city-lafayette",
+     "city-louisville",
+     "city-westminster"
+    ]
+   }
+  },
+  "80021": {
+   "counties": [
+    "08014",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-19",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-29",
+     "co-house-33"
+    ],
+    "place": [
+     "city-broomfield",
+     "city-westminster"
+    ]
+   }
+  },
+  "80022": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-28"
+    ],
+    "state_house": [
+     "co-house-32",
+     "co-house-48",
+     "co-house-56"
+    ],
+    "place": [
+     "city-commerce-city",
+     "city-derby"
+    ]
+   }
+  },
+  "80023": {
+   "counties": [
+    "08001",
+    "08014"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-24",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-29",
+     "co-house-33"
+    ],
+    "place": [
+     "city-broomfield",
+     "city-thornton",
+     "city-westminster"
+    ]
+   }
+  },
+  "80024": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-21"
+    ],
+    "state_house": [
+     "co-house-32"
+    ],
+    "place": [
+     "city-derby"
+    ]
+   }
+  },
+  "80025": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-eldorado-springs"
+    ]
+   }
+  },
+  "80026": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-17",
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-12",
+     "co-house-19"
+    ],
+    "place": [
+     "city-erie",
+     "city-lafayette",
+     "city-leyner",
+     "city-louisville"
+    ]
+   }
+  },
+  "80027": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-12",
+     "co-house-49"
+    ],
+    "place": [
+     "city-louisville",
+     "city-superior"
+    ]
+   }
+  },
+  "80030": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-19",
+     "co-senate-21"
+    ],
+    "state_house": [
+     "co-house-24",
+     "co-house-35"
+    ],
+    "place": [
+     "city-arvada",
+     "city-berkley",
+     "city-westminster"
+    ]
+   }
+  },
+  "80031": {
+   "counties": [
+    "08001",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-19",
+     "co-senate-21",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-29",
+     "co-house-35"
+    ],
+    "place": [
+     "city-shaw-heights",
+     "city-westminster"
+    ]
+   }
+  },
+  "80033": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-19",
+     "co-senate-22"
+    ],
+    "state_house": [
+     "co-house-23",
+     "co-house-24"
+    ],
+    "place": [
+     "city-arvada",
+     "city-wheat-ridge"
+    ]
+   }
+  },
+  "80045": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28"
+    ],
+    "state_house": [
+     "co-house-36"
+    ],
+    "place": [
+     "city-aurora"
+    ]
+   }
+  },
+  "80101": {
+   "counties": [
+    "08039"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ]
+   }
+  },
+  "80102": {
+   "counties": [
+    "08001",
+    "08005",
+    "08039"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-27",
+     "co-senate-28",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-36",
+     "co-house-56"
+    ],
+    "place": [
+     "city-aurora",
+     "city-bennett",
+     "city-brick-center"
+    ]
+   }
+  },
+  "80103": {
+   "counties": [
+    "08001",
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-21"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-byers",
+     "city-peoria"
+    ]
+   }
+  },
+  "80104": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-2",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-45"
+    ],
+    "place": [
+     "city-castle-rock"
+    ]
+   }
+  },
+  "80105": {
+   "counties": [
+    "08001",
+    "08005",
+    "08039"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-deer-trail"
+    ]
+   }
+  },
+  "80106": {
+   "counties": [
+    "08035",
+    "08039",
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-35",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-20",
+     "co-house-39",
+     "co-house-56"
+    ],
+    "place": [
+     "city-black-forest",
+     "city-elbert"
+    ]
+   }
+  },
+  "80107": {
+   "counties": [
+    "08039"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-elizabeth",
+     "city-ponderosa-park"
+    ]
+   }
+  },
+  "80108": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-2",
+     "co-senate-30"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-45"
+    ],
+    "place": [
+     "city-castle-pines",
+     "city-castle-pines-village",
+     "city-castle-rock"
+    ]
+   }
+  },
+  "80109": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-2",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-45"
+    ],
+    "place": [
+     "city-castle-rock"
+    ]
+   }
+  },
+  "80110": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-26"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-3"
+    ],
+    "place": [
+     "city-denver",
+     "city-englewood",
+     "city-sheridan"
+    ]
+   }
+  },
+  "80111": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-16",
+     "co-senate-26",
+     "co-senate-27"
+    ],
+    "state_house": [
+     "co-house-3",
+     "co-house-37",
+     "co-house-40"
+    ],
+    "place": [
+     "city-centennial",
+     "city-cherry-creek",
+     "city-cherry-hills-village",
+     "city-greenwood-village"
+    ]
+   }
+  },
+  "80112": {
+   "counties": [
+    "08005",
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-16",
+     "co-senate-2",
+     "co-senate-26",
+     "co-senate-27",
+     "co-senate-30"
+    ],
+    "state_house": [
+     "co-house-37",
+     "co-house-39",
+     "co-house-44"
+    ],
+    "place": [
+     "city-centennial",
+     "city-dove-valley",
+     "city-greenwood-village",
+     "city-inverness",
+     "city-lone-tree",
+     "city-meridian"
+    ]
+   }
+  },
+  "80113": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-26"
+    ],
+    "state_house": [
+     "co-house-3"
+    ],
+    "place": [
+     "city-cherry-hills-village",
+     "city-englewood"
+    ]
+   }
+  },
+  "80116": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-2",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-45"
+    ],
+    "place": [
+     "city-castle-rock",
+     "city-franktown"
+    ]
+   }
+  },
+  "80117": {
+   "counties": [
+    "08039"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-kiowa"
+    ]
+   }
+  },
+  "80118": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-39"
+    ],
+    "place": [
+     "city-larkspur",
+     "city-perry-park"
+    ]
+   }
+  },
+  "80120": {
+   "counties": [
+    "08005",
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-16",
+     "co-senate-26",
+     "co-senate-30"
+    ],
+    "state_house": [
+     "co-house-3",
+     "co-house-38",
+     "co-house-43"
+    ],
+    "place": [
+     "city-englewood",
+     "city-littleton"
+    ]
+   }
+  },
+  "80121": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-16",
+     "co-senate-26"
+    ],
+    "state_house": [
+     "co-house-3",
+     "co-house-37",
+     "co-house-38"
+    ],
+    "place": [
+     "city-centennial",
+     "city-cherry-hills-village",
+     "city-greenwood-village",
+     "city-littleton"
+    ]
+   }
+  },
+  "80122": {
+   "counties": [
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-16"
+    ],
+    "state_house": [
+     "co-house-37",
+     "co-house-38"
+    ],
+    "place": [
+     "city-centennial",
+     "city-littleton"
+    ]
+   }
+  },
+  "80123": {
+   "counties": [
+    "08005",
+    "08031",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-16",
+     "co-senate-20",
+     "co-senate-26"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-25",
+     "co-house-28",
+     "co-house-38"
+    ],
+    "place": [
+     "city-bow-mar",
+     "city-columbine",
+     "city-columbine-valley",
+     "city-denver",
+     "city-ken-caryl",
+     "city-lakewood",
+     "city-littleton"
+    ]
+   }
+  },
+  "80124": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-30"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-43"
+    ],
+    "place": [
+     "city-acres-green",
+     "city-highlands-ranch",
+     "city-lone-tree"
+    ]
+   }
+  },
+  "80125": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-30",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-43"
+    ],
+    "place": [
+     "city-highlands-ranch",
+     "city-louviers",
+     "city-roxborough-park",
+     "city-sterling-ranch"
+    ]
+   }
+  },
+  "80126": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-30"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-43"
+    ],
+    "place": [
+     "city-highlands-ranch"
+    ]
+   }
+  },
+  "80127": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-16",
+     "co-senate-20",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-25",
+     "co-house-28"
+    ],
+    "place": [
+     "city-dakota-ridge",
+     "city-ken-caryl",
+     "city-littleton"
+    ]
+   }
+  },
+  "80128": {
+   "counties": [
+    "08005",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-6",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-16",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-25",
+     "co-house-28",
+     "co-house-38"
+    ],
+    "place": [
+     "city-columbine",
+     "city-ken-caryl",
+     "city-littleton"
+    ]
+   }
+  },
+  "80129": {
+   "counties": [
+    "08005",
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-16",
+     "co-senate-30"
+    ],
+    "state_house": [
+     "co-house-38",
+     "co-house-39",
+     "co-house-43"
+    ],
+    "place": [
+     "city-highlands-ranch",
+     "city-littleton"
+    ]
+   }
+  },
+  "80130": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-30"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-43"
+    ],
+    "place": [
+     "city-highlands-ranch"
+    ]
+   }
+  },
+  "80131": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-39"
+    ],
+    "place": [
+     "city-louviers"
+    ]
+   }
+  },
+  "80132": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-20"
+    ],
+    "place": [
+     "city-monument",
+     "city-palmer-lake",
+     "city-woodmoor"
+    ]
+   }
+  },
+  "80133": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-20"
+    ],
+    "place": [
+     "city-monument",
+     "city-palmer-lake"
+    ]
+   }
+  },
+  "80134": {
+   "counties": [
+    "08035"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-2",
+     "co-senate-30",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-39",
+     "co-house-44",
+     "co-house-45"
+    ],
+    "place": [
+     "city-castle-pines",
+     "city-grand-view-estates",
+     "city-lone-tree",
+     "city-meridian-village",
+     "city-parker",
+     "city-sierra-ridge",
+     "city-stepping-stone",
+     "city-stonegate",
+     "city-the-pinery"
+    ]
+   }
+  },
+  "80135": {
+   "counties": [
+    "08035",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-30",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-25",
+     "co-house-39",
+     "co-house-45"
+    ],
+    "place": [
+     "city-sedalia",
+     "city-westcreek"
+    ]
+   }
+  },
+  "80136": {
+   "counties": [
+    "08001",
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-21"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-comanche-creek",
+     "city-strasburg"
+    ]
+   }
+  },
+  "80137": {
+   "counties": [
+    "08001",
+    "08005"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-27",
+     "co-senate-28"
+    ],
+    "state_house": [
+     "co-house-36",
+     "co-house-56"
+    ],
+    "place": [
+     "city-aurora",
+     "city-watkins"
+    ]
+   }
+  },
+  "80138": {
+   "counties": [
+    "08035",
+    "08039"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-2",
+     "co-senate-27",
+     "co-senate-35",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-44",
+     "co-house-56",
+     "co-house-61"
+    ],
+    "place": [
+     "city-aurora",
+     "city-parker"
+    ]
+   }
+  },
+  "80202": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-5",
+     "co-house-6"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80203": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-2",
+     "co-house-5",
+     "co-house-6"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80204": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-4",
+     "co-house-5"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80205": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-33",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-5",
+     "co-house-8"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80206": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31"
+    ],
+    "state_house": [
+     "co-house-2",
+     "co-house-6",
+     "co-house-8"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80207": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-33"
+    ],
+    "state_house": [
+     "co-house-8"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80209": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-2",
+     "co-house-5"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80210": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-2"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80211": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-4",
+     "co-house-5"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80212": {
+   "counties": [
+    "08001",
+    "08031",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-22",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-23",
+     "co-house-35",
+     "co-house-4"
+    ],
+    "place": [
+     "city-berkley",
+     "city-denver",
+     "city-lakeside",
+     "city-mountain-view",
+     "city-wheat-ridge"
+    ]
+   }
+  },
+  "80214": {
+   "counties": [
+    "08031",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-22",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-23",
+     "co-house-30",
+     "co-house-4"
+    ],
+    "place": [
+     "city-denver",
+     "city-edgewater",
+     "city-lakewood",
+     "city-wheat-ridge"
+    ]
+   }
+  },
+  "80215": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-22"
+    ],
+    "state_house": [
+     "co-house-23",
+     "co-house-30"
+    ],
+    "place": [
+     "city-applewood",
+     "city-lakewood",
+     "city-wheat-ridge"
+    ]
+   }
+  },
+  "80216": {
+   "counties": [
+    "08001",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-33",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-32",
+     "co-house-5",
+     "co-house-7",
+     "co-house-8"
+    ],
+    "place": [
+     "city-commerce-city",
+     "city-denver",
+     "city-north-washington"
+    ]
+   }
+  },
+  "80218": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31"
+    ],
+    "state_house": [
+     "co-house-2",
+     "co-house-6",
+     "co-house-8"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80219": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-32",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-4",
+     "co-house-5"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80220": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-33"
+    ],
+    "state_house": [
+     "co-house-2",
+     "co-house-6",
+     "co-house-8",
+     "co-house-9"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80221": {
+   "counties": [
+    "08001",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-32",
+     "co-house-35",
+     "co-house-4",
+     "co-house-5"
+    ],
+    "place": [
+     "city-berkley",
+     "city-denver",
+     "city-north-washington",
+     "city-sherrelwood",
+     "city-twin-lakes",
+     "city-westminster"
+    ]
+   }
+  },
+  "80222": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-26",
+     "co-senate-31",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-2",
+     "co-house-3",
+     "co-house-9"
+    ],
+    "place": [
+     "city-denver",
+     "city-holly-hills"
+    ]
+   }
+  },
+  "80223": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-32",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-5"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80224": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-26",
+     "co-senate-31",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-3",
+     "co-house-9"
+    ],
+    "place": [
+     "city-denver",
+     "city-four-square-mile"
+    ]
+   }
+  },
+  "80226": {
+   "counties": [
+    "08031",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20",
+     "co-senate-22",
+     "co-senate-34"
+    ],
+    "state_house": [
+     "co-house-23",
+     "co-house-30"
+    ],
+    "place": [
+     "city-denver",
+     "city-lakewood"
+    ]
+   }
+  },
+  "80227": {
+   "counties": [
+    "08031",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20",
+     "co-senate-22",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-23",
+     "co-house-28",
+     "co-house-30"
+    ],
+    "place": [
+     "city-denver",
+     "city-lakewood"
+    ]
+   }
+  },
+  "80228": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20",
+     "co-senate-22"
+    ],
+    "state_house": [
+     "co-house-23",
+     "co-house-25",
+     "co-house-28"
+    ],
+    "place": [
+     "city-lakewood"
+    ]
+   }
+  },
+  "80229": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-24"
+    ],
+    "state_house": [
+     "co-house-31",
+     "co-house-32"
+    ],
+    "place": [
+     "city-north-washington",
+     "city-thornton",
+     "city-welby"
+    ]
+   }
+  },
+  "80230": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-28",
+     "co-senate-31"
+    ],
+    "state_house": [
+     "co-house-42",
+     "co-house-6",
+     "co-house-9"
+    ],
+    "place": [
+     "city-aurora",
+     "city-denver"
+    ]
+   }
+  },
+  "80231": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-26",
+     "co-senate-27",
+     "co-senate-29",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-3",
+     "co-house-41",
+     "co-house-6",
+     "co-house-9"
+    ],
+    "place": [
+     "city-aurora",
+     "city-denver",
+     "city-four-square-mile"
+    ]
+   }
+  },
+  "80232": {
+   "counties": [
+    "08031",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20",
+     "co-senate-22",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-23",
+     "co-house-28",
+     "co-house-30"
+    ],
+    "place": [
+     "city-denver",
+     "city-lakewood"
+    ]
+   }
+  },
+  "80233": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-24",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-31",
+     "co-house-34"
+    ],
+    "place": [
+     "city-northglenn",
+     "city-thornton"
+    ]
+   }
+  },
+  "80234": {
+   "counties": [
+    "08001",
+    "08014"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-24",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-29",
+     "co-house-33",
+     "co-house-34",
+     "co-house-35"
+    ],
+    "place": [
+     "city-broomfield",
+     "city-federal-heights",
+     "city-northglenn",
+     "city-westminster"
+    ]
+   }
+  },
+  "80235": {
+   "counties": [
+    "08031",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20",
+     "co-senate-26",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-28"
+    ],
+    "place": [
+     "city-dakota-ridge",
+     "city-denver",
+     "city-lakewood"
+    ]
+   }
+  },
+  "80236": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-26",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-1",
+     "co-house-3"
+    ],
+    "place": [
+     "city-denver",
+     "city-sheridan"
+    ]
+   }
+  },
+  "80237": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-26"
+    ],
+    "state_house": [
+     "co-house-3"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80238": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-33"
+    ],
+    "state_house": [
+     "co-house-7",
+     "co-house-8"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80239": {
+   "counties": [
+    "08001",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-28",
+     "co-senate-33"
+    ],
+    "state_house": [
+     "co-house-32",
+     "co-house-36",
+     "co-house-7",
+     "co-house-8"
+    ],
+    "place": [
+     "city-aurora",
+     "city-denver"
+    ]
+   }
+  },
+  "80241": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-24",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-31",
+     "co-house-34"
+    ],
+    "place": [
+     "city-northglenn",
+     "city-thornton"
+    ]
+   }
+  },
+  "80246": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-2",
+     "co-house-9"
+    ],
+    "place": [
+     "city-denver",
+     "city-glendale"
+    ]
+   }
+  },
+  "80247": {
+   "counties": [
+    "08005",
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1",
+     "co-cd-6"
+    ],
+    "state_senate": [
+     "co-senate-26",
+     "co-senate-29",
+     "co-senate-32"
+    ],
+    "state_house": [
+     "co-house-41",
+     "co-house-42",
+     "co-house-6",
+     "co-house-9"
+    ],
+    "place": [
+     "city-aurora",
+     "city-denver",
+     "city-four-square-mile"
+    ]
+   }
+  },
+  "80249": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-33"
+    ],
+    "state_house": [
+     "co-house-7"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80260": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-21",
+     "co-senate-24",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-31",
+     "co-house-34",
+     "co-house-35"
+    ],
+    "place": [
+     "city-federal-heights",
+     "city-northglenn",
+     "city-thornton",
+     "city-westminster"
+    ]
+   }
+  },
+  "80264": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31"
+    ],
+    "state_house": [
+     "co-house-6"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80266": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-33"
+    ],
+    "state_house": [
+     "co-house-7"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80290": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31"
+    ],
+    "state_house": [
+     "co-house-5",
+     "co-house-6"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80293": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31"
+    ],
+    "state_house": [
+     "co-house-5"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80294": {
+   "counties": [
+    "08031"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-1"
+    ],
+    "state_senate": [
+     "co-senate-31"
+    ],
+    "state_house": [
+     "co-house-5"
+    ],
+    "place": [
+     "city-denver"
+    ]
+   }
+  },
+  "80301": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-17",
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-10",
+     "co-house-12"
+    ],
+    "place": [
+     "city-boulder",
+     "city-gunbarrel",
+     "city-valmont"
+    ]
+   }
+  },
+  "80302": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-10",
+     "co-house-12",
+     "co-house-49"
+    ],
+    "place": [
+     "city-altona",
+     "city-boulder",
+     "city-crisman",
+     "city-gold-hill",
+     "city-lazy-acres",
+     "city-mountain-meadows",
+     "city-seven-hills",
+     "city-sugarloaf",
+     "city-sunshine",
+     "city-tall-timber"
+    ]
+   }
+  },
+  "80303": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-10",
+     "co-house-12",
+     "co-house-49"
+    ],
+    "place": [
+     "city-boulder",
+     "city-eldorado-springs",
+     "city-paragon-estates"
+    ]
+   }
+  },
+  "80304": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-10",
+     "co-house-49"
+    ],
+    "place": [
+     "city-boulder",
+     "city-pine-brook-hill"
+    ]
+   }
+  },
+  "80305": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-10",
+     "co-house-49"
+    ],
+    "place": [
+     "city-boulder",
+     "city-eldorado-springs"
+    ]
+   }
+  },
+  "80310": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-10"
+    ],
+    "place": [
+     "city-boulder"
+    ]
+   }
+  },
+  "80401": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20",
+     "co-senate-22"
+    ],
+    "state_house": [
+     "co-house-23",
+     "co-house-25",
+     "co-house-27"
+    ],
+    "place": [
+     "city-applewood",
+     "city-east-pleasant-view",
+     "city-genesee",
+     "city-golden",
+     "city-lakewood",
+     "city-west-pleasant-view",
+     "city-wheat-ridge"
+    ]
+   }
+  },
+  "80403": {
+   "counties": [
+    "08013",
+    "08047",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-19",
+     "co-senate-20",
+     "co-senate-22",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-24",
+     "co-house-27",
+     "co-house-49"
+    ],
+    "place": [
+     "city-arvada",
+     "city-coal-creek",
+     "city-fairmount",
+     "city-golden"
+    ]
+   }
+  },
+  "80419": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-22"
+    ],
+    "state_house": [
+     "co-house-27"
+    ],
+    "place": [
+     "city-golden"
+    ]
+   }
+  },
+  "80420": {
+   "counties": [
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-alma"
+    ]
+   }
+  },
+  "80421": {
+   "counties": [
+    "08059",
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13",
+     "co-house-25"
+    ]
+   }
+  },
+  "80422": {
+   "counties": [
+    "08047"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-black-hawk"
+    ]
+   }
+  },
+  "80423": {
+   "counties": [
+    "08037",
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13",
+     "co-house-26"
+    ]
+   }
+  },
+  "80424": {
+   "counties": [
+    "08117"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-blue-river",
+     "city-breckenridge"
+    ]
+   }
+  },
+  "80425": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-25"
+    ]
+   }
+  },
+  "80426": {
+   "counties": [
+    "08037"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ]
+   }
+  },
+  "80427": {
+   "counties": [
+    "08047"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-black-hawk",
+     "city-central"
+    ]
+   }
+  },
+  "80428": {
+   "counties": [
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ]
+   }
+  },
+  "80430": {
+   "counties": [
+    "08057"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ]
+   }
+  },
+  "80432": {
+   "counties": [
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ]
+   }
+  },
+  "80433": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-25"
+    ],
+    "place": [
+     "city-aspen-park"
+    ]
+   }
+  },
+  "80434": {
+   "counties": [
+    "08057"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ]
+   }
+  },
+  "80435": {
+   "counties": [
+    "08117"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-dillon",
+     "city-keystone",
+     "city-montezuma"
+    ]
+   }
+  },
+  "80436": {
+   "counties": [
+    "08019"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-downieville-lawson-dumont"
+    ]
+   }
+  },
+  "80438": {
+   "counties": [
+    "08019"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-empire"
+    ]
+   }
+  },
+  "80439": {
+   "counties": [
+    "08019",
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20",
+     "co-senate-4",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-25",
+     "co-house-27",
+     "co-house-49"
+    ],
+    "place": [
+     "city-brook-forest",
+     "city-echo-hills",
+     "city-evergreen",
+     "city-floyd-hill",
+     "city-kittredge",
+     "city-pine-valley",
+     "city-upper-bear-creek",
+     "city-upper-witter-gulch"
+    ]
+   }
+  },
+  "80440": {
+   "counties": [
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-fairplay",
+     "city-hartsel"
+    ]
+   }
+  },
+  "80442": {
+   "counties": [
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-fraser"
+    ]
+   }
+  },
+  "80443": {
+   "counties": [
+    "08117"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-copper-mountain",
+     "city-frisco"
+    ]
+   }
+  },
+  "80444": {
+   "counties": [
+    "08019"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-georgetown"
+    ]
+   }
+  },
+  "80446": {
+   "counties": [
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-granby"
+    ]
+   }
+  },
+  "80447": {
+   "counties": [
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-grand-lake"
+    ]
+   }
+  },
+  "80448": {
+   "counties": [
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ]
+   }
+  },
+  "80449": {
+   "counties": [
+    "08015",
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-hartsel"
+    ]
+   }
+  },
+  "80451": {
+   "counties": [
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-hot-sulphur-springs"
+    ]
+   }
+  },
+  "80452": {
+   "counties": [
+    "08019",
+    "08047"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-blue-valley",
+     "city-central",
+     "city-idaho-springs",
+     "city-st-mary-s"
+    ]
+   }
+  },
+  "80453": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20"
+    ],
+    "state_house": [
+     "co-house-25"
+    ],
+    "place": [
+     "city-idledale"
+    ]
+   }
+  },
+  "80454": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20"
+    ],
+    "state_house": [
+     "co-house-25"
+    ],
+    "place": [
+     "city-indian-hills"
+    ]
+   }
+  },
+  "80455": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-glendale",
+     "city-gold-hill",
+     "city-jamestown"
+    ]
+   }
+  },
+  "80456": {
+   "counties": [
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ]
+   }
+  },
+  "80457": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20"
+    ],
+    "state_house": [
+     "co-house-25"
+    ],
+    "place": [
+     "city-kittredge"
+    ]
+   }
+  },
+  "80459": {
+   "counties": [
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-kremmling"
+    ]
+   }
+  },
+  "80461": {
+   "counties": [
+    "08065"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-leadville",
+     "city-leadville-north"
+    ]
+   }
+  },
+  "80463": {
+   "counties": [
+    "08037",
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-mccoy"
+    ]
+   }
+  },
+  "80465": {
+   "counties": [
+    "08059"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-20",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-25",
+     "co-house-28"
+    ],
+    "place": [
+     "city-dakota-ridge",
+     "city-indian-hills",
+     "city-lakewood",
+     "city-morrison"
+    ]
+   }
+  },
+  "80466": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-bonanza-mountain-estates",
+     "city-eldora",
+     "city-nederland",
+     "city-st-ann-highlands",
+     "city-ward"
+    ]
+   }
+  },
+  "80467": {
+   "counties": [
+    "08103",
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-oak-creek"
+    ]
+   }
+  },
+  "80468": {
+   "counties": [
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-parshall"
+    ]
+   }
+  },
+  "80469": {
+   "counties": [
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-phippsburg"
+    ]
+   }
+  },
+  "80470": {
+   "counties": [
+    "08059",
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13",
+     "co-house-25"
+    ]
+   }
+  },
+  "80471": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ]
+   }
+  },
+  "80473": {
+   "counties": [
+    "08057"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ]
+   }
+  },
+  "80474": {
+   "counties": [
+    "08047"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-rollinsville"
+    ]
+   }
+  },
+  "80475": {
+   "counties": [
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ]
+   }
+  },
+  "80476": {
+   "counties": [
+    "08019"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-silver-plume"
+    ]
+   }
+  },
+  "80478": {
+   "counties": [
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-granby",
+     "city-tabernash"
+    ]
+   }
+  },
+  "80479": {
+   "counties": [
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ]
+   }
+  },
+  "80480": {
+   "counties": [
+    "08057"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-walden"
+    ]
+   }
+  },
+  "80481": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-bark-ranch",
+     "city-hidden-lake",
+     "city-ward"
+    ]
+   }
+  },
+  "80482": {
+   "counties": [
+    "08049"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-fraser",
+     "city-winter-park"
+    ]
+   }
+  },
+  "80483": {
+   "counties": [
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-yampa"
+    ]
+   }
+  },
+  "80487": {
+   "counties": [
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-steamboat-springs"
+    ]
+   }
+  },
+  "80498": {
+   "counties": [
+    "08049",
+    "08117"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-heeney",
+     "city-silverthorne"
+    ]
+   }
+  },
+  "80501": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-17"
+    ],
+    "state_house": [
+     "co-house-11",
+     "co-house-19"
+    ],
+    "place": [
+     "city-longmont"
+    ]
+   }
+  },
+  "80503": {
+   "counties": [
+    "08013",
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-17",
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-10",
+     "co-house-11",
+     "co-house-12",
+     "co-house-49"
+    ],
+    "place": [
+     "city-boulder",
+     "city-gunbarrel",
+     "city-longmont",
+     "city-niwot"
+    ]
+   }
+  },
+  "80504": {
+   "counties": [
+    "08013",
+    "08069",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-17",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-11",
+     "co-house-12",
+     "co-house-19",
+     "co-house-49",
+     "co-house-64"
+    ],
+    "place": [
+     "city-firestone",
+     "city-frederick",
+     "city-longmont",
+     "city-mead"
+    ]
+   }
+  },
+  "80510": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-allenspark"
+    ]
+   }
+  },
+  "80512": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ]
+   }
+  },
+  "80513": {
+   "counties": [
+    "08013",
+    "08069",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-49",
+     "co-house-64"
+    ],
+    "place": [
+     "city-berthoud",
+     "city-johnstown",
+     "city-mead"
+    ]
+   }
+  },
+  "80514": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-19"
+    ],
+    "place": [
+     "city-dacono",
+     "city-frederick"
+    ]
+   }
+  },
+  "80515": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ]
+   }
+  },
+  "80516": {
+   "counties": [
+    "08013",
+    "08014",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-7",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-17",
+     "co-senate-23",
+     "co-senate-25"
+    ],
+    "state_house": [
+     "co-house-19",
+     "co-house-33"
+    ],
+    "place": [
+     "city-broomfield",
+     "city-dacono",
+     "city-erie",
+     "city-frederick"
+    ]
+   }
+  },
+  "80517": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-estes-park"
+    ]
+   }
+  },
+  "80520": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-19"
+    ],
+    "place": [
+     "city-firestone",
+     "city-frederick"
+    ]
+   }
+  },
+  "80521": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-14",
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-53",
+     "co-house-65"
+    ],
+    "place": [
+     "city-fort-collins"
+    ]
+   }
+  },
+  "80524": {
+   "counties": [
+    "08069",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-14",
+     "co-senate-15",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-49",
+     "co-house-52",
+     "co-house-53",
+     "co-house-63",
+     "co-house-65"
+    ],
+    "place": [
+     "city-fort-collins",
+     "city-laporte",
+     "city-timnath"
+    ]
+   }
+  },
+  "80525": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-14",
+     "co-senate-15",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-51",
+     "co-house-52",
+     "co-house-53",
+     "co-house-65"
+    ],
+    "place": [
+     "city-fort-collins",
+     "city-timnath"
+    ]
+   }
+  },
+  "80526": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-14",
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49",
+     "co-house-51",
+     "co-house-52",
+     "co-house-53"
+    ],
+    "place": [
+     "city-fort-collins",
+     "city-loveland"
+    ]
+   }
+  },
+  "80528": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-14",
+     "co-senate-15",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-51",
+     "co-house-52",
+     "co-house-65"
+    ],
+    "place": [
+     "city-fort-collins",
+     "city-loveland",
+     "city-timnath",
+     "city-windsor"
+    ]
+   }
+  },
+  "80530": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-19"
+    ],
+    "place": [
+     "city-firestone",
+     "city-frederick"
+    ]
+   }
+  },
+  "80532": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ]
+   }
+  },
+  "80534": {
+   "counties": [
+    "08069",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-48",
+     "co-house-64",
+     "co-house-65"
+    ],
+    "place": [
+     "city-berthoud",
+     "city-johnstown",
+     "city-mead",
+     "city-milliken"
+    ]
+   }
+  },
+  "80535": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49",
+     "co-house-65"
+    ],
+    "place": [
+     "city-laporte"
+    ]
+   }
+  },
+  "80536": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ]
+   }
+  },
+  "80537": {
+   "counties": [
+    "08069",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-49",
+     "co-house-51",
+     "co-house-64",
+     "co-house-65"
+    ],
+    "place": [
+     "city-loveland"
+    ]
+   }
+  },
+  "80538": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-15",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-49",
+     "co-house-51",
+     "co-house-65"
+    ],
+    "place": [
+     "city-johnstown",
+     "city-loveland"
+    ]
+   }
+  },
+  "80540": {
+   "counties": [
+    "08013",
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-allenspark",
+     "city-lyons"
+    ]
+   }
+  },
+  "80542": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-64"
+    ],
+    "place": [
+     "city-mead"
+    ]
+   }
+  },
+  "80543": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-13",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-50",
+     "co-house-64"
+    ],
+    "place": [
+     "city-evans",
+     "city-greeley",
+     "city-milliken"
+    ]
+   }
+  },
+  "80544": {
+   "counties": [
+    "08013"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-18"
+    ],
+    "state_house": [
+     "co-house-12"
+    ],
+    "place": [
+     "city-niwot"
+    ]
+   }
+  },
+  "80545": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ],
+    "place": [
+     "city-red-feather-lakes"
+    ]
+   }
+  },
+  "80546": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-65"
+    ],
+    "place": [
+     "city-severance"
+    ]
+   }
+  },
+  "80547": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-52",
+     "co-house-65"
+    ],
+    "place": [
+     "city-fort-collins",
+     "city-timnath"
+    ]
+   }
+  },
+  "80549": {
+   "counties": [
+    "08069",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-15",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-49",
+     "co-house-63",
+     "co-house-65"
+    ],
+    "place": [
+     "city-wellington"
+    ]
+   }
+  },
+  "80550": {
+   "counties": [
+    "08069",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-15",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-51",
+     "co-house-64",
+     "co-house-65"
+    ],
+    "place": [
+     "city-greeley",
+     "city-loveland",
+     "city-severance",
+     "city-windsor"
+    ]
+   }
+  },
+  "80601": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-13",
+     "co-senate-21",
+     "co-senate-24"
+    ],
+    "state_house": [
+     "co-house-32",
+     "co-house-48"
+    ],
+    "place": [
+     "city-brighton",
+     "city-commerce-city",
+     "city-lochbuie",
+     "city-todd-creek"
+    ]
+   }
+  },
+  "80602": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-13",
+     "co-senate-24"
+    ],
+    "state_house": [
+     "co-house-31",
+     "co-house-33",
+     "co-house-34",
+     "co-house-48"
+    ],
+    "place": [
+     "city-thornton",
+     "city-todd-creek"
+    ]
+   }
+  },
+  "80603": {
+   "counties": [
+    "08001",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-13",
+     "co-senate-21",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-19",
+     "co-house-32",
+     "co-house-48",
+     "co-house-56"
+    ],
+    "place": [
+     "city-brighton",
+     "city-commerce-city",
+     "city-dacono",
+     "city-lochbuie",
+     "city-northglenn"
+    ]
+   }
+  },
+  "80610": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63",
+     "co-house-65"
+    ],
+    "place": [
+     "city-ault",
+     "city-severance"
+    ]
+   }
+  },
+  "80611": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-briggsdale"
+    ]
+   }
+  },
+  "80612": {
+   "counties": [
+    "08069",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49",
+     "co-house-63"
+    ]
+   }
+  },
+  "80615": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63",
+     "co-house-65"
+    ],
+    "place": [
+     "city-eaton",
+     "city-severance"
+    ]
+   }
+  },
+  "80620": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-13"
+    ],
+    "state_house": [
+     "co-house-48",
+     "co-house-50"
+    ],
+    "place": [
+     "city-evans"
+    ]
+   }
+  },
+  "80621": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-13",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-19",
+     "co-house-48"
+    ],
+    "place": [
+     "city-aristocrat-ranchettes",
+     "city-fort-lupton",
+     "city-frederick"
+    ]
+   }
+  },
+  "80622": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80623": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-13"
+    ],
+    "state_house": [
+     "co-house-48"
+    ],
+    "place": [
+     "city-gilcrest"
+    ]
+   }
+  },
+  "80624": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80631": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-13",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-48",
+     "co-house-50",
+     "co-house-63",
+     "co-house-64",
+     "co-house-65"
+    ],
+    "place": [
+     "city-garden-city",
+     "city-greeley",
+     "city-kersey",
+     "city-windsor"
+    ]
+   }
+  },
+  "80634": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-13",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-50",
+     "co-house-64"
+    ],
+    "place": [
+     "city-evans",
+     "city-greeley",
+     "city-milliken"
+    ]
+   }
+  },
+  "80640": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-13",
+     "co-senate-21",
+     "co-senate-24"
+    ],
+    "state_house": [
+     "co-house-31",
+     "co-house-32",
+     "co-house-48"
+    ],
+    "place": [
+     "city-brighton",
+     "city-commerce-city",
+     "city-derby",
+     "city-thornton"
+    ]
+   }
+  },
+  "80642": {
+   "counties": [
+    "08001",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-21",
+     "co-senate-28"
+    ],
+    "state_house": [
+     "co-house-48",
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-hudson",
+     "city-keenesburg"
+    ]
+   }
+  },
+  "80643": {
+   "counties": [
+    "08001",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-21"
+    ],
+    "state_house": [
+     "co-house-48",
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-hudson",
+     "city-keenesburg"
+    ]
+   }
+  },
+  "80644": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-48",
+     "co-house-63"
+    ],
+    "place": [
+     "city-kersey"
+    ]
+   }
+  },
+  "80645": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-13"
+    ],
+    "state_house": [
+     "co-house-48",
+     "co-house-50",
+     "co-house-63"
+    ],
+    "place": [
+     "city-evans",
+     "city-la-salle"
+    ]
+   }
+  },
+  "80646": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80648": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-nunn"
+    ]
+   }
+  },
+  "80649": {
+   "counties": [
+    "08087",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-orchard"
+    ]
+   }
+  },
+  "80650": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-pierce",
+     "city-severance"
+    ]
+   }
+  },
+  "80651": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-8"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-13",
+     "co-senate-23"
+    ],
+    "state_house": [
+     "co-house-19",
+     "co-house-48",
+     "co-house-64"
+    ],
+    "place": [
+     "city-gilcrest",
+     "city-mead",
+     "city-milliken",
+     "city-platteville"
+    ]
+   }
+  },
+  "80652": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80653": {
+   "counties": [
+    "08087"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-jackson-lake",
+     "city-weldona"
+    ]
+   }
+  },
+  "80654": {
+   "counties": [
+    "08001",
+    "08087",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-21"
+    ],
+    "state_house": [
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-wiggins"
+    ]
+   }
+  },
+  "80701": {
+   "counties": [
+    "08001",
+    "08087"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-21"
+    ],
+    "state_house": [
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-blue-sky",
+     "city-fort-morgan",
+     "city-morgan-heights",
+     "city-saddle-ridge",
+     "city-trail-side"
+    ]
+   }
+  },
+  "80705": {
+   "counties": [
+    "08087"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-log-lane-village"
+    ]
+   }
+  },
+  "80720": {
+   "counties": [
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-akron"
+    ]
+   }
+  },
+  "80721": {
+   "counties": [
+    "08095"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-amherst"
+    ]
+   }
+  },
+  "80722": {
+   "counties": [
+    "08075"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-atwood"
+    ]
+   }
+  },
+  "80723": {
+   "counties": [
+    "08087",
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-brush"
+    ]
+   }
+  },
+  "80726": {
+   "counties": [
+    "08075"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-crook"
+    ]
+   }
+  },
+  "80727": {
+   "counties": [
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-eckley"
+    ]
+   }
+  },
+  "80728": {
+   "counties": [
+    "08075"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-fleming"
+    ]
+   }
+  },
+  "80729": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-grover"
+    ]
+   }
+  },
+  "80731": {
+   "counties": [
+    "08075",
+    "08095",
+    "08115",
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-haxtun",
+     "city-paoli"
+    ]
+   }
+  },
+  "80732": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80733": {
+   "counties": [
+    "08087",
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-hillrose"
+    ]
+   }
+  },
+  "80734": {
+   "counties": [
+    "08095",
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-holyoke"
+    ]
+   }
+  },
+  "80735": {
+   "counties": [
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-idalia"
+    ]
+   }
+  },
+  "80736": {
+   "counties": [
+    "08075"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-iliff"
+    ]
+   }
+  },
+  "80737": {
+   "counties": [
+    "08115"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-julesburg"
+    ]
+   }
+  },
+  "80740": {
+   "counties": [
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80741": {
+   "counties": [
+    "08075",
+    "08087",
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-merino"
+    ]
+   }
+  },
+  "80742": {
+   "counties": [
+    "08087",
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-raymer-new-raymer"
+    ]
+   }
+  },
+  "80743": {
+   "counties": [
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-otis"
+    ]
+   }
+  },
+  "80744": {
+   "counties": [
+    "08115"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-ovid"
+    ]
+   }
+  },
+  "80745": {
+   "counties": [
+    "08075"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-padroni"
+    ]
+   }
+  },
+  "80746": {
+   "counties": [
+    "08095"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-paoli"
+    ]
+   }
+  },
+  "80747": {
+   "counties": [
+    "08075"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-peetz"
+    ]
+   }
+  },
+  "80749": {
+   "counties": [
+    "08115"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-sedgwick"
+    ]
+   }
+  },
+  "80750": {
+   "counties": [
+    "08087"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-snyder"
+    ]
+   }
+  },
+  "80751": {
+   "counties": [
+    "08075"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-sterling"
+    ]
+   }
+  },
+  "80754": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80755": {
+   "counties": [
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-vernon"
+    ]
+   }
+  },
+  "80757": {
+   "counties": [
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80758": {
+   "counties": [
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-laird",
+     "city-wray"
+    ]
+   }
+  },
+  "80759": {
+   "counties": [
+    "08121",
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-yuma"
+    ]
+   }
+  },
+  "80801": {
+   "counties": [
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  },
+  "80802": {
+   "counties": [
+    "08017"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-arapahoe"
+    ]
+   }
+  },
+  "80804": {
+   "counties": [
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-arriba"
+    ]
+   }
+  },
+  "80805": {
+   "counties": [
+    "08063"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-bethune"
+    ]
+   }
+  },
+  "80807": {
+   "counties": [
+    "08063",
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-burlington"
+    ]
+   }
+  },
+  "80808": {
+   "counties": [
+    "08039",
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-calhan",
+     "city-ellicott"
+    ]
+   }
+  },
+  "80809": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-18"
+    ],
+    "place": [
+     "city-cascade-chipita-park"
+    ]
+   }
+  },
+  "80810": {
+   "counties": [
+    "08017"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-cheyenne-wells"
+    ]
+   }
+  },
+  "80812": {
+   "counties": [
+    "08121",
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-cope"
+    ]
+   }
+  },
+  "80813": {
+   "counties": [
+    "08119"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-cripple-creek"
+    ]
+   }
+  },
+  "80814": {
+   "counties": [
+    "08119"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-divide",
+     "city-midland"
+    ]
+   }
+  },
+  "80815": {
+   "counties": [
+    "08063",
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-flagler"
+    ]
+   }
+  },
+  "80816": {
+   "counties": [
+    "08093",
+    "08119"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13",
+     "co-house-60"
+    ],
+    "place": [
+     "city-florissant"
+    ]
+   }
+  },
+  "80817": {
+   "counties": [
+    "08041",
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-12",
+     "co-senate-3",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-21",
+     "co-house-56",
+     "co-house-60"
+    ],
+    "place": [
+     "city-fountain",
+     "city-security-widefield"
+    ]
+   }
+  },
+  "80818": {
+   "counties": [
+    "08073",
+    "08121"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-genoa"
+    ]
+   }
+  },
+  "80819": {
+   "counties": [
+    "08041",
+    "08119"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-18"
+    ],
+    "place": [
+     "city-cascade-chipita-park",
+     "city-green-mountain-falls"
+    ]
+   }
+  },
+  "80820": {
+   "counties": [
+    "08093"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-guffey"
+    ]
+   }
+  },
+  "80821": {
+   "counties": [
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-hugo"
+    ]
+   }
+  },
+  "80822": {
+   "counties": [
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-joes"
+    ]
+   }
+  },
+  "80823": {
+   "counties": [
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ]
+   }
+  },
+  "80824": {
+   "counties": [
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ],
+    "place": [
+     "city-kirk"
+    ]
+   }
+  },
+  "80825": {
+   "counties": [
+    "08017"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-kit-carson"
+    ]
+   }
+  },
+  "80826": {
+   "counties": [
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ]
+   }
+  },
+  "80827": {
+   "counties": [
+    "08093",
+    "08119"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13",
+     "co-house-60"
+    ]
+   }
+  },
+  "80828": {
+   "counties": [
+    "08039",
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-limon"
+    ]
+   }
+  },
+  "80829": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-18"
+    ],
+    "place": [
+     "city-colorado-springs",
+     "city-manitou-springs"
+    ]
+   }
+  },
+  "80830": {
+   "counties": [
+    "08039"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-matheson"
+    ]
+   }
+  },
+  "80831": {
+   "counties": [
+    "08039",
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-15",
+     "co-house-20",
+     "co-house-56"
+    ],
+    "place": [
+     "city-colorado-springs",
+     "city-peyton"
+    ]
+   }
+  },
+  "80832": {
+   "counties": [
+    "08039",
+    "08041",
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-ramah"
+    ]
+   }
+  },
+  "80833": {
+   "counties": [
+    "08039",
+    "08041",
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ]
+   }
+  },
+  "80834": {
+   "counties": [
+    "08063"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-seibert"
+    ]
+   }
+  },
+  "80835": {
+   "counties": [
+    "08039",
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ],
+    "place": [
+     "city-simla"
+    ]
+   }
+  },
+  "80836": {
+   "counties": [
+    "08063",
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-stratton"
+    ]
+   }
+  },
+  "80840": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-20"
+    ],
+    "place": [
+     "city-air-force-academy",
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80860": {
+   "counties": [
+    "08119"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-goldfield",
+     "city-victor"
+    ]
+   }
+  },
+  "80861": {
+   "counties": [
+    "08063",
+    "08125"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56",
+     "co-house-63"
+    ],
+    "place": [
+     "city-vona"
+    ]
+   }
+  },
+  "80862": {
+   "counties": [
+    "08017"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ]
+   }
+  },
+  "80863": {
+   "counties": [
+    "08041",
+    "08119"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-12",
+     "co-senate-4",
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-18",
+     "co-house-20",
+     "co-house-60"
+    ],
+    "place": [
+     "city-cascade-chipita-park",
+     "city-woodland-park"
+    ]
+   }
+  },
+  "80864": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4",
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-56"
+    ]
+   }
+  },
+  "80902": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-21"
+    ],
+    "place": [
+     "city-fort-carson"
+    ]
+   }
+  },
+  "80903": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11",
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-16",
+     "co-house-17",
+     "co-house-18"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80904": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-12",
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-14",
+     "co-house-18",
+     "co-house-20"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80905": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11",
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-16",
+     "co-house-17",
+     "co-house-18"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80906": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11",
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-17",
+     "co-house-18",
+     "co-house-21"
+    ],
+    "place": [
+     "city-colorado-springs",
+     "city-fountain",
+     "city-stratmoor"
+    ]
+   }
+  },
+  "80907": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10",
+     "co-senate-12",
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-14",
+     "co-house-16",
+     "co-house-18"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80908": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-35",
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-14",
+     "co-house-15",
+     "co-house-20"
+    ],
+    "place": [
+     "city-black-forest",
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80909": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10",
+     "co-senate-11",
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-16",
+     "co-house-17",
+     "co-house-22"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80910": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11"
+    ],
+    "state_house": [
+     "co-house-16",
+     "co-house-17"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80911": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11",
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-17",
+     "co-house-21"
+    ],
+    "place": [
+     "city-colorado-springs",
+     "city-fountain",
+     "city-security-widefield",
+     "city-stratmoor"
+    ]
+   }
+  },
+  "80913": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-12"
+    ],
+    "state_house": [
+     "co-house-21"
+    ],
+    "place": [
+     "city-fort-carson",
+     "city-fountain"
+    ]
+   }
+  },
+  "80914": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11"
+    ],
+    "state_house": [
+     "co-house-17"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80915": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10",
+     "co-senate-11"
+    ],
+    "state_house": [
+     "co-house-15",
+     "co-house-16",
+     "co-house-17",
+     "co-house-22"
+    ],
+    "place": [
+     "city-cimarron-hills",
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80916": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11"
+    ],
+    "state_house": [
+     "co-house-17"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80917": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10"
+    ],
+    "state_house": [
+     "co-house-16",
+     "co-house-22"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80918": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10"
+    ],
+    "state_house": [
+     "co-house-14",
+     "co-house-16",
+     "co-house-22"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80919": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-12",
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-14",
+     "co-house-18",
+     "co-house-20"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80920": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-14",
+     "co-house-20",
+     "co-house-22"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80921": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-12",
+     "co-senate-35",
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-14",
+     "co-house-20"
+    ],
+    "place": [
+     "city-black-forest",
+     "city-colorado-springs",
+     "city-gleneagle",
+     "city-monument"
+    ]
+   }
+  },
+  "80922": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10"
+    ],
+    "state_house": [
+     "co-house-15"
+    ],
+    "place": [
+     "city-cimarron-hills",
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80923": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10"
+    ],
+    "state_house": [
+     "co-house-15",
+     "co-house-22"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80924": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-9"
+    ],
+    "state_house": [
+     "co-house-14"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80925": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11",
+     "co-senate-12",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-15",
+     "co-house-17",
+     "co-house-21",
+     "co-house-56"
+    ],
+    "place": [
+     "city-colorado-springs",
+     "city-fountain",
+     "city-security-widefield"
+    ]
+   }
+  },
+  "80926": {
+   "counties": [
+    "08041",
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-12",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-18",
+     "co-house-21",
+     "co-house-60"
+    ],
+    "place": [
+     "city-colorado-springs",
+     "city-rock-creek-park"
+    ]
+   }
+  },
+  "80927": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-15"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80928": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-15",
+     "co-house-56"
+    ]
+   }
+  },
+  "80929": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-11",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-15",
+     "co-house-56"
+    ],
+    "place": [
+     "city-cimarron-hills",
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80930": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-15",
+     "co-house-56"
+    ]
+   }
+  },
+  "80938": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10"
+    ],
+    "state_house": [
+     "co-house-15"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80939": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10",
+     "co-senate-11"
+    ],
+    "state_house": [
+     "co-house-15"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "80951": {
+   "counties": [
+    "08041"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-10",
+     "co-senate-11"
+    ],
+    "state_house": [
+     "co-house-15"
+    ],
+    "place": [
+     "city-colorado-springs"
+    ]
+   }
+  },
+  "81001": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-47",
+     "co-house-62"
+    ],
+    "place": [
+     "city-pueblo"
+    ]
+   }
+  },
+  "81003": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-62"
+    ],
+    "place": [
+     "city-pueblo"
+    ]
+   }
+  },
+  "81004": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-62"
+    ],
+    "place": [
+     "city-pueblo"
+    ]
+   }
+  },
+  "81005": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-62"
+    ],
+    "place": [
+     "city-pueblo"
+    ]
+   }
+  },
+  "81006": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-47",
+     "co-house-62"
+    ],
+    "place": [
+     "city-blende",
+     "city-pueblo",
+     "city-salt-creek",
+     "city-vineland"
+    ]
+   }
+  },
+  "81007": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-47",
+     "co-house-60"
+    ],
+    "place": [
+     "city-pueblo-west"
+    ]
+   }
+  },
+  "81008": {
+   "counties": [
+    "08041",
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-5"
+    ],
+    "state_senate": [
+     "co-senate-3",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-47",
+     "co-house-56",
+     "co-house-60"
+    ],
+    "place": [
+     "city-pueblo"
+    ]
+   }
+  },
+  "81019": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46"
+    ],
+    "place": [
+     "city-colorado-city"
+    ]
+   }
+  },
+  "81020": {
+   "counties": [
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-aguilar",
+     "city-lynn"
+    ]
+   }
+  },
+  "81021": {
+   "counties": [
+    "08061",
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47",
+     "co-house-56"
+    ]
+   }
+  },
+  "81022": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-47"
+    ],
+    "place": [
+     "city-avondale"
+    ]
+   }
+  },
+  "81023": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46"
+    ],
+    "place": [
+     "city-beulah-valley"
+    ]
+   }
+  },
+  "81024": {
+   "counties": [
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ]
+   }
+  },
+  "81025": {
+   "counties": [
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-3"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-47"
+    ],
+    "place": [
+     "city-boone"
+    ]
+   }
+  },
+  "81027": {
+   "counties": [
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-branson"
+    ]
+   }
+  },
+  "81029": {
+   "counties": [
+    "08009"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-campo"
+    ]
+   }
+  },
+  "81030": {
+   "counties": [
+    "08089"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-cheraw"
+    ]
+   }
+  },
+  "81033": {
+   "counties": [
+    "08025"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-crowley"
+    ]
+   }
+  },
+  "81036": {
+   "counties": [
+    "08061"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-eads"
+    ]
+   }
+  },
+  "81039": {
+   "counties": [
+    "08025",
+    "08089",
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-3",
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-fowler"
+    ]
+   }
+  },
+  "81040": {
+   "counties": [
+    "08055"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-gardner"
+    ]
+   }
+  },
+  "81041": {
+   "counties": [
+    "08009",
+    "08099"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-granada"
+    ]
+   }
+  },
+  "81043": {
+   "counties": [
+    "08099"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-hartman"
+    ]
+   }
+  },
+  "81044": {
+   "counties": [
+    "08011"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-hasty"
+    ]
+   }
+  },
+  "81045": {
+   "counties": [
+    "08017",
+    "08061",
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47",
+     "co-house-56"
+    ],
+    "place": [
+     "city-haswell"
+    ]
+   }
+  },
+  "81046": {
+   "counties": [
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-hoehne"
+    ]
+   }
+  },
+  "81047": {
+   "counties": [
+    "08061",
+    "08099"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-holly"
+    ]
+   }
+  },
+  "81049": {
+   "counties": [
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-kim"
+    ]
+   }
+  },
+  "81050": {
+   "counties": [
+    "08011",
+    "08089"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-cheraw",
+     "city-la-junta",
+     "city-la-junta-gardens",
+     "city-north-la-junta"
+    ]
+   }
+  },
+  "81052": {
+   "counties": [
+    "08011",
+    "08099"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-lamar"
+    ]
+   }
+  },
+  "81054": {
+   "counties": [
+    "08009",
+    "08011",
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-las-animas"
+    ]
+   }
+  },
+  "81055": {
+   "counties": [
+    "08023",
+    "08055"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35",
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-47",
+     "co-house-62"
+    ],
+    "place": [
+     "city-la-veta"
+    ]
+   }
+  },
+  "81057": {
+   "counties": [
+    "08011"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-mcclave"
+    ]
+   }
+  },
+  "81058": {
+   "counties": [
+    "08025",
+    "08089"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-manzanola"
+    ]
+   }
+  },
+  "81059": {
+   "counties": [
+    "08071",
+    "08089"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ]
+   }
+  },
+  "81062": {
+   "counties": [
+    "08025"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-olney-springs"
+    ]
+   }
+  },
+  "81063": {
+   "counties": [
+    "08025",
+    "08073"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47",
+     "co-house-56"
+    ],
+    "place": [
+     "city-ordway"
+    ]
+   }
+  },
+  "81064": {
+   "counties": [
+    "08009",
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-pritchett"
+    ]
+   }
+  },
+  "81067": {
+   "counties": [
+    "08089"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-rocky-ford"
+    ]
+   }
+  },
+  "81069": {
+   "counties": [
+    "08027",
+    "08055",
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-3",
+     "co-senate-35",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-47",
+     "co-house-60",
+     "co-house-62"
+    ],
+    "place": [
+     "city-colorado-city",
+     "city-rye"
+    ]
+   }
+  },
+  "81071": {
+   "counties": [
+    "08061"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-brandon",
+     "city-sheridan-lake",
+     "city-towner"
+    ]
+   }
+  },
+  "81073": {
+   "counties": [
+    "08009"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-springfield"
+    ]
+   }
+  },
+  "81076": {
+   "counties": [
+    "08025"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-sugar-city"
+    ]
+   }
+  },
+  "81077": {
+   "counties": [
+    "08089"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-swink"
+    ]
+   }
+  },
+  "81081": {
+   "counties": [
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ]
+   }
+  },
+  "81082": {
+   "counties": [
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-cokedale",
+     "city-el-moro",
+     "city-hoehne",
+     "city-jansen",
+     "city-segundo",
+     "city-starkville",
+     "city-trinidad",
+     "city-valdez"
+    ]
+   }
+  },
+  "81084": {
+   "counties": [
+    "08009",
+    "08099"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-two-buttes"
+    ]
+   }
+  },
+  "81087": {
+   "counties": [
+    "08009"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-vilas"
+    ]
+   }
+  },
+  "81089": {
+   "counties": [
+    "08055",
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47",
+     "co-house-62"
+    ],
+    "place": [
+     "city-walsenburg"
+    ]
+   }
+  },
+  "81090": {
+   "counties": [
+    "08009"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-walsh"
+    ]
+   }
+  },
+  "81091": {
+   "counties": [
+    "08071"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-stonewall-gap",
+     "city-weston"
+    ]
+   }
+  },
+  "81092": {
+   "counties": [
+    "08011",
+    "08061",
+    "08099"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-35"
+    ],
+    "state_house": [
+     "co-house-47"
+    ],
+    "place": [
+     "city-wiley"
+    ]
+   }
+  },
+  "81101": {
+   "counties": [
+    "08003",
+    "08021"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-alamosa",
+     "city-alamosa-east"
+    ]
+   }
+  },
+  "81120": {
+   "counties": [
+    "08021"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-antonito",
+     "city-conejos"
+    ]
+   }
+  },
+  "81121": {
+   "counties": [
+    "08007"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-arboles"
+    ]
+   }
+  },
+  "81122": {
+   "counties": [
+    "08007",
+    "08067"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-bayfield"
+    ]
+   }
+  },
+  "81123": {
+   "counties": [
+    "08023"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-blanca"
+    ]
+   }
+  },
+  "81124": {
+   "counties": [
+    "08021"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-capulin"
+    ]
+   }
+  },
+  "81125": {
+   "counties": [
+    "08003",
+    "08105",
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-center"
+    ]
+   }
+  },
+  "81126": {
+   "counties": [
+    "08023"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ]
+   }
+  },
+  "81128": {
+   "counties": [
+    "08007"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ]
+   }
+  },
+  "81129": {
+   "counties": [
+    "08021"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-conejos"
+    ]
+   }
+  },
+  "81130": {
+   "counties": [
+    "08053",
+    "08079"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58",
+     "co-house-62"
+    ],
+    "place": [
+     "city-city-of-creede"
+    ]
+   }
+  },
+  "81131": {
+   "counties": [
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-crestone"
+    ]
+   }
+  },
+  "81132": {
+   "counties": [
+    "08105",
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-del-norte"
+    ]
+   }
+  },
+  "81133": {
+   "counties": [
+    "08023"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-fort-garland"
+    ]
+   }
+  },
+  "81136": {
+   "counties": [
+    "08003",
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-hooper"
+    ]
+   }
+  },
+  "81137": {
+   "counties": [
+    "08007",
+    "08067"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-ignacio",
+     "city-southern-ute"
+    ]
+   }
+  },
+  "81138": {
+   "counties": [
+    "08023"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ]
+   }
+  },
+  "81140": {
+   "counties": [
+    "08021"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-la-jara"
+    ]
+   }
+  },
+  "81141": {
+   "counties": [
+    "08021"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-manassa"
+    ]
+   }
+  },
+  "81143": {
+   "counties": [
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-moffat"
+    ]
+   }
+  },
+  "81144": {
+   "counties": [
+    "08003",
+    "08105"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-monte-vista"
+    ]
+   }
+  },
+  "81146": {
+   "counties": [
+    "08003"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ]
+   }
+  },
+  "81147": {
+   "counties": [
+    "08007",
+    "08053",
+    "08079"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58",
+     "co-house-59",
+     "co-house-62"
+    ],
+    "place": [
+     "city-pagosa-springs",
+     "city-piedra"
+    ]
+   }
+  },
+  "81148": {
+   "counties": [
+    "08021"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-romeo"
+    ]
+   }
+  },
+  "81149": {
+   "counties": [
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-saguache"
+    ]
+   }
+  },
+  "81151": {
+   "counties": [
+    "08021",
+    "08023"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-san-acacio",
+     "city-sanford"
+    ]
+   }
+  },
+  "81152": {
+   "counties": [
+    "08023"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-san-luis"
+    ]
+   }
+  },
+  "81154": {
+   "counties": [
+    "08079",
+    "08105"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-alpine",
+     "city-gerrard",
+     "city-south-fork"
+    ]
+   }
+  },
+  "81155": {
+   "counties": [
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-62"
+    ],
+    "place": [
+     "city-bonanza"
+    ]
+   }
+  },
+  "81201": {
+   "counties": [
+    "08015",
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13",
+     "co-house-60"
+    ],
+    "place": [
+     "city-maysville",
+     "city-poncha-springs",
+     "city-salida",
+     "city-smeltertown"
+    ]
+   }
+  },
+  "81210": {
+   "counties": [
+    "08051"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81211": {
+   "counties": [
+    "08015"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-buena-vista",
+     "city-johnson-village"
+    ]
+   }
+  },
+  "81212": {
+   "counties": [
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-brookside",
+     "city-ca-on-city",
+     "city-lincoln-park",
+     "city-park-center"
+    ]
+   }
+  },
+  "81220": {
+   "counties": [
+    "08051",
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81221": {
+   "counties": [
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-coal-creek"
+    ]
+   }
+  },
+  "81222": {
+   "counties": [
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-coaldale"
+    ]
+   }
+  },
+  "81223": {
+   "counties": [
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-cotopaxi"
+    ]
+   }
+  },
+  "81224": {
+   "counties": [
+    "08051"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-crested-butte"
+    ]
+   }
+  },
+  "81225": {
+   "counties": [
+    "08051"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-mount-crested-butte"
+    ]
+   }
+  },
+  "81226": {
+   "counties": [
+    "08027",
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-florence",
+     "city-williamsburg"
+    ]
+   }
+  },
+  "81227": {
+   "counties": [
+    "08015"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-garfield"
+    ]
+   }
+  },
+  "81228": {
+   "counties": [
+    "08015"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ]
+   }
+  },
+  "81230": {
+   "counties": [
+    "08051",
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58",
+     "co-house-62"
+    ],
+    "place": [
+     "city-gunnison"
+    ]
+   }
+  },
+  "81232": {
+   "counties": [
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ]
+   }
+  },
+  "81233": {
+   "counties": [
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-howard"
+    ]
+   }
+  },
+  "81235": {
+   "counties": [
+    "08053"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-cathedral",
+     "city-lake-city"
+    ]
+   }
+  },
+  "81236": {
+   "counties": [
+    "08015"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-nathrop"
+    ]
+   }
+  },
+  "81237": {
+   "counties": [
+    "08051"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81239": {
+   "counties": [
+    "08051"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81240": {
+   "counties": [
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-penrose"
+    ]
+   }
+  },
+  "81241": {
+   "counties": [
+    "08051"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-pitkin"
+    ]
+   }
+  },
+  "81242": {
+   "counties": [
+    "08015"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-poncha-springs"
+    ]
+   }
+  },
+  "81243": {
+   "counties": [
+    "08051"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81244": {
+   "counties": [
+    "08043"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-rockvale"
+    ]
+   }
+  },
+  "81248": {
+   "counties": [
+    "08051",
+    "08109"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58",
+     "co-house-62"
+    ]
+   }
+  },
+  "81251": {
+   "counties": [
+    "08065"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-13"
+    ],
+    "place": [
+     "city-twin-lakes"
+    ]
+   }
+  },
+  "81252": {
+   "counties": [
+    "08027"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-60"
+    ],
+    "place": [
+     "city-silver-cliff",
+     "city-westcliffe"
+    ]
+   }
+  },
+  "81253": {
+   "counties": [
+    "08027",
+    "08043",
+    "08101"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3",
+     "co-cd-7"
+    ],
+    "state_senate": [
+     "co-senate-3",
+     "co-senate-4"
+    ],
+    "state_house": [
+     "co-house-46",
+     "co-house-60"
+    ]
+   }
+  },
+  "81301": {
+   "counties": [
+    "08067",
+    "08111"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-durango"
+    ]
+   }
+  },
+  "81303": {
+   "counties": [
+    "08067"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-durango"
+    ]
+   }
+  },
+  "81320": {
+   "counties": [
+    "08033"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81321": {
+   "counties": [
+    "08083"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58",
+     "co-house-59"
+    ],
+    "place": [
+     "city-cortez"
+    ]
+   }
+  },
+  "81323": {
+   "counties": [
+    "08033",
+    "08083"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58",
+     "co-house-59"
+    ],
+    "place": [
+     "city-dolores"
+    ]
+   }
+  },
+  "81324": {
+   "counties": [
+    "08033"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-dove-creek"
+    ]
+   }
+  },
+  "81325": {
+   "counties": [
+    "08033",
+    "08113"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81326": {
+   "counties": [
+    "08067"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-durango",
+     "city-marvel"
+    ]
+   }
+  },
+  "81327": {
+   "counties": [
+    "08083"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-lewis"
+    ]
+   }
+  },
+  "81328": {
+   "counties": [
+    "08067",
+    "08083"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-mancos"
+    ]
+   }
+  },
+  "81330": {
+   "counties": [
+    "08083"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ]
+   }
+  },
+  "81331": {
+   "counties": [
+    "08083"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81332": {
+   "counties": [
+    "08033"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-rico"
+    ]
+   }
+  },
+  "81334": {
+   "counties": [
+    "08083"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-towaoc"
+    ]
+   }
+  },
+  "81335": {
+   "counties": [
+    "08083"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81401": {
+   "counties": [
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-montrose"
+    ]
+   }
+  },
+  "81403": {
+   "counties": [
+    "08085",
+    "08091"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-colona",
+     "city-montrose"
+    ]
+   }
+  },
+  "81410": {
+   "counties": [
+    "08029"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-58"
+    ],
+    "place": [
+     "city-orchard-city"
+    ]
+   }
+  },
+  "81411": {
+   "counties": [
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81413": {
+   "counties": [
+    "08029"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-58"
+    ],
+    "place": [
+     "city-cedaredge"
+    ]
+   }
+  },
+  "81415": {
+   "counties": [
+    "08029",
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-crawford"
+    ]
+   }
+  },
+  "81416": {
+   "counties": [
+    "08029",
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-58"
+    ],
+    "place": [
+     "city-delta"
+    ]
+   }
+  },
+  "81418": {
+   "counties": [
+    "08029"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ],
+    "place": [
+     "city-orchard-city"
+    ]
+   }
+  },
+  "81419": {
+   "counties": [
+    "08029"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-58"
+    ],
+    "place": [
+     "city-hotchkiss",
+     "city-lazear"
+    ]
+   }
+  },
+  "81422": {
+   "counties": [
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-naturita"
+    ]
+   }
+  },
+  "81423": {
+   "counties": [
+    "08085",
+    "08113"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-norwood"
+    ]
+   }
+  },
+  "81424": {
+   "counties": [
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-nucla"
+    ]
+   }
+  },
+  "81425": {
+   "counties": [
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-olathe"
+    ]
+   }
+  },
+  "81426": {
+   "counties": [
+    "08113"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-ophir"
+    ]
+   }
+  },
+  "81427": {
+   "counties": [
+    "08091"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-ouray"
+    ]
+   }
+  },
+  "81428": {
+   "counties": [
+    "08029"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-paonia"
+    ]
+   }
+  },
+  "81429": {
+   "counties": [
+    "08085"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ]
+   }
+  },
+  "81430": {
+   "counties": [
+    "08113"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-placerville",
+     "city-sawpit"
+    ]
+   }
+  },
+  "81431": {
+   "counties": [
+    "08085",
+    "08113"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-redvale"
+    ]
+   }
+  },
+  "81432": {
+   "counties": [
+    "08091",
+    "08113"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-loghill-village",
+     "city-portland",
+     "city-ridgway"
+    ]
+   }
+  },
+  "81433": {
+   "counties": [
+    "08111"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-59"
+    ],
+    "place": [
+     "city-silverton"
+    ]
+   }
+  },
+  "81434": {
+   "counties": [
+    "08029",
+    "08051"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-somerset"
+    ]
+   }
+  },
+  "81435": {
+   "counties": [
+    "08113"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-6"
+    ],
+    "state_house": [
+     "co-house-58"
+    ],
+    "place": [
+     "city-mountain-village",
+     "city-telluride"
+    ]
+   }
+  },
+  "81501": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-55"
+    ],
+    "place": [
+     "city-grand-junction"
+    ]
+   }
+  },
+  "81503": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-55"
+    ],
+    "place": [
+     "city-grand-junction",
+     "city-orchard-mesa"
+    ]
+   }
+  },
+  "81504": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-55"
+    ],
+    "place": [
+     "city-clifton",
+     "city-fruitvale",
+     "city-grand-junction"
+    ]
+   }
+  },
+  "81505": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-55"
+    ],
+    "place": [
+     "city-grand-junction"
+    ]
+   }
+  },
+  "81506": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-55"
+    ],
+    "place": [
+     "city-grand-junction"
+    ]
+   }
+  },
+  "81507": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-55"
+    ],
+    "place": [
+     "city-grand-junction",
+     "city-redlands"
+    ]
+   }
+  },
+  "81520": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ],
+    "place": [
+     "city-clifton"
+    ]
+   }
+  },
+  "81521": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-55"
+    ],
+    "place": [
+     "city-fruita"
+    ]
+   }
+  },
+  "81522": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ]
+   }
+  },
+  "81523": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ]
+   }
+  },
+  "81524": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ],
+    "place": [
+     "city-loma"
+    ]
+   }
+  },
+  "81525": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ]
+   }
+  },
+  "81526": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ],
+    "place": [
+     "city-palisade"
+    ]
+   }
+  },
+  "81527": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ]
+   }
+  },
+  "81601": {
+   "counties": [
+    "08045"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-57"
+    ],
+    "place": [
+     "city-carbonate",
+     "city-cattle-creek",
+     "city-chacra",
+     "city-glenwood-springs",
+     "city-no-name"
+    ]
+   }
+  },
+  "81610": {
+   "counties": [
+    "08081"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-dinosaur"
+    ]
+   }
+  },
+  "81611": {
+   "counties": [
+    "08097"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-57"
+    ],
+    "place": [
+     "city-aspen",
+     "city-snowmass-village",
+     "city-woody-creek"
+    ]
+   }
+  },
+  "81612": {
+   "counties": [
+    "08097"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-57"
+    ]
+   }
+  },
+  "81615": {
+   "counties": [
+    "08097"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-57"
+    ],
+    "place": [
+     "city-snowmass-village"
+    ]
+   }
+  },
+  "81620": {
+   "counties": [
+    "08037"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-avon"
+    ]
+   }
+  },
+  "81621": {
+   "counties": [
+    "08037",
+    "08097"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26",
+     "co-house-57"
+    ],
+    "place": [
+     "city-basalt"
+    ]
+   }
+  },
+  "81623": {
+   "counties": [
+    "08037",
+    "08045",
+    "08051",
+    "08097"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-57",
+     "co-house-58"
+    ],
+    "place": [
+     "city-carbondale",
+     "city-catherine",
+     "city-el-jebel",
+     "city-marble",
+     "city-mulford",
+     "city-redstone"
+    ]
+   }
+  },
+  "81624": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ],
+    "place": [
+     "city-collbran"
+    ]
+   }
+  },
+  "81625": {
+   "counties": [
+    "08081"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-craig"
+    ]
+   }
+  },
+  "81630": {
+   "counties": [
+    "08045",
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-57"
+    ],
+    "place": [
+     "city-de-beque"
+    ]
+   }
+  },
+  "81631": {
+   "counties": [
+    "08037"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-eagle",
+     "city-fulford"
+    ]
+   }
+  },
+  "81632": {
+   "counties": [
+    "08037"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-edwards"
+    ]
+   }
+  },
+  "81633": {
+   "counties": [
+    "08081"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ]
+   }
+  },
+  "81635": {
+   "counties": [
+    "08045",
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-7",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-54",
+     "co-house-57"
+    ],
+    "place": [
+     "city-battlement-mesa",
+     "city-parachute"
+    ]
+   }
+  },
+  "81637": {
+   "counties": [
+    "08037",
+    "08045"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26",
+     "co-house-57"
+    ],
+    "place": [
+     "city-dotsero",
+     "city-gypsum"
+    ]
+   }
+  },
+  "81638": {
+   "counties": [
+    "08081",
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ]
+   }
+  },
+  "81639": {
+   "counties": [
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-hayden"
+    ]
+   }
+  },
+  "81640": {
+   "counties": [
+    "08081"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-maybell"
+    ]
+   }
+  },
+  "81641": {
+   "counties": [
+    "08081",
+    "08103"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-meeker"
+    ]
+   }
+  },
+  "81642": {
+   "counties": [
+    "08097"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-57"
+    ],
+    "place": [
+     "city-norrie"
+    ]
+   }
+  },
+  "81643": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ]
+   }
+  },
+  "81645": {
+   "counties": [
+    "08037"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-minturn"
+    ]
+   }
+  },
+  "81646": {
+   "counties": [
+    "08077"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-7"
+    ],
+    "state_house": [
+     "co-house-54"
+    ]
+   }
+  },
+  "81647": {
+   "counties": [
+    "08045"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-57"
+    ],
+    "place": [
+     "city-new-castle"
+    ]
+   }
+  },
+  "81648": {
+   "counties": [
+    "08103"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-rangely"
+    ]
+   }
+  },
+  "81649": {
+   "counties": [
+    "08037"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-minturn",
+     "city-red-cliff"
+    ]
+   }
+  },
+  "81650": {
+   "counties": [
+    "08045",
+    "08103"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26",
+     "co-house-57"
+    ],
+    "place": [
+     "city-rifle"
+    ]
+   }
+  },
+  "81652": {
+   "counties": [
+    "08045"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5",
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-57"
+    ],
+    "place": [
+     "city-silt"
+    ]
+   }
+  },
+  "81653": {
+   "counties": [
+    "08081",
+    "08107"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2",
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ]
+   }
+  },
+  "81654": {
+   "counties": [
+    "08097"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-57"
+    ]
+   }
+  },
+  "81655": {
+   "counties": [
+    "08037"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-wolcott"
+    ]
+   }
+  },
+  "81656": {
+   "counties": [
+    "08097"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-3"
+    ],
+    "state_senate": [
+     "co-senate-5"
+    ],
+    "state_house": [
+     "co-house-57"
+    ],
+    "place": [
+     "city-woody-creek"
+    ]
+   }
+  },
+  "81657": {
+   "counties": [
+    "08037"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-8"
+    ],
+    "state_house": [
+     "co-house-26"
+    ],
+    "place": [
+     "city-vail"
+    ]
+   }
+  },
+  "82063": {
+   "counties": [
+    "08069"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-2"
+    ],
+    "state_senate": [
+     "co-senate-15"
+    ],
+    "state_house": [
+     "co-house-49"
+    ]
+   }
+  },
+  "82082": {
+   "counties": [
+    "08123"
+   ],
+   "districts": {
+    "congressional": [
+     "co-cd-4"
+    ],
+    "state_senate": [
+     "co-senate-1"
+    ],
+    "state_house": [
+     "co-house-63"
+    ]
+   }
+  }
+ },
+ "other_states": {
+  "006": "PR",
+  "007": "PR",
+  "008": "VI",
+  "009": "PR",
+  "010": "MA",
+  "011": "MA",
+  "012": "MA",
+  "013": "MA",
+  "014": "MA",
+  "015": "MA",
+  "016": "MA",
+  "017": "MA",
+  "018": "MA",
+  "019": "MA",
+  "020": "MA",
+  "021": "MA",
+  "022": "MA",
+  "023": "MA",
+  "024": "MA",
+  "025": "MA",
+  "026": "MA",
+  "027": "MA",
+  "028": "RI",
+  "029": "RI",
+  "030": "NH",
+  "031": "NH",
+  "032": "NH",
+  "033": "NH",
+  "034": "NH",
+  "035": "NH",
+  "036": "NH",
+  "037": "NH",
+  "038": "NH",
+  "039": "ME",
+  "040": "ME",
+  "041": "ME",
+  "042": "ME",
+  "043": "ME",
+  "044": "ME",
+  "045": "ME",
+  "046": "ME",
+  "047": "ME",
+  "048": "ME",
+  "049": "ME",
+  "050": "VT",
+  "051": "VT",
+  "052": "VT",
+  "053": "VT",
+  "054": "VT",
+  "056": "VT",
+  "057": "VT",
+  "058": "VT",
+  "059": "VT",
+  "060": "CT",
+  "061": "CT",
+  "062": "CT",
+  "063": "CT",
+  "064": "CT",
+  "065": "CT",
+  "066": "CT",
+  "067": "CT",
+  "068": "CT",
+  "069": "CT",
+  "070": "NJ",
+  "071": "NJ",
+  "072": "NJ",
+  "073": "NJ",
+  "074": "NJ",
+  "075": "NJ",
+  "076": "NJ",
+  "077": "NJ",
+  "078": "NJ",
+  "079": "NJ",
+  "080": "NJ",
+  "081": "NJ",
+  "082": "NJ",
+  "083": "NJ",
+  "084": "NJ",
+  "085": "NJ",
+  "086": "NJ",
+  "087": "NJ",
+  "088": "NJ",
+  "089": "NJ",
+  "100": "NY",
+  "101": "NY",
+  "102": "NY",
+  "103": "NY",
+  "104": "NY",
+  "105": "NY",
+  "106": "NY",
+  "107": "NY",
+  "108": "NY",
+  "109": "NY",
+  "110": "NY",
+  "111": "NY",
+  "112": "NY",
+  "113": "NY",
+  "114": "NY",
+  "115": "NY",
+  "116": "NY",
+  "117": "NY",
+  "118": "NY",
+  "119": "NY",
+  "120": "NY",
+  "121": "NY",
+  "122": "NY",
+  "123": "NY",
+  "124": "NY",
+  "125": "NY",
+  "126": "NY",
+  "127": "NY",
+  "128": "NY",
+  "129": "NY",
+  "130": "NY",
+  "131": "NY",
+  "132": "NY",
+  "133": "NY",
+  "134": "NY",
+  "135": "NY",
+  "136": "NY",
+  "137": "NY",
+  "138": "NY",
+  "139": "NY",
+  "140": "NY",
+  "141": "NY",
+  "142": "NY",
+  "143": "NY",
+  "144": "NY",
+  "145": "NY",
+  "146": "NY",
+  "147": "NY",
+  "148": "NY",
+  "149": "NY",
+  "150": "PA",
+  "151": "PA",
+  "152": "PA",
+  "153": "PA",
+  "154": "PA",
+  "155": "PA",
+  "156": "PA",
+  "157": "PA",
+  "158": "PA",
+  "159": "PA",
+  "160": "PA",
+  "161": "PA",
+  "162": "PA",
+  "163": "PA",
+  "164": "PA",
+  "165": "PA",
+  "166": "PA",
+  "167": "PA",
+  "168": "PA",
+  "169": "PA",
+  "170": "PA",
+  "171": "PA",
+  "172": "PA",
+  "173": "PA",
+  "174": "PA",
+  "175": "PA",
+  "176": "PA",
+  "177": "PA",
+  "178": "PA",
+  "179": "PA",
+  "180": "PA",
+  "181": "PA",
+  "182": "PA",
+  "183": "PA",
+  "184": "PA",
+  "185": "PA",
+  "186": "PA",
+  "187": "PA",
+  "188": "PA",
+  "189": "PA",
+  "190": "PA",
+  "191": "PA",
+  "193": "PA",
+  "194": "PA",
+  "195": "PA",
+  "196": "PA",
+  "197": "DE",
+  "198": "DE",
+  "199": "DE",
+  "200": "DC",
+  "201": "VA",
+  "202": "DC",
+  "203": "DC",
+  "204": "DC",
+  "205": "DC",
+  "206": "MD",
+  "207": "MD",
+  "208": "MD",
+  "209": "MD",
+  "210": "MD",
+  "211": "MD",
+  "212": "MD",
+  "214": "MD",
+  "215": "MD",
+  "216": "MD",
+  "217": "MD",
+  "218": "MD",
+  "219": "MD",
+  "220": "VA",
+  "221": "VA",
+  "222": "VA",
+  "223": "VA",
+  "224": "VA",
+  "225": "VA",
+  "226": "VA",
+  "227": "VA",
+  "228": "VA",
+  "229": "VA",
+  "230": "VA",
+  "231": "VA",
+  "232": "VA",
+  "233": "VA",
+  "234": "VA",
+  "235": "VA",
+  "236": "VA",
+  "237": "VA",
+  "238": "VA",
+  "239": "VA",
+  "240": "VA",
+  "241": "VA",
+  "242": "VA",
+  "243": "VA",
+  "244": "VA",
+  "245": "VA",
+  "246": "VA",
+  "247": "WV",
+  "248": "WV",
+  "249": "WV",
+  "250": "WV",
+  "251": "WV",
+  "252": "WV",
+  "253": "WV",
+  "254": "WV",
+  "255": "WV",
+  "256": "WV",
+  "257": "WV",
+  "258": "WV",
+  "259": "WV",
+  "260": "WV",
+  "261": "WV",
+  "262": "WV",
+  "263": "WV",
+  "264": "WV",
+  "265": "WV",
+  "266": "WV",
+  "267": "WV",
+  "268": "WV",
+  "270": "NC",
+  "271": "NC",
+  "272": "NC",
+  "273": "NC",
+  "274": "NC",
+  "275": "NC",
+  "276": "NC",
+  "277": "NC",
+  "278": "NC",
+  "279": "NC",
+  "280": "NC",
+  "281": "NC",
+  "282": "NC",
+  "283": "NC",
+  "284": "NC",
+  "285": "NC",
+  "286": "NC",
+  "287": "NC",
+  "288": "NC",
+  "289": "NC",
+  "290": "SC",
+  "291": "SC",
+  "292": "SC",
+  "293": "SC",
+  "294": "SC",
+  "295": "SC",
+  "296": "SC",
+  "297": "SC",
+  "298": "SC",
+  "299": "SC",
+  "300": "GA",
+  "301": "GA",
+  "302": "GA",
+  "303": "GA",
+  "304": "GA",
+  "305": "GA",
+  "306": "GA",
+  "307": "GA",
+  "308": "GA",
+  "309": "GA",
+  "310": "GA",
+  "312": "GA",
+  "313": "GA",
+  "314": "GA",
+  "315": "GA",
+  "316": "GA",
+  "317": "GA",
+  "318": "GA",
+  "319": "GA",
+  "320": "FL",
+  "321": "FL",
+  "322": "FL",
+  "323": "FL",
+  "324": "FL",
+  "325": "FL",
+  "326": "FL",
+  "327": "FL",
+  "328": "FL",
+  "329": "FL",
+  "330": "FL",
+  "331": "FL",
+  "333": "FL",
+  "334": "FL",
+  "335": "FL",
+  "336": "FL",
+  "337": "FL",
+  "338": "FL",
+  "339": "FL",
+  "341": "FL",
+  "342": "FL",
+  "344": "FL",
+  "346": "FL",
+  "347": "FL",
+  "349": "FL",
+  "350": "AL",
+  "351": "AL",
+  "352": "AL",
+  "354": "AL",
+  "355": "AL",
+  "356": "AL",
+  "357": "AL",
+  "358": "AL",
+  "359": "AL",
+  "360": "AL",
+  "361": "AL",
+  "362": "AL",
+  "363": "AL",
+  "364": "AL",
+  "365": "AL",
+  "366": "AL",
+  "367": "AL",
+  "368": "AL",
+  "369": "AL",
+  "370": "TN",
+  "371": "TN",
+  "372": "TN",
+  "373": "TN",
+  "374": "TN",
+  "376": "TN",
+  "377": "TN",
+  "378": "TN",
+  "379": "TN",
+  "380": "TN",
+  "381": "TN",
+  "382": "TN",
+  "383": "TN",
+  "384": "TN",
+  "385": "TN",
+  "386": "MS",
+  "387": "MS",
+  "388": "MS",
+  "389": "MS",
+  "390": "MS",
+  "391": "MS",
+  "392": "MS",
+  "393": "MS",
+  "394": "MS",
+  "395": "MS",
+  "396": "MS",
+  "397": "MS",
+  "398": "GA",
+  "400": "KY",
+  "401": "KY",
+  "402": "KY",
+  "403": "KY",
+  "404": "KY",
+  "405": "KY",
+  "406": "KY",
+  "407": "KY",
+  "408": "KY",
+  "409": "KY",
+  "410": "KY",
+  "411": "KY",
+  "412": "KY",
+  "413": "KY",
+  "414": "KY",
+  "415": "KY",
+  "416": "KY",
+  "417": "KY",
+  "418": "KY",
+  "420": "KY",
+  "421": "KY",
+  "422": "KY",
+  "423": "KY",
+  "424": "KY",
+  "425": "KY",
+  "426": "KY",
+  "427": "KY",
+  "430": "OH",
+  "431": "OH",
+  "432": "OH",
+  "433": "OH",
+  "434": "OH",
+  "435": "OH",
+  "436": "OH",
+  "437": "OH",
+  "438": "OH",
+  "439": "OH",
+  "440": "OH",
+  "441": "OH",
+  "442": "OH",
+  "443": "OH",
+  "444": "OH",
+  "445": "OH",
+  "446": "OH",
+  "447": "OH",
+  "448": "OH",
+  "449": "OH",
+  "450": "OH",
+  "451": "OH",
+  "452": "OH",
+  "453": "OH",
+  "454": "OH",
+  "455": "OH",
+  "456": "OH",
+  "457": "OH",
+  "458": "OH",
+  "460": "IN",
+  "461": "IN",
+  "462": "IN",
+  "463": "IN",
+  "464": "IN",
+  "465": "IN",
+  "466": "IN",
+  "467": "IN",
+  "468": "IN",
+  "469": "IN",
+  "470": "IN",
+  "471": "IN",
+  "472": "IN",
+  "473": "IN",
+  "474": "IN",
+  "475": "IN",
+  "476": "IN",
+  "477": "IN",
+  "478": "IN",
+  "479": "IN",
+  "480": "MI",
+  "481": "MI",
+  "482": "MI",
+  "483": "MI",
+  "484": "MI",
+  "485": "MI",
+  "486": "MI",
+  "487": "MI",
+  "488": "MI",
+  "489": "MI",
+  "490": "MI",
+  "491": "MI",
+  "492": "MI",
+  "493": "MI",
+  "494": "MI",
+  "495": "MI",
+  "496": "MI",
+  "497": "MI",
+  "498": "MI",
+  "499": "MI",
+  "500": "IA",
+  "501": "IA",
+  "502": "IA",
+  "503": "IA",
+  "504": "IA",
+  "505": "IA",
+  "506": "IA",
+  "507": "IA",
+  "508": "IA",
+  "510": "IA",
+  "511": "IA",
+  "512": "IA",
+  "513": "IA",
+  "514": "IA",
+  "515": "IA",
+  "516": "IA",
+  "520": "IA",
+  "521": "IA",
+  "522": "IA",
+  "523": "IA",
+  "524": "IA",
+  "525": "IA",
+  "526": "IA",
+  "527": "IA",
+  "528": "IA",
+  "530": "WI",
+  "531": "WI",
+  "532": "WI",
+  "534": "WI",
+  "535": "WI",
+  "537": "WI",
+  "538": "WI",
+  "539": "WI",
+  "540": "WI",
+  "541": "WI",
+  "542": "WI",
+  "543": "WI",
+  "544": "WI",
+  "545": "WI",
+  "546": "WI",
+  "547": "WI",
+  "548": "WI",
+  "549": "WI",
+  "550": "MN",
+  "551": "MN",
+  "553": "MN",
+  "554": "MN",
+  "556": "MN",
+  "557": "MN",
+  "558": "MN",
+  "559": "MN",
+  "560": "MN",
+  "561": "MN",
+  "562": "MN",
+  "563": "MN",
+  "564": "MN",
+  "565": "MN",
+  "566": "MN",
+  "567": "MN",
+  "570": "SD",
+  "571": "SD",
+  "572": "SD",
+  "573": "SD",
+  "574": "SD",
+  "575": "SD",
+  "576": "SD",
+  "577": "SD",
+  "580": "ND",
+  "581": "ND",
+  "582": "ND",
+  "583": "ND",
+  "584": "ND",
+  "585": "ND",
+  "586": "ND",
+  "587": "ND",
+  "588": "ND",
+  "590": "MT",
+  "591": "MT",
+  "592": "MT",
+  "593": "MT",
+  "594": "MT",
+  "595": "MT",
+  "596": "MT",
+  "597": "MT",
+  "598": "MT",
+  "599": "MT",
+  "600": "IL",
+  "601": "IL",
+  "602": "IL",
+  "603": "IL",
+  "604": "IL",
+  "605": "IL",
+  "606": "IL",
+  "607": "IL",
+  "608": "IL",
+  "609": "IL",
+  "610": "IL",
+  "611": "IL",
+  "612": "IL",
+  "613": "IL",
+  "614": "IL",
+  "615": "IL",
+  "616": "IL",
+  "617": "IL",
+  "618": "IL",
+  "619": "IL",
+  "620": "IL",
+  "622": "IL",
+  "623": "IL",
+  "624": "IL",
+  "625": "IL",
+  "626": "IL",
+  "627": "IL",
+  "628": "IL",
+  "629": "IL",
+  "630": "MO",
+  "631": "MO",
+  "633": "MO",
+  "634": "MO",
+  "635": "MO",
+  "636": "MO",
+  "637": "MO",
+  "638": "MO",
+  "639": "MO",
+  "640": "MO",
+  "641": "MO",
+  "644": "MO",
+  "645": "MO",
+  "646": "MO",
+  "647": "MO",
+  "648": "MO",
+  "650": "MO",
+  "651": "MO",
+  "652": "MO",
+  "653": "MO",
+  "654": "MO",
+  "655": "MO",
+  "656": "MO",
+  "657": "MO",
+  "658": "MO",
+  "660": "KS",
+  "661": "KS",
+  "662": "KS",
+  "664": "KS",
+  "665": "KS",
+  "666": "KS",
+  "667": "KS",
+  "668": "KS",
+  "669": "KS",
+  "670": "KS",
+  "671": "KS",
+  "672": "KS",
+  "673": "KS",
+  "674": "KS",
+  "675": "KS",
+  "676": "KS",
+  "677": "KS",
+  "678": "KS",
+  "679": "KS",
+  "680": "NE",
+  "681": "NE",
+  "683": "NE",
+  "684": "NE",
+  "685": "NE",
+  "686": "NE",
+  "687": "NE",
+  "688": "NE",
+  "689": "NE",
+  "690": "NE",
+  "692": "NE",
+  "693": "NE",
+  "700": "LA",
+  "701": "LA",
+  "703": "LA",
+  "704": "LA",
+  "705": "LA",
+  "706": "LA",
+  "707": "LA",
+  "708": "LA",
+  "710": "LA",
+  "711": "LA",
+  "712": "LA",
+  "713": "LA",
+  "714": "LA",
+  "716": "AR",
+  "717": "AR",
+  "718": "AR",
+  "719": "AR",
+  "720": "AR",
+  "721": "AR",
+  "722": "AR",
+  "723": "AR",
+  "724": "AR",
+  "725": "AR",
+  "726": "AR",
+  "727": "AR",
+  "728": "AR",
+  "729": "AR",
+  "730": "OK",
+  "731": "OK",
+  "734": "OK",
+  "735": "OK",
+  "736": "OK",
+  "737": "OK",
+  "738": "OK",
+  "739": "OK",
+  "740": "OK",
+  "741": "OK",
+  "743": "OK",
+  "744": "OK",
+  "745": "OK",
+  "746": "OK",
+  "747": "OK",
+  "748": "OK",
+  "749": "OK",
+  "750": "TX",
+  "751": "TX",
+  "752": "TX",
+  "753": "TX",
+  "754": "TX",
+  "755": "TX",
+  "756": "TX",
+  "757": "TX",
+  "758": "TX",
+  "759": "TX",
+  "760": "TX",
+  "761": "TX",
+  "762": "TX",
+  "763": "TX",
+  "764": "TX",
+  "765": "TX",
+  "766": "TX",
+  "767": "TX",
+  "768": "TX",
+  "769": "TX",
+  "770": "TX",
+  "772": "TX",
+  "773": "TX",
+  "774": "TX",
+  "775": "TX",
+  "776": "TX",
+  "777": "TX",
+  "778": "TX",
+  "779": "TX",
+  "780": "TX",
+  "781": "TX",
+  "782": "TX",
+  "783": "TX",
+  "784": "TX",
+  "785": "TX",
+  "786": "TX",
+  "787": "TX",
+  "788": "TX",
+  "789": "TX",
+  "790": "TX",
+  "791": "TX",
+  "792": "TX",
+  "793": "TX",
+  "794": "TX",
+  "795": "TX",
+  "796": "TX",
+  "797": "TX",
+  "798": "TX",
+  "799": "TX",
+  "821": "WY",
+  "822": "WY",
+  "823": "WY",
+  "824": "WY",
+  "825": "WY",
+  "826": "WY",
+  "827": "WY",
+  "828": "WY",
+  "829": "WY",
+  "830": "WY",
+  "831": "WY",
+  "832": "ID",
+  "833": "ID",
+  "834": "ID",
+  "835": "ID",
+  "836": "ID",
+  "837": "ID",
+  "838": "ID",
+  "840": "UT",
+  "841": "UT",
+  "843": "UT",
+  "844": "UT",
+  "845": "UT",
+  "846": "UT",
+  "847": "UT",
+  "850": "AZ",
+  "851": "AZ",
+  "852": "AZ",
+  "853": "AZ",
+  "855": "AZ",
+  "856": "AZ",
+  "857": "AZ",
+  "859": "AZ",
+  "860": "AZ",
+  "863": "AZ",
+  "864": "AZ",
+  "865": "AZ",
+  "870": "NM",
+  "871": "NM",
+  "873": "NM",
+  "874": "NM",
+  "875": "NM",
+  "877": "NM",
+  "878": "NM",
+  "879": "NM",
+  "880": "NM",
+  "881": "NM",
+  "882": "NM",
+  "883": "NM",
+  "884": "NM",
+  "890": "NV",
+  "891": "NV",
+  "893": "NV",
+  "894": "NV",
+  "895": "NV",
+  "897": "NV",
+  "898": "NV",
+  "900": "CA",
+  "902": "CA",
+  "903": "CA",
+  "904": "CA",
+  "905": "CA",
+  "906": "CA",
+  "907": "CA",
+  "908": "CA",
+  "910": "CA",
+  "911": "CA",
+  "912": "CA",
+  "913": "CA",
+  "914": "CA",
+  "915": "CA",
+  "916": "CA",
+  "917": "CA",
+  "918": "CA",
+  "919": "CA",
+  "920": "CA",
+  "921": "CA",
+  "922": "CA",
+  "923": "CA",
+  "924": "CA",
+  "925": "CA",
+  "926": "CA",
+  "927": "CA",
+  "928": "CA",
+  "930": "CA",
+  "931": "CA",
+  "932": "CA",
+  "933": "CA",
+  "934": "CA",
+  "935": "CA",
+  "936": "CA",
+  "937": "CA",
+  "939": "CA",
+  "940": "CA",
+  "941": "CA",
+  "943": "CA",
+  "944": "CA",
+  "945": "CA",
+  "946": "CA",
+  "947": "CA",
+  "948": "CA",
+  "949": "CA",
+  "950": "CA",
+  "951": "CA",
+  "952": "CA",
+  "953": "CA",
+  "954": "CA",
+  "955": "CA",
+  "956": "CA",
+  "957": "CA",
+  "958": "CA",
+  "959": "CA",
+  "960": "CA",
+  "961": "CA",
+  "967": "HI",
+  "968": "HI",
+  "969": "GU",
+  "970": "OR",
+  "971": "OR",
+  "972": "OR",
+  "973": "OR",
+  "974": "OR",
+  "975": "OR",
+  "976": "OR",
+  "977": "OR",
+  "978": "OR",
+  "979": "OR",
+  "980": "WA",
+  "981": "WA",
+  "982": "WA",
+  "983": "WA",
+  "984": "WA",
+  "985": "WA",
+  "986": "WA",
+  "988": "WA",
+  "989": "WA",
+  "990": "WA",
+  "991": "WA",
+  "992": "WA",
+  "993": "WA",
+  "994": "WA",
+  "995": "AK",
+  "996": "AK",
+  "997": "AK",
+  "998": "AK",
+  "999": "AK"
+ }
+}

@@ -1,0 +1,3007 @@
+# Statewide items for the November 3, 2026 general election, in printed order.
+# Drafted by pipeline/import_sos.py from the Secretary of State's official files;
+# corrected and verified by a person (verification/statewide.yaml).
+election_id: co-2026-11-03
+districts: []
+items:
+- id: us-senate
+  kind: candidate_contest
+  group: federal
+  district_id: null
+  title: United States Senator
+  vote_for: 1
+  write_in: true
+  candidates:
+  - id: cand-mark-baisley
+    name: Mark Baisley
+    party: Republican Party
+    order: 1
+  - id: cand-john-hickenlooper
+    name: John Hickenlooper
+    party: Democratic Party
+    order: 2
+  - id: cand-bob-chew
+    name: Bob Chew
+    party: Forward Party
+    order: 3
+  - id: cand-christopher-baum
+    name: Christopher Baum
+    party: Approval Voting Party
+    order: 4
+  - id: cand-blake-huber
+    name: Blake Huber
+    party: Libertarian Party
+    order: 5
+  - id: cand-adam-withrow
+    name: Adam Withrow
+    party: Unity Party
+    order: 6
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: us-house-cd-1
+  kind: candidate_contest
+  group: federal
+  district_id: co-cd-1
+  title: Representative to the 120th United States Congress - Congressional District 1
+  vote_for: 1
+  write_in: true
+  candidates:
+  - id: cand-melat-kiros
+    name: Melat Kiros
+    party: Democratic Party
+    order: 1
+  - id: cand-christy-peterson
+    name: Christy Peterson
+    party: Republican Party
+    order: 2
+  - id: cand-critter-milton
+    name: Critter Milton
+    party: Unity Party
+    order: 3
+  - id: cand-chad-humphrey
+    name: Chad Humphrey
+    party: Libertarian Party
+    order: 4
+  - id: cand-shimon-blau
+    name: Shimon Blau
+    party: Unaffiliated
+    order: 5
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: us-house-cd-2
+  kind: candidate_contest
+  group: federal
+  district_id: co-cd-2
+  title: Representative to the 120th United States Congress - Congressional District 2
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-joe-neguse
+    name: Joe Neguse
+    party: Democratic Party
+    order: 1
+  - id: cand-kelley-anne-dennison
+    name: Kelley Anne Dennison
+    party: Republican Party
+    order: 2
+  - id: cand-gaylon-kent
+    name: Gaylon Kent
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: us-house-cd-3
+  kind: candidate_contest
+  group: federal
+  district_id: co-cd-3
+  title: Representative to the 120th United States Congress - Congressional District 3
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-dwayne-l-romero
+    name: Dwayne L. Romero
+    party: Democratic Party
+    order: 1
+  - id: cand-jeff-hurd
+    name: Jeff Hurd
+    party: Republican Party
+    order: 2
+  - id: cand-cory-robertson
+    name: Cory Robertson
+    party: Libertarian Party
+    order: 3
+  - id: cand-clifton-brown
+    name: Clifton Brown
+    party: Unaffiliated
+    order: 4
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: us-house-cd-4
+  kind: candidate_contest
+  group: federal
+  district_id: co-cd-4
+  title: Representative to the 120th United States Congress - Congressional District 4
+  vote_for: 1
+  write_in: true
+  candidates:
+  - id: cand-lauren-boebert
+    name: Lauren Boebert
+    party: Republican Party
+    order: 1
+  - id: cand-eileen-laubacher
+    name: Eileen Laubacher
+    party: Democratic Party
+    order: 2
+  - id: cand-douglas-mangeris
+    name: Douglas Mangeris
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: us-house-cd-5
+  kind: candidate_contest
+  group: federal
+  district_id: co-cd-5
+  title: Representative to the 120th United States Congress - Congressional District 5
+  vote_for: 1
+  write_in: true
+  candidates:
+  - id: cand-jeff-crank
+    name: Jeff Crank
+    party: Republican Party
+    order: 1
+  - id: cand-jessica-killin
+    name: Jessica Killin
+    party: Democratic Party
+    order: 2
+  - id: cand-christopher-mitchell
+    name: Christopher Mitchell
+    party: American Constitution Party
+    order: 3
+  - id: cand-mark-marky-jr-elworth
+    name: Mark "Marky Jr" Elworth
+    party: Libertarian Party
+    order: 4
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: us-house-cd-6
+  kind: candidate_contest
+  group: federal
+  district_id: co-cd-6
+  title: Representative to the 120th United States Congress - Congressional District 6
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jason-crow
+    name: Jason Crow
+    party: Democratic Party
+    order: 1
+  - id: cand-jason-clark
+    name: Jason Clark
+    party: Republican Party
+    order: 2
+  - id: cand-patty-mcmahon
+    name: Patty McMahon
+    party: Libertarian Party
+    order: 3
+  - id: cand-meredith-ryan
+    name: Meredith Ryan
+    party: Unity Party
+    order: 4
+  - id: cand-samir-witta
+    name: Samir Witta
+    party: Unaffiliated
+    order: 5
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: us-house-cd-7
+  kind: candidate_contest
+  group: federal
+  district_id: co-cd-7
+  title: Representative to the 120th United States Congress - Congressional District 7
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-tim-bennett
+    name: Tim Bennett
+    party: Republican Party
+    order: 1
+  - id: cand-brittany-pettersen
+    name: Brittany Pettersen
+    party: Democratic Party
+    order: 2
+  - id: cand-susan-hall
+    name: Susan Hall
+    party: Unity Party
+    order: 3
+  - id: cand-lawrence-kyle-clark
+    name: Lawrence Kyle Clark
+    party: American Constitution Party
+    order: 4
+  - id: cand-dan-kilo-sallis
+    name: Dan "Kilo" Sallis
+    party: Libertarian Party
+    order: 5
+  - id: cand-joe-krzeczkowski
+    name: Joe Krzeczkowski
+    party: Unaffiliated
+    order: 6
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: us-house-cd-8
+  kind: candidate_contest
+  group: federal
+  district_id: co-cd-8
+  title: Representative to the 120th United States Congress - Congressional District 8
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-gabe-evans
+    name: Gabe Evans
+    party: Republican Party
+    order: 1
+  - id: cand-manny-rutinel
+    name: Manny Rutinel
+    party: Democratic Party
+    order: 2
+  - id: cand-dave-wood
+    name: Dave Wood
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: governor
+  kind: candidate_contest
+  group: state
+  district_id: null
+  title: Governor/Lieutenant Governor
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-victor-marx-george-washington-markert
+    name: Victor Marx / George Washington Markert
+    party: Republican Party
+    order: 1
+  - id: cand-phil-weiser-lesley-dahlkemper
+    name: Phil Weiser / Lesley Dahlkemper
+    party: Democratic Party
+    order: 2
+  - id: cand-stephen-t-hamilton-james-k-treibert
+    name: Stephen T. Hamilton / James K Treibert
+    party: American Constitution Party
+    order: 3
+  - id: cand-eric-mulder-wayne-harlos
+    name: Eric Mulder / Wayne Harlos
+    party: Libertarian Party
+    order: 4
+  - id: cand-jeff-peckman-t-j-cole
+    name: Jeff Peckman / T.J. Cole
+    party: Unity Party
+    order: 5
+  - id: cand-erik-underwood-frank-atwood
+    name: Erik Underwood / Frank Atwood
+    party: Approval Voting Party
+    order: 6
+  - id: cand-greg-lopez-taralyn-romero
+    name: Greg Lopez / Taralyn Romero
+    party: Unaffiliated
+    order: 7
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: secretary-of-state
+  kind: candidate_contest
+  group: state
+  district_id: null
+  title: Secretary of State
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-amanda-gonzalez
+    name: Amanda Gonzalez
+    party: Democratic Party
+    order: 1
+  - id: cand-james-wiley
+    name: James Wiley
+    party: Republican Party
+    order: 2
+  - id: cand-sean-vadney
+    name: Sean Vadney
+    party: Libertarian Party
+    order: 3
+  - id: cand-amanda-campbell
+    name: Amanda Campbell
+    party: American Constitution Party
+    order: 4
+  - id: cand-celeste-landry
+    name: Celeste Landry
+    party: Forward Party
+    order: 5
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-treasurer
+  kind: candidate_contest
+  group: state
+  district_id: null
+  title: State Treasurer
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jeff-bridges
+    name: Jeff Bridges
+    party: Democratic Party
+    order: 1
+  - id: cand-kevin-grantham
+    name: Kevin Grantham
+    party: Republican Party
+    order: 2
+  - id: cand-jodie-barr
+    name: Jodie Barr
+    party: Libertarian Party
+    order: 3
+  - id: cand-marilee-langner-sturgis
+    name: Marilee Langner Sturgis
+    party: Approval Voting Party
+    order: 4
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: attorney-general
+  kind: candidate_contest
+  group: state
+  district_id: null
+  title: Attorney General
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-michael-j-allen
+    name: Michael J. Allen
+    party: Republican Party
+    order: 1
+  - id: cand-jena-griswold
+    name: Jena Griswold
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: sbe-cd-1
+  kind: candidate_contest
+  group: state
+  district_id: co-cd-1
+  title: State Board of Education Member - Congressional District 1
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-lisa-esc-rcega
+    name: Lisa Escárcega
+    party: Democratic Party
+    order: 1
+  - id: cand-frederick-espinoza
+    name: Frederick Espinoza
+    party: Republican Party
+    order: 2
+  - id: cand-clayton-casciato
+    name: Clayton Casciato
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: sbe-cd-3
+  kind: candidate_contest
+  group: state
+  district_id: co-cd-3
+  title: State Board of Education Member - Congressional District 3
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-sherri-m-wright
+    name: Sherri M Wright
+    party: Republican Party
+    order: 1
+  - id: cand-barb-clementi
+    name: Barb Clementi
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: sbe-cd-7
+  kind: candidate_contest
+  group: state
+  district_id: co-cd-7
+  title: State Board of Education Member - Congressional District 7
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-karla-esser
+    name: Karla Esser
+    party: Democratic Party
+    order: 1
+  - id: cand-steve-barton
+    name: Steve Barton
+    party: Republican Party
+    order: 2
+  - id: cand-ross-klopf
+    name: Ross Klopf
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: cu-regent-cd-2
+  kind: candidate_contest
+  group: state
+  district_id: co-cd-2
+  title: Regent of the University of Colorado - Congressional District 2
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-marty-neilson
+    name: Marty Neilson
+    party: Republican Party
+    order: 1
+  - id: cand-edie-hooton
+    name: Edie Hooton
+    party: Democratic Party
+    order: 2
+  - id: cand-richard-friend
+    name: Richard Friend
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: cu-regent-cd-6
+  kind: candidate_contest
+  group: state
+  district_id: co-cd-6
+  title: Regent of the University of Colorado - Congressional District 6
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-veanessa-burbage
+    name: Veanessa Burbage
+    party: Republican Party
+    order: 1
+  - id: cand-ilana-spiegel
+    name: Ilana Spiegel
+    party: Democratic Party
+    order: 2
+  - id: cand-joe-johnson
+    name: Joe Johnson
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: cu-regent-cd-7
+  kind: candidate_contest
+  group: state
+  district_id: co-cd-7
+  title: Regent of the University of Colorado - Congressional District 7
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-paul-mueller
+    name: Paul Mueller
+    party: Republican Party
+    order: 1
+  - id: cand-nolbert-chavez
+    name: Nolbert Chavez
+    party: Democratic Party
+    order: 2
+  - id: cand-betterose-ryan
+    name: BetteRose Ryan
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-1
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-1
+  title: State Senator - District 1
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jamie-jeffery
+    name: Jamie Jeffery
+    party: Democratic Party
+    order: 1
+  - id: cand-byron-pelton
+    name: Byron Pelton
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-3
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-3
+  title: State Senator - District 3
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-aaron-gutierrez
+    name: Aaron Gutierrez
+    party: Democratic Party
+    order: 1
+  - id: cand-dana-charles
+    name: Dana Charles
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-4
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-4
+  title: State Senator - District 4
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-justin-kurth
+    name: Justin Kurth
+    party: Democratic Party
+    order: 1
+  - id: cand-teddy-collins
+    name: Teddy Collins
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-7
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-7
+  title: State Senator - District 7
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-janice-rich
+    name: Janice Rich
+    party: Republican Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-8
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-8
+  title: State Senator - District 8
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-dylan-roberts
+    name: Dylan Roberts
+    party: Democratic Party
+    order: 1
+  - id: cand-corey-marshall
+    name: Corey Marshall
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-9
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-9
+  title: State Senator - District 9
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-terri-carver
+    name: Terri Carver
+    party: Republican Party
+    order: 1
+  - id: cand-william-delano-moses-iii
+    name: William Delano Moses III
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-11
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-11
+  title: State Senator - District 11
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-tony-exum-sr
+    name: Tony Exum Sr
+    party: Democratic Party
+    order: 1
+  - id: cand-levon-stilson
+    name: Levon Stilson
+    party: Republican Party
+    order: 2
+  - id: cand-janet-turner
+    name: Janet Turner
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-15
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-15
+  title: State Senator - District 15
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-rob-woodward
+    name: Rob Woodward
+    party: Republican Party
+    order: 1
+  - id: cand-janice-marchman
+    name: Janice Marchman
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-17
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-17
+  title: State Senator - District 17
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-katie-wallace
+    name: Katie Wallace
+    party: Democratic Party
+    order: 1
+  - id: cand-pat-miller
+    name: Pat Miller
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-20
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-20
+  title: State Senator - District 20
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-richard-rich-mancuso
+    name: Richard (Rich) Mancuso
+    party: Republican Party
+    order: 1
+  - id: cand-sheila-lieder
+    name: Sheila Lieder
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-21
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-21
+  title: State Senator - District 21
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-frederick-alfred-jr
+    name: Frederick Alfred Jr
+    party: Republican Party
+    order: 1
+  - id: cand-adrienne-benavidez
+    name: Adrienne Benavidez
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-22
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-22
+  title: State Senator - District 22
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-steve-harkess
+    name: Steve Harkess
+    party: Republican Party
+    order: 1
+  - id: cand-monica-irasema-duran
+    name: Monica Irasema Duran
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-24
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-24
+  title: State Senator - District 24
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-kevin-allen
+    name: Kevin Allen
+    party: Republican Party
+    order: 1
+  - id: cand-kyle-mullica
+    name: Kyle Mullica
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-25
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-25
+  title: State Senator - District 25
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-paul-kohlhoff
+    name: Paul Kohlhoff
+    party: Republican Party
+    order: 1
+  - id: cand-william-lindstedt
+    name: William Lindstedt
+    party: Democratic Party
+    order: 2
+  - id: cand-mark-philip-bromley
+    name: Mark Philip Bromley
+    party: Unaffiliated
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-27
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-27
+  title: State Senator - District 27
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-danielle-lammon
+    name: Danielle Lammon
+    party: Republican Party
+    order: 1
+  - id: cand-tom-sullivan
+    name: Tom Sullivan
+    party: Democratic Party
+    order: 2
+  - id: cand-michele-poague
+    name: Michele Poague
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-29
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-29
+  title: State Senator - District 29
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-iman-m-jodeh
+    name: Iman M. Jodeh
+    party: Democratic Party
+    order: 1
+  - id: cand-robert-mckenna
+    name: Robert McKenna
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-30
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-30
+  title: State Senator - District 30
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-john-carson
+    name: John Carson
+    party: Republican Party
+    order: 1
+  - id: cand-kevin-leung
+    name: Kevin Leung
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-31
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-31
+  title: State Senator - District 31
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-matt-ball
+    name: Matt Ball
+    party: Democratic Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-32
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-32
+  title: State Senator - District 32
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-emily-sirota
+    name: Emily Sirota
+    party: Democratic Party
+    order: 1
+  - id: cand-sydnnia-wulff
+    name: Sydnnia Wulff
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-34
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-34
+  title: State Senator - District 34
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-chela-garcia-irlando
+    name: Chela Garcia Irlando
+    party: Democratic Party
+    order: 1
+  - id: cand-jennifer-qualteri
+    name: Jennifer Qualteri
+    party: Republican Party
+    order: 2
+  - id: cand-jacob-luria
+    name: Jacob Luria
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-senate-35
+  kind: candidate_contest
+  group: legislature
+  district_id: co-senate-35
+  title: State Senator - District 35
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-rod-pelton
+    name: Rod Pelton
+    party: Republican Party
+    order: 1
+  - id: cand-duane-l-gurule
+    name: Duane L Gurule
+    party: Democratic Party
+    order: 2
+  - id: cand-richard-graf
+    name: Richard Graf
+    party: Libertarian Party
+    order: 3
+  - id: cand-travis-star-nelson
+    name: Travis Star Nelson
+    party: Unaffiliated
+    order: 4
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-1
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-1
+  title: State Representative - District 1
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-javier-mabrey
+    name: Javier Mabrey
+    party: Democratic Party
+    order: 1
+  - id: cand-joseph-montoya
+    name: Joseph Montoya
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-2
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-2
+  title: State Representative - District 2
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-scott-baldermann
+    name: Scott Baldermann
+    party: Democratic Party
+    order: 1
+  - id: cand-carey-marin
+    name: Carey Marin
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-3
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-3
+  title: State Representative - District 3
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-gena-ozols
+    name: Gena Ozols
+    party: Democratic Party
+    order: 1
+  - id: cand-rebecca-winegar
+    name: Rebecca Winegar
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-4
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-4
+  title: State Representative - District 4
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-ellwood-ervin
+    name: Ellwood Ervin
+    party: Republican Party
+    order: 1
+  - id: cand-cecelia-espenoza
+    name: Cecelia Espenoza
+    party: Democratic Party
+    order: 2
+  - id: cand-bill-hare
+    name: Bill Hare
+    party: Forward Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-5
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-5
+  title: State Representative - District 5
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-justine-sandoval
+    name: Justine Sandoval
+    party: Democratic Party
+    order: 1
+  - id: cand-johnnie-w-johnson
+    name: Johnnie W. Johnson
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-6
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-6
+  title: State Representative - District 6
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-iris-halpern
+    name: Iris Halpern
+    party: Democratic Party
+    order: 1
+  - id: cand-kathleen-angel
+    name: Kathleen Angel
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-7
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-7
+  title: State Representative - District 7
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jennifer-bacon
+    name: Jennifer Bacon
+    party: Democratic Party
+    order: 1
+  - id: cand-jeff-wilson
+    name: Jeff Wilson
+    party: Libertarian Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-8
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-8
+  title: State Representative - District 8
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-carolyn-barnes
+    name: Carolyn Barnes
+    party: Republican Party
+    order: 1
+  - id: cand-lindsay-gilchrist
+    name: Lindsay Gilchrist
+    party: Democratic Party
+    order: 2
+  - id: cand-jesse-lashawn-parris
+    name: Jesse Lashawn Parris
+    party: Unity Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-9
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-9
+  title: State Representative - District 9
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-tom-cowhick
+    name: Tom Cowhick
+    party: Republican Party
+    order: 1
+  - id: cand-monica-vanbuskirk
+    name: Monica VanBuskirk
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-10
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-10
+  title: State Representative - District 10
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-junie-joseph
+    name: Junie Joseph
+    party: Democratic Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-11
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-11
+  title: State Representative - District 11
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-karen-mccormick
+    name: Karen McCormick
+    party: Democratic Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-12
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-12
+  title: State Representative - District 12
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-ryan-rhatigan
+    name: Ryan Rhatigan
+    party: Republican Party
+    order: 1
+  - id: cand-kyle-brown
+    name: Kyle Brown
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-13
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-13
+  title: State Representative - District 13
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-consuelo-redhorse
+    name: Consuelo Redhorse
+    party: Democratic Party
+    order: 1
+  - id: cand-miguel-martinez
+    name: Miguel Martinez
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-14
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-14
+  title: State Representative - District 14
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-ava-flanell
+    name: Ava Flanell
+    party: Republican Party
+    order: 1
+  - id: cand-sarah-emery
+    name: Sarah Emery
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-15
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-15
+  title: State Representative - District 15
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jeff-k-livingston
+    name: Jeff K. Livingston
+    party: Democratic Party
+    order: 1
+  - id: cand-pricella-tiegen
+    name: Pricella Tiegen
+    party: Republican Party
+    order: 2
+  - id: cand-doug-jones
+    name: Doug Jones
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-16
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-16
+  title: State Representative - District 16
+  vote_for: 1
+  write_in: true
+  candidates:
+  - id: cand-jill-haffley
+    name: Jill Haffley
+    party: Republican Party
+    order: 1
+  - id: cand-steph-vigil
+    name: Steph Vigil
+    party: Democratic Party
+    order: 2
+  - id: cand-john-c-hjersman
+    name: John C Hjersman
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-17
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-17
+  title: State Representative - District 17
+  vote_for: 1
+  write_in: true
+  candidates:
+  - id: cand-regina-english
+    name: Regina English
+    party: Democratic Party
+    order: 1
+  - id: cand-laura-martin
+    name: Laura Martin
+    party: Republican Party
+    order: 2
+  - id: cand-john-michael-angle
+    name: John Michael Angle
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-18
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-18
+  title: State Representative - District 18
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-amy-t-paschal
+    name: Amy T Paschal
+    party: Democratic Party
+    order: 1
+  - id: cand-adriana-cuva
+    name: Adriana Cuva
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-19
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-19
+  title: State Representative - District 19
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-dan-woog
+    name: Dan Woog
+    party: Republican Party
+    order: 1
+  - id: cand-jillaire-mcmillan
+    name: Jillaire McMillan
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-20
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-20
+  title: State Representative - District 20
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jarvis-caldwell
+    name: Jarvis Caldwell
+    party: Republican Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-21
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-21
+  title: State Representative - District 21
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-brenda-miller
+    name: Brenda Miller
+    party: Republican Party
+    order: 1
+  - id: cand-michelle-tweed
+    name: Michelle Tweed
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-22
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-22
+  title: State Representative - District 22
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-michael-pierson
+    name: Michael Pierson
+    party: Democratic Party
+    order: 1
+  - id: cand-ken-degraaf
+    name: Ken deGraaf
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-23
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-23
+  title: State Representative - District 23
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-alexis-hoffkling
+    name: Alexis Hoffkling
+    party: Democratic Party
+    order: 1
+  - id: cand-ross-metler
+    name: Ross Metler
+    party: Libertarian Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-24
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-24
+  title: State Representative - District 24
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-lisa-feret
+    name: Lisa Feret
+    party: Democratic Party
+    order: 1
+  - id: cand-kristopher-johnson
+    name: Kristopher Johnson
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-25
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-25
+  title: State Representative - District 25
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-mark-herzfeld
+    name: Mark Herzfeld
+    party: Republican Party
+    order: 1
+  - id: cand-tammy-story
+    name: Tammy Story
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-26
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-26
+  title: State Representative - District 26
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-meghan-lukens
+    name: Meghan Lukens
+    party: Democratic Party
+    order: 1
+  - id: cand-james-kellogg
+    name: James Kellogg
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-27
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-27
+  title: State Representative - District 27
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-danielle-varda
+    name: Danielle Varda
+    party: Democratic Party
+    order: 1
+  - id: cand-eric-bodenstab
+    name: Eric Bodenstab
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-28
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-28
+  title: State Representative - District 28
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-david-rein
+    name: David Rein
+    party: Democratic Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-29
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-29
+  title: State Representative - District 29
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-kristine-ireland
+    name: Kristine Ireland
+    party: Republican Party
+    order: 1
+  - id: cand-lori-goldstein
+    name: Lori Goldstein
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-30
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-30
+  title: State Representative - District 30
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-rebekah-stewart
+    name: Rebekah Stewart
+    party: Democratic Party
+    order: 1
+  - id: cand-william-tyler-switzer
+    name: William Tyler Switzer
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-31
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-31
+  title: State Representative - District 31
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-gabriel-cervantes
+    name: Gabriel Cervantes
+    party: Democratic Party
+    order: 1
+  - id: cand-ray-roll
+    name: Ray Roll
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-32
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-32
+  title: State Representative - District 32
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-michelle-d-lee
+    name: Michelle D. Lee
+    party: Republican Party
+    order: 1
+  - id: cand-chris-vandijk
+    name: Chris VanDijk
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-33
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-33
+  title: State Representative - District 33
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-kenny-van-nguyen
+    name: Kenny Van Nguyen
+    party: Democratic Party
+    order: 1
+  - id: cand-nate-jorgensen
+    name: Nate Jorgensen
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-34
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-34
+  title: State Representative - District 34
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-craig-sullivan
+    name: Craig Sullivan
+    party: Republican Party
+    order: 1
+  - id: cand-jenny-willford
+    name: Jenny Willford
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-35
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-35
+  title: State Representative - District 35
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-lorena-garcia
+    name: Lorena Garcia
+    party: Democratic Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-36
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-36
+  title: State Representative - District 36
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-michael-carter
+    name: Michael Carter
+    party: Democratic Party
+    order: 1
+  - id: cand-paul-e-nelson
+    name: Paul E. Nelson
+    party: Republican Party
+    order: 2
+  - id: cand-andrew-gibson
+    name: Andrew Gibson
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-37
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-37
+  title: State Representative - District 37
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jill-thompson
+    name: Jill Thompson
+    party: Republican Party
+    order: 1
+  - id: cand-chad-clifford
+    name: Chad Clifford
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-38
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-38
+  title: State Representative - District 38
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-gretchen-rydin
+    name: Gretchen Rydin
+    party: Democratic Party
+    order: 1
+  - id: cand-tim-martin
+    name: Tim Martin
+    party: Center Party
+    order: 2
+  - id: cand-norm-olsen
+    name: Norm Olsen
+    party: Libertarian Party
+    order: 3
+  - id: cand-allison-madrigal
+    name: Allison Madrigal
+    party: Unaffiliated
+    order: 4
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-39
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-39
+  title: State Representative - District 39
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-brandi-bradley
+    name: Brandi Bradley
+    party: Republican Party
+    order: 1
+  - id: cand-christian-schilder
+    name: Christian Schilder
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-40
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-40
+  title: State Representative - District 40
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-clinton-porter
+    name: Clinton Porter
+    party: Republican Party
+    order: 1
+  - id: cand-naquetta-ricks
+    name: Naquetta Ricks
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-41
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-41
+  title: State Representative - District 41
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jamie-jackson
+    name: Jamie Jackson
+    party: Democratic Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-42
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-42
+  title: State Representative - District 42
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-sarah-amelia-woodson
+    name: Sarah Amelia Woodson
+    party: Democratic Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-43
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-43
+  title: State Representative - District 43
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-robert-bob-marshall
+    name: Robert "Bob" Marshall
+    party: Democratic Party
+    order: 1
+  - id: cand-nate-marsh
+    name: Nate Marsh
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-44
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-44
+  title: State Representative - District 44
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-anthony-hartsook
+    name: Anthony Hartsook
+    party: Republican Party
+    order: 1
+  - id: cand-richard-bowness
+    name: Richard Bowness
+    party: Democratic Party
+    order: 2
+  - id: cand-john-h-sutton
+    name: John H Sutton
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-45
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-45
+  title: State Representative - District 45
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-michael-clarkson
+    name: Michael Clarkson
+    party: Democratic Party
+    order: 1
+  - id: cand-max-brooks
+    name: Max Brooks
+    party: Republican Party
+    order: 2
+  - id: cand-caryn-ann-harlos
+    name: Caryn Ann Harlos
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-46
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-46
+  title: State Representative - District 46
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jonathan-post
+    name: Jonathan Post
+    party: Republican Party
+    order: 1
+  - id: cand-tisha-mauro
+    name: Tisha Mauro
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-47
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-47
+  title: State Representative - District 47
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-vic-meyers
+    name: Vic Meyers
+    party: Democratic Party
+    order: 1
+  - id: cand-ty-winter
+    name: Ty Winter
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-48
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-48
+  title: State Representative - District 48
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-carlos-barron
+    name: Carlos Barron
+    party: Republican Party
+    order: 1
+  - id: cand-dez-packard
+    name: Dez Packard
+    party: Democratic Party
+    order: 2
+  - id: cand-eric-e-joss
+    name: Eric E. Joss
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-49
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-49
+  title: State Representative - District 49
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-michael-sheperek
+    name: Michael Sheperek
+    party: Republican Party
+    order: 1
+  - id: cand-lesley-smith
+    name: Lesley Smith
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-50
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-50
+  title: State Representative - District 50
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-ryan-gonzalez
+    name: Ryan Gonzalez
+    party: Republican Party
+    order: 1
+  - id: cand-tommy-butler
+    name: Tommy Butler
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-51
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-51
+  title: State Representative - District 51
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-amy-parks
+    name: Amy Parks
+    party: Republican Party
+    order: 1
+  - id: cand-jacki-marsh
+    name: Jacki Marsh
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-52
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-52
+  title: State Representative - District 52
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-yara-zokaie
+    name: Yara Zokaie
+    party: Democratic Party
+    order: 1
+  - id: cand-steve-yurash
+    name: Steve Yurash
+    party: Center Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-53
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-53
+  title: State Representative - District 53
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-daniel-frick
+    name: Daniel Frick
+    party: Republican Party
+    order: 1
+  - id: cand-andy-boesenecker
+    name: Andy Boesenecker
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-54
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-54
+  title: State Representative - District 54
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-jason-bias
+    name: Jason Bias
+    party: Republican Party
+    order: 1
+  - id: cand-mallory-martin
+    name: Mallory Martin
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-55
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-55
+  title: State Representative - District 55
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-rick-taggart
+    name: Rick Taggart
+    party: Republican Party
+    order: 1
+  - id: cand-brittni-packard
+    name: Brittni Packard
+    party: Democratic Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-56
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-56
+  title: State Representative - District 56
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-chris-richardson
+    name: Chris Richardson
+    party: Republican Party
+    order: 1
+  - id: cand-amy-l-lunde
+    name: Amy L. Lunde
+    party: Libertarian Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-57
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-57
+  title: State Representative - District 57
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-elizabeth-velasco
+    name: Elizabeth Velasco
+    party: Democratic Party
+    order: 1
+  - id: cand-russ-andrews
+    name: Russ Andrews
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-58
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-58
+  title: State Representative - District 58
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-larry-don-suckla
+    name: Larry Don Suckla
+    party: Republican Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-59
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-59
+  title: State Representative - District 59
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-katie-stewart
+    name: Katie Stewart
+    party: Democratic Party
+    order: 1
+  - id: cand-naomi-riess
+    name: Naomi Riess
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-60
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-60
+  title: State Representative - District 60
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-kathryn-kester-green
+    name: Kathryn Kester Green
+    party: Democratic Party
+    order: 1
+  - id: cand-matt-alexander
+    name: Matt Alexander
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-61
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-61
+  title: State Representative - District 61
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-scott-shamblin
+    name: Scott Shamblin
+    party: Republican Party
+    order: 1
+  - id: cand-eliza-hamrick
+    name: Eliza Hamrick
+    party: Democratic Party
+    order: 2
+  - id: cand-kevin-gulbranson
+    name: Kevin Gulbranson
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-62
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-62
+  title: State Representative - District 62
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-matthew-martinez
+    name: Matthew Martinez
+    party: Democratic Party
+    order: 1
+  - id: cand-steven-rodriguez
+    name: Steven Rodriguez
+    party: Republican Party
+    order: 2
+  - id: cand-donald-vermillion
+    name: Donald Vermillion
+    party: Libertarian Party
+    order: 3
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-63
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-63
+  title: State Representative - District 63
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-dusty-johnson
+    name: Dusty Johnson
+    party: Republican Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-64
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-64
+  title: State Representative - District 64
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-maureen-mo-dower
+    name: Maureen (Mo) Dower
+    party: Democratic Party
+    order: 1
+  - id: cand-scott-l-slaugh
+    name: Scott L. Slaugh
+    party: Republican Party
+    order: 2
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: state-house-65
+  kind: candidate_contest
+  group: legislature
+  district_id: co-house-65
+  title: State Representative - District 65
+  vote_for: 1
+  write_in: false
+  candidates:
+  - id: cand-lori-garcia-sander
+    name: Lori Garcia Sander
+    party: Republican Party
+    order: 1
+  links:
+    official:
+    - label: Official candidate list (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/vote/generalCandidates.html
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: retain-supreme-william-w-hood-iii
+  kind: retention
+  group: judges
+  district_id: null
+  title: Colorado Supreme Court Justice William W. Hood, III
+  judge: William W. Hood, III
+  court: Colorado Supreme Court
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: retain-appeals-rebecca-rankin-freyre
+  kind: retention
+  group: judges
+  district_id: null
+  title: Colorado Court of Appeals Judge Rebecca Rankin Freyre
+  judge: Rebecca Rankin Freyre
+  court: Colorado Court of Appeals
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: retain-appeals-elizabeth-l-harris
+  kind: retention
+  group: judges
+  district_id: null
+  title: Colorado Court of Appeals Judge Elizabeth L. Harris
+  judge: Elizabeth L. Harris
+  court: Colorado Court of Appeals
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: retain-appeals-katharine-e-lum
+  kind: retention
+  group: judges
+  district_id: null
+  title: Colorado Court of Appeals Judge Katharine E. Lum
+  judge: Katharine E. Lum
+  court: Colorado Court of Appeals
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: retain-appeals-pax-moultrie
+  kind: retention
+  group: judges
+  district_id: null
+  title: Colorado Court of Appeals Judge Pax Moultrie
+  judge: Pax Moultrie
+  court: Colorado Court of Appeals
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: retain-appeals-karl-l-schock
+  kind: retention
+  group: judges
+  district_id: null
+  title: Colorado Court of Appeals Judge Karl L. Schock
+  judge: Karl L. Schock
+  court: Colorado Court of Appeals
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: retain-appeals-grant-sullivan
+  kind: retention
+  group: judges
+  district_id: null
+  title: Colorado Court of Appeals Judge Grant Sullivan
+  judge: Grant Sullivan
+  court: Colorado Court of Appeals
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+- id: amendment-81
+  kind: measure
+  group: measures
+  district_id: null
+  title: Amendment 81
+  ballot_text:
+    text: Shall there be an amendment to the Colorado Constitution requiring law enforcement to notify the department
+      of homeland security when a person is charged with either a violent crime or any crime if the person has a
+      prior felony conviction if law enforcement cannot determine that the person is lawfully present in the United
+      States?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/95Final.pdf
+    explainers: []
+    support: &id001
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id001
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: amendment-82
+  kind: measure
+  group: measures
+  district_id: null
+  title: Amendment 82
+  ballot_text:
+    text: Shall there be an amendment to the Colorado Constitution creating new law granting the right for consumers
+      to purchase natural gas for cooking or heating in homes or businesses and for distributors and utilities to
+      sell natural gas to consumers?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/177Final.pdf
+    explainers: []
+    support: &id002
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id002
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: amendment-83
+  kind: measure
+  group: measures
+  district_id: null
+  title: Amendment 83
+  ballot_text:
+    text: Shall there be an amendment to the Colorado Constitution creating a constitutional right to hunt, fish,
+      and harvest fish and wildlife by traditional methods, including all species of fish and wildlife managed by
+      the state except non-game species, endangered species, or any species that is illegal to hunt under federal
+      law, and, in connection therewith, establishing hunting and fishing as the preferred means of managing fish
+      and wildlife populations; and preserving the right of the state to regulate hunting, fishing, and wildlife
+      management if necessary for sound scientific wildlife conservation and management, public safety, or to preserve
+      the future of hunting and fishing opportunities for all species?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/302Final.pdf
+    explainers: []
+    support: &id003
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id003
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: amendment-84
+  kind: measure
+  group: measures
+  district_id: null
+  title: Amendment 84
+  ballot_text:
+    text: Shall there be an amendment to the Colorado Constitution requiring a voter to sign and include the last
+      four digits of their social security number or their Colorado driver’s license or identification card number
+      on the outside of their mail ballot for any federal or state election, and, in connection therewith, allowing
+      the voter to correct missing or incorrect information, including with alternative forms of identification;
+      and prohibiting a county clerk and recorder from counting the mail ballot unless the problem is fixed?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/362Final.pdf
+    explainers: []
+    support: &id004
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id004
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: amendment-85
+  kind: measure
+  group: measures
+  district_id: null
+  title: Amendment 85
+  ballot_text:
+    text: Shall there be an amendment to the Colorado Constitution concerning ballot question language, and, in
+      connection therewith, requiring all state and local ballot questions to be written in plain language and at
+      no more than an 8th grade reading level and prohibiting a state statute from requiring language that conflicts
+      with these requirements in ballot questions for citizen-initiated measures?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/234Final.pdf
+    explainers: []
+    support: &id005
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id005
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: amendment-86
+  kind: measure
+  group: measures
+  district_id: null
+  title: Amendment 86
+  ballot_text:
+    text: Shall there be an amendment to the Colorado Constitution concerning congressional redistricting, and,
+      in connection therewith, reenacting the current process for congressional redistricting in the Colorado Constitution
+      and prohibiting modifications to a final map unless at least three public meetings are held, the modifications
+      do not have the effect of dividing communities of interest or purposefully favoring one political party, and
+      are approved by the congressional redistricting commission and the Colorado Supreme Court?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/256Final.pdf
+    explainers: []
+    support: &id006
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id006
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: amendment-87
+  kind: measure
+  group: measures
+  district_id: null
+  title: Amendment 87
+  ballot_text:
+    text: SHALL STATE TAXES BE INCREASED $2.7 BILLION ANNUALLY, IN ORDER TO INCREASE OR IMPROVE LEVELS OF PUBLIC
+      SERVICES, INCLUDING K-12 PUBLIC SCHOOL EDUCATION, HEALTH CARE, AND EARLY CHILD CARE AND EDUCATION SERVICES,
+      BY AN AMENDMENT TO THE COLORADO CONSTITUTION AND A CHANGE TO THE COLORADO REVISED STATUTES REPEALING EXISTING
+      LAW AND CREATING NEW LAW TO REPLACE THE UNIFORM STATE INCOME TAX RATE WITH A GRADUATED INCOME TAX STRUCTURE,
+      AND, IN CONNECTION THEREWITH, AMENDING THE TAXPAYER’S BILL OF RIGHTS TO ELIMINATE THE CONSTITUTIONAL REQUIREMENT
+      FOR ALL TAXABLE NET INCOME TO BE TAXED AT ONE RATE WITH NO ADDED TAX ON INCOME; ESTABLISHING VARIOUS INCOME
+      TAX RATES BASED ON THE AMOUNT OF TAXABLE INCOME EARNED BY INDIVIDUALS, ESTATES, TRUSTS, AND CORPORATIONS,
+      WHILE MAINTAINING THE CURRENT 4.4% TAX ON INCOME FROM THE SALE OF A PRINCIPAL RESIDENCE, WHICH WILL RESULT
+      IN THE ESTIMATED CHANGE IN INCOME TAXES OWED BY INDIVIDUALS AS IDENTIFIED IN THE FOLLOWING TABLE; AND AUTHORIZING
+      THE STATE TO RETAIN AND SPEND ANY INCREASED REVENUE FROM THE NEW TAX STRUCTURE, AS A VOTER-APPROVED REVENUE
+      CHANGE, TO SUPPLEMENT CURRENT LEVELS OF FUNDING FOR K-12 PUBLIC SCHOOL EDUCATION, HEALTH CARE, AND EARLY CHILD
+      CARE AND EDUCATION PROGRAMS?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    table:
+      caption: Change in Income Taxes Owed by Income Category
+      header:
+      - Income Categories
+      - Current Average Income Tax Owed
+      - Proposed Average Income Tax Owed
+      - Proposed Change in Average Income Tax Owed if Passed + or -
+      rows:
+      - - $25,000 or less
+        - $59
+        - $50
+        - -$9
+      - - $25,001 - $50,000
+        - $751
+        - $632
+        - -$119
+      - - $50,001 - $100,000
+        - $1,877
+        - $1,666
+        - -$210
+      - - $100,001 - $200,000
+        - $4,126
+        - $3,828
+        - -$298
+      - - $200,001 - $500,000
+        - $9,344
+        - $9,019
+        - -$325
+      - - $500,001 - $1,000,000
+        - $19,288
+        - $18,963
+        - -$325
+      - - $1,000,001 - $2,000,000
+        - $29,432
+        - $34,196
+        - +$4,764
+      - - $2,000,001 - $5,000,000
+        - $41,196
+        - $55,110
+        - +$13,914
+      note: Income categories use adjusted gross income reported to the federal Internal Revenue Service.
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/195Final.pdf
+    explainers: []
+    support: &id007
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id007
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: proposition-nn
+  kind: measure
+  group: measures
+  district_id: null
+  title: Proposition NN
+  ballot_text:
+    text: Shall state investment in K-12 public education increase two percent each year for the next ten years,
+      with investments used to increase teacher pay, improve teacher retention, lower class sizes, and increase
+      access to career and technical courses, without raising taxes but instead funded by raising the annual limit
+      on state fiscal year spending only by the amount spent on public K-12 education as a voter-approved revenue
+      change, and requiring an annual publicly released, independent audit to show how the new investments are spent?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://leg.colorado.gov/bill_files/116503/download
+    explainers: []
+    support: &id008
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id008
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: proposition-132
+  kind: measure
+  group: measures
+  district_id: null
+  title: Proposition 132
+  ballot_text:
+    text: Shall there be a change to the Colorado Revised Statutes concerning criminal penalties for fentanyl and
+      certain synthetic opioids, and, in connection therewith, increasing the felony classifications of drug-related
+      crimes for distribution, manufacturing, dispensing, sale, or possession of fentanyl and certain synthetic
+      opioids; creating mandated treatment for certain drug felony violations based on possession amount; and changing
+      sentencing provisions to narrow or eliminate exemptions for crimes related to fentanyl and certain synthetic
+      opioids and drug-related deaths?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/85Final.pdf
+    explainers: []
+    support: &id009
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id009
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: proposition-133
+  kind: measure
+  group: measures
+  district_id: null
+  title: Proposition 133
+  ballot_text:
+    text: Shall there be a change to the Colorado Revised Statutes modifying existing law concerning human trafficking
+      of a minor for sexual servitude, and, in connection therewith, creating new law expanding human trafficking
+      of a minor for sexual servitude to include knowingly trading anything of monetary value to buy or sell sexual
+      activity with a minor and increasing the penalty to be life in prison without parole or release?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/108Final.pdf
+    explainers: []
+    support: &id010
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id010
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: proposition-134
+  kind: measure
+  group: measures
+  district_id: null
+  title: Proposition 134
+  ballot_text:
+    text: Shall there be a change to the Colorado Revised Statutes creating new law restricting participation in
+      all K-12 and collegiate school sports based on the participant’s sex as determined by certain aspects of their
+      biological reproductive system, and, in connection therewith, requiring a school, institution of higher education,
+      or athletic association to designate each school or intramural athletic team or sport as male, female, or
+      coeducational; only allowing participants to compete on the team or sport of their designated sex or to compete
+      on a coeducational team; creating an exception to allow a female to participate on a male-designated team
+      or sport if there is no female team available; prohibiting a government entity, licensing or accrediting organization,
+      or athletic association from entertaining a complaint, opening an investigation, or taking other adverse action
+      against a school for maintaining separate teams or sports for females; and providing the commissioner of education
+      with the authority to enforce the proposed initiative for K-12 school districts?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/109Final.pdf
+    explainers: []
+    support: &id011
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id011
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: proposition-135
+  kind: measure
+  group: measures
+  district_id: null
+  title: Proposition 135
+  ballot_text:
+    text: Shall there be a change to the Colorado Revised Statutes modifying existing law by prohibiting surgery
+      on a minor for the purpose of altering the minor’s biological sex characteristics, and, in connection therewith,
+      prohibiting any health-care professional or other person from knowingly performing, prescribing, administering,
+      or providing any surgery to a minor for the purpose of altering the minor’s biological sex characteristics
+      and prohibiting the use of state or federal funds, Medicaid reimbursement, or insurance coverage to pay for
+      this type of surgery?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/110Final.pdf
+    explainers: []
+    support: &id012
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id012
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: proposition-136
+  kind: measure
+  group: measures
+  district_id: null
+  title: Proposition 136
+  ballot_text:
+    text: Shall there be a change to the Colorado Revised Statutes capping the state income tax rate at 4.4% of
+      federal taxable income for individuals and corporations?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/232FinalCorrected.pdf
+    explainers: []
+    support: &id013
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id013
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+- id: proposition-137
+  kind: measure
+  group: measures
+  district_id: null
+  title: Proposition 137
+  ballot_text:
+    text: Shall there be a change to the Colorado Revised Statutes creating new law to increase water and land conservation
+      funding without raising taxes, and, in connection therewith, through a voter-approved revenue change, allowing
+      the state to keep and spend a portion of revenue from the state sales tax on sporting goods and equipment
+      to conserve and protect Colorado’s water, land, and forests, prevent wildfires, support outdoor recreation
+      training and activities, and reduce revenue spent on these conservation purposes if necessary to preserve
+      funding for certain tax credits?
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  links:
+    official:
+    - label: Blue Book analysis
+      url: https://leg.colorado.gov/bluebook
+    - label: Ballot title and committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    - label: Full text
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2025-2026/308Final.pdf
+    explainers: []
+    support: &id014
+      label: Registered issue committees (Secretary of State)
+      url: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+    oppose: *id014
+  provenance:
+    source: https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html

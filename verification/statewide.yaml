@@ -1,0 +1,31 @@
+# Verification record: statewide items, November 3, 2026 general election.
+#
+# Filled in by a PERSON, not by a script or an agent. The build fails until it is complete.
+#
+# How to check (about an hour):
+#  1. Open sources/co-2026-11-03/statewide.yaml next to the official sources below.
+#  2. Count contests and questions per group in printed order and enter them under groups.
+#     Use the order on a real 2026 sample ballot; the import's order of State Board of
+#     Education vs CU Regent, and of unaffiliated candidates, is a best guess.
+#  3. For each measure, copy the ballot title from the 2026 Blue Book (a different source
+#     from the one the import used) into measures. The build compares them word for word.
+#  4. Fix anything wrong in statewide.yaml, then fill in checked_by and checked_at.
+#  5. A second person checks at least 10 percent of items (13 or more) and fills in spot_check.
+scope: statewide
+election_id: co-2026-11-03
+sources:
+  - https://www.coloradosos.gov/pubs/elections/vote/files/2026/2026GeneralCandidateListOfficial.xlsx
+  - https://www.coloradosos.gov/pubs/elections/vote/files/2026/20260728MajorMinorPartyDrawing.xlsx
+  - https://www.coloradosos.gov/pubs/elections/Initiatives/ballot/contacts/2026.html
+  - https://leg.colorado.gov/bluebook
+checked_by:
+checked_at:
+groups: []
+#  - {group: federal, count: 9}
+#  - {group: state, count: ...}
+measures: {}
+#  amendment-81: "Shall there be an amendment ..."
+spot_check: {}
+#  by: Second Person
+#  at: 2026-10-15
+#  items_checked: 13
