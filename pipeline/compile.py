@@ -289,7 +289,7 @@ def compile_county(fips: str, raw: dict[str, Any], sw_by_id: dict[str, dict[str,
 
     check_verification(where, printed, record, res)
     coverage: dict[str, Any] = {"status": "statewide_only"}
-    if record:
+    if record and record.get("checked_by") and record.get("checked_at"):
         coverage = {"status": "verified_complete", "source": record.get("sample_ballot", ""),
                     "verified_at": str(record.get("checked_at", "")), "verified_by": str(record.get("checked_by", ""))}
     return {

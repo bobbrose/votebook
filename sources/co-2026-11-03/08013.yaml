@@ -1,0 +1,932 @@
+# Boulder County, November 3, 2026: every contest and question on any ballot in the county,
+# in printed order. Drafted by pipeline/extract_sample_ballot.py from the compiled sample ballot
+# (https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf), then corrected by a person. Search for CHECK.
+county_fips: 08013
+name: Boulder
+districts:
+- id: rtd-o
+  type: special_district
+  name: Regional Transportation District, Director District O
+- id: city-boulder
+  type: city
+  name: City of Boulder
+- id: city-erie
+  type: city
+  name: Town of Erie
+- id: city-superior
+  type: city
+  name: Town of Superior
+- id: city-lafayette
+  type: city
+  name: City of Lafayette
+- id: city-longmont
+  type: city
+  name: City of Longmont
+- id: city-louisville
+  type: city
+  name: City of Louisville
+- id: city-niwot
+  type: city
+  name: Proposed Municipality of Niwot
+- id: eldorado-springs-public-improvement-district
+  type: special_district
+  name: Eldorado Springs Public Improvement District
+- id: sombrero-ranch-public-improvement-district
+  type: special_district
+  name: Sombrero Ranch Public Improvement District
+- id: summerlin-public-improvement-district
+  type: special_district
+  name: Summerlin Public Improvement District
+- id: allenspark-fire-protection-district
+  type: special_district
+  name: Allenspark Fire Protection District
+- id: front-range-passenger-rail-district
+  type: special_district
+  name: Front Range Passenger Rail District
+- id: timberline-fire-protection-district
+  type: special_district
+  name: Timberline Fire Protection District
+ballot:
+- statewide: us-senate
+- statewide: us-house-cd-2
+- statewide: governor
+- statewide: secretary-of-state
+- statewide: state-treasurer
+- statewide: attorney-general
+- statewide: cu-regent-cd-2
+- statewide: state-senate-15
+- statewide: state-senate-17
+- statewide: state-house-10
+- statewide: state-house-11
+- statewide: state-house-12
+- statewide: state-house-19
+- statewide: state-house-49
+- id: regional-transportation-district-director-district-o
+  kind: candidate_contest
+  group: special_districts
+  district_id: rtd-o
+  title: Regional Transportation District Director - District O
+  candidates:
+  - name: Jack Rosenthal
+  - name: Audrey DeBarros
+  write_in: false
+  vote_for: 1
+  provenance: &id001
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+- id: boulder-county-commissioner-district-3
+  kind: candidate_contest
+  group: county
+  district_id: null
+  title: Boulder County Commissioner - District 3
+  candidates:
+  - name: Ashley Stolzmann
+    party: Democratic
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: boulder-county-clerk-and-recorder
+  kind: candidate_contest
+  group: county
+  district_id: null
+  title: Boulder County Clerk and Recorder
+  candidates:
+  - name: Molly Fitzpatrick
+    party: Democratic
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: boulder-county-treasurer
+  kind: candidate_contest
+  group: county
+  district_id: null
+  title: Boulder County Treasurer
+  candidates:
+  - name: Rachel Friend
+    party: Democratic
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: boulder-county-assessor
+  kind: candidate_contest
+  group: county
+  district_id: null
+  title: Boulder County Assessor
+  candidates:
+  - name: Cynthia Braddock
+    party: Democratic
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: boulder-county-sheriff
+  kind: candidate_contest
+  group: county
+  district_id: null
+  title: Boulder County Sheriff
+  candidates:
+  - name: Curtis Johnson
+    party: Democratic
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: boulder-county-surveyor
+  kind: candidate_contest
+  group: county
+  district_id: null
+  title: Boulder County Surveyor
+  candidates:
+  - name: Kayce D. W. Keane
+    party: Democratic
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: boulder-county-coroner
+  kind: candidate_contest
+  group: county
+  district_id: null
+  title: Boulder County Coroner
+  candidates:
+  - name: Jeff Martin
+    party: Democratic
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: city-of-boulder-mayoral-candidates
+  kind: candidate_contest
+  group: city
+  district_id: city-boulder
+  title: City of Boulder Mayoral Candidates
+  candidates:
+  - name: Lisa Ann Jacobs
+  - name: Taishya Adams
+  - name: Aaron Brockett
+  - name: Jameson (Jamo) Goldstein
+  - name: Grateful Fred Instead
+  - name: Aquiles La Grave
+  write_in: false
+  ranked: true
+  max_ranks: 6
+  seats: 1
+  rcv_instructions:
+    text: 'Special Instructions: Rank candidates in the order of your preference. Fill in the oval: In the first
+      column, for your first choice. In the second column, for your second choice. In the third column, for your
+      third choice, and so on.'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-boulder-council-candidates
+  kind: candidate_contest
+  group: city
+  district_id: city-boulder
+  title: City of Boulder Council Candidates
+  candidates:
+  - name: Lee Gilbert
+  - name: Sam Fuqua
+  - name: Ryan Schuchard
+  - name: Jamillah Richmond
+  - name: Benita Duran
+  - name: Tara Winer
+  - name: Rachel Rose Isaacson
+  - name: Dave Martus
+  - name: Scott Rendleman
+  - name: Jill Adler Grano
+  - name: Ryan Jamieson
+  - name: Lynn Segal
+  - name: Tina Marquis
+  write_in: false
+  vote_for: 5
+  provenance: *id001
+- id: town-of-erie-town-council-district-1
+  kind: candidate_contest
+  group: city
+  district_id: city-erie
+  title: Town of Erie Town Council District 1
+  candidates:
+  - name: Andrew Sawusch
+  - name: Bob Braudes
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: town-of-erie-town-council-district-2
+  kind: candidate_contest
+  group: city
+  district_id: city-erie
+  title: Town of Erie Town Council District 2
+  candidates:
+  - name: Delaney Dreckman
+  - name: Ben Hemphill
+  - name: Dipak Basnet
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: town-of-superior-mayor
+  kind: candidate_contest
+  group: city
+  district_id: city-superior
+  title: Town of Superior Mayor
+  candidates:
+  - name: Neal S. Shah
+  write_in: false
+  vote_for: 1
+  provenance: *id001
+- id: town-of-superior-council-member
+  kind: candidate_contest
+  group: city
+  district_id: city-superior
+  title: Town of Superior Council Member
+  candidates:
+  - name: Kelly Watt
+  - name: Debra K. Bowes
+  - name: Adam Vonnahme
+  - name: Stephanie Miller
+  - name: John Heckman
+  write_in: false
+  vote_for: 5
+  provenance: *id001
+- statewide: retain-supreme-william-w-hood-iii
+- statewide: retain-appeals-rebecca-rankin-freyre
+- statewide: retain-appeals-elizabeth-l-harris
+- statewide: retain-appeals-katharine-e-lum
+- statewide: retain-appeals-pax-moultrie
+- statewide: retain-appeals-karl-l-schock
+- statewide: retain-appeals-grant-sullivan
+- id: retain-20th-judicial-district-michael-kotlarczyk
+  kind: retention
+  group: judges
+  title: 20th Judicial District Judge Michael Kotlarczyk
+  judge: Michael Kotlarczyk
+  court: 20th Judicial District
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  district_id: null
+  provenance: *id001
+- id: retain-20th-judicial-district-j-chris-larson
+  kind: retention
+  group: judges
+  title: 20th Judicial District Judge J. Chris Larson
+  judge: J. Chris Larson
+  court: 20th Judicial District
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  district_id: null
+  provenance: *id001
+- id: retain-20th-judicial-district-nancy-woodruff-salomone
+  kind: retention
+  group: judges
+  title: 20th Judicial District Judge Nancy Woodruff Salomone
+  judge: Nancy Woodruff Salomone
+  court: 20th Judicial District
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  district_id: null
+  provenance: *id001
+- id: retain-boulder-county-court-elizabeth-house-moulton-brodsky
+  kind: retention
+  group: judges
+  title: Boulder County Court Judge Elizabeth House Moulton Brodsky
+  judge: Elizabeth House Moulton Brodsky
+  court: Boulder County Court
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  district_id: null
+  provenance: *id001
+- id: retain-boulder-county-court-monica-haenselman
+  kind: retention
+  group: judges
+  title: Boulder County Court Judge Monica Haenselman
+  judge: Monica Haenselman
+  court: Boulder County Court
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  district_id: null
+  provenance: *id001
+- id: retain-boulder-county-court-zachary-ilya-malkinson
+  kind: retention
+  group: judges
+  title: Boulder County Court Judge Zachary Ilya Malkinson
+  judge: Zachary Ilya Malkinson
+  court: Boulder County Court
+  links:
+    official:
+    - label: Judicial performance evaluation
+      url: https://judicialperformance.colorado.gov/judicial-evaluations
+  district_id: null
+  provenance: *id001
+- statewide: amendment-81
+- statewide: amendment-82
+- statewide: amendment-83
+- statewide: amendment-84
+- statewide: amendment-85
+- statewide: amendment-86
+- statewide: amendment-87
+- statewide: proposition-nn
+- statewide: proposition-132
+- statewide: proposition-133
+- statewide: proposition-134
+- statewide: proposition-135
+- statewide: proposition-136
+- statewide: proposition-137
+- id: county-ballot-measures-boulder-county-1a
+  kind: measure
+  group: measures
+  district_id: null
+  title: County Ballot Measures Boulder County Ballot Issue 1A
+  ballot_text:
+    text: 'EARLY CHILDHOOD CARE AND EDUCATION MILL LEVY INCREASE AND VOTER-APPROVED REVENUE CHANGE SHALL BOULDER
+      COUNTY TAXES BE INCREASED $30,000,000 ANNUALLY (IN TAX COLLECTION YEAR 2027), AND BY SUCH ADDITIONAL AMOUNTS
+      RAISED ANNUALLY THEREAFTER, BY A MILL LEVY IMPOSED AT A RATE OF 2.579 MILLS (EQUATING TO APPROXIMATELY $115
+      PER YEAR ON A $725,000 HOME BASED ON CURRENT RATES OF ASSESSMENT) FOR THE PURPOSE OF ADDRESSING THE SHORTAGE
+      AND HIGH COST OF CHILD CARE AND PRESCHOOL PROGRAMS FOR BOULDER COUNTY FAMILIES WITH YOUNG CHILDREN, INCLUDING:
+      LOWERING THE HIGH COST OF CHILD CARE AND· PRESCHOOL FOR BOULDER COUNTY FAMILIES; INCREASING THE COMPENSATION
+      OF CHILD CARE AND· PRESCHOOL TEACHERS AND STAFF TO RETAIN AND ATTRACT HIGH-QUALITY EDUCATORS; AND ADDRESSING
+      THE SHORTAGE OF CARE BY EXPANDING· CAPACITY FOR MORE CHILDREN AND REDUCING WAITLISTS; AND SHALL THE REVENUES
+      AND EARNINGS ON THE INVESTMENT OF THE PROCEEDS OF SUCH TAX CONSTITUTE A VOTER-APPROVED REVENUE CHANGE UNDER
+      ARTICLE X SECTION 20 OF THE COLORADO CONSTITUTION AND AN EXCEPTION TO THE LIMITATIONS SET FORTH IN SECTION
+      29-1-301 OF THE COLORADO REVISED STATUTES, ALL AS MORE PARTICULARLY SET FORTH IN BOARD OF COUNTY COMMISSIONERS''
+      RESOLUTION NO. 2026-048?'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: boulder-county-200
+  kind: measure
+  group: measures
+  district_id: null
+  title: Boulder County Ballot Question 200
+  ballot_text:
+    text: Shall the membership of the Boulder County Board of Commissioners be increased from a three member board
+      to a five member board?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: boulder-county-201
+  kind: measure
+  group: measures
+  district_id: null
+  title: Boulder County Ballot Question 201
+  ballot_text:
+    text: If the membership of the Boulder County Board of Commissioners is increased from a three member board
+      to a five member board, by what method shall the Boulder County Board of Commissioners be elected?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  choices:
+  - Five commissioners resident in districts to be elected only by voters resident in the district
+  - Three commissioners resident in districts to be elected only by voters resident in the district; plus two commissioners
+    resident in any district to be elected by voters of the whole county
+  provenance: *id001
+- id: city-of-boulder-2j
+  kind: measure
+  group: measures
+  district_id: city-boulder
+  title: City of Boulder Ballot Issue 2J
+  ballot_text:
+    text: 'RESIDENTIAL VACANCY EXCISE TAX (TABOR) SHALL THE CITY OF BOULDER TAXES BE INCREASED $6,000,000 ANNUALLY
+      (WHICH AMOUNT REPRESENTS ESTIMATED REVENUES IN 2028, THE FIRST FULL FISCAL YEAR OF COLLECTION), AND BY SUCH
+      AMOUNTS RAISED ANNUALLY THEREAFTER, BY IMPOSING A $4,000 TAX ON VACANT HOMES THAT ARE OCCUPIED FOR 183 DAYS
+      OR LESS PER YEAR, WITH SUCH AMOUNT NEVER FALLING BELOW $4,000 BUT INCREASING ANNUALLY IN ACCORDANCE WITH THE
+      DENVER-AURORA-LAKEWOOD CONSUMER PRICE INDEX UP TO, BUT NEVER EXCEEDING $7,000, WITH THE REVENUE FROM SUCH
+      TAX TO BE USED FOR THE PURPOSE OF SUPPORTING CITY SERVICES, INCLUDING: POLICE AND FIRE PROTECTION; PARKS AND
+      RECREATION; TRANSPORTATION AND MAINTENANCE; AND OTHER GENERAL SERVICES IMPORTANT TO THE QUALITY OF LIFE IN
+      THE CITY; AND SHALL THE REVENUES FROM SUCH TAXES AND ANY RELATED EARNINGS BE COLLECTED, RETAINED, AND SPENT
+      AS A VOTER-APPROVED REVENUE CHANGE WITHOUT LIMITATION AND AN EXCEPTION TO THE REVENUE AND SPENDING LIMITS
+      OF ARTICLE X, SECTION 20 OF THE COLORADO CONSTITUTION?'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-boulder-2k
+  kind: measure
+  group: measures
+  district_id: city-boulder
+  title: City of Boulder Ballot Issue 2K
+  ballot_text:
+    text: 'RECREATION AND SAFETY BOND (TABOR) SHALL CITY OF BOULDER DEBT BE INCREASED UP TO $400,000,000, WITH A
+      MAXIMUM REPAYMENT COST UP TO $650,000,000, AND SHALL CITY TAXES BE INCREASED UP TO $32,500,000 ANNUALLY FOR
+      THE PURPOSE OF FINANCING THE CONSTRUCTION, RENOVATION, OR REPLACEMENT OF COMMUNITY RECREATION, SAFETY INFRASTRUCTURE,
+      AND OTHER CAPITAL PROJECTS, SUCH AS: I) THE SOUTH BOULDER RECREATION CENTER, INCLUDING A LAP POOL; II) THE
+      NORTH BOULDER RECREATION CENTER, INCLUDING AQUATICS AMENITIES AND IMPROVEMENTS NEEDED TO CO-LOCATE WEST AGE
+      WELL SENIOR CENTER; III) FIRE STATIONS (TO SUSTAIN EMERGENCY AND WILDFIRE RESPONSE CAPABILITIES); IV) A NEW
+      PUBLIC SAFETY BUILDING FOR POLICE AND 911 SERVICES; V) PENFIELD TATE II MUNICIPAL BUILDING; AND VI) THE MUNICIPAL
+      SERVICE CENTER (TO SUPPORT INFRASTRUCTURE SERVICES, SUCH AS SNOW REMOVAL, UTILITY MAINTENANCE, AND CITY STREET
+      OPERATIONS); IN ORDER TO SUPPORT RECREATION, SAFETY, AND CRITICAL INFRASTRUCTURE NEEDS FOR COMMUNITY MEMBERS
+      OF ALL AGES; THROUGH THE ISSUANCE AND PAYMENT OF GENERAL OBLIGATION DEBT, WITH SUCH DEBT CONTAINING SUCH TERMS,
+      NOT INCONSISTENT HEREWITH, AS THE CITY COUNCIL MAY DETERMINE; AND IN CONNECTION THEREWITH, SHALL AD VALOREM
+      PROPERTY TAXES BE LEVIED WITHOUT LIMITATION AS TO THE RATE, BUT NOT MORE THAN THE AMOUNTS LISTED ABOVE, TO
+      GENERATE AN AMOUNT SUFFICIENT IN EACH YEAR TO PAY THE PRINCIPAL OF, PREMIUM, IF ANY, AND INTEREST ON SUCH
+      DEBT OR ANY REFUNDING DEBT (OR TO CREATE A RESERVE FOR SUCH PAYMENT); AND SHALL THE PROCEEDS OF SUCH DEBT
+      AND RESERVES AND THE REVENUES FROM SUCH TAXES AND ANY INVESTMENT INCOME EARNED FROM SUCH PROCEEDS AND REVENUES
+      BE COLLECTED AND SPENT WITHOUT LIMITATION OR CONDITION AS A VOTER-APPROVED REVENUE CHANGE AND AN EXCEPTION
+      TO THE LIMITS THAT WOULD OTHERWISE APPLY UNDER ARTICLE X, SECTION 20 OF THE COLORADO CONSTITUTION OR ANY OTHER
+      LAW?'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-boulder-2l
+  kind: measure
+  group: measures
+  district_id: city-boulder
+  title: City of Boulder Ballot Question 2L
+  ballot_text:
+    text: Bargaining Rights Union Firefighters in City Charter Shall the City amend its charter by the addition
+      of a new Sec. 73, "Collective Bargaining for Firefighters," as described in Ordinance 8761 which provides
+      a charter guaranteed right for full-time fire department employees to bargain collectively over matters related
+      to safety, wages, benefits, and all other terms and conditions employment, except those certain terms that
+      are reserved to rights of management as defined in the proposed charter amendment, with impasse to be resolved
+      through non-binding factfinding followed, if necessary, by a vote of the qualified electors of the City?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  choices:
+  - For the Measure
+  - Against the Measure
+  provenance: *id001
+- id: city-of-boulder-2m
+  kind: measure
+  group: measures
+  district_id: city-boulder
+  title: City of Boulder Ballot Question 2M
+  ballot_text:
+    text: Debt Limit City Charter Language Change Shall Section 97 of the Boulder Home Rule Charter be amended pursuant
+      to Ordinance 8762 to modify the City's debt limitation to be not more than three percent of the actual value
+      of the taxable property within the City?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  choices:
+  - For the Measure
+  - Against the Measure
+  provenance: *id001
+- id: city-of-lafayette-2a
+  kind: measure
+  group: measures
+  district_id: city-lafayette
+  title: City of Lafayette Ballot Issue 2A
+  ballot_text:
+    text: EXTENSION OF AN EXPIRING TAX FOR LAMONT DOES PARK WITHOUT IMPOSING A NEW TAX, SHALL THE CITY OF LAFAYETTE
+      BE AUTHORIZED TO EXTEND AN EXPIRING PROPERTY TAX IN AN AMOUNT NOT TO EXCEED $713,000 ANNUALLY (TOTAL ANNUAL
+      REVENUE COLLECTION FOR THE CITY), WHICH PROPERTY TAX INCREASE WAS APPROVED BY THE VOTERS IN 2014 AND IS SET
+      TO EXPIRE IN DECEMBER 2026, SUCH TAX TO BE EXTENDED THROUGH DECEMBER 31, 2046, WITH SUCH REVENUE TO BE USED
+      FOR CAPITAL IMPROVEMENTS TO, AND THE CONTINUED OPERATION AND MAINTENANCE OF, LAMONT DOES PARK AND RELATED
+      FACILITIES, INCLUDING THE PAYMENT OF ANY ANNUALLY APPROPRIATED OBLIGATION FOR SUCH PURPOSES, AND FOR OTHER
+      CITY PURPOSES RELATED THERETO, AND SHALL SUCH RESULTING REVENUE CONSTITUTE A VOTER APPROVED REVENUE AND/OR
+      SPENDING CHANGE AND BE COLLECTED AND SPENT BY THE CITY WITHOUT REGARD TO ANY SPENDING, REVENUE RAISING OR
+      OTHER LIMITATION CONTAINED WITHIN ARTICLE X, SECTION 20 OF THE COLORADO CONSTITUTION, OR ANY OTHER LAW?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-longmont-3a
+  kind: measure
+  group: measures
+  district_id: city-longmont
+  title: City of Longmont Ballot Issue 3A
+  ballot_text:
+    text: 'MAINTAIN AND INCREASE FIRE AND POLICE SERVICES VIA TAX INCREASES SHALL CITY OF LONGMONT TAXES BE INCREASED
+      $19.5 MILLION ANNUALLY IN THE FIRST FULL YEAR AND BY WHATEVER ADDITIONAL AMOUNTS AS ARE GENERATED ANNUALLY
+      IN EACH SUBSEQUENT YEAR FROM THE IMPOSITION OF AN ADDITIONAL MILL LEVY OF NOT TO EXCEED 2.44 MILLS (AS ADJUSTED)
+      BEGINNING WITH TAX COLLECTION YEAR 2027 AND AN ADDITIONAL CITY SALES AND USE TAX IMPOSED AT A RATE OF 0.33%
+      BEGINNING JANUARY 1, 2027, WITH THE PROCEEDS OF SUCH TAXES BEING USED EXCLUSIVELY TO MAINTAIN AND INCREASE
+      THE LEVEL OF SERVICE FOR PUBLIC SAFETY IN THE CITY OF LONGMONT, INCLUDING, BUT NOT LIMITED TO PROVIDING FUNDS
+      FOR: POLICE OFFICERS AND PERSONNEL FOR TRAFFIC ENFORCEMENT AND CRIMINAL INVESTIGATIONS AND PREVENTION; POLICE
+      OFFICERS TO ENSURE SAFETY OF OFFICERS AND TO IMPROVE EMERGENCY RESPONSE; EMERGENCY DISPATCHERS FOR 911 RESPONSE;
+      FIREFIGHTERS TO ENSURE SAFE AND SUFFICIENT RESPONSE TO EMERGENCIES; PERSONNEL TO SUPPORT EMERGENCY PUBLIC
+      SAFETY RESPONDERS; AND PUBLIC SAFETY EQUIPMENT, VEHICLES AND FACILITIES TO ENSURE SAFETY; AND SHALL ORDINANCE
+      O-2026-53 AUTHORIZING SUCH TAX INCREASES BE APPROVED, AND SHALL THE CITY BE AUTHORIZED TO INCREASE THE MILL
+      LEVY AUTHORIZED BY THIS QUESTION BEGINNING IN TAX COLLECTION YEAR 2028 AND ANNUALLY THEREAFTER TO OFFSET ANY
+      REVENUE REDUCTIONS CAUSED BY ANY CONSTITUTIONALLY OR STATUTORILY REQUIRED TAX CREDITS, PROPERTY TAX REFUNDS,
+      ABATEMENTS, REDUCTIONS IN THE PERCENTAGE OF ACTUAL VALUATION USED TO DETERMINE ASSESSED VALUATION, OR REDUCTIONS
+      IN THE ACTUAL VALUE AGAINST WHICH THE ASSESSMENT RATE IS APPLIED THAT ARE ENACTED AFTER THE DATE OF APPROVAL
+      OF THIS BALLOT QUESTION OR ARE OTHERWISE SET FORTH IN C.R.S. §§ 29-1-1701, ET SEQ., OR C.R.S. §§ 39-1-101,
+      ET SEQ., AND SHALL THE PROCEEDS OF SUCH TAXES AND INVESTMENT INCOME THEREON BE COLLECTED AND SPENT WITHOUT
+      REGARD TO ANY LIMITATION CONTAINED WITHIN ARTICLE X, SECTION 20 OF THE COLORADO CONSTITUTION OR ANY OTHER
+      LAW?'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-longmont-3b
+  kind: measure
+  group: measures
+  district_id: city-longmont
+  title: City of Longmont Ballot Question 3B
+  ballot_text:
+    text: Charter Amendment to Protect Open Space Lands Shall the City of Longmont Home Rule Charter be amended
+      by revising section 13.2 to add open space to lands that cannot be sold or conveyed without voter approval,
+      with exceptions for public roads, utilities, life-essential infrastructure, open space operations, and the
+      sale or conveyance of structures on such lands?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-longmont-3c
+  kind: measure
+  group: measures
+  district_id: city-longmont
+  title: City of Longmont Ballot Question 3C
+  ballot_text:
+    text: Charter Amendment to Allow Ranked Choice Voting Methods Shall the City of Longmont Home Rule Charter be
+      amended by adopting a new section 2.10 of the Charter to provide for the use of Ranked Choice Voting (ranked
+      voting methods) where possible to elect future mayors and councilmembers of the City of Longmont starting
+      in November 2029?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-longmont-3d
+  kind: measure
+  group: measures
+  district_id: city-longmont
+  title: City of Longmont Ballot Question 3D
+  ballot_text:
+    text: Charter Amendment to Adjust City Council Electoral Cycles Shall the City of Longmont Home Rule Charter
+      be amended by amending section 3.6 of the Charter to realign the cycle on which members of the Longmont city
+      council are elected so that the three councilmembers elected at-large are elected in one electoral cycle and
+      the three councilmembers elected from wards are elected in another electoral cycle, with such electoral cycles
+      alternating from then on, with such realignment contingent upon voter approval of the measure on the November
+      3, 2026 City of Longmont ballot requiring the use of ranked choice voting to elect city council members when
+      possible?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-louisville-2b
+  kind: measure
+  group: measures
+  district_id: city-louisville
+  title: City of Louisville Ballot Issue 2B
+  ballot_text:
+    text: 'HISTORIC PRESERVATION TAX SHALL CITY OF LOUISVILLE TAXES BE INCREASED $1.5 MILLION IN 2029 AND THEN ANNUALLY
+      THEREAFTER BY WHATEVER AMOUNTS ARE GENERATED FROM THE CONTINUATION OF THE CITY''S HISTORIC PRESERVATION SALES
+      TAX OF 0.125% BEGINNING JANUARY 1, 2029, AND EXPIRING DECEMBER 31, 2038; WITH THE NET PROCEEDS OF SUCH SALES
+      TAX, ALONG WITH THE CITY''S EXISTING 0.125% HISTORIC PRESERVATION USE TAX, TO BE UTILIZED FOR HISTORIC PRESERVATION
+      PURPOSES AS ESTABLISHED BY BALLOT ISSUES APPROVED BY THE VOTERS IN 2008 AND 2017, AND, COMMENCING ON JANUARY
+      1, 2027, SHALL THE CITY ALSO BE AUTHORIZED TO: (1) EXPEND ANY FUNDS FROM SUCH HISTORIC PRESERVATION TAX ON
+      CITY PROGRAMS AND CAPITAL PROJECTS THAT PROMOTE AND PRESERVE THE CITY''S HISTORY AND CULTURAL HERITAGE, AND
+      (2) INCREASE THE PORTION OF SUCH TAX ALLOCATED TO OPERATING AND MAINTAINING THE LOUISVILLE MUSEUM CAMPUS FROM
+      20% TO 30% PER YEAR; AND SHALL THE CITY BE PERMITTED TO COLLECT, RETAIN AND EXPEND ALL REVENUES DERIVED FROM
+      SUCH TAX AS A VOTER-APPROVED REVENUE CHANGE AND AN EXCEPTION TO LIMITS WHICH WOULD OTHERWISE APPLY UNDER ARTICLE
+      X, SECTION 20 OF THE COLORADO CONSTITUTION OR ANY OTHER LAW?'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-louisville-2c
+  kind: measure
+  group: measures
+  district_id: city-louisville
+  title: City of Louisville Ballot Question 2C
+  ballot_text:
+    text: Charter Amendment Expanding Executive Session Topics Shall the City of Louisville Home Rule Charter be
+      amended to authorize the City Council to convene executive sessions for the purpose of considering any matter
+      authorized by the Colorado Open Meetings Law, C.R.S. § 24-6-401, et seq., as amended, and for boards, commissions,
+      task forces, and committees to convene executive sessions pursuant to the Colorado Open Meetings Law in accordance
+      with procedures and subject to limitations established by ordinance, thereby expanding the topics for executive
+      sessions currently permitted under the Charter?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-louisville-2d
+  kind: measure
+  group: measures
+  district_id: city-louisville
+  title: City of Louisville Ballot Question 2D
+  ballot_text:
+    text: Charter Amendment to Change Timing for Taking Office Shall the City of Louisville Home Rule Charter be
+      amended to provide that the Mayor and each Councilmember shall take office at the first regular Council meeting
+      following certification of the election results, as opposed to the first meeting following the election?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-louisville-2e
+  kind: measure
+  group: measures
+  district_id: city-louisville
+  title: City of Louisville Ballot Question 2E
+  ballot_text:
+    text: Charter Amendment for Initiative and Referendum Signatures Shall the City of Louisville Home Rule Charter
+      be amended to increase the number of signatures required for initiative petitions from 5 percent to 7.5 percent
+      of registered electors and to increase the number of signatures required for referendum petitions from 2.5
+      percent to 5 percent of registered electors?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-louisville-2f
+  kind: measure
+  group: measures
+  district_id: city-louisville
+  title: City of Louisville Ballot Question 2F
+  ballot_text:
+    text: Charter Amendment Regarding Meeting Locations Shall the City of Louisville Home Rule Charter be amended
+      to allow the City's public bodies to hold public meetings in locations other than public buildings and public
+      facilities, provided all meeting locations shall be accessible to all members of the public?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-louisville-2g
+  kind: measure
+  group: measures
+  district_id: city-louisville
+  title: City of Louisville Ballot Question 2G
+  ballot_text:
+    text: Charter Amendment to Allow for Review and Comment Shall the City of Louisville Home Rule Charter be amended
+      to require proponents of an initiated ordinance or Charter amendment to first submit the text of the initiated
+      measure to the City Manager for review and comment at a public meeting, subject to the limitation that City
+      staff shall not have the authority to require any amendment, modification, or other alteration to the text
+      of the proposed measure, or to impose additional procedural requirements on the proponent?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: city-of-louisville-2h
+  kind: measure
+  group: measures
+  district_id: city-louisville
+  title: City of Louisville Ballot Question 2H
+  ballot_text:
+    text: Charter Amendment to Update Language Shall the City of Louisville Home Rule Charter be amended to remove
+      gendered pronouns, to replace references to "citizen" with "members of the public," to replace references
+      to "City offices" with "City Clerk's office and City website," and to replace references to "television" with
+      "virtually"?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: town-of-erie-3e
+  kind: measure
+  group: measures
+  district_id: city-erie
+  title: Town of Erie Ballot Issue 3E
+  ballot_text:
+    text: AUTHORIZATION FOR A NEW TOWN LODGING TAX FOR THE PURPOSES OF PAYING FOR PARK AND RECREATIONAL FACILITIES,
+      CAPITAL INFRASTRUCTURE, LAW ENFORCEMENT/SAFETY AND SECURITY, AND FOR OTHER GENERAL GOVERNMENTAL PURPOSES SHALL
+      THE TOWN OF ERIE TAXES BE INCREASED BY UP TO $150,000 COMMENCING ON JANUARY 1, 2027, AND BY WHATEVER AMOUNTS
+      ARE GENERATED ANNUALLY THEREAFTER THROUGH THE IMPOSITION OF A LODGING TAX AT THE RATE OF THREE AND ONE HALF
+      PERCENT ON THE TOTAL RENTAL FEE, PRICE, OR OTHER CONSIDERATION PAID OR CHARGED FOR THE LEASING OR RENTAL OF
+      ANY HOTEL ROOM, MOTEL ROOM, BED AND BREAKFAST, SHORT TERM RENTAL OR OTHER ACCOMMODATION WITH A STAY OF THIRTY
+      DAYS OR LESS, AND SHALL ALL REVENUES DERIVED FROM SUCH LODGING TAX BE USED FOR GENERAL GOVERNMENTAL PURPOSES,
+      INCLUDING, BUT NOT LIMITED TO PARK AND RECREATIONAL FACILITIES, CAPITAL INFRASTRUCTURE, AND LAW ENFORCEMENT/SAFETY
+      AND SECURITY PURPOSES, AND SHALL THE REVENUES FROM SUCH TAXES AND ANY EARNINGS FROM THE INVESTMENT OF SUCH
+      REVENUES BE COLLECTED AND SPENT AS A VOTER-APPROVED REVENUE CHANGE PURSUANT TO ARTICLE X, SECTION 20 OF THE
+      COLORADO CONSTITUTION AND ANY OTHER LAW?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: town-of-erie-3f
+  kind: measure
+  group: measures
+  district_id: city-erie
+  title: Town of Erie Ballot Issue 3F
+  ballot_text:
+    text: 'AUTHORIZATION FOR THE ISSUANCE OF DEBT AND AN ADDITIONAL SALES AND USE TAX FOR THE PURPOSE OF PAYING
+      FOR THE EXPANSION OF THE ERIE COMMUNITY CENTER SHALL THE TOWN OF ERIE''S DEBT BE INCREASED BY UP TO $32.5
+      MILLION, WITH A MAXIMUM REPAYMENT COST NOT TO EXCEED $52.6 MILLION (PRINCIPAL AND INTEREST) FOR THE PURPOSE
+      OF UPDATING THE AGING ERIE COMMUNITY CENTER BUILDING AND FACILITIES BY ACQUIRING, DESIGNING, CONSTRUCTING,
+      EXPANDING, RENOVATING, IMPROVING, AND EQUIPPING THE SAME AND FOR CONTINUED OPERATIONS AND MAINTENANCE, WITH
+      SUCH IMPROVEMENTS TO INCLUDE BUT ARE NOT LIMITED TO: CONSTRUCTING AND EQUIPPING NEW FITNESS· STUDIOS AND EXPANDING
+      EXISTING STUDIOS; CONSTRUCTING AND EQUIPPING A NEW GYMNASIUM· AND RACQUET BALL COURTS; EXPANDING MULTIPURPOSE
+      COMMUNITY AND· RECREATION SPACE; EQUIPPING NEW STRENGTH TRAINING AND CIRCUIT· TRAINING AREAS; AND SHALL TOWN
+      TAXES BE INCREASED BY UP TO $4,866,857 IN THE FIRST FULL FISCAL YEAR AND BY SUCH ADDITIONAL AMOUNTS AS ARE
+      GENERATED ANNUALLY THEREAFTER BY AN INCREASE IN THE RATE OF SALES AND USE TAX IMPOSED BY THE TOWN BY .501%,
+      COMMENCING JANUARY 1, 2027, WHICH TAX REVENUES WILL BE USED FOR THE PAYMENT OF THE DEBT AUTHORIZED BY THIS
+      QUESTION AND FOR THE CONSTRUCTION, OPERATION AND MAINTENANCE OF THE ERIE COMMUNITY CENTER AND OTHER PARK AND
+      RECREATION RELATED EXPENSES OF THE TOWN; AND MAY THE DEBT ISSUED PURSUANT TO THIS QUESTION BE PAID FROM SUCH
+      LEGALLY AVAILABLE REVENUES, BEAR INTEREST, AND BE SOLD IN ONE SERIES OR MORE AT A PRICE ABOVE, BELOW OR EQUAL
+      TO THE PRINCIPAL AMOUNT OF SUCH DEBT AND WITH SUCH TERMS AND CONDITIONS, INCLUDING PROVISIONS FOR REDEMPTION
+      PRIOR TO MATURITY WITH OR WITHOUT PAYMENT OF PREMIUM OF NOT TO EXCEED 3%, ALL AS THE TOWN MAY DETERMINE; AND
+      SHALL THE REVENUES RAISED BY SUCH SALES AND USE TAX RATE INCREASE AND PROCEEDS OF SUCH DEBT, ANY OTHER REVENUE
+      USED TO PAY SUCH DEBT, AND INVESTMENT INCOME THEREON, BE COLLECTED AND SPENT BY THE TOWN AS A VOTER-APPROVED
+      REVENUE CHANGE PURSUANT TO ARTICLE X, SECTION 20 OF THE COLORADO CONSTITUTION?'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: proposed-municipality-of-niwot-300
+  kind: measure
+  group: measures
+  district_id: city-niwot
+  title: Proposed Municipality of Niwot Ballot Question 300
+  ballot_text:
+    text: Shall Niwot be incorporated as a municipality?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  choices:
+  - For Incorporation
+  - Against Incorporation
+  provenance: *id001
+- id: proposed-municipality-of-niwot-301
+  kind: measure
+  group: measures
+  district_id: city-niwot
+  title: Proposed Municipality of Niwot Ballot Question 301
+  ballot_text:
+    text: Shall a Home Rule Charter Commission be formed pursuant to C.R.S. Title 31, Article 2, Part 2 for the
+      Proposed Municipality of Niwot?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: proposed-municipality-of-niwot-home-rule-charter-commission
+  kind: candidate_contest
+  group: measures
+  district_id: city-niwot
+  title: Proposed Municipality of Niwot - Home Rule Charter Commission
+  candidates:
+  - name: Rita Neis
+  - name: Jim Thomas
+  - name: Cody Barela
+  - name: Richard England
+  - name: Ari Adler
+  - name: Michael DeLalla
+  - name: Colleen Donovan
+  - name: Patrick Mayne
+  - name: Cheryl Hodges
+  - name: Jack Trope
+  - name: Nick Little
+  - name: Alison Steele
+  - name: Sean Donovan
+  - name: Jim Parys
+  - name: David Costa
+  - name: Karl Neis
+  - name: Scott Firle
+  - name: Tony Santelli
+  - name: Orin Hargraves
+  - name: Kathy M. Koehler
+  - name: Rodney Archer
+  - name: D. Scott Tennant
+  - name: Bruce (Biff) Warren
+  - name: Sue Ellen Peck
+  - name: Mary Plese
+  - name: Jason Seely
+  - name: Charles Hodges
+  - name: Carrie Wise
+  write_in: false
+  vote_for: 9
+  provenance: *id001
+- id: proposed-municipality-of-niwot-302
+  kind: measure
+  group: measures
+  district_id: city-niwot
+  title: Proposed Municipality of Niwot Ballot Issue 302
+  ballot_text:
+    text: AUTHORIZATION TO LEVY A SALES AND USE TAX SHALL NIWOT TAXES BE INCREASED BY $2,800,000 ANNUALLY IN THE
+      FIRST FULL FISCAL YEAR, AND BY WHATEVER ADDITIONAL AMOUNTS ARE RAISED ANNUALLY THEREAFTER FROM A SALES AND
+      USE TAX IMPOSED AT THE RATE OF TWO AND ONE-HALF PERCENT (2.5%), COMMENCING ON JANUARY 1, 2028, FOR THE PURPOSE
+      OF FUNDING CAPITAL IMPROVEMENTS AND RELATED OPERATIONAL EXPENDITURES, INCLUDING BUT NOT LIMITED TO DEBT REPAYMENT,
+      AND ANY LAWFUL MUNICIPAL PURPOSE WITH (I) THE SALES TAX TO BE IMPOSED ON THE SALE OF TANGIBLE PERSONAL PROPERTY
+      AND TAXABLE SERVICES, EXCEPT FOR FOOD FOR DOMESTIC CONSUMPTION AND SUCH OTHER CATEGORIES TO BE EXEMPT AS DETERMINED
+      BY THE GOVERNING BODY OF THE MUNICIPALITY, AND (II) THE USE TAX TO BE IMPOSED ON THE PRIVILEGE OF STORING,
+      USING, OR CONSUMING TANGIBLE PERSONAL PROPERTY IN NIWOT, INCLUDING CONSTRUCTION AND BUILDING MATERIALS, WITH
+      ALL SUCH TAXES TO BE ESTABLISHED BY ORDINANCE OF THE GOVERNING BODY OF THE MUNICIPALITY PRIOR TO THE IMPOSITION
+      OF THE SALES AND USE TAX AND CONSISTENT WITH THIS BALLOT MEASURE; AND SHALL NIWOT BE AUTHORIZED TO COLLECT,
+      RETAIN, AND SPEND ALL REVENUES FROM SUCH TAXES AND ALL EARNINGS THEREON AS A VOTER APPROVED REVENUE CHANGE
+      UNDER ARTICLE X, SECTION 20 OF THE STATE CONSTITUTION?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: proposed-municipality-of-niwot-303
+  kind: measure
+  group: measures
+  district_id: city-niwot
+  title: Proposed Municipality of Niwot Ballot Issue 303
+  ballot_text:
+    text: AUTHORIZATION TO LEVY A PROPERTY TAX SHALL NIWOT TAXES BE INCREASED BY $900,000 ANNUALLY IN THE FIRST
+      FULL FISCAL YEAR, AND BY SUCH ADDITIONAL AMOUNTS RAISED ANNUALLY THEREAFTER BY AN AD VALOREM PROPERTY TAX
+      MILL LEVY IMPOSED AT THE RATE OF FOUR (4) MILLS FOR THE PURPOSE OF MEETING OPERATIONAL AND MAINTENANCE COSTS;
+      AND SHALL THE REVENUE FROM SUCH MILL LEVY CONSTITUTE A VOTER APPROVED REVENUE CHANGE UNDER ARTICLE X, SECTION
+      20 OF THE STATE CONSTITUTION AND AN EXCEPTION TO THE LIMITATION SET FORTH IN SECTION 29-1-301 OF THE COLORADO
+      REVISED STATUTES?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: proposed-municipality-of-niwot-304
+  kind: measure
+  group: measures
+  district_id: city-niwot
+  title: Proposed Municipality of Niwot Ballot Issue 304
+  ballot_text:
+    text: AUTHORIZATION TO LEVY A MARIJUANA SPECIAL SALES TAX SHALL NIWOT TAXES BE INCREASED BY $60,000 ANNUALLY
+      IN THE FIRST FULL FISCAL YEAR, AND BY SUCH AMOUNTS AS ARE RAISED ANNUALLY THEREAFTER, FROM A MARIJUANA SPECIAL
+      SALES TAX IMPOSED AT THE RATE OF THREE PERCENT (3.0%), COMMENCING ON JANUARY 1, 2028, ON THE SALE OF RETAIL
+      MARIJUANA AND RETAIL MARIJUANA PRODUCTS TO CONSUMERS, RETAIL MARIJUANA STORES, OR RETAIL MARIJUANA PRODUCT
+      MANUFACTURERS, AS AUTHORIZED BY STATE LAW, IN ADDITION TO ANY OTHER SALES TAXES LEVIED BY NIWOT, WITH ALL
+      SUCH TAXES TO BE ESTABLISHED BY ORDINANCE OF THE GOVERNING BODY OF THE MUNICIPALITY PRIOR TO THE IMPOSITION
+      OF THE MARIJUANA SPECIAL SALES TAX AND CONSISTENT WITH THIS BALLOT MEASURE; AND SHALL NIWOT BE AUTHORIZED
+      TO COLLECT, RETAIN, AND SPEND ALL REVENUES FROM SUCH TAXES AND ALL EARNINGS THEREON AS A VOTER APPROVED REVENUE
+      CHANGE UNDER ARTICLE X, SECTION 20 OF THE STATE CONSTITUTION?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: proposed-municipality-of-niwot-305
+  kind: measure
+  group: measures
+  district_id: city-niwot
+  title: Proposed Municipality of Niwot Ballot Issue 305
+  ballot_text:
+    text: AUTHORIZATION TO RETAIN AND SPEND ALL REVENUES SHALL NIWOT BE AUTHORIZED TO RETAIN AND SPEND THE FULL
+      AMOUNT OF ALL REVENUE COLLECTED FROM ALL SOURCES NOT OTHERWISE EXCLUDED FROM FISCAL YEAR SPENDING, INCLUDING
+      BUT NOT LIMITED TO STATE AND LOCAL GRANTS, FEES AND CHARGES, SALES AND USE TAXES, AND PROPERTY TAXES, COMMENCING
+      IN 2027 AND EACH SUBSEQUENT YEAR, WITHOUT REGARD TO ANY STATE REVENUE OR EXPENDITURE LIMITATION INCLUDING
+      THE LIMITATION CONTAINED IN ARTICLE X, SECTION 20 OF THE STATE CONSTITUTION?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: proposed-municipality-of-niwot-306
+  kind: measure
+  group: measures
+  district_id: city-niwot
+  title: Proposed Municipality of Niwot Ballot Issue 306
+  ballot_text:
+    text: AUTHORIZATION TO INCREASE DEBT SHALL NIWOT DEBT BE INCREASED UP TO $15 MILLION, WITH A MAXIMUM REPAYMENT
+      COST UP TO $28 MILLION, FOR THE PURPOSE OF FUNDING THE REPAIR, RECONSTRUCTION, IMPROVEMENT, AND MAINTENANCE
+      OF STREETS, ROADS, BRIDGES, DRAINAGE, SIDEWALKS, AND RELATED TRANSPORTATION INFRASTRUCTURE WITHIN THE MUNICIPALITY;
+      SUCH DEBT TO BE EVIDENCED BY THE ISSUANCE OF REVENUE BONDS OR OTHER FINANCIAL OBLIGATIONS PAYABLE FROM SALES
+      AND USE TAX REVENUES IF SUCH TAXES ARE APPROVED BY SEPARATE BALLOT MEASURE, TO BE ISSUED AT SUCH TIMES AND
+      PRICES (AT, ABOVE OR BELOW PAR) AND IN SUCH MANNER AND CONTAINING SUCH TERMS CONSISTENT HEREWITH AS THE GOVERNING
+      BODY OF THE MUNICIPALITY MAY DETERMINE; AND SHALL THE PROCEEDS OF SUCH DEBT AND ANY INVESTMENT EARNINGS THEREON
+      CONSTITUTE A VOTER-APPROVED REVENUE CHANGE UNDER ARTICLE X, SECTION 20 OF THE STATE CONSTITUTION?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: eldorado-springs-public-improvement-district-6a
+  kind: measure
+  group: measures
+  district_id: eldorado-springs-public-improvement-district
+  title: Eldorado Springs Public Improvement District of Boulder County Ballot Issue 6A
+  ballot_text:
+    text: DEBT AUTHORIZATION SHALL ELDORADO SPRINGS PUBLIC IMPROVEMENT DISTRICT OF BOULDER COUNTY DEBT (FOR ELDORADO
+      SPRINGS LOCAL IMPROVEMENT DISTRICT NO. 3) BE INCREASED BY UP TO $1,000,000, WITH A MAXIMUM REPAYMENT COST
+      OF UP TO $1,440,000 (SUCH AMOUNTS TO BE REDUCED TO THE EXTENT PROJECTED COSTS OR LOAN RATES HAVE BEEN OVER-ESTIMATED,
+      OR TO THE EXTENT ADDITIONAL SOURCES OF FUNDING, IF ANY, ARE SECURED) FOR THE PURPOSE OF FINANCING THE COSTS
+      OF IMPROVEMENTS TO THE ELDORADO SPRINGS WASTEWATER TREATMENT PLANT AND ANY COSTS NECESSARY OR INCIDENTAL THERETO,
+      INCLUDING WITHOUT LIMITATION THE COST OF ESTABLISHING RESERVES TO SECURE THE PAYMENT OF SUCH DEBT; SHALL SUCH
+      DEBT BEAR INTEREST AT A MAXIMUM NET EFFECTIVE INTEREST RATE NOT TO EXCEED 4% AND BE PAYABLE FROM SPECIAL ASSESSMENTS
+      IMPOSED AGAINST BENEFITED PROPERTIES WITHIN THE LOCAL IMPROVEMENT DISTRICT AND FROM OTHER FUNDS THAT MAY BE
+      LAWFULLY PLEDGED TO THE PAYMENT OF SUCH DEBT; AND SHALL THE REVENUES FROM SUCH SPECIAL ASSESSMENTS AND ANY
+      EARNINGS THEREON AND FROM THE INVESTMENT OF THE PROCEEDS OF SUCH DEBT CONSTITUTE A VOTER-APPROVED REVENUE
+      CHANGE; ALL IN ACCORDANCE WITH RESOLUTION NO. 2026-003 OF THE BOARD OF DIRECTORS OF THE PUBLIC IMPROVEMENT
+      DISTRICT?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: sombrero-ranch-public-improvement-district-6b
+  kind: measure
+  group: measures
+  district_id: sombrero-ranch-public-improvement-district
+  title: Sombrero Ranch Public Improvement District of Boulder County Ballot Issue 6B
+  ballot_text:
+    text: MILL LEVY INCREASE, MULTIPLE-FISCAL YEAR OBLIGATION AUTHORIZATION, REVENUE CHANGE AND FORMATION SHALL
+      SOMBRERO RANCH PUBLIC IMPROVEMENT DISTRICT OF BOULDER COUNTY TAXES BE INCREASED $185,000 (IN TAX COLLECTION
+      YEAR 2027) AND THEREAFTER BY THE DOLLAR AMOUNT PRODUCED FROM THE LEVY OF AN AD VALOREM PROPERTY TAX IMPOSED
+      AT A RATE UP TO 14.47 MILLS, WITH THE ANNUAL TAX REVENUES (REGARDLESS OF DOLLAR AMOUNT) FROM SUCH MILL LEVY
+      TO BE USED FOR RESURFACING COUNTY ROADS WITHIN THE DISTRICT AND OTHER COUNTY ROAD IMPROVEMENT PURPOSES WITHIN
+      THE DISTRICT; AND, SHALL THE DISTRICT BE AUTHORIZED TO ENTER INTO A MULTIPLE-FISCAL YEAR OBLIGATION IN AN
+      AMOUNT NOT TO EXCEED $3,500,000, TO BE PAID FROM THE REVENUES OF THE TAX DESCRIBED ABOVE AND ANY OTHER SOURCES
+      OF FUNDING LEGALLY AVAILABLE TO THE DISTRICT; AND SHALL THE TAX REVENUES DESCRIBED ABOVE, OTHER LEGALLY AVAILABLE
+      FUNDING, IF ANY, AND THE INTEREST EARNINGS THEREON CONSTITUTE A VOTER-APPROVED REVENUE CHANGE UNDER ARTICLE
+      X, SECTION 20 OF THE COLORADO CONSTITUTION (TABOR) AND AN EXCEPTION TO THE LIMITATIONS SET FORTH IN SECTION
+      29-1-301 OF THE COLORADO REVISED STATUTES OR ANY OTHER LIMITS WHICH MAY OTHERWISE APPLY; AND SHALL SOMBRERO
+      RANCH PUBLIC IMPROVEMENT DISTRICT OF BOULDER COUNTY BE ORGANIZED, ALL AS MORE PARTICULARLY SET FORTH IN BOARD
+      OF COUNTY COMMISSIONERS' RESOLUTION 2026-040?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: summerlin-public-improvement-district-6c
+  kind: measure
+  group: measures
+  district_id: summerlin-public-improvement-district
+  title: Summerlin Public Improvement District of Boulder County Ballot Issue 6C
+  ballot_text:
+    text: MILL LEVY INCREASE, MULTIPLE-FISCAL YEAR OBLIGATION AUTHORIZATION, REVENUE CHANGE AND FORMATION SHALL
+      SUMMERLIN PUBLIC IMPROVEMENT DISTRICT OF BOULDER COUNTY TAXES BE INCREASED $60,000 (IN TAX COLLECTION YEAR
+      2027) AND THEREAFTER BY THE DOLLAR AMOUNT PRODUCED FROM THE LEVY OF AN AD VALOREM PROPERTY TAX IMPOSED AT
+      A RATE UP TO 17.34 MILLS, WITH THE ANNUAL TAX REVENUES (REGARDLESS OF DOLLAR AMOUNT) FROM SUCH MILL LEVY TO
+      BE USED FOR RESURFACING COUNTY ROADS WITHIN THE DISTRICT AND OTHER COUNTY ROAD IMPROVEMENT PURPOSES WITHIN
+      THE DISTRICT; AND, SHALL THE DISTRICT BE AUTHORIZED TO ENTER INTO A MULTIPLE-FISCAL YEAR OBLIGATION IN AN
+      AMOUNT NOT TO EXCEED $1,250,000, TO BE PAID FROM THE REVENUES OF THE TAX DESCRIBED ABOVE AND ANY OTHER SOURCES
+      OF FUNDING LEGALLY AVAILABLE TO THE DISTRICT; AND SHALL THE TAX REVENUES DESCRIBED ABOVE, OTHER LEGALLY AVAILABLE
+      FUNDING, IF ANY, AND THE INTEREST EARNINGS THEREON CONSTITUTE A VOTER-APPROVED REVENUE CHANGE UNDER ARTICLE
+      X, SECTION 20 OF THE COLORADO CONSTITUTION (TABOR) AND AN EXCEPTION TO THE LIMITATIONS SET FORTH IN SECTION
+      29-1-301 OF THE COLORADO REVISED STATUTES OR ANY OTHER LIMITS WHICH MAY OTHERWISE APPLY; AND SHALL SUMMERLIN
+      PUBLIC IMPROVEMENT DISTRICT OF BOULDER COUNTY BE ORGANIZED, ALL AS MORE PARTICULARLY SET FORTH IN BOARD OF
+      COUNTY COMMISSIONERS' RESOLUTION 2026-034?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: allenspark-fire-protection-district-7c
+  kind: measure
+  group: measures
+  district_id: allenspark-fire-protection-district
+  title: Allenspark Fire Protection District Ballot Issue 7C
+  ballot_text:
+    text: 'SHALL ALLENSPARK FIRE PROTECTION DISTRICT TAXES BE INCREASED BY UP TO $331,000 IN THE FIRST FISCAL YEAR
+      (2027) AND BY SUCH AMOUNT AS MAY BE RAISED ANNUALLY THEREAFTER, BY INCREASING THE DISTRICT''S PROPERTY TAX
+      RATE BY AN ADDITIONAL 5.3 MILLS, FOR THE PURPOSES OF PROVIDING FIRE PROTECTION AND EMERGENCY RESPONSE SERVICES,
+      INCLUDING BUT NOT LIMITED TO: REBUILDING DEPLETED RESERVES IN ORDER TO· PRESERVE THE CURRENT LEVEL OF SERVICES
+      FOR THE COMMUNITY, ADDRESS DEFERRED MAINTENANCE FOR OUR BUILDINGS AND GROUNDS, AND UPDATE AND REPLACE CRITICAL
+      FIREFIGHTING AND MEDICAL EQUIPMENT (THE LAST MILL LEVY INCREASE WAS IN 2003). EXPAND STAFFING TO IMPROVE BOTH
+      FIRE AND· MEDICAL OUTCOMES THROUGH FIRE MITIGATION, COMMUNITY OUTREACH AND EDUCATION. IMPROVING FIREFIGHTING
+      CAPABILITIES BY EXPANDING· WATER RESOURCES TO INCREASE THE NUMBER OF DRY HYDRANTS AND INSTALLING WATER STORAGE
+      TANKS AT KEY LOCATIONS THROUGHOUT THE DISTRICT. AND SHALL ALL REVENUE AND ANY EARNINGS ON THIS TAX CONSTITUTE
+      A PERMANENT VOTER-APPROVED REVENUE CHANGE WITHIN THE MEANING OF ARTICLE X, SECTION 20 OF THE COLORADO CONSTITUTION
+      AND AN EXCEPTION TO THE LIMITATIONS SET FORTH IN TITLE 29 OF THE COLORADO REVISED STATUTES, AND ANY OTHER
+      LAW?'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: front-range-passenger-rail-district-7a
+  kind: measure
+  group: measures
+  district_id: front-range-passenger-rail-district
+  title: Front Range Passenger Rail District Ballot Issue 7A
+  ballot_text:
+    text: 'SHALL FRONT RANGE PASSENGER RAIL DISTRICT TAXES BE INCREASED $295,000,000 ANNUALLY AND BY WHATEVER AMOUNTS
+      ARE RAISED ANNUALLY THEREAFTER, AND SHALL FRONT RANGE PASSENGER RAIL DISTRICT DEBT BE INCREASED $580,000,000,
+      WITH A REPAYMENT COST OF $785,000,000; TO CONSTRUCT, OPERATE, AND MAINTAIN COLORADO CONNECTOR (COCO) PASSENGER
+      RAIL SERVICE ON COLORADO''S FRONT RANGE AND CONNECT COMMUNITIES, INCLUDING PUEBLO, COLORADO SPRINGS, STERLING
+      RANCH, LITTLETON, DENVER, WESTMINSTER, BROOMFIELD, LOUISVILLE, BOULDER, LONGMONT, LOVELAND, AND FORT COLLINS;
+      IN ORDER TO: REMOVE VEHICLES FROM HIGHWAYS AND INCREASE· TRAVEL CAPACITY; CONNECT TRAVELERS TO EMPLOYMENT
+      CENTERS,· COLLEGES, SPORTS ARENAS, AND ENTERTAINMENT HUBS ALONG THE FRONT RANGE; AND INVEST IN STATION AREA
+      IMPROVEMENTS AND LOCAL· CONNECTIONS TO RAIL STATIONS; BY ESTABLISHING A 0.333% SALES AND USE TAX (EQUAL TO
+      ONE THIRD OF A PENNY ON A $1 PURCHASE), WITH EXEMPTIONS PROVIDED UNDER COLORADO LAW, INCLUDING THOSE FOR GASOLINE,
+      FOOD, RESIDENTIAL ELECTRICITY AND GAS, PRESCRIPTION DRUGS, AND MEDICAL SUPPLIES; AND TO RETAIN ALL SUCH REVENUES,
+      PUBLIC AND PRIVATE CONTRIBUTIONS, AND ANY INVESTMENT INCOME ON REVENUES AND DEBT PROCEEDS, AS A VOTER-APPROVED
+      REVENUE CHANGE UNDER SECTION 20 OF ARTICLE X OF THE COLORADO CONSTITUTION; AND REQUIRING THAT ALL SUCH DEDICATED
+      REVENUES BE REVIEWED ANNUALLY BY AN INDEPENDENT AUDITOR AND A ROTATING GROUP OF CITIZEN TAXPAYERS WHO LIVE
+      IN THE DISTRICT?'
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001
+- id: timberline-fire-protection-district-7b
+  kind: measure
+  group: measures
+  district_id: timberline-fire-protection-district
+  title: Timberline Fire Protection District Ballot Issue 7B
+  ballot_text:
+    text: SHALL TIMBERLINE FIRE PROTECTION DISTRICT TAXES BE INCREASED IN THE FIRST FULL FISCAL YEAR BY $1,200,000
+      AND BY SUCH AMOUNTS ANNUALLY THEREAFTER AS MAY BE RAISED BY AN ADDITIONAL PROPERTY TAX LEVY OF 6.0 MILLS,
+      THE REVENUE THEREFROM TO SUPPORT THE DISTRICT'S RESPONSE CAPABILITIES, INCLUDING BUT NOT LIMITED TO HIRING
+      ADDITIONAL FIREFIGHTERS, MAINTAINING WILDFIRE MITIGATION SERVICES AND EMERGENCY RESERVES, AND SUPPORTING THE
+      DISTRICT'S GENERAL OPERATIONS AND CAPITAL NEEDS?
+    source: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+  provenance: *id001

@@ -1,0 +1,25 @@
+# Verification record: Boulder County, November 3, 2026 general election.
+#
+# Filled in by a PERSON, not by a script or an agent. The build fails until it is complete.
+#
+# How to check (one to two hours):
+#  1. Open the compiled sample ballot (sample_ballot below) next to sources/co-2026-11-03/08013.yaml.
+#  2. Walk the PDF top to bottom. Every contest and question must be in the YAML, in the same order,
+#     with the same candidates in the same order, party labels and vote limits.
+#     Items marked "statewide:" are statewide items; check them in statewide.yaml.
+#  3. Count items per group in printed order and enter them under groups. Groups are:
+#     federal, state, legislature, special_districts (RTD), county, city (city and town races),
+#     judges, measures (everything under Ballot Measures, including the Niwot commission race).
+#  4. For every measure, copy its text straight from the PDF (not from the YAML) into measures.
+#     The build compares them word for word, which catches extraction mistakes.
+#  5. Check choices on measures that are not Yes/No: 2L, 2M, 200-201, Niwot 300.
+#  6. Fix anything wrong in 08013.yaml, then fill in checked_by and checked_at.
+#  7. A second person checks at least 10 percent of items (9 or more) and fills in spot_check.
+scope: "08013"
+election_id: co-2026-11-03
+sample_ballot: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf
+checked_by:
+checked_at:
+groups: []
+measures: {}
+spot_check: {}

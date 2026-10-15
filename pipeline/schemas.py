@@ -83,6 +83,9 @@ DEFS = {
                     },
                 },
             },
+            # Measure choices when the ballot prints something other than Yes/For and No/Against.
+            # Two labels map to the yes and no positions; more than two is a pick-one question.
+            "choices": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}},
             "judge": {"type": "string"},
             "court": {"type": "string"},
             "vote_for": {"type": "integer", "minimum": 1},

@@ -66,6 +66,16 @@ DISTRICT_IDS = {"cd": "co-cd-{}", "senate": "co-senate-{}", "house": "co-house-{
 DISTRICT_NAMES = {"cd": "Congressional District {}", "senate": "District {}", "house": "District {}"}
 
 
+def district_name(office: str, kind: str, n: int) -> str:
+    # The ballot prints "Representative to the 120th United States Congress - District 2".
+    return f"District {n}" if office == "US House of Representatives" else DISTRICT_NAMES[kind].format(n)
+
+
+def party_label(party: str | None) -> str | None:
+    """Party as the ballot prints it: "Democratic", not "Democratic Party"."""
+    return party.removesuffix(" Party") if party else None
+
+
 def drawing_positions(path: str) -> dict[tuple[str, str], dict[str, int]]:
     data = rows(path)
     header = data[0]
@@ -111,7 +121,7 @@ def candidate_contests(cand_path: str, drawing_path: str) -> list[dict]:
                 "kind": "candidate_contest",
                 "group": group,
                 "district_id": DISTRICT_IDS[kind].format(int(district)) if kind else None,
-                "title": title + (f" - {DISTRICT_NAMES[kind].format(int(district))}" if kind else ""),
+                "title": title + (f" - {district_name(office, kind, int(district))}" if kind else ""),
                 "vote_for": 1,
                 "write_in": key in write_ins,
                 "candidates": ordered,
@@ -151,7 +161,8 @@ def order_candidates(cands: list[dict], positions: dict[str, int], where: str) -
                      "check the sample ballot")
     out = []
     for i, c in enumerate(placed + sorted(rest, key=lambda c: c["name"]), start=1):
-        out.append({"id": "cand-" + slug(c["name"]), "name": c["name"], "party": c["party"], "order": i})
+        out.append({"id": "cand-" + slug(c["name"]), "name": c["name"], "party": party_label(c["party"]),
+                    "order": i})
     return out
 
 

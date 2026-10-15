@@ -14,27 +14,27 @@ items:
   candidates:
   - id: cand-mark-baisley
     name: Mark Baisley
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-john-hickenlooper
     name: John Hickenlooper
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-bob-chew
     name: Bob Chew
-    party: Forward Party
+    party: Forward
     order: 3
   - id: cand-christopher-baum
     name: Christopher Baum
-    party: Approval Voting Party
+    party: Approval Voting
     order: 4
   - id: cand-blake-huber
     name: Blake Huber
-    party: Libertarian Party
+    party: Libertarian
     order: 5
   - id: cand-adam-withrow
     name: Adam Withrow
-    party: Unity Party
+    party: Unity
     order: 6
   links:
     official:
@@ -46,25 +46,25 @@ items:
   kind: candidate_contest
   group: federal
   district_id: co-cd-1
-  title: Representative to the 120th United States Congress - Congressional District 1
+  title: Representative to the 120th United States Congress - District 1
   vote_for: 1
   write_in: true
   candidates:
   - id: cand-melat-kiros
     name: Melat Kiros
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-christy-peterson
     name: Christy Peterson
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-critter-milton
     name: Critter Milton
-    party: Unity Party
+    party: Unity
     order: 3
   - id: cand-chad-humphrey
     name: Chad Humphrey
-    party: Libertarian Party
+    party: Libertarian
     order: 4
   - id: cand-shimon-blau
     name: Shimon Blau
@@ -80,21 +80,21 @@ items:
   kind: candidate_contest
   group: federal
   district_id: co-cd-2
-  title: Representative to the 120th United States Congress - Congressional District 2
+  title: Representative to the 120th United States Congress - District 2
   vote_for: 1
   write_in: false
   candidates:
   - id: cand-joe-neguse
     name: Joe Neguse
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-kelley-anne-dennison
     name: Kelley Anne Dennison
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-gaylon-kent
     name: Gaylon Kent
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -106,21 +106,21 @@ items:
   kind: candidate_contest
   group: federal
   district_id: co-cd-3
-  title: Representative to the 120th United States Congress - Congressional District 3
+  title: Representative to the 120th United States Congress - District 3
   vote_for: 1
   write_in: false
   candidates:
   - id: cand-dwayne-l-romero
     name: Dwayne L. Romero
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-jeff-hurd
     name: Jeff Hurd
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-cory-robertson
     name: Cory Robertson
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   - id: cand-clifton-brown
     name: Clifton Brown
@@ -136,21 +136,21 @@ items:
   kind: candidate_contest
   group: federal
   district_id: co-cd-4
-  title: Representative to the 120th United States Congress - Congressional District 4
+  title: Representative to the 120th United States Congress - District 4
   vote_for: 1
   write_in: true
   candidates:
   - id: cand-lauren-boebert
     name: Lauren Boebert
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-eileen-laubacher
     name: Eileen Laubacher
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-douglas-mangeris
     name: Douglas Mangeris
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -162,25 +162,25 @@ items:
   kind: candidate_contest
   group: federal
   district_id: co-cd-5
-  title: Representative to the 120th United States Congress - Congressional District 5
+  title: Representative to the 120th United States Congress - District 5
   vote_for: 1
   write_in: true
   candidates:
   - id: cand-jeff-crank
     name: Jeff Crank
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-jessica-killin
     name: Jessica Killin
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-christopher-mitchell
     name: Christopher Mitchell
-    party: American Constitution Party
+    party: American Constitution
     order: 3
   - id: cand-mark-marky-jr-elworth
     name: Mark "Marky Jr" Elworth
-    party: Libertarian Party
+    party: Libertarian
     order: 4
   links:
     official:
@@ -192,25 +192,25 @@ items:
   kind: candidate_contest
   group: federal
   district_id: co-cd-6
-  title: Representative to the 120th United States Congress - Congressional District 6
+  title: Representative to the 120th United States Congress - District 6
   vote_for: 1
   write_in: false
   candidates:
   - id: cand-jason-crow
     name: Jason Crow
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-jason-clark
     name: Jason Clark
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-patty-mcmahon
     name: Patty McMahon
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   - id: cand-meredith-ryan
     name: Meredith Ryan
-    party: Unity Party
+    party: Unity
     order: 4
   - id: cand-samir-witta
     name: Samir Witta
@@ -226,29 +226,29 @@ items:
   kind: candidate_contest
   group: federal
   district_id: co-cd-7
-  title: Representative to the 120th United States Congress - Congressional District 7
+  title: Representative to the 120th United States Congress - District 7
   vote_for: 1
   write_in: false
   candidates:
   - id: cand-tim-bennett
     name: Tim Bennett
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-brittany-pettersen
     name: Brittany Pettersen
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-susan-hall
     name: Susan Hall
-    party: Unity Party
+    party: Unity
     order: 3
   - id: cand-lawrence-kyle-clark
     name: Lawrence Kyle Clark
-    party: American Constitution Party
+    party: American Constitution
     order: 4
   - id: cand-dan-kilo-sallis
     name: Dan "Kilo" Sallis
-    party: Libertarian Party
+    party: Libertarian
     order: 5
   - id: cand-joe-krzeczkowski
     name: Joe Krzeczkowski
@@ -264,21 +264,21 @@ items:
   kind: candidate_contest
   group: federal
   district_id: co-cd-8
-  title: Representative to the 120th United States Congress - Congressional District 8
+  title: Representative to the 120th United States Congress - District 8
   vote_for: 1
   write_in: false
   candidates:
   - id: cand-gabe-evans
     name: Gabe Evans
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-manny-rutinel
     name: Manny Rutinel
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-dave-wood
     name: Dave Wood
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -296,27 +296,27 @@ items:
   candidates:
   - id: cand-victor-marx-george-washington-markert
     name: Victor Marx / George Washington Markert
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-phil-weiser-lesley-dahlkemper
     name: Phil Weiser / Lesley Dahlkemper
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-stephen-t-hamilton-james-k-treibert
     name: Stephen T. Hamilton / James K Treibert
-    party: American Constitution Party
+    party: American Constitution
     order: 3
   - id: cand-eric-mulder-wayne-harlos
     name: Eric Mulder / Wayne Harlos
-    party: Libertarian Party
+    party: Libertarian
     order: 4
   - id: cand-jeff-peckman-t-j-cole
     name: Jeff Peckman / T.J. Cole
-    party: Unity Party
+    party: Unity
     order: 5
   - id: cand-erik-underwood-frank-atwood
     name: Erik Underwood / Frank Atwood
-    party: Approval Voting Party
+    party: Approval Voting
     order: 6
   - id: cand-greg-lopez-taralyn-romero
     name: Greg Lopez / Taralyn Romero
@@ -338,23 +338,23 @@ items:
   candidates:
   - id: cand-amanda-gonzalez
     name: Amanda Gonzalez
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-james-wiley
     name: James Wiley
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-sean-vadney
     name: Sean Vadney
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   - id: cand-amanda-campbell
     name: Amanda Campbell
-    party: American Constitution Party
+    party: American Constitution
     order: 4
   - id: cand-celeste-landry
     name: Celeste Landry
-    party: Forward Party
+    party: Forward
     order: 5
   links:
     official:
@@ -372,19 +372,19 @@ items:
   candidates:
   - id: cand-jeff-bridges
     name: Jeff Bridges
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-kevin-grantham
     name: Kevin Grantham
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-jodie-barr
     name: Jodie Barr
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   - id: cand-marilee-langner-sturgis
     name: Marilee Langner Sturgis
-    party: Approval Voting Party
+    party: Approval Voting
     order: 4
   links:
     official:
@@ -402,11 +402,11 @@ items:
   candidates:
   - id: cand-michael-j-allen
     name: Michael J. Allen
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-jena-griswold
     name: Jena Griswold
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -424,15 +424,15 @@ items:
   candidates:
   - id: cand-lisa-esc-rcega
     name: Lisa Escárcega
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-frederick-espinoza
     name: Frederick Espinoza
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-clayton-casciato
     name: Clayton Casciato
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -450,11 +450,11 @@ items:
   candidates:
   - id: cand-sherri-m-wright
     name: Sherri M Wright
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-barb-clementi
     name: Barb Clementi
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -472,15 +472,15 @@ items:
   candidates:
   - id: cand-karla-esser
     name: Karla Esser
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-steve-barton
     name: Steve Barton
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-ross-klopf
     name: Ross Klopf
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -498,15 +498,15 @@ items:
   candidates:
   - id: cand-marty-neilson
     name: Marty Neilson
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-edie-hooton
     name: Edie Hooton
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-richard-friend
     name: Richard Friend
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -524,15 +524,15 @@ items:
   candidates:
   - id: cand-veanessa-burbage
     name: Veanessa Burbage
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-ilana-spiegel
     name: Ilana Spiegel
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-joe-johnson
     name: Joe Johnson
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -550,15 +550,15 @@ items:
   candidates:
   - id: cand-paul-mueller
     name: Paul Mueller
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-nolbert-chavez
     name: Nolbert Chavez
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-betterose-ryan
     name: BetteRose Ryan
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -576,11 +576,11 @@ items:
   candidates:
   - id: cand-jamie-jeffery
     name: Jamie Jeffery
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-byron-pelton
     name: Byron Pelton
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -598,11 +598,11 @@ items:
   candidates:
   - id: cand-aaron-gutierrez
     name: Aaron Gutierrez
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-dana-charles
     name: Dana Charles
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -620,11 +620,11 @@ items:
   candidates:
   - id: cand-justin-kurth
     name: Justin Kurth
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-teddy-collins
     name: Teddy Collins
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -642,7 +642,7 @@ items:
   candidates:
   - id: cand-janice-rich
     name: Janice Rich
-    party: Republican Party
+    party: Republican
     order: 1
   links:
     official:
@@ -660,11 +660,11 @@ items:
   candidates:
   - id: cand-dylan-roberts
     name: Dylan Roberts
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-corey-marshall
     name: Corey Marshall
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -682,11 +682,11 @@ items:
   candidates:
   - id: cand-terri-carver
     name: Terri Carver
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-william-delano-moses-iii
     name: William Delano Moses III
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -704,15 +704,15 @@ items:
   candidates:
   - id: cand-tony-exum-sr
     name: Tony Exum Sr
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-levon-stilson
     name: Levon Stilson
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-janet-turner
     name: Janet Turner
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -730,11 +730,11 @@ items:
   candidates:
   - id: cand-rob-woodward
     name: Rob Woodward
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-janice-marchman
     name: Janice Marchman
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -752,11 +752,11 @@ items:
   candidates:
   - id: cand-katie-wallace
     name: Katie Wallace
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-pat-miller
     name: Pat Miller
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -774,11 +774,11 @@ items:
   candidates:
   - id: cand-richard-rich-mancuso
     name: Richard (Rich) Mancuso
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-sheila-lieder
     name: Sheila Lieder
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -796,11 +796,11 @@ items:
   candidates:
   - id: cand-frederick-alfred-jr
     name: Frederick Alfred Jr
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-adrienne-benavidez
     name: Adrienne Benavidez
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -818,11 +818,11 @@ items:
   candidates:
   - id: cand-steve-harkess
     name: Steve Harkess
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-monica-irasema-duran
     name: Monica Irasema Duran
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -840,11 +840,11 @@ items:
   candidates:
   - id: cand-kevin-allen
     name: Kevin Allen
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-kyle-mullica
     name: Kyle Mullica
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -862,11 +862,11 @@ items:
   candidates:
   - id: cand-paul-kohlhoff
     name: Paul Kohlhoff
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-william-lindstedt
     name: William Lindstedt
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-mark-philip-bromley
     name: Mark Philip Bromley
@@ -888,15 +888,15 @@ items:
   candidates:
   - id: cand-danielle-lammon
     name: Danielle Lammon
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-tom-sullivan
     name: Tom Sullivan
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-michele-poague
     name: Michele Poague
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -914,11 +914,11 @@ items:
   candidates:
   - id: cand-iman-m-jodeh
     name: Iman M. Jodeh
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-robert-mckenna
     name: Robert McKenna
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -936,11 +936,11 @@ items:
   candidates:
   - id: cand-john-carson
     name: John Carson
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-kevin-leung
     name: Kevin Leung
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -958,7 +958,7 @@ items:
   candidates:
   - id: cand-matt-ball
     name: Matt Ball
-    party: Democratic Party
+    party: Democratic
     order: 1
   links:
     official:
@@ -976,11 +976,11 @@ items:
   candidates:
   - id: cand-emily-sirota
     name: Emily Sirota
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-sydnnia-wulff
     name: Sydnnia Wulff
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -998,15 +998,15 @@ items:
   candidates:
   - id: cand-chela-garcia-irlando
     name: Chela Garcia Irlando
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-jennifer-qualteri
     name: Jennifer Qualteri
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-jacob-luria
     name: Jacob Luria
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -1024,15 +1024,15 @@ items:
   candidates:
   - id: cand-rod-pelton
     name: Rod Pelton
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-duane-l-gurule
     name: Duane L Gurule
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-richard-graf
     name: Richard Graf
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   - id: cand-travis-star-nelson
     name: Travis Star Nelson
@@ -1054,11 +1054,11 @@ items:
   candidates:
   - id: cand-javier-mabrey
     name: Javier Mabrey
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-joseph-montoya
     name: Joseph Montoya
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1076,11 +1076,11 @@ items:
   candidates:
   - id: cand-scott-baldermann
     name: Scott Baldermann
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-carey-marin
     name: Carey Marin
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1098,11 +1098,11 @@ items:
   candidates:
   - id: cand-gena-ozols
     name: Gena Ozols
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-rebecca-winegar
     name: Rebecca Winegar
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1120,15 +1120,15 @@ items:
   candidates:
   - id: cand-ellwood-ervin
     name: Ellwood Ervin
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-cecelia-espenoza
     name: Cecelia Espenoza
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-bill-hare
     name: Bill Hare
-    party: Forward Party
+    party: Forward
     order: 3
   links:
     official:
@@ -1146,11 +1146,11 @@ items:
   candidates:
   - id: cand-justine-sandoval
     name: Justine Sandoval
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-johnnie-w-johnson
     name: Johnnie W. Johnson
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1168,11 +1168,11 @@ items:
   candidates:
   - id: cand-iris-halpern
     name: Iris Halpern
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-kathleen-angel
     name: Kathleen Angel
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1190,11 +1190,11 @@ items:
   candidates:
   - id: cand-jennifer-bacon
     name: Jennifer Bacon
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-jeff-wilson
     name: Jeff Wilson
-    party: Libertarian Party
+    party: Libertarian
     order: 2
   links:
     official:
@@ -1212,15 +1212,15 @@ items:
   candidates:
   - id: cand-carolyn-barnes
     name: Carolyn Barnes
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-lindsay-gilchrist
     name: Lindsay Gilchrist
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-jesse-lashawn-parris
     name: Jesse Lashawn Parris
-    party: Unity Party
+    party: Unity
     order: 3
   links:
     official:
@@ -1238,11 +1238,11 @@ items:
   candidates:
   - id: cand-tom-cowhick
     name: Tom Cowhick
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-monica-vanbuskirk
     name: Monica VanBuskirk
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1260,7 +1260,7 @@ items:
   candidates:
   - id: cand-junie-joseph
     name: Junie Joseph
-    party: Democratic Party
+    party: Democratic
     order: 1
   links:
     official:
@@ -1278,7 +1278,7 @@ items:
   candidates:
   - id: cand-karen-mccormick
     name: Karen McCormick
-    party: Democratic Party
+    party: Democratic
     order: 1
   links:
     official:
@@ -1296,11 +1296,11 @@ items:
   candidates:
   - id: cand-ryan-rhatigan
     name: Ryan Rhatigan
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-kyle-brown
     name: Kyle Brown
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1318,11 +1318,11 @@ items:
   candidates:
   - id: cand-consuelo-redhorse
     name: Consuelo Redhorse
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-miguel-martinez
     name: Miguel Martinez
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1340,11 +1340,11 @@ items:
   candidates:
   - id: cand-ava-flanell
     name: Ava Flanell
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-sarah-emery
     name: Sarah Emery
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1362,15 +1362,15 @@ items:
   candidates:
   - id: cand-jeff-k-livingston
     name: Jeff K. Livingston
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-pricella-tiegen
     name: Pricella Tiegen
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-doug-jones
     name: Doug Jones
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -1388,15 +1388,15 @@ items:
   candidates:
   - id: cand-jill-haffley
     name: Jill Haffley
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-steph-vigil
     name: Steph Vigil
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-john-c-hjersman
     name: John C Hjersman
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -1414,15 +1414,15 @@ items:
   candidates:
   - id: cand-regina-english
     name: Regina English
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-laura-martin
     name: Laura Martin
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-john-michael-angle
     name: John Michael Angle
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -1440,11 +1440,11 @@ items:
   candidates:
   - id: cand-amy-t-paschal
     name: Amy T Paschal
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-adriana-cuva
     name: Adriana Cuva
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1462,11 +1462,11 @@ items:
   candidates:
   - id: cand-dan-woog
     name: Dan Woog
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-jillaire-mcmillan
     name: Jillaire McMillan
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1484,7 +1484,7 @@ items:
   candidates:
   - id: cand-jarvis-caldwell
     name: Jarvis Caldwell
-    party: Republican Party
+    party: Republican
     order: 1
   links:
     official:
@@ -1502,11 +1502,11 @@ items:
   candidates:
   - id: cand-brenda-miller
     name: Brenda Miller
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-michelle-tweed
     name: Michelle Tweed
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1524,11 +1524,11 @@ items:
   candidates:
   - id: cand-michael-pierson
     name: Michael Pierson
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-ken-degraaf
     name: Ken deGraaf
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1546,11 +1546,11 @@ items:
   candidates:
   - id: cand-alexis-hoffkling
     name: Alexis Hoffkling
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-ross-metler
     name: Ross Metler
-    party: Libertarian Party
+    party: Libertarian
     order: 2
   links:
     official:
@@ -1568,11 +1568,11 @@ items:
   candidates:
   - id: cand-lisa-feret
     name: Lisa Feret
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-kristopher-johnson
     name: Kristopher Johnson
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1590,11 +1590,11 @@ items:
   candidates:
   - id: cand-mark-herzfeld
     name: Mark Herzfeld
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-tammy-story
     name: Tammy Story
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1612,11 +1612,11 @@ items:
   candidates:
   - id: cand-meghan-lukens
     name: Meghan Lukens
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-james-kellogg
     name: James Kellogg
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1634,11 +1634,11 @@ items:
   candidates:
   - id: cand-danielle-varda
     name: Danielle Varda
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-eric-bodenstab
     name: Eric Bodenstab
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1656,7 +1656,7 @@ items:
   candidates:
   - id: cand-david-rein
     name: David Rein
-    party: Democratic Party
+    party: Democratic
     order: 1
   links:
     official:
@@ -1674,11 +1674,11 @@ items:
   candidates:
   - id: cand-kristine-ireland
     name: Kristine Ireland
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-lori-goldstein
     name: Lori Goldstein
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1696,11 +1696,11 @@ items:
   candidates:
   - id: cand-rebekah-stewart
     name: Rebekah Stewart
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-william-tyler-switzer
     name: William Tyler Switzer
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1718,11 +1718,11 @@ items:
   candidates:
   - id: cand-gabriel-cervantes
     name: Gabriel Cervantes
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-ray-roll
     name: Ray Roll
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1740,11 +1740,11 @@ items:
   candidates:
   - id: cand-michelle-d-lee
     name: Michelle D. Lee
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-chris-vandijk
     name: Chris VanDijk
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1762,11 +1762,11 @@ items:
   candidates:
   - id: cand-kenny-van-nguyen
     name: Kenny Van Nguyen
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-nate-jorgensen
     name: Nate Jorgensen
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -1784,11 +1784,11 @@ items:
   candidates:
   - id: cand-craig-sullivan
     name: Craig Sullivan
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-jenny-willford
     name: Jenny Willford
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1806,7 +1806,7 @@ items:
   candidates:
   - id: cand-lorena-garcia
     name: Lorena Garcia
-    party: Democratic Party
+    party: Democratic
     order: 1
   links:
     official:
@@ -1824,15 +1824,15 @@ items:
   candidates:
   - id: cand-michael-carter
     name: Michael Carter
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-paul-e-nelson
     name: Paul E. Nelson
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-andrew-gibson
     name: Andrew Gibson
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -1850,11 +1850,11 @@ items:
   candidates:
   - id: cand-jill-thompson
     name: Jill Thompson
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-chad-clifford
     name: Chad Clifford
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1872,15 +1872,15 @@ items:
   candidates:
   - id: cand-gretchen-rydin
     name: Gretchen Rydin
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-tim-martin
     name: Tim Martin
-    party: Center Party
+    party: Center
     order: 2
   - id: cand-norm-olsen
     name: Norm Olsen
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   - id: cand-allison-madrigal
     name: Allison Madrigal
@@ -1902,11 +1902,11 @@ items:
   candidates:
   - id: cand-brandi-bradley
     name: Brandi Bradley
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-christian-schilder
     name: Christian Schilder
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1924,11 +1924,11 @@ items:
   candidates:
   - id: cand-clinton-porter
     name: Clinton Porter
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-naquetta-ricks
     name: Naquetta Ricks
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -1946,7 +1946,7 @@ items:
   candidates:
   - id: cand-jamie-jackson
     name: Jamie Jackson
-    party: Democratic Party
+    party: Democratic
     order: 1
   links:
     official:
@@ -1964,7 +1964,7 @@ items:
   candidates:
   - id: cand-sarah-amelia-woodson
     name: Sarah Amelia Woodson
-    party: Democratic Party
+    party: Democratic
     order: 1
   links:
     official:
@@ -1982,11 +1982,11 @@ items:
   candidates:
   - id: cand-robert-bob-marshall
     name: Robert "Bob" Marshall
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-nate-marsh
     name: Nate Marsh
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -2004,15 +2004,15 @@ items:
   candidates:
   - id: cand-anthony-hartsook
     name: Anthony Hartsook
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-richard-bowness
     name: Richard Bowness
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-john-h-sutton
     name: John H Sutton
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -2030,15 +2030,15 @@ items:
   candidates:
   - id: cand-michael-clarkson
     name: Michael Clarkson
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-max-brooks
     name: Max Brooks
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-caryn-ann-harlos
     name: Caryn Ann Harlos
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -2056,11 +2056,11 @@ items:
   candidates:
   - id: cand-jonathan-post
     name: Jonathan Post
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-tisha-mauro
     name: Tisha Mauro
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -2078,11 +2078,11 @@ items:
   candidates:
   - id: cand-vic-meyers
     name: Vic Meyers
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-ty-winter
     name: Ty Winter
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -2100,15 +2100,15 @@ items:
   candidates:
   - id: cand-carlos-barron
     name: Carlos Barron
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-dez-packard
     name: Dez Packard
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-eric-e-joss
     name: Eric E. Joss
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -2126,11 +2126,11 @@ items:
   candidates:
   - id: cand-michael-sheperek
     name: Michael Sheperek
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-lesley-smith
     name: Lesley Smith
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -2148,11 +2148,11 @@ items:
   candidates:
   - id: cand-ryan-gonzalez
     name: Ryan Gonzalez
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-tommy-butler
     name: Tommy Butler
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -2170,11 +2170,11 @@ items:
   candidates:
   - id: cand-amy-parks
     name: Amy Parks
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-jacki-marsh
     name: Jacki Marsh
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -2192,11 +2192,11 @@ items:
   candidates:
   - id: cand-yara-zokaie
     name: Yara Zokaie
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-steve-yurash
     name: Steve Yurash
-    party: Center Party
+    party: Center
     order: 2
   links:
     official:
@@ -2214,11 +2214,11 @@ items:
   candidates:
   - id: cand-daniel-frick
     name: Daniel Frick
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-andy-boesenecker
     name: Andy Boesenecker
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -2236,11 +2236,11 @@ items:
   candidates:
   - id: cand-jason-bias
     name: Jason Bias
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-mallory-martin
     name: Mallory Martin
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -2258,11 +2258,11 @@ items:
   candidates:
   - id: cand-rick-taggart
     name: Rick Taggart
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-brittni-packard
     name: Brittni Packard
-    party: Democratic Party
+    party: Democratic
     order: 2
   links:
     official:
@@ -2280,11 +2280,11 @@ items:
   candidates:
   - id: cand-chris-richardson
     name: Chris Richardson
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-amy-l-lunde
     name: Amy L. Lunde
-    party: Libertarian Party
+    party: Libertarian
     order: 2
   links:
     official:
@@ -2302,11 +2302,11 @@ items:
   candidates:
   - id: cand-elizabeth-velasco
     name: Elizabeth Velasco
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-russ-andrews
     name: Russ Andrews
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -2324,7 +2324,7 @@ items:
   candidates:
   - id: cand-larry-don-suckla
     name: Larry Don Suckla
-    party: Republican Party
+    party: Republican
     order: 1
   links:
     official:
@@ -2342,11 +2342,11 @@ items:
   candidates:
   - id: cand-katie-stewart
     name: Katie Stewart
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-naomi-riess
     name: Naomi Riess
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -2364,11 +2364,11 @@ items:
   candidates:
   - id: cand-kathryn-kester-green
     name: Kathryn Kester Green
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-matt-alexander
     name: Matt Alexander
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -2386,15 +2386,15 @@ items:
   candidates:
   - id: cand-scott-shamblin
     name: Scott Shamblin
-    party: Republican Party
+    party: Republican
     order: 1
   - id: cand-eliza-hamrick
     name: Eliza Hamrick
-    party: Democratic Party
+    party: Democratic
     order: 2
   - id: cand-kevin-gulbranson
     name: Kevin Gulbranson
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -2412,15 +2412,15 @@ items:
   candidates:
   - id: cand-matthew-martinez
     name: Matthew Martinez
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-steven-rodriguez
     name: Steven Rodriguez
-    party: Republican Party
+    party: Republican
     order: 2
   - id: cand-donald-vermillion
     name: Donald Vermillion
-    party: Libertarian Party
+    party: Libertarian
     order: 3
   links:
     official:
@@ -2438,7 +2438,7 @@ items:
   candidates:
   - id: cand-dusty-johnson
     name: Dusty Johnson
-    party: Republican Party
+    party: Republican
     order: 1
   links:
     official:
@@ -2456,11 +2456,11 @@ items:
   candidates:
   - id: cand-maureen-mo-dower
     name: Maureen (Mo) Dower
-    party: Democratic Party
+    party: Democratic
     order: 1
   - id: cand-scott-l-slaugh
     name: Scott L. Slaugh
-    party: Republican Party
+    party: Republican
     order: 2
   links:
     official:
@@ -2478,7 +2478,7 @@ items:
   candidates:
   - id: cand-lori-garcia-sander
     name: Lori Garcia Sander
-    party: Republican Party
+    party: Republican
     order: 1
   links:
     official:
