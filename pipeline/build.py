@@ -3,6 +3,9 @@
     python -m pipeline.build --election co-2026-11-03           # compile and write data/2026-11-03/
     python -m pipeline.build --election co-2026-11-03 --check   # compile, run every check, and fail
                                                                 # if data/ is not what sources compile to
+    python -m pipeline.build --election co-2026-11-03 --draft-out app/dev-data
+                                                                # development only: write even when checks
+                                                                # fail; unsigned counties are marked "draft"
 
 Writes zip-index.json, statewide.json, counties.json, manifest.json, hashes.txt,
 CHANGELOG.md and schema/*.json. Exit code 0 = success, 1 = any check failed.
@@ -127,6 +130,8 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--election", required=True, help="election id, e.g. co-2026-11-03")
     ap.add_argument("--check", action="store_true", help="check only; fail if data/ is out of date")
+    ap.add_argument("--draft-out", type=Path, default=None,
+                    help="development only: write draft data here even if checks fail (never deploy it)")
     ap.add_argument("--root", type=Path, default=ROOT, help=argparse.SUPPRESS)
     ap.add_argument("--today", type=dt.date.fromisoformat, default=None, help=argparse.SUPPRESS)
     args = ap.parse_args(argv)
@@ -135,6 +140,8 @@ def main(argv: list[str] | None = None) -> int:
     out = out_dir(args.root, args.election)
     existing = load_existing(out)
     res = compile_election(args.root, args.election, PLACEHOLDER_VERSION)
+    if args.draft_out:
+        return write_draft(res, args.draft_out / out.name)
     if res.errors:
         report(res.errors)
         return 1
@@ -190,6 +197,26 @@ def main(argv: list[str] | None = None) -> int:
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(text, encoding="utf-8")
     print(f"Wrote {out}: {summary}" + (f"; {len(entries)} changelog entries" if entries else ""))
+    return 0
+
+
+def write_draft(res: Result, out: Path) -> int:
+    """Draft data for app development. Unsigned counties with local items get coverage "draft",
+    which the published schema does not allow, so draft data can never pass a real build."""
+    if res.statewide is None or res.counties is None or res.zip_index is None:
+        report(res.errors)
+        return 1
+    for c in res.counties["counties"].values():
+        if c["items"] and c["coverage"]["status"] != "verified_complete":
+            c["coverage"] = {"status": "draft"}
+    for d in (res.statewide, res.counties, res.zip_index):
+        d["data_version"] = "draft"
+    files = render(res, "draft")
+    for name, text in files.items():
+        p = out / name
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(text, encoding="utf-8")
+    print(f"Wrote DRAFT data to {out} ({len(res.errors)} check failures ignored). Never deploy it.")
     return 0
 
 

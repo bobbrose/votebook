@@ -309,3 +309,13 @@ def test_verified_date_comes_from_the_verification_record(world: World) -> None:
     local = world.data("counties.json")["counties"]["08013"]["items"][0]
     assert sw["provenance"]["verified_at"] == "2099-10-01"
     assert local["provenance"]["verified_at"] == "2099-10-03"
+
+
+def test_draft_mode_writes_data_marked_draft_even_when_checks_fail(world: World, tmp_path: Path) -> None:
+    world.remove("verification/08013.yaml")
+    out = tmp_path / "draft"
+    assert build.main(["--election", ELECTION, "--root", str(world.root), "--draft-out", str(out)]) == 0
+    counties = json.loads((out / "2099-11-03" / "counties.json").read_text())
+    assert counties["counties"]["08013"]["coverage"] == {"status": "draft"}
+    assert counties["data_version"] == "draft"
+    assert not (world.root / "data").exists()  # the real output is untouched

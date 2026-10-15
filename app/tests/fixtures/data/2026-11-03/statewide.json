@@ -1,0 +1,182 @@
+{
+ "schema_version": 1,
+ "data_version": "2026.10.15-1",
+ "election_id": "co-2026-11-03",
+ "districts": [],
+ "items": [
+  {
+   "id": "us-senate",
+   "kind": "candidate_contest",
+   "group": "federal",
+   "ballot_order": 1000,
+   "district_id": null,
+   "title": "United States Senator",
+   "ranked": false,
+   "vote_for": 1,
+   "write_in": true,
+   "links": {
+    "official": [
+     {
+      "label": "Official candidate list",
+      "url": "https://example.org/list"
+     }
+    ],
+    "explainers": [],
+    "support": null,
+    "oppose": null
+   },
+   "provenance": {
+    "source": "https://example.org/sample.pdf",
+    "verified_at": "2026-10-10"
+   },
+   "candidates": [
+    {
+     "id": "cand-avery-sample",
+     "name": "Avery Sample",
+     "party": "Party A",
+     "order": 1,
+     "links": []
+    },
+    {
+     "id": "cand-blake-sample",
+     "name": "Blake Sample",
+     "party": "Party B",
+     "order": 2,
+     "links": []
+    },
+    {
+     "id": "cand-casey-sample",
+     "name": "Casey Sample",
+     "party": null,
+     "order": 3,
+     "links": []
+    }
+   ]
+  },
+  {
+   "id": "state-house-1",
+   "kind": "candidate_contest",
+   "group": "legislature",
+   "ballot_order": 2000,
+   "district_id": "co-house-1",
+   "title": "State Representative - District 1",
+   "ranked": false,
+   "vote_for": 1,
+   "write_in": false,
+   "links": {
+    "official": [
+     {
+      "label": "Official candidate list",
+      "url": "https://example.org/list"
+     }
+    ],
+    "explainers": [],
+    "support": null,
+    "oppose": null
+   },
+   "provenance": {
+    "source": "https://example.org/sample.pdf",
+    "verified_at": "2026-10-10"
+   },
+   "candidates": [
+    {
+     "id": "cand-drew-sample",
+     "name": "Drew Sample",
+     "party": "Party A",
+     "order": 1,
+     "links": []
+    }
+   ]
+  },
+  {
+   "id": "state-house-2",
+   "kind": "candidate_contest",
+   "group": "legislature",
+   "ballot_order": 3000,
+   "district_id": "co-house-2",
+   "title": "State Representative - District 2",
+   "ranked": false,
+   "vote_for": 1,
+   "write_in": false,
+   "links": {
+    "official": [
+     {
+      "label": "Official candidate list",
+      "url": "https://example.org/list"
+     }
+    ],
+    "explainers": [],
+    "support": null,
+    "oppose": null
+   },
+   "provenance": {
+    "source": "https://example.org/sample.pdf",
+    "verified_at": "2026-10-10"
+   },
+   "candidates": [
+    {
+     "id": "cand-emery-sample",
+     "name": "Emery Sample",
+     "party": "Party B",
+     "order": 1,
+     "links": []
+    }
+   ]
+  },
+  {
+   "id": "retain-supreme-jordan-doe",
+   "kind": "retention",
+   "group": "judges",
+   "ballot_order": 4000,
+   "district_id": null,
+   "title": "Colorado Supreme Court Justice Jordan Doe",
+   "judge": "Jordan Doe",
+   "court": "Colorado Supreme Court",
+   "links": {
+    "official": [
+     {
+      "label": "Judicial performance evaluation",
+      "url": "https://example.org/jpe"
+     }
+    ],
+    "explainers": [],
+    "support": null,
+    "oppose": null
+   },
+   "provenance": {
+    "source": "https://example.org/sample.pdf",
+    "verified_at": "2026-10-10"
+   }
+  },
+  {
+   "id": "amendment-1",
+   "kind": "measure",
+   "group": "measures",
+   "ballot_order": 5000,
+   "district_id": null,
+   "title": "Amendment 1",
+   "ballot_text": {
+    "text": "Shall there be an amendment to the example constitution?",
+    "source": "https://example.org/bluebook"
+   },
+   "links": {
+    "official": [
+     {
+      "label": "Official candidate list",
+      "url": "https://example.org/list"
+     }
+    ],
+    "explainers": [],
+    "support": {
+     "label": "Yes on 1",
+     "url": "https://example.org/yes"
+    },
+    "oppose": null
+   },
+   "provenance": {
+    "source": "https://example.org/sample.pdf",
+    "verified_at": "2026-10-10"
+   }
+  }
+ ]
+}

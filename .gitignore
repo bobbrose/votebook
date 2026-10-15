@@ -3,3 +3,8 @@
 .cache/
 __pycache__/
 .pytest_cache/
+app/dev-data/
+node_modules/
+app/dist/
+app/test-results/
+app/playwright-report/

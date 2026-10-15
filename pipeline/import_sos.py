@@ -29,7 +29,7 @@ CANDIDATES_URL = SOS + "vote/files/2026/2026GeneralCandidateListOfficial.xlsx"
 CANDIDATES_PAGE = SOS + "vote/generalCandidates.html"
 DRAWING_URL = SOS + "vote/files/2026/20260728MajorMinorPartyDrawing.xlsx"
 MEASURES_PAGE = SOS + "Initiatives/ballot/contacts/2026.html"
-BLUE_BOOK = "https://leg.colorado.gov/bluebook"
+BLUE_BOOK = "https://content.leg.colorado.gov/sites/default/files/2026-bluebook-english-accessible_1.pdf"
 JPE_INDEX = "https://judicialperformance.colorado.gov/judicial-evaluations"
 
 notes: list[str] = []

@@ -1,0 +1,239 @@
+{
+ "schema_version": 1,
+ "data_version": "2026.10.15-1",
+ "election_id": "co-2026-11-03",
+ "counties": {
+  "08001": {
+   "county_fips": "08001",
+   "name": "Alpha",
+   "coverage": {
+    "status": "verified_complete",
+    "source": "https://example.org/alpha.pdf",
+    "verified_at": "2026-10-10",
+    "verified_by": "Checker"
+   },
+   "statewide_order": [
+    "us-senate",
+    "state-house-1",
+    "state-house-2",
+    "retain-supreme-jordan-doe",
+    "amendment-1"
+   ],
+   "districts": [
+    {
+     "id": "city-alpha",
+     "type": "city",
+     "name": "City of Alpha"
+    },
+    {
+     "id": "alpha-fire-district",
+     "type": "special_district",
+     "name": "Alpha Fire District"
+    }
+   ],
+   "items": [
+    {
+     "id": "alpha-council",
+     "kind": "candidate_contest",
+     "group": "city",
+     "ballot_order": 3010,
+     "district_id": "city-alpha",
+     "title": "City of Alpha Council",
+     "ranked": false,
+     "vote_for": 2,
+     "write_in": false,
+     "links": {
+      "official": [
+       {
+        "label": "Official candidate list",
+        "url": "https://example.org/list"
+       }
+      ],
+      "explainers": [],
+      "support": null,
+      "oppose": null
+     },
+     "provenance": {
+      "source": "https://example.org/sample.pdf",
+      "verified_at": "2026-10-10"
+     },
+     "candidates": [
+      {
+       "id": "cand-finley-sample",
+       "name": "Finley Sample",
+       "party": null,
+       "order": 1,
+       "links": []
+      },
+      {
+       "id": "cand-gray-sample",
+       "name": "Gray Sample",
+       "party": null,
+       "order": 2,
+       "links": []
+      },
+      {
+       "id": "cand-harper-sample",
+       "name": "Harper Sample",
+       "party": null,
+       "order": 3,
+       "links": []
+      }
+     ]
+    },
+    {
+     "id": "alpha-mayor",
+     "kind": "candidate_contest",
+     "group": "city",
+     "ballot_order": 3020,
+     "district_id": "city-alpha",
+     "title": "City of Alpha Mayor",
+     "ranked": true,
+     "write_in": false,
+     "links": {
+      "official": [
+       {
+        "label": "Official candidate list",
+        "url": "https://example.org/list"
+       }
+      ],
+      "explainers": [],
+      "support": null,
+      "oppose": null
+     },
+     "provenance": {
+      "source": "https://example.org/sample.pdf",
+      "verified_at": "2026-10-10"
+     },
+     "candidates": [
+      {
+       "id": "cand-indy-sample",
+       "name": "Indy Sample",
+       "party": null,
+       "order": 1,
+       "links": []
+      },
+      {
+       "id": "cand-jules-sample",
+       "name": "Jules Sample",
+       "party": null,
+       "order": 2,
+       "links": []
+      }
+     ],
+     "max_ranks": 2,
+     "seats": 1,
+     "rcv_instructions": {
+      "text": "Rank candidates in order of preference.",
+      "source": "https://example.org/alpha.pdf"
+     }
+    },
+    {
+     "id": "alpha-2a",
+     "kind": "measure",
+     "group": "measures",
+     "ballot_order": 5010,
+     "district_id": "city-alpha",
+     "title": "City of Alpha Ballot Question 2A",
+     "ballot_text": {
+      "text": "Shall the charter be amended?",
+      "source": "https://example.org/bluebook"
+     },
+     "links": {
+      "official": [
+       {
+        "label": "Official candidate list",
+        "url": "https://example.org/list"
+       }
+      ],
+      "explainers": [],
+      "support": null,
+      "oppose": null
+     },
+     "provenance": {
+      "source": "https://example.org/sample.pdf",
+      "verified_at": "2026-10-10"
+     },
+     "choices": [
+      "For the Measure",
+      "Against the Measure"
+     ]
+    },
+    {
+     "id": "alpha-200",
+     "kind": "measure",
+     "group": "measures",
+     "ballot_order": 5020,
+     "district_id": null,
+     "title": "Alpha County Ballot Question 200",
+     "ballot_text": {
+      "text": "By what method shall the board be elected?",
+      "source": "https://example.org/bluebook"
+     },
+     "links": {
+      "official": [
+       {
+        "label": "Official candidate list",
+        "url": "https://example.org/list"
+       }
+      ],
+      "explainers": [],
+      "support": null,
+      "oppose": null
+     },
+     "provenance": {
+      "source": "https://example.org/sample.pdf",
+      "verified_at": "2026-10-10"
+     },
+     "choices": [
+      "By districts",
+      "At large",
+      "Half and half"
+     ]
+    },
+    {
+     "id": "alpha-fire-7a",
+     "kind": "measure",
+     "group": "measures",
+     "ballot_order": 5030,
+     "district_id": "alpha-fire-district",
+     "title": "Alpha Fire District Ballot Issue 7A",
+     "ballot_text": {
+      "text": "Shall the district taxes be increased?",
+      "source": "https://example.org/bluebook"
+     },
+     "links": {
+      "official": [
+       {
+        "label": "Official candidate list",
+        "url": "https://example.org/list"
+       }
+      ],
+      "explainers": [],
+      "support": null,
+      "oppose": null
+     },
+     "provenance": {
+      "source": "https://example.org/sample.pdf",
+      "verified_at": "2026-10-10"
+     }
+    }
+   ]
+  },
+  "08003": {
+   "county_fips": "08003",
+   "name": "Beta",
+   "coverage": {
+    "status": "statewide_only"
+   },
+   "statewide_order": [
+    "us-senate",
+    "state-house-2",
+    "retain-supreme-jordan-doe",
+    "amendment-1"
+   ],
+   "districts": [],
+   "items": []
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "schema_version": 1,
+ "data_version": "2026.10.15-1",
+ "election_id": "co-2026-11-03",
+ "zips": {
+  "80001": {
+   "counties": [
+    "08001"
+   ],
+   "districts": {
+    "state_house": [
+     "co-house-1",
+     "co-house-2"
+    ],
+    "place": [
+     "city-alpha"
+    ]
+   }
+  },
+  "80002": {
+   "counties": [
+    "08001",
+    "08003"
+   ],
+   "districts": {
+    "state_house": [
+     "co-house-2"
+    ]
+   }
+  },
+  "80003": {
+   "counties": [
+    "08003"
+   ],
+   "districts": {
+    "state_house": [
+     "co-house-2"
+    ]
+   }
+  }
+ },
+ "other_states": {
+  "841": "UT"
+ },
+ "states": {
+  "UT": {
+   "name": "Utah",
+   "election_site": "https://vote.gov/register/utah"
+  }
+ }
+}
