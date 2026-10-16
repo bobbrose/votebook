@@ -80,7 +80,10 @@ export function Privacy() {
         <p>Every visitor's browser downloads the same ballot files: every county's ballot and a ZIP code table for the whole state. Your browser picks out your ballot itself, so this site never learns which ZIP code, county or districts you looked up, or what you chose.</p>
 
         <h2>What the host can see</h2>
-        <p>This site is hosted by Vercel. Like any web host, Vercel's servers see that a device at your internet address loaded the site, and Vercel keeps its own request logs. Because everyone downloads the same files, those logs cannot show what you looked up. We use no analytics, no cookies, no ads and no third-party scripts or fonts.</p>
+        <p>This site is hosted by Vercel. Like any web host, Vercel's servers see that a device at your internet address loaded the site. Vercel keeps request logs: which file was requested, when, the browser type, and the internet address. The project can view those logs for one day; how long Vercel itself keeps them is set by Vercel's own privacy policy. Because everyone downloads the same files, the logs cannot show which ZIP code you looked up or anything you chose. We use no analytics, no cookies, no ads and no third-party scripts or fonts.</p>
+
+        <h2>Working offline</h2>
+        <p>After your first visit, your browser keeps a copy of this site's own files and the ballot data so it works without a connection, for example in a vote center. That copy holds nothing you entered. It updates itself the next time you're online.</p>
 
         <h2>Links to other sites</h2>
         <p>Links to official and campaign sites open those sites, which have their own privacy practices. This site tells them nothing about you, not even which page you came from.</p>

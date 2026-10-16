@@ -2,6 +2,7 @@
 
     python3 tests/fixtures/make_fixture.py
 """
+import hashlib
 import json
 from pathlib import Path
 
@@ -73,6 +74,14 @@ zip_index = {**H, "zips": {
 }, "other_states": {"841": "UT"}, "states": {"UT": {"name": "Utah", "election_site": "https://vote.gov/register/utah"}}}
 
 OUT.mkdir(parents=True, exist_ok=True)
-for name, doc in [("statewide.json", statewide), ("counties.json", counties), ("zip-index.json", zip_index)]:
-    (OUT / name).write_text(json.dumps(doc, indent=1) + "\n")
+manifest = {"data_version": H["data_version"], "files": ["zip-index.json", "statewide.json", "counties.json"],
+            "schema_version": 1}
+hashes = []
+for name, doc in [("statewide.json", statewide), ("counties.json", counties), ("zip-index.json", zip_index),
+                  ("manifest.json", manifest)]:
+    body = json.dumps(doc, indent=1) + "\n"
+    (OUT / name).write_text(body)
+    hashes.append(f"{hashlib.sha256(body.encode()).hexdigest()}  {name}")
+# Same format as the pipeline's hashes.txt, so the production build accepts fixture data in e2e tests.
+(OUT / "hashes.txt").write_text("\n".join(sorted(hashes, key=lambda h: h.split()[1])) + "\n")
 print("wrote", OUT)

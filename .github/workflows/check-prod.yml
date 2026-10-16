@@ -1,0 +1,41 @@
+name: check:prod
+
+# Runs the privacy and offline checks against every successful Vercel deployment (preview and
+# production). Vercel Deployment Checks require this job before promoting to the domain (docs/hosting.md).
+on:
+  deployment_status:
+
+jobs:
+  check:
+    if: github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Check the deployment
+        env:
+          VERCEL_BYPASS_SECRET: ${{ secrets.VERCEL_BYPASS_SECRET }}
+        run: npm run check:prod -- --url "${{ github.event.deployment_status.environment_url || github.event.deployment_status.target_url }}"
+      - name: Record the URL and served file hashes
+        if: always()
+        env:
+          URL: ${{ github.event.deployment_status.environment_url || github.event.deployment_status.target_url }}
+          VERCEL_BYPASS_SECRET: ${{ secrets.VERCEL_BYPASS_SECRET }}
+        run: |
+          {
+            echo "### Deployment $URL"
+            echo '```'
+            curl -fsS -H "x-vercel-protection-bypass: $VERCEL_BYPASS_SECRET" "$URL/data/2026-11-03/hashes.txt" || echo "hashes.txt not served"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

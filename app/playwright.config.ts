@@ -12,8 +12,9 @@ export default defineConfig({
     { name: "mobile-webkit", use: { ...devices["iPhone 13"], viewport: { width: 360, height: 740 } } },
   ],
   webServer: {
-    // The fictional fixture ballot, never real data, so tests are deterministic.
-    command: `BALLOT_DATA_DIR=tests/fixtures/data npx vite --port ${PORT} --strictPort`,
+    // A production build with the fictional fixture ballot (never real data, so tests are deterministic),
+    // served by `vite preview` with the same headers as Vercel (vercel.json), service worker included.
+    command: `E2E_DATA_DIR=tests/fixtures/data npx vite build --logLevel warn && npx vite preview --port ${PORT} --strictPort`,
     url: `http://localhost:${PORT}`,
     reuseExistingServer: false,
   },

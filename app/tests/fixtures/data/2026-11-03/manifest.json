@@ -1,0 +1,9 @@
+{
+ "data_version": "2026.10.15-1",
+ "files": [
+  "zip-index.json",
+  "statewide.json",
+  "counties.json"
+ ],
+ "schema_version": 1
+}

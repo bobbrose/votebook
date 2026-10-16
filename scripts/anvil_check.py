@@ -21,6 +21,10 @@ What it enforces:
   * The build gate: building may not start until plan.md has a "Reviewed by:"
     line written by approve-plan. Plan review is not hash-locked; plans change
     during a build, and scope changes go through the PRD and its approval.
+  * Overrides: a human can choose to proceed past failing checks with
+    "override", recorded in REVIEW.md with a name and reason. An override covers
+    only the exact failures it lists; any new failure still blocks. Overridden
+    failures are shown as warnings so they stay visible.
 
 Exit code 0 = gate passes, 1 = gate fails. Standard library only.
 """
@@ -97,6 +101,14 @@ class Report:
 
     def ok(self, msg: str) -> None:
         self.passes.append(msg)
+
+    def apply_overrides(self, overrides: list[dict]) -> None:
+        """Turn failures a human has overridden into visible warnings."""
+        for o in overrides:
+            for msg in o["failures"]:
+                if msg in self.errors:
+                    self.errors.remove(msg)
+                    self.warnings.append(f"OVERRIDDEN by {o['by']} ({o['at']}): {msg} [reason: {o['reason']}]")
 
     def print(self) -> None:
         for m in self.passes:
@@ -213,6 +225,60 @@ APPROVE_STAGE = {"vision": None, "prd": "prd", "spec": "spec", "design": "design
 APPROVAL_RE = re.compile(
     r"^-\s+(\S+\.md):\s+([0-9a-f]{16})(?:\s+·\s+approved by\s+(.+?)\s+·\s+(\S+))?\s*$", re.M)
 NOTES_DEFAULT = "## Reviewer notes\n\n(Add decisions on critique findings here.)\n"
+OVERRIDES_HEAD = "## Overrides"
+OVERRIDES_INTRO = ("Human decisions to proceed past failing checks. Each covers only the failures listed under it; "
+                   "a new failure still blocks. Only humans override, via anvil_check.py override; "
+                   "remove all with override --clear.")
+OVERRIDE_RE = re.compile(r"^-\s+by\s+(.+?)\s+·\s+(\S+)\s+·\s+(\S+)\s+·\s+reason:\s*(.*)$")
+
+
+def overrides_section(text: str) -> str:
+    m = re.search(rf"^{OVERRIDES_HEAD}\n.*?(?=^## |\Z)", text, re.M | re.S)
+    return m.group(0) if m else ""
+
+
+def read_overrides(docs: Path) -> list[dict]:
+    """Each override: who, when, stage, reason and the exact failure messages it covers."""
+    out: list[dict] = []
+    for line in overrides_section(read(docs, "review") or "").splitlines():
+        m = OVERRIDE_RE.match(line)
+        if m:
+            out.append({"by": m.group(1), "at": m.group(2), "stage": m.group(3), "reason": m.group(4), "failures": []})
+        elif out and line.startswith("  - "):
+            out[-1]["failures"].append(line[4:].strip())
+    return out
+
+
+def render_overrides(overrides: list[dict]) -> str:
+    if not overrides:
+        return ""
+    lines = [OVERRIDES_HEAD, "", OVERRIDES_INTRO, ""]
+    for o in overrides:
+        lines.append(f"- by {o['by']} · {o['at']} · {o['stage']} · reason: {o['reason']}")
+        lines += [f"  - {f}" for f in o["failures"]]
+    return "\n".join(lines) + "\n"
+
+
+def write_review(docs: Path, records: dict[str, tuple[str, str, str]], overrides: list[dict]) -> None:
+    old = read(docs, "review") or ""
+    m = re.search(r"^## Reviewer notes.*?(?=^## |\Z)", old, re.M | re.S)
+    notes = m.group(0).rstrip() + "\n" if m else NOTES_DEFAULT
+    order = [DOCS[k] for k in APPROVABLE]
+    lines = [
+        "# Review record",
+        "",
+        "One line per approved doc: file, hash at approval, approver, time.",
+        "Editing a doc makes its approval stale. Only humans approve, via anvil_check.py approve.",
+        "",
+        *[f"- {f}: {records[f][0]} · approved by {records[f][1]} · {records[f][2]}"
+          for f in sorted(records, key=lambda f: order.index(f) if f in order else len(order))],
+        "",
+    ]
+    ov = render_overrides(overrides)
+    if ov:
+        lines += [ov]
+    lines += [notes]
+    (docs / DOCS["review"]).write_text("\n".join(lines), encoding="utf-8")
 
 
 def doc_hashes(docs: Path) -> dict[str, str]:
@@ -300,8 +366,15 @@ def check_plan_review(text: str, r: Report, required: bool) -> None:
 
 
 def cmd_check(docs: Path, stage: str) -> int:
-    r = Report()
     print(f"Anvil gate check: {docs}  (stage: {stage})\n")
+    r = run_checks(docs, stage)
+    r.apply_overrides(read_overrides(docs))
+    r.print()
+    return 0 if not r.errors else 1
+
+
+def run_checks(docs: Path, stage: str) -> Report:
+    r = Report()
     if read(docs, "vision") is None:
         r.err("vision.md: missing; the chain starts from a vision")
     ids: dict[str, set[str]] = {"REQ": set(), "NFR": set(), "AC": set()}
@@ -329,8 +402,32 @@ def cmd_check(docs: Path, stage: str) -> int:
             check_plan_review(read(docs, "plan"), r, required=(stage == "build"))
     elif stage == "review" and read(docs, "plan") is not None and not (docs / DOCS["review"]).exists():
         r.err("plan.md exists before human approval; the plan must come after review")
-    r.print()
-    return 0 if not r.errors else 1
+    return r
+
+
+def cmd_override(docs: Path, by: str, reason: str, stage: str, match: str | None, clear: bool) -> int:
+    overrides = read_overrides(docs)
+    if clear:
+        write_review(docs, read_approvals(docs), [])
+        print(f"Removed {len(overrides)} override(s) from {docs / DOCS['review']}")
+        return 0
+    if not reason.strip():
+        print("An override needs a reason (--reason).")
+        return 1
+    r = run_checks(docs, stage)
+    covered = {f for o in overrides for f in o["failures"]}
+    failures = [e for e in r.errors if e not in covered and (match is None or match.lower() in e.lower())]
+    if not failures:
+        print(f"Nothing to override: no {'matching ' if match else ''}failures at stage {stage} that aren't already overridden.")
+        return 0
+    now = dt.datetime.now().isoformat(timespec="minutes")
+    overrides.append({"by": by, "at": now, "stage": stage, "reason": " ".join(reason.split()), "failures": failures})
+    write_review(docs, read_approvals(docs), overrides)
+    print(f"Recorded override by {by} in {docs / DOCS['review']} for {len(failures)} failure(s):")
+    for f in failures:
+        print(f"  - {f}")
+    print("\nThese now show as warnings. Any new failure still blocks.")
+    return 0
 
 
 def doc_key(name: str) -> str | None:
@@ -376,22 +473,7 @@ def cmd_approve(docs: Path, by: str, only: list[str] | None = None) -> int:
     for key in keys:
         records[DOCS[key]] = (hashes[DOCS[key]], by, now)
 
-    old = read(docs, "review") or ""
-    m = re.search(r"^## Reviewer notes.*", old, re.M | re.S)
-    notes = m.group(0).rstrip() + "\n" if m else NOTES_DEFAULT
-    order = [DOCS[k] for k in APPROVABLE]
-    lines = [
-        "# Review record",
-        "",
-        "One line per approved doc: file, hash at approval, approver, time.",
-        "Editing a doc makes its approval stale. Only humans approve, via anvil_check.py approve.",
-        "",
-        *[f"- {f}: {records[f][0]} · approved by {records[f][1]} · {records[f][2]}"
-          for f in sorted(records, key=lambda f: order.index(f) if f in order else len(order))],
-        "",
-        notes,
-    ]
-    (docs / DOCS["review"]).write_text("\n".join(lines), encoding="utf-8")
+    write_review(docs, records, read_overrides(docs))
     print(f"\nRecorded approval of {', '.join(DOCS[k] for k in keys)} in {docs / DOCS['review']}")
     return 0
 
@@ -447,6 +529,10 @@ def cmd_status(docs: Path) -> int:
         nxt = "human review of plan.md, then anvil_check.py approve-plan"
     else:
         nxt = "build milestone M1 (/anvil-build M1)"
+    ov = read_overrides(docs)
+    if ov:
+        n = sum(len(o["failures"]) for o in ov)
+        print(f"\n  Overrides: {n} failure(s) overridden by {', '.join(sorted({o['by'] for o in ov}))} (see REVIEW.md).")
     print(f"\nNext step: {nxt}")
     return 0
 
@@ -458,6 +544,8 @@ examples:
     python scripts/anvil_check.py approve docs --by "Name"
     python scripts/anvil_check.py approve docs --doc vision.md --by "Name"
     python scripts/anvil_check.py approve-plan docs --by "Name"
+    python scripts/anvil_check.py override docs --by "Name" --stage build --reason "Why we proceed"
+    python scripts/anvil_check.py override docs --clear
 
 Run '<command> -h' for details on one command.
 """
@@ -481,6 +569,14 @@ def main() -> int:
     pp = sub.add_parser("approve-plan", help="record a human review line in plan.md (humans only)")
     pp.add_argument("docs", type=Path, help="docs folder, e.g. docs")
     pp.add_argument("--by", required=True, help="name of the person who reviewed the plan")
+    o = sub.add_parser("override", help="record a human decision to proceed past failing checks (humans only)")
+    o.add_argument("docs", type=Path, help="docs folder, e.g. docs")
+    o.add_argument("--by", help="name of the person overriding")
+    o.add_argument("--reason", default="", help="why it is right to proceed anyway; recorded in REVIEW.md")
+    o.add_argument("--stage", choices=STAGES, default="build",
+                   help="stage whose current failures to override (default: build)")
+    o.add_argument("--match", metavar="TEXT", help="override only failures containing this text (default: all of them)")
+    o.add_argument("--clear", action="store_true", help="remove every recorded override")
     s = sub.add_parser("status", help="show which stages pass and the next step")
     s.add_argument("docs", type=Path, help="docs folder, e.g. docs")
     if len(sys.argv) == 1:
@@ -493,6 +589,10 @@ def main() -> int:
         return cmd_approve(args.docs, args.by, args.doc)
     if args.cmd == "approve-plan":
         return cmd_approve_plan(args.docs, args.by)
+    if args.cmd == "override":
+        if not args.clear and not args.by:
+            ap.error("override needs --by (or --clear)")
+        return cmd_override(args.docs, args.by, args.reason, args.stage, args.match, args.clear)
     return cmd_status(args.docs)
 
 if __name__ == "__main__":
