@@ -67,7 +67,9 @@ All files carry `schema_version`, `data_version` and `election_id` so multiple e
       { "id": "city-of-boulder-council-candidates", "kind": "candidate_contest", "group": "city", "ballot_order": 15020,
         "district_id": "city-boulder", "title": "City of Boulder Council Candidates", "vote_for": 5, "ranked": false,
         "candidates": [ { "id": "cand-lee-gilbert", "name": "Lee Gilbert", "party": null, "order": 1, "links": [] } ],
-        "write_in": false, "links": { ... }, "provenance": { ... } },
+        "write_in": false,
+        "links": { "official": [ { "label": "City of Boulder: candidates and videos", "url": "https://bouldercolorado.gov/..." } ], ... },
+        "provenance": { ... } },
       { "id": "city-of-boulder-mayoral-candidates", "kind": "candidate_contest", "group": "city", "ballot_order": 15010,
         "district_id": "city-boulder", "title": "City of Boulder Mayoral Candidates", "ranked": true, "max_ranks": 6, "seats": 1,
         "rcv_instructions": { "text": "Rank candidates in the order of your preference ...", "source": "https://...sample ballot.pdf" },
@@ -77,7 +79,7 @@ All files carry `schema_version`, `data_version` and `election_id` so multiple e
 
 The app builds a county's ballot from `statewide_order` plus that county's `items`, sorted by `ballot_order`. A ZIP in several counties shows each county's ballot items, with one coverage label per county. District ids are `co-cd-N`, `co-senate-N`, `co-house-N`, `city-<name>` (from Census places) and a slug of the district's printed name for special districts. `provenance.verified_at` and `coverage` come from the signed verification record, never from source files.
 
-`statewide.json` has the same `items` shape with `group` in federal, state, judges (statewide courts) and measures. `kind` is one of `measure`, `retention`, `candidate_contest`. A ranked contest has `ranked: true`, `max_ranks` (the number of ranking columns on the printed ballot), `seats` (1 for single-winner) and `rcv_instructions`, copied from the jurisdiction's official voter instructions; it has no `vote_for`. Every `measure` carries `ballot_text` copied from the certified source; there is no field for project-written descriptions (critique D3). When the certified title includes a table (Colorado requires one for income tax changes, as in Amendment 87), `ballot_text.table` holds its caption, header, rows and note. `choices` is present only when the ballot prints labels other than YES/FOR and NO/AGAINST: two labels take the yes and no positions; more than two make a pick-one question (REQ-09). Every `retention` item has a `links.official` entry labeled "Judicial performance evaluation" pointing to the Colorado Office of Judicial Performance Evaluation page for that judge, and no field for the evaluation's finding (critique D4).
+`statewide.json` has the same `items` shape with `group` in federal, state, judges (statewide courts) and measures. `kind` is one of `measure`, `retention`, `candidate_contest`. A ranked contest has `ranked: true`, `max_ranks` (the number of ranking columns on the printed ballot), `seats` (1 for single-winner) and `rcv_instructions`, copied from the jurisdiction's official voter instructions; it has no `vote_for`. Every `measure` carries `ballot_text` copied from the certified source; there is no field for project-written descriptions (critique D3). When the certified title includes a table (Colorado requires one for income tax changes, as in Amendment 87), `ballot_text.table` holds its caption, header, rows and note. `choices` is present only when the ballot prints labels other than YES/FOR and NO/AGAINST: two labels take the yes and no positions; more than two make a pick-one question (REQ-09). A candidate may carry `incumbent: true`. It is set by hand in the source file only from an official record of current officeholders and is confirmed by the checker with the rest of the item; it is never inferred, and absence means nothing is shown (AC-57). City and town contests carry the clerk's own candidate page, when one exists, as a `links.official` entry; candidate names there can differ from the printed ballot, and the data keeps the printed names. Every `retention` item has a `links.official` entry labeled "Judicial performance evaluation" pointing to the Colorado Office of Judicial Performance Evaluation page for that judge, and no field for the evaluation's finding (critique D4).
 
 User data (device only):
 
@@ -85,7 +87,7 @@ User data (device only):
 { "format": "ballot-explorer-choices", "version": 1, "election_id": "co-2026-11-03",
   "scope": { "zip": "80302", "narrowing": { "co-house": "10" } },
   "choices": { "boulder-city-2c": { "vote": "yes" }, "boulder-council": { "selected": ["cand-a","cand-c"] },
-               "boulder-mayor": { "ranking": ["cand-b", "cand-a", { "write_in": "Name" }] } },   // array index 0 = 1st
+               "boulder-mayor": { "ranking": ["cand-b", "", "cand-a"] } },   // index 0 = 1st; "" = rank left empty
   "notes": { "boulder-city-2c": "Ask Dana about the fiscal note" },
   "updated_at": "2026-10-13T18:00:00Z" }
 ```
@@ -113,14 +115,14 @@ Intersects Census cartographic ZCTA polygons with county, congressional, state s
 Implements: REQ-01, REQ-02.
 
 ### C3 Ballot resolver (`app/src/resolve.ts`)
-Pure functions. `rank(choice, candidateId)`, `unrank(choice, candidateId)` and `move(choice, candidateId, delta)` keep a ranking consecutive, unique and within `max_ranks` (AC-14). `itemsForZip(index, files, zip)` returns items with `conditional: districtName | null`. `narrow(items, selections)` removes items that cannot apply. `itemsForPoint(items, boundaries, [lon, lat])` uses point-in-polygon on TopoJSON boundaries from the statewide `boundaries.topojson` (Release 1, not in pilot). Always sorts by `ballot_order`.
-Implements: REQ-01, REQ-03, REQ-04, REQ-05, REQ-10 (ranking rules), NFR-06.
+Pure functions. `setRank(ranking, candidateId, rank | null)` gives a candidate a rank and refuses a rank another candidate holds, so ranks stay unique and within `max_ranks` (AC-14); `skippedRanks(ranking)` lists empty ranks above the last one used (AC-58). Release 1 adds ranked write-ins. `partiesOnBallot(rows)`, `fillByParty(rows, choices, party)` and `clearCandidates(rows, choices)` implement REQ-24 without touching ranked contests, measures or notes. `itemsForZip(index, files, zip)` returns items with `conditional: districtName | null`. `narrow(items, selections)` removes items that cannot apply; it is switched off in the pilot (`NARROWING_IN_PILOT`), which is research mode only. `itemsForPoint(items, boundaries, [lon, lat])` uses point-in-polygon on TopoJSON boundaries from the statewide `boundaries.topojson` (Release 1, not in pilot). Always sorts by `ballot_order`.
+Implements: REQ-01, REQ-03, REQ-04, REQ-05, REQ-10 (ranking rules), REQ-24, NFR-06.
 
 ### C4 UI (`app/src/ui/`)
-Preact with TypeScript, built with Vite. Chosen for a small bundle (target under 60 KB compressed app JS) and familiar component model. Screens per design.md. Controls are native form elements where possible (radio group for Yes/Undecided/No, checkboxes for candidates) for accessibility. The progress bar (REQ-12) is a `position: sticky` header shared by the Ballot and item detail screens, using a native `<progress>` element plus the text count, derived from the store so it updates on every change. Scroll offsets for in-page links account for its height. The print stylesheet hides it.
+Preact with TypeScript, built with Vite. Chosen for a small bundle (target under 60 KB compressed app JS) and familiar component model. Screens per design.md. Controls are native form elements where possible (radio group for Yes/Undecided/No, checkboxes for candidates) for accessibility. The progress bar (REQ-12) is a `position: sticky` header shared by the Ballot and item detail screens, using a native `<progress>` element plus the text count, derived from the store so it updates on every change. Scroll offsets for in-page links account for its height. The print stylesheet hides it. Ballot rows open in place to show the vote control and note; which rows are open, the ballot search text (REQ-25) and the row to return to after "Learn more" are held in memory only, never stored. Search matching is a plain lower-case word match done on the device.
 
 Ranked-choice counting example (`app/src/ui/rcv-example.ts`, Release 1): fixed, hand-written example data with fictional candidates, one variant for single-winner and one for multi-winner contests. It is static content, never computed from loaded ballot data or the voter's choices (AC-48). The app has no tabulation code. The example's steps are checked against each pilot or release jurisdiction's official counting rules before release.
-Implements: REQ-06, REQ-07, REQ-09, REQ-10, REQ-11, REQ-12, REQ-13, REQ-14, REQ-20, REQ-21, REQ-22 (report link), REQ-23, NFR-05, NFR-09.
+Implements: REQ-06, REQ-07, REQ-09, REQ-10, REQ-11, REQ-12, REQ-13, REQ-14, REQ-20, REQ-21, REQ-22 (report link), REQ-23, REQ-24, REQ-25, NFR-05, NFR-09.
 
 ### C5 Storage (`app/src/store.ts`)
 One interface, two backends: IndexedDB (via a 1 KB wrapper written in-house, no dependency) and an in-memory backend for private session mode. Debounced autosave at 300 ms. `clearAll()` deletes the database (including the device key used by C6), Cache Storage entries for user data, and `localStorage` keys. On first save the store calls `navigator.storage.persist()` to reduce browser-initiated deletion, such as Safari's 7-day limit; the app works the same whether or not it is granted.
@@ -160,13 +162,13 @@ Implements: REQ-22.
 | REQ-01 | C2, C3 | Unit tests on resolver with fixture ZIPs; e2e AC-01, AC-02 |
 | REQ-02 | C2, C4 | e2e AC-03 |
 | REQ-03 | C3, C4 (Release 1) | Unit point-in-polygon tests; e2e AC-04, network assertion AC-05 |
-| REQ-04 | C3, C4 | Unit tests on `narrow`; e2e AC-06 |
+| REQ-04 | C3, C4 (Release 1) | Unit tests on `narrow`; e2e AC-06 |
 | REQ-05 | C1, C3 | Pipeline order check vs verification record; e2e AC-07 |
 | REQ-06 | C1, C4 | Component tests AC-08, AC-41; pipeline retention link check |
 | REQ-07 | C4 | Component test AC-09 |
 | REQ-08 | C1, C4 | Pipeline fails on ballot text mismatch (AC-11); component test AC-10 |
 | REQ-09 | C1, C4 | Component tests AC-12, AC-51, AC-52; schema check of `choices` |
-| REQ-10 | C1, C3, C4 | Unit tests on ranking functions AC-14; component tests AC-13, AC-47, AC-48; e2e write-out AC-49; pipeline check AC-50 |
+| REQ-10 | C1, C3, C4 | Unit tests on ranking functions AC-14, AC-58; component tests AC-13, AC-47, AC-48, AC-57; e2e write-out AC-49; pipeline check AC-50 |
 | REQ-11 | C4, C5 | e2e AC-15 |
 | REQ-12 | C4 | Component test AC-16; e2e scroll test at 360 px AC-42 |
 | REQ-13 | C4 | e2e AC-17, AC-18; print snapshot AC-19 |
@@ -180,12 +182,14 @@ Implements: REQ-22.
 | REQ-21 | C1, C4 | Schema requires provenance; component test AC-28 |
 | REQ-22 | C1, C9 | Link test AC-29; changelog generation test AC-30 |
 | REQ-23 | C4 | Content review AC-31 |
+| REQ-24 | C3, C4 | Unit tests on `fillByParty`, `partiesOnBallot`, `clearCandidates` AC-53 to AC-55; e2e select and clear |
+| REQ-25 | C4 | e2e search AC-56 |
 | NFR-01 | C1, C3, C5, C6, C7, C8 | Playwright network guard on every e2e test AC-32, AC-05, AC-26; same-files test AC-40; saved-file content scan AC-43 |
 | NFR-02 | C8 | Header test and cookie assertion AC-33 |
 | NFR-03 | C7 | e2e offline test AC-34 |
 | NFR-04 | C4, C7 | Lighthouse CI with mobile throttling AC-35 |
 | NFR-05 | C4 | axe-core in e2e, manual VoiceOver and NVDA pass AC-36 |
-| NFR-06 | C1, C3 | Order check in pipeline and e2e AC-07 |
+| NFR-06 | C1, C3 | Order check in pipeline and e2e AC-07; alphabetical party list AC-54 |
 | NFR-07 | C1 | Pipeline schema and hash checks AC-37, AC-11 |
 | NFR-08 | C8 | Reproducible build job comparing hashes AC-38 |
 | NFR-09 | C4 | Playwright at 360 px, no horizontal overflow AC-39 |

@@ -1,7 +1,7 @@
 // S6 Write out my ballot (REQ-13, REQ-14).
 import { useState } from "preact/hooks";
 import { ELECTION_DAY, LINKS } from "../links";
-import { countsTowardProgress, isDecided, type Row } from "../resolve";
+import { countsTowardProgress, isDecided, ordinal, type Row } from "../resolve";
 import { useApp } from "../state";
 import { GROUP_HEADINGS, choiceSummary } from "./Ballot";
 import { ProgressBar } from "./parts";
@@ -18,7 +18,13 @@ export function writeOutLines(rows: Row[], choices: Record<string, Choice>, note
     if (!decided && !opts.undecided) continue;
     if (!countsTowardProgress(item) && !opts.undecided) continue;
     if (item.group !== group) { group = item.group; lines.push("", GROUP_HEADINGS[group].toUpperCase()); }
-    lines.push(`${item.title} ... ${choiceSummary(item, choice)}`);
+    if (item.kind === "candidate_contest" && item.ranked && decided && choice && "ranking" in choice) {
+      // AC-49: one line per rank, in rank order, to match the ranking columns on the paper ballot.
+      lines.push(`${item.title} (ranked)`);
+      choice.ranking.forEach((id, i) => {
+        if (id) lines.push(`    ${ordinal(i + 1)} ... ${item.candidates.find((c) => c.id === id)?.name}`);
+      });
+    } else lines.push(`${item.title} ... ${choiceSummary(item, choice)}`);
     const note = notes[item.id]?.trim();
     if (opts.notes && note) lines.push(`    Note: ${note}`);
   }

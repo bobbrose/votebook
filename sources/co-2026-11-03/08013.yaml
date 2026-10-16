@@ -155,6 +155,10 @@ ballot:
   group: city
   district_id: city-boulder
   title: City of Boulder Mayoral Candidates
+  links:
+    official:
+    - label: 'City of Boulder: candidates and videos'
+      url: https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates
   candidates:
   - name: Lisa Ann Jacobs
   - name: Taishya Adams
@@ -177,6 +181,10 @@ ballot:
   group: city
   district_id: city-boulder
   title: City of Boulder Council Candidates
+  links:
+    official:
+    - label: 'City of Boulder: candidates and videos'
+      url: https://bouldercolorado.gov/2026-city-boulder-mayoral-and-city-council-candidates
   candidates:
   - name: Lee Gilbert
   - name: Sam Fuqua

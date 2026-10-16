@@ -119,21 +119,35 @@ export function SidesRow({ links }: { links: Links }) {
   );
 }
 
-/** Autosaving note (REQ-11, AC-15). */
+/** Autosaving note (REQ-11, AC-15): reads as a light "Notes" line until tapped, then grows as the voter types. */
 export function NoteField({ id }: { id: string }) {
   const { user, setNote, isPrivate } = useApp();
   const [status, setStatus] = useState("");
+  const grow = (el: HTMLTextAreaElement | null) => {
+    if (!el) return;
+    el.style.height = "auto";
+    el.style.height = `${el.scrollHeight}px`;
+  };
   return (
-    <section>
-      <label for={`note-${id}`}><h3>My note</h3></label>
+    <div class="note">
       <textarea
         id={`note-${id}`}
-        rows={3}
+        class="note-field"
+        rows={1}
+        aria-label="Notes"
+        placeholder="Notes"
+        ref={grow}
         value={user.notes[id] ?? ""}
-        onInput={(e) => { setNote(id, (e.target as HTMLTextAreaElement).value); setStatus(isPrivate ? "Kept for this session only" : "Saved on this device"); }}
+        onInput={(e) => {
+          const el = e.target as HTMLTextAreaElement;
+          grow(el);
+          setNote(id, el.value);
+          setStatus(isPrivate ? "Kept for this session only" : "Saved on this device");
+        }}
+        onBlur={() => setStatus("")}
       />
-      <p class="muted small" aria-live="polite">{status}</p>
-    </section>
+      <p class="note-status muted small" aria-live="polite">{status}</p>
+    </div>
   );
 }
 

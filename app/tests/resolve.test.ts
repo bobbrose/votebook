@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
-  emptyNarrowing, isDecided, itemsForZip, narrow, narrowingOptions, progress, toggleCandidate, yesNoLabels,
+  clearCandidates, emptyNarrowing, ordinal, setRank, skippedRanks, fillByParty, isDecided, partiesOnBallot, itemsForZip, narrow, narrowingOptions, progress, toggleCandidate, yesNoLabels,
 } from "../src/resolve";
 import type { Contest, Measure } from "../src/types";
 import { fixture } from "./data";
@@ -87,11 +87,12 @@ describe("narrow (REQ-04, AC-06)", () => {
 });
 
 describe("decisions and progress (REQ-09, REQ-10, REQ-12)", () => {
-  it("counts only decided items and leaves ranked contests out in the pilot (AC-16)", () => {
+  it("counts only decided items, ranked contests included (AC-16)", () => {
     const rows = ballot("80001").rows;
-    expect(progress(rows, {})).toEqual({ decided: 0, total: 9 });
-    expect(progress(rows, { "amendment-1": { vote: "yes" }, "alpha-200": { pick: 1 }, "us-senate": { selected: [] } }))
-      .toEqual({ decided: 2, total: 9 });
+    expect(progress(rows, {})).toEqual({ decided: 0, total: 10 });
+    expect(progress(rows, { "amendment-1": { vote: "yes" }, "alpha-200": { pick: 1 }, "us-senate": { selected: [] },
+                            "alpha-mayor": { ranking: ["", "cand-indy-sample"] } }))
+      .toEqual({ decided: 3, total: 10 });
   });
 
   it("treats Undecided and empty selections as undecided", () => {
@@ -113,5 +114,49 @@ describe("decisions and progress (REQ-09, REQ-10, REQ-12)", () => {
     expect(yesNoLabels(item("amendment-1"))).toEqual(["Yes", "No"]);
     expect(yesNoLabels(item("alpha-2a"))).toEqual(["For the Measure", "Against the Measure"]);
     expect(yesNoLabels(item("alpha-200") as Measure)).toBeNull();
+  });
+});
+
+describe("select all from a party, unselect all", () => {
+  const rows = ballot("80001").rows;
+  it("offers every party on the ballot, alphabetically (NFR-06)", () => {
+    expect(partiesOnBallot(rows)).toEqual(["Party A", "Party B"]);
+  });
+  it("sets every race where the party has a candidate and counts the picks it replaces", () => {
+    const r = fillByParty(rows, { "us-senate": { selected: ["cand-casey-sample"] } }, "Party A");
+    expect(r.choices).toEqual({
+      "us-senate": { selected: ["cand-avery-sample"], write_in: "" },
+      "state-house-1": { selected: ["cand-drew-sample"], write_in: "" },
+    });
+    expect(r.filled).toBe(2);
+    expect(r.replaced).toBe(1);
+  });
+  it("skips a race where the party has more candidates than the vote limit (AC-13)", () => {
+    const senate = item("us-senate") as Contest;
+    const crowded = { ...senate, candidates: senate.candidates.map((c) => ({ ...c, party: "Party A" })) };
+    const r = fillByParty([{ item: crowded, county: "08001", districtType: null, conditional: null }], {}, "Party A");
+    expect(r.tooMany).toBe(1);
+    expect(r.choices).toEqual({});
+  });
+  it("unselect all clears candidates and keeps measures", () => {
+    const changes = clearCandidates(rows, { "us-senate": { selected: ["cand-avery-sample"] }, "amendment-1": { vote: "yes" } });
+    expect(changes).toEqual({ "us-senate": { selected: [], write_in: "" } });
+  });
+});
+
+describe("ranked contests (REQ-10)", () => {
+  it("never lets two candidates hold the same rank", () => {
+    const r = setRank([], "a", 1)!;
+    expect(r).toEqual(["a"]);
+    expect(setRank(r, "b", 1)).toBeNull();
+    expect(setRank(r, "b", 2)).toEqual(["a", "b"]);
+  });
+  it("moves a candidate to a new rank and clears the old one", () => {
+    expect(setRank(["a", "b"], "a", 3)).toEqual(["", "b", "a"]);
+    expect(setRank(["a", "b"], "b", null)).toEqual(["a"]);
+  });
+  it("reports skipped ranks", () => {
+    expect(skippedRanks(["", "b", "", "c"])).toEqual([1, 3]);
+    expect([1, 2, 3, 4, 11, 12, 13, 21, 22].map(ordinal)).toEqual(["1st", "2nd", "3rd", "4th", "11th", "12th", "13th", "21st", "22nd"]);
   });
 });

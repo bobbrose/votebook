@@ -87,6 +87,7 @@ items:
   - id: cand-joe-neguse
     name: Joe Neguse
     party: Democratic
+    incumbent: true  # test value from the project owner, 2026-10-16; confirm before signing
     order: 1
   - id: cand-kelley-anne-dennison
     name: Kelley Anne Dennison

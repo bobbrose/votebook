@@ -32,10 +32,10 @@ describe("measure detail (REQ-06 to REQ-09)", () => {
     await open("80001", "#/item/amendment-1");
     expect((screen.getByLabelText("Undecided") as HTMLInputElement).checked).toBe(true);
     const count = () => document.querySelector(".progress-count")!.textContent;
-    expect(count()).toBe("0 of 9 decided");
+    expect(count()).toBe("0 of 10 decided");
     await act(() => void fireEvent.click(screen.getByLabelText("Yes")));
-    expect(count()).toBe("1 of 9 decided");
-    expect(document.querySelector("[aria-live=polite].visually-hidden")!.textContent).toBe("1 of 9 decided");
+    expect(count()).toBe("1 of 10 decided");
+    expect(document.querySelector("[aria-live=polite].visually-hidden")!.textContent).toBe("1 of 10 decided");
   });
 
   it("uses printed labels and offers pick-one questions (AC-51, AC-52)", async () => {
@@ -66,10 +66,14 @@ describe("candidate contests (REQ-10)", () => {
     expect(screen.getByText("You can choose up to 2. Unselect one first.")).toBeTruthy();
   });
 
-  it("shows official instructions and the paper-ballot fallback for ranked contests in the pilot (AC-47)", async () => {
+  it("shows official instructions and a rank dropdown per candidate; a used rank is disabled elsewhere (AC-47)", async () => {
     await open("80001", "#/item/alpha-mayor");
     expect(screen.getByText("Rank candidates in order of preference.")).toBeTruthy();
-    expect(screen.getByText(/Mark your rankings on your paper ballot/)).toBeTruthy();
+    const indy = screen.getByLabelText("Rank for Indy Sample") as HTMLSelectElement;
+    await act(() => void fireEvent.change(indy, { target: { value: "1" } }));
+    const jules = screen.getByLabelText("Rank for Jules Sample") as HTMLSelectElement;
+    expect((jules.querySelector('option[value="1"]') as HTMLOptionElement).disabled).toBe(true);
+    expect((jules.querySelector('option[value="2"]') as HTMLOptionElement).disabled).toBe(false);
   });
 });
 

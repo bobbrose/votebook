@@ -39,6 +39,8 @@ Exit criteria:
 ### M3 Pilot app (pilot, October 14 to 16)
 Vite, Preact and TypeScript app. Resolver (`itemsForZip`, `narrow`). Home, Not in Colorado, Ballot with research banner, coverage labels and ProgressBar, Narrow my ballot, item detail for measures, retentions and candidate contests (checkbox variant), Write out my ballot with print stylesheet, Your data with private session and Clear everything, Privacy and Voting basics pages. Store with IndexedDB and in-memory backends, autosave, PrivacyStrip and the leave-page prompt.
 
+Added during the M3 walk-through (PRD updated October 16): ballot cards that open to decide in place, simple ranked choice with rank menus, Select all from a party and Clear, ballot search, party and incumbent markers, compact notes, and city clerk candidate links. Guided narrowing was taken out of the pilot (research mode only) and moves to Release 1.
+
 Requirements: REQ-01, REQ-02, REQ-04, REQ-05, REQ-06, REQ-07, REQ-08, REQ-09, REQ-10 (vote-for contests), REQ-11, REQ-12, REQ-13, REQ-14, REQ-15, REQ-16, REQ-17, REQ-20, REQ-21, REQ-23, NFR-06, NFR-09. Acceptance: AC-01 to AC-03, AC-06 to AC-10, AC-12, AC-13, AC-15 to AC-23, AC-27, AC-28, AC-31, AC-39, AC-41, AC-42, AC-46.
 
 Exit criteria:
@@ -98,7 +100,7 @@ Exit criteria:
 - `python -m pytest pipeline -k changelog` passes.
 
 ### M9 Ranked choice (2027)
-Ranked contest fields and pipeline checks, ranking functions, RankedList, RcvInstructions, CountingExample, ranked write-out lines. Counting example checked against each jurisdiction's official rules.
+Simple ranking, the ranked data checks and ranked write-out lines shipped in the pilot (M3). M9 adds ranked write-ins and the CountingExample, checked against each jurisdiction's official rules.
 
 Requirements: REQ-10, REQ-12, REQ-13, NFR-05, NFR-06. Acceptance: AC-14, AC-47, AC-48, AC-49, AC-50.
 
@@ -153,6 +155,7 @@ Exit criteria:
 | T-13 | M3 | Store, autosave, Clear everything, private session, leave prompt | REQ-15, REQ-16, REQ-17, AC-15, AC-21 to AC-23, AC-46 |
 | T-14 | M3 | Write out my ballot and print stylesheet | REQ-13, REQ-14, AC-17 to AC-20 |
 | T-15 | M3 | Privacy and Voting basics pages | REQ-14, REQ-23, AC-31 |
+| T-15a | M3 | Ballot cards, simple ranking, party select, search, incumbent marker | REQ-10, REQ-24, REQ-25, AC-14, AC-47, AC-49, AC-53 to AC-58 |
 | T-16 | M4 | Privacy guard and same-files test | NFR-01, AC-32, AC-40 |
 | T-17 | M4 | Headers, CSP, SRI, cookie test | NFR-02, AC-33 |
 | T-18 | M4 | Service worker and offline test | NFR-03, AC-34 |
@@ -163,7 +166,7 @@ Exit criteria:
 | T-23 | M6 | 2027 election data and all-county verification | REQ-20, AC-27 |
 | T-24 | M7 | Encrypted export and import, device key | REQ-18, AC-24, AC-25, AC-43 to AC-45 |
 | T-25 | M8 | Report an error and changelog page | REQ-22, AC-29, AC-30 |
-| T-26 | M9 | Ranked choice data, ranking, UI, write-out | REQ-10, AC-14, AC-47 to AC-50 |
+| T-26 | M9 | Ranked write-ins and counting example | REQ-10, AC-48 |
 | T-27 | M10 | Precise mode and boundaries | REQ-03, AC-04, AC-05 |
 | T-28 | M11 | QR transfer | REQ-19, AC-26 |
 | T-29 | M12 | Reproducible build, screen-reader pass, Lighthouse gate | NFR-04, NFR-05, NFR-08, AC-35, AC-36, AC-38 |
@@ -175,13 +178,13 @@ Exit criteria:
 | REQ-01 | M1, M3 |
 | REQ-02 | M1, M3 |
 | REQ-03 | M10 |
-| REQ-04 | M3 |
+| REQ-04 | Release 1 (re-planned after the pilot) |
 | REQ-05 | M1, M2, M3 |
 | REQ-06 | M1, M2, M3 |
 | REQ-07 | M2, M3 |
 | REQ-08 | M1, M2, M3 |
 | REQ-09 | M3 |
-| REQ-10 | M3 (vote-for), M9 (ranked) |
+| REQ-10 | M3, M9 (counting example, write-ins) |
 | REQ-11 | M3 |
 | REQ-12 | M3, M9 |
 | REQ-13 | M3, M9 |
@@ -195,6 +198,8 @@ Exit criteria:
 | REQ-21 | M1, M2, M3, M5, M6 |
 | REQ-22 | M8 |
 | REQ-23 | M3, M4, M8 |
+| REQ-24 | M3 |
+| REQ-25 | M3 |
 | NFR-01 | M1, M4, M5, M6, M7, M10, M11 |
 | NFR-02 | M4, M10 |
 | NFR-03 | M4 |

@@ -47,6 +47,7 @@ DEFS = {
             "party": {"type": ["string", "null"]},
             "order": {"type": "integer", "minimum": 1},
             "links": {"type": "array", "items": {"$ref": "#/$defs/link"}},
+            "incumbent": {"type": "boolean"},
         },
     },
     "item": {

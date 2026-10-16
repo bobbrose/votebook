@@ -14,7 +14,7 @@ export interface Links {
 
 export interface Provenance { source: string; verified_at: string }
 
-export interface Candidate { id: string; name: string; party: string | null; order: number; links: Link[] }
+export interface Candidate { id: string; name: string; party: string | null; order: number; links: Link[]; incumbent?: boolean }
 
 export interface BallotTable { caption: string; header: string[]; rows: string[][]; note: string | null }
 

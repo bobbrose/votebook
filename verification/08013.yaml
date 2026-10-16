@@ -13,8 +13,11 @@
 #  4. For every measure, copy its text straight from the PDF (not from the YAML) into measures.
 #     The build compares them word for word, which catches extraction mistakes.
 #  5. Check choices on measures that are not Yes/No: 2L, 2M, 200-201, Niwot 300.
-#  6. Fix anything wrong in 08013.yaml, then fill in checked_by and checked_at.
-#  7. A second person checks at least 10 percent of items (9 or more) and fills in spot_check.
+#  6. Open each official link on city and town races (for example the City of Boulder candidates page)
+#     and confirm it is the clerk's own page for this election and lists the same candidates.
+#     Candidate names there may differ from the printed ballot; the YAML keeps the printed names.
+#  7. Fix anything wrong in 08013.yaml, then fill in checked_by and checked_at.
+#  8. A second person checks at least 10 percent of items (9 or more) and fills in spot_check.
 scope: "08013"
 election_id: co-2026-11-03
 sample_ballot: https://assets.bouldercounty.gov/wp-content/uploads/2026/09/Boulder-County-2026-General-Sample-Ballot.pdf

@@ -1,8 +1,8 @@
 // S4 Item detail (measure, retention, choices variants) and S5 (candidate contest, ranked fallback).
 import { useState } from "preact/hooks";
-import { toggleCandidate, yesNoLabels } from "../resolve";
+import { ordinal, setRank, skippedRanks, toggleCandidate, yesNoLabels } from "../resolve";
 import { useApp } from "../state";
-import type { BallotTable, Contest, Item, Measure, Retention, Vote } from "../types";
+import type { BallotTable, Contest, Measure, Retention, Vote } from "../types";
 import { ExternalLink, LinkList, NoteField, PickOne, ProgressBar, ProvenanceLine, SidesRow, TriState } from "./parts";
 
 export function ItemDetail({ id }: { id: string }) {
@@ -27,7 +27,8 @@ export function ItemDetail({ id }: { id: string }) {
   );
 }
 
-function VoteControl({ item }: { item: Item }) {
+/** The voter's choice for a measure or retention; shared with the expanded Ballot row. */
+export function VoteControl({ item }: { item: Measure | Retention }) {
   const app = useApp();
   const choice = app.user.choices[item.id];
   if (item.kind === "measure" && item.choices && item.choices.length > 2) {
@@ -64,10 +65,14 @@ function MeasureBody({ item }: { item: Measure }) {
   );
 }
 
+export function retentionQuestion(item: Retention): string {
+  return `Shall ${item.court === "Colorado Supreme Court" ? "Justice" : "Judge"} ${item.judge} of the ${item.court} be retained in office?`;
+}
+
 function RetentionBody({ item }: { item: Retention }) {
   return (
     <>
-      <p class="ballot-text">Shall {item.court === "Colorado Supreme Court" ? "Justice" : "Judge"} {item.judge} of the {item.court} be retained in office?</p>
+      <p class="ballot-text">{retentionQuestion(item)}</p>
       <VoteControl item={item} />
       <LinkList title="Official sources" links={item.links.official} />
     </>
@@ -75,12 +80,9 @@ function RetentionBody({ item }: { item: Retention }) {
 }
 
 function ContestBody({ item }: { item: Contest }) {
-  const app = useApp();
-  const [message, setMessage] = useState("");
   if (item.ranked) {
     return (
       <>
-        <p><strong>Ranked choice: rank up to {item.max_ranks}{item.seats && item.seats > 1 ? `, ${item.seats} to be elected` : ""}.</strong></p>
         {item.rcv_instructions && (
           <section>
             <h2 class="sub">How ranked choice works here (official instructions)</h2>
@@ -88,13 +90,29 @@ function ContestBody({ item }: { item: Contest }) {
             <p class="small"><ExternalLink link={{ label: "Source", url: item.rcv_instructions.source }} /></p>
           </section>
         )}
-        <p class="notice">Ranking isn't available in this test version. Mark your rankings on your paper ballot.</p>
-        <h2 class="sub">Candidates, in ballot order</h2>
-        <ul class="candidates plain">{item.candidates.map((c) => <li key={c.id}>{c.name}{c.party ? ` (${c.party})` : ""}</li>)}</ul>
+        <RankedChooser item={item} />
         <LinkList title="Official sources" links={item.links.official} />
       </>
     );
   }
+  return (
+    <>
+      <CandidateChooser item={item} />
+      <LinkList title="Official sources" links={item.links.official} />
+      {item.candidates.some((c) => c.links.length) && (
+        <section>
+          <h3>Candidates' own sites</h3>
+          <ul class="links">{item.candidates.flatMap((c) => c.links.map((l) => <li key={c.id + l.url}>{c.name}: <ExternalLink link={l} /></li>))}</ul>
+        </section>
+      )}
+    </>
+  );
+}
+
+/** Candidate checkboxes with the vote limit (REQ-10, AC-13); shared with the expanded Ballot row. */
+export function CandidateChooser({ item }: { item: Contest }) {
+  const app = useApp();
+  const [message, setMessage] = useState("");
   const limit = item.vote_for ?? 1;
   const choice = app.user.choices[item.id];
   const selected = choice && "selected" in choice ? choice.selected : [];
@@ -115,7 +133,7 @@ function ContestBody({ item }: { item: Contest }) {
         <legend class="visually-hidden">Candidates for {item.title}</legend>
         {item.candidates.map((c) => (
           <label key={c.id} class="candidate">
-            <span class="candidate-name">{c.name}<span class="party">{c.party ?? "No party"}</span></span>
+            <span class="candidate-name">{c.name}<span class="party">{c.party ?? "No party"}{c.incumbent ? " · Incumbent" : ""}</span></span>
             <input type="checkbox" checked={selected.includes(c.id)} onChange={(e) => {
               (e.target as HTMLInputElement).checked = selected.includes(c.id);
               toggle(c.id);
@@ -135,13 +153,47 @@ function ContestBody({ item }: { item: Contest }) {
         )}
       </fieldset>
       <p class="limit-message" aria-live="polite">{message}</p>
-      <LinkList title="Official sources" links={item.links.official} />
-      {item.candidates.some((c) => c.links.length) && (
-        <section>
-          <h3>Candidates' own sites</h3>
-          <ul class="links">{item.candidates.flatMap((c) => c.links.map((l) => <li key={c.id + l.url}>{c.name}: <ExternalLink link={l} /></li>))}</ul>
-        </section>
-      )}
+    </>
+  );
+}
+
+/** Ranked contest: one rank dropdown per candidate; a rank held by another candidate can't be picked twice (REQ-10). */
+export function RankedChooser({ item }: { item: Contest }) {
+  const app = useApp();
+  const choice = app.user.choices[item.id];
+  const ranking = choice && "ranking" in choice ? choice.ranking : [];
+  const max = item.max_ranks ?? item.candidates.length;
+  const ranks = Array.from({ length: max }, (_, i) => i + 1);
+  const skipped = skippedRanks(ranking);
+
+  const change = (id: string, value: string) => {
+    const next = setRank(ranking, id, value ? Number(value) : null);
+    if (next) app.setChoice(item.id, { ranking: next });
+  };
+
+  return (
+    <>
+      <p><strong>Rank up to {max}{item.seats && item.seats > 1 ? `, ${item.seats} to be elected` : ""}. 1st is the one you want most.</strong></p>
+      <div class="candidates">
+        {item.candidates.map((c) => {
+          const mine = ranking.indexOf(c.id) + 1;
+          return (
+            <label key={c.id} class={`candidate ranked ${mine ? "is-ranked" : ""}`}>
+              <span class="candidate-name">{c.name}<span class="party">{c.party ?? "No party"}{c.incumbent ? " · Incumbent" : ""}</span></span>
+              <select aria-label={`Rank for ${c.name}`} value={mine ? String(mine) : ""}
+                      onChange={(e) => change(c.id, (e.target as HTMLSelectElement).value)}>
+                <option value="">Not ranked</option>
+                {ranks.map((r) => (
+                  <option key={r} value={r} disabled={!!ranking[r - 1] && ranking[r - 1] !== c.id}>{ordinal(r)}</option>
+                ))}
+              </select>
+            </label>
+          );
+        })}
+      </div>
+      <p class="limit-message" aria-live="polite">
+        {skipped.length ? `You skipped ${skipped.map(ordinal).join(" and ")}. Check the official instructions for what a skipped rank means.` : ""}
+      </p>
     </>
   );
 }

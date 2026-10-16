@@ -82,6 +82,9 @@ export function emptyNarrowing(): Narrowing {
   return { county: null, picks: {}, special: {} };
 }
 
+/** The early pilot is research only: every item for the ZIP, no narrowing controls. */
+export const NARROWING_IN_PILOT = false;
+
 /** Guided narrowing (REQ-04, AC-06): drop rows that cannot apply; settled rows lose their tag. */
 export function narrow(rows: Row[], n: Narrowing, counties: County[]): Row[] {
   const out: Row[] = [];
@@ -133,8 +136,33 @@ export function narrowingOptions(rows: Row[], counties: County[]) {
   };
 }
 
-/** Ranked contests are shown with official instructions only in the pilot (PRD Release scope). */
-export const RANKED_IN_PILOT = false;
+/** Ranked contests use a simple rank dropdown per candidate in the pilot. */
+export const RANKED_IN_PILOT = true;
+
+export function ordinal(n: number): string {
+  const s = n % 100 >= 11 && n % 100 <= 13 ? "th" : ({ 1: "st", 2: "nd", 3: "rd" } as Record<number, string>)[n % 10] ?? "th";
+  return `${n}${s}`;
+}
+
+/**
+ * A ranking is stored by position: ranking[0] is the 1st choice, "" is a rank left empty.
+ * Returns the new ranking, or null when another candidate already holds that rank (no duplicate ranks).
+ */
+export function setRank(ranking: string[], id: string, rank: number | null): string[] | null {
+  const next = ranking.map((x) => (x === id ? "" : x));
+  if (rank !== null) {
+    if (next[rank - 1]) return null;
+    while (next.length < rank) next.push("");
+    next[rank - 1] = id;
+  }
+  while (next.length && !next[next.length - 1]) next.pop();
+  return next;
+}
+
+/** Ranks left empty before the last one used, so the voter can be told (for example "2nd"). */
+export function skippedRanks(ranking: string[]): number[] {
+  return ranking.flatMap((x, i) => (x ? [] : [i + 1]));
+}
 
 export function countsTowardProgress(item: Item): boolean {
   return !(item.kind === "candidate_contest" && item.ranked && !RANKED_IN_PILOT);
@@ -146,7 +174,7 @@ export function isDecided(_item: Item, choice: Choice | undefined): boolean {
   if ("vote" in choice) return choice.vote !== "undecided";
   if ("pick" in choice) return choice.pick !== null;
   if ("selected" in choice) return choice.selected.length > 0 || !!choice.write_in?.trim();
-  if ("ranking" in choice) return choice.ranking.length > 0;
+  if ("ranking" in choice) return choice.ranking.some(Boolean);
   return false;
 }
 
@@ -169,4 +197,49 @@ export function yesNoLabels(item: Item): [string, string] | null {
   if (item.kind !== "measure") return null;
   if (!item.choices) return ["Yes", "No"];
   return item.choices.length === 2 ? [item.choices[0], item.choices[1]] : null;
+}
+
+/** Every party with a candidate in a vote-for contest on these rows, alphabetical so no party is favored (NFR-06). */
+export function partiesOnBallot(rows: Row[]): string[] {
+  const parties = new Set<string>();
+  for (const { item } of rows) {
+    if (item.kind === "candidate_contest" && !item.ranked) for (const c of item.candidates) if (c.party) parties.add(c.party);
+  }
+  return [...parties].sort((a, b) => a.localeCompare(b));
+}
+
+export interface PartyFill {
+  choices: Record<string, Choice>;   // only the contests that change
+  filled: number;                    // contests set to this party's candidates
+  replaced: number;                  // of those, contests where the voter had already chosen someone else
+  tooMany: number;                   // the party has more candidates than the vote limit
+}
+
+/** "Select all from a party": sets every vote-for contest where the party has candidates; never exceeds a limit. */
+export function fillByParty(rows: Row[], choices: Record<string, Choice>, party: string): PartyFill {
+  const out: PartyFill = { choices: {}, filled: 0, replaced: 0, tooMany: 0 };
+  for (const { item } of rows) {
+    if (item.kind !== "candidate_contest" || item.ranked) continue;
+    const ids = item.candidates.filter((c) => c.party === party).map((c) => c.id);
+    if (!ids.length) continue;
+    if (ids.length > (item.vote_for ?? 1)) { out.tooMany++; continue; }
+    const current = choices[item.id];
+    const same = current && "selected" in current && !current.write_in?.trim()
+      && current.selected.length === ids.length && ids.every((id) => current.selected.includes(id));
+    if (same) continue;
+    if (isDecided(item, current)) out.replaced++;
+    out.choices[item.id] = { selected: ids, write_in: "" };
+    out.filled++;
+  }
+  return out;
+}
+
+/** "Unselect all": clears every candidate choice on these rows; measures and notes are kept. */
+export function clearCandidates(rows: Row[], choices: Record<string, Choice>): Record<string, Choice> {
+  const out: Record<string, Choice> = {};
+  for (const { item } of rows) {
+    if (item.kind !== "candidate_contest" || !isDecided(item, choices[item.id])) continue;
+    out[item.id] = item.ranked ? { ranking: [] } : { selected: [], write_in: "" };
+  }
+  return out;
 }

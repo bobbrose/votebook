@@ -77,20 +77,44 @@ input[type="checkbox"], input[type="radio"] { width: 24px; height: 24px; min-hei
 .privacy-strip { background: var(--warn-bg); padding: 8px 12px; border-radius: 8px; margin: 6px auto 0; max-width: 40rem; font-size: 0.9rem; }
 
 /* Ballot */
-.research { background: var(--tag-bg); border-radius: var(--radius); padding: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.research p { margin: 0; flex: 1 1 14rem; }
+.research { background: var(--tag-bg); border-radius: var(--radius); padding: 12px; }
+.research p { margin: 8px 0 0; font-size: 0.9rem; }
+.research .notice { background: var(--surface); }
+.zip-form.compact .zip-row input { font-size: 1rem; flex: 1 1 auto; max-width: none; }
 .coverage { font-size: 0.9rem; border-left: 4px solid var(--line); padding: 4px 10px; }
 .coverage.verified { border-color: var(--accent); }
 .coverage.partial, .coverage.draft { border-color: var(--danger); }
 .items { list-style: none; padding: 0; margin: 0; }
 h2.group { text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.85rem; color: var(--muted); border-bottom: 1px solid var(--line); padding-bottom: 4px; margin-top: 1.75rem; }
+.ballot-item {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+}
+.ballot-item { margin: 10px 0; }
+.ballot-item.open { border-color: var(--accent); box-shadow: 0 2px 8px rgb(0 0 0 / 0.12); }
+.ballot-item .item-row { padding: 12px; border-radius: var(--radius); }
+.item-panel { border-top: 1px solid var(--line); }
+.candidates .candidate { border: 1px solid var(--line); border-radius: var(--radius); margin: 8px 0; padding: 6px 12px; background: var(--surface); }
+.candidates .candidate:has(input:checked) { border: 2px solid var(--accent); background: var(--tag-bg); }
+.candidates .candidate.write-in { border-style: dashed; }
+.party-fill { display: flex; gap: 6px; align-items: center; margin: 0.75rem 0; font-size: 0.875rem; }
+.party-fill select { width: auto; flex: 0 1 12rem; font-size: inherit; padding: 4px 8px; min-height: 36px; }
+.small-button { font-size: inherit; padding: 4px 12px; min-height: 36px; }
 .item-row {
-  display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; padding: 12px 4px; min-height: 44px;
-  border-bottom: 1px solid var(--line); color: var(--text); text-decoration: none;
+  display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; padding: 12px 4px; min-height: 44px; width: 100%;
+  border: none; border-radius: 0; background: transparent; color: var(--text); font: inherit; text-align: left; cursor: pointer;
 }
 .item-title { font-weight: 600; }
 .item-choice { grid-column: 1; color: var(--muted); }
-.chevron { grid-column: 2; grid-row: 1 / span 3; align-self: center; font-size: 1.4rem; color: var(--muted); }
+.item-choice.decided { color: var(--text); font-weight: 600; }
+.row-status { grid-column: 2; grid-row: 1 / span 3; align-self: center; display: flex; align-items: center; gap: 10px; }
+.check { color: var(--accent); font-size: 1.3rem; font-weight: 700; }
+.chevron { font-size: 1.4rem; color: var(--muted); display: inline-block; transition: transform 0.15s; }
+.open .chevron { transform: rotate(90deg); }
+.item-panel { padding: 4px 12px 12px; }
+.ballot-text .clamp { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+.learn-more { margin: 0.5rem 0 0; font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .chevron { transition: none; } }
 .tag { grid-column: 1; justify-self: start; background: var(--tag-bg); border-radius: 6px; padding: 1px 8px; font-size: 0.85rem; }
 .menu { margin: 2rem 0 1rem; }
 
@@ -155,3 +179,20 @@ th[scope="row"], thead th:first-child { text-align: left; }
   .plan { border: none; padding: 0; font-size: 11pt; }
   main { padding: 0; max-width: none; }
 }
+.item-panel .limit-message:empty { min-height: 0; margin: 0; }
+.candidate.ranked select { width: auto; min-width: 8.5rem; }
+.candidates .candidate.is-ranked { border: 2px solid var(--accent); background: var(--tag-bg); }
+.note { margin: 0.5rem 0; }
+.note-field {
+  display: block; width: 100%; min-height: 0; resize: none; overflow: hidden;
+  border: 1px solid transparent; background: transparent; padding: 6px 8px; margin-left: -8px; border-radius: 6px;
+}
+.note-field::placeholder { font-style: italic; color: var(--muted); opacity: 0.8; }
+.note-field:focus { border-color: var(--line); background: var(--surface); }
+.note-status { margin: 2px 0 0; min-height: 0; }
+.note-status:empty { display: none; }
+.picks { display: flex; flex-direction: column; }
+.pick-meta { font-weight: 400; color: var(--muted); font-size: 0.9em; }
+.zip-form.compact .zip-row input { min-width: 0; }
+.zip-row button { white-space: nowrap; flex: 0 0 auto; }
+.ballot-filter { width: 100%; margin: 0 0 0.5rem; font-size: 1rem; }

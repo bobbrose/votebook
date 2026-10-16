@@ -2,7 +2,7 @@
 import { createContext, type ComponentChildren } from "preact";
 import { useContext, useEffect, useMemo, useRef, useState } from "preact/hooks";
 import { ELECTION_ID, loadData } from "./data";
-import { emptyNarrowing, itemsForZip, narrow, type Lookup, type Row } from "./resolve";
+import { NARROWING_IN_PILOT, emptyNarrowing, itemsForZip, narrow, type Lookup, type Row } from "./resolve";
 import { createStore, emptyUserData, type Store } from "./store";
 import type { BallotData, Choice, Narrowing, UserData } from "./types";
 
@@ -17,6 +17,7 @@ interface AppState {
   setZip(zip: string | null): void;
   setNarrowing(n: Narrowing): void;
   setChoice(id: string, c: Choice): void;
+  setChoices(changes: Record<string, Choice>): void;
   setNote(id: string, text: string): void;
   startPrivate(): void;
   stopPrivate(): void;
@@ -93,7 +94,8 @@ export function AppProvider({ children, initialData }: { children: ComponentChil
 
   const lookup = useMemo(() => (data && user.scope.zip ? itemsForZip(data, user.scope.zip) : null), [data, user.scope.zip]);
   const rows = useMemo(
-    () => (lookup?.kind === "ballot" ? narrow(lookup.rows, user.scope.narrowing, lookup.counties) : []),
+    () => (lookup?.kind !== "ballot" ? []
+      : NARROWING_IN_PILOT ? narrow(lookup.rows, user.scope.narrowing, lookup.counties) : lookup.rows),
     [lookup, user.scope.narrowing],
   );
 
@@ -112,6 +114,7 @@ export function AppProvider({ children, initialData }: { children: ComponentChil
     setZip: (zip) => update((u) => ({ ...u, scope: { zip, narrowing: emptyNarrowing() } })),
     setNarrowing: (n) => update((u) => ({ ...u, scope: { ...u.scope, narrowing: n } })),
     setChoice: (id, c) => update((u) => ({ ...u, choices: { ...u.choices, [id]: c } })),
+    setChoices: (changes) => update((u) => ({ ...u, choices: { ...u.choices, ...changes } })),
     setNote: (id, text) => update((u) => ({ ...u, notes: { ...u.notes, [id]: text } })),
     startPrivate: () => {
       // Anything already on this device is wiped; the current ballot moves to memory.

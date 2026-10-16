@@ -1,27 +1,61 @@
 import { expect, lookUp, test } from "./fixtures";
 
-test("F1: look up a ZIP, see conditional items, and narrow (AC-01, AC-02, AC-06, AC-07)", async ({ page }) => {
+test("F1: look up a ZIP and research everything that could be on a ballot there (AC-01, AC-02, AC-07)", async ({ page }) => {
   await lookUp(page, "80001");
   const titles = await page.locator(".item-title").allTextContents();
   expect(titles[0]).toBe("United States Senator");
   expect(titles).toContain("State Representative - District 2");
   await expect(page.getByText("Depends on your district: State House District 1")).toBeVisible();
-  await page.getByRole("button", { name: "Narrow my ballot" }).click();
-  await page.getByLabel("State House district").selectOption("co-house-1");
-  await page.getByRole("button", { name: "Done" }).click();
-  expect(await page.locator(".item-title").allTextContents()).not.toContain("State Representative - District 2");
+  await expect(page.getByText("Researching ZIP 80001.")).toBeVisible();
+  await expect(page.getByRole("button", { name: "Narrow my ballot" })).toHaveCount(0);
+});
+
+test("Searching the ballot filters it to matching cards", async ({ page }) => {
+  await lookUp(page, "80001");
+  const search = page.getByLabel("Search the ballot");
+  await search.fill("blake");
+  expect(await page.locator(".item-title").allTextContents()).toEqual(["United States Senator"]);
+  await expect(page.getByText("Showing 1 of 10 items")).toBeVisible();
+  await search.fill("charter");
+  expect(await page.locator(".item-title").allTextContents()).toEqual(["City of Alpha Ballot Question 2A"]);
+  await search.fill("zzz");
+  await expect(page.getByText('Nothing on this ballot matches "zzz".')).toBeVisible();
+  await search.fill("");
+  await expect(page.locator(".item-title")).toHaveCount(10);
 });
 
 test("F2: decide a measure and write a note; both survive a reload (AC-12, AC-15, AC-16, AC-21)", async ({ page }) => {
   await lookUp(page, "80001");
   await page.getByText("Amendment 1", { exact: true }).click();
   await page.locator(".segmented label", { hasText: "No" }).click();
-  await page.getByLabel("My note").fill("ask about cost");
-  await expect(page.locator(".progress-count")).toHaveText("1 of 9 decided");
+  await page.getByLabel("Notes").fill("ask about cost");
+  await expect(page.locator(".progress-count")).toHaveText("1 of 10 decided");
   await page.waitForTimeout(500);
   await page.reload();
+  // Collapsed after the reload: the row shows the choice and a check mark.
+  const row = page.locator(".ballot-item", { hasText: "Amendment 1" });
+  await expect(row.locator(".item-choice")).toHaveText("No");
+  await expect(row.locator(".check")).toBeVisible();
+  await row.locator(".item-row").click();
   await expect(page.locator(".segmented label.selected")).toHaveText("No");
-  await expect(page.getByLabel("My note")).toHaveValue("ask about cost");
+  await expect(page.getByLabel("Notes")).toHaveValue("ask about cost");
+});
+
+test("Ballot rows open to decide in place; Learn more opens the full item and comes back", async ({ page }) => {
+  await lookUp(page, "80001");
+  const row = page.locator(".ballot-item", { hasText: "United States Senator" });
+  await row.locator(".item-row").click();
+  await expect(row.locator(".item-row")).toHaveAttribute("aria-expanded", "true");
+  await row.locator("label.candidate").first().click();
+  await expect(page.locator(".progress-count")).toHaveText("1 of 10 decided");
+  await row.locator(".item-row").click();
+  await expect(row.locator(".check")).toBeVisible();
+  await expect(row.locator(".item-choice")).not.toHaveText("Undecided");
+  await row.locator(".item-row").click();
+  await row.getByRole("link", { name: /Learn more/ }).click();
+  await expect(page.locator("h1")).toHaveText("United States Senator");
+  await page.goBack();
+  await expect(row.locator(".item-row")).toHaveAttribute("aria-expanded", "true");
 });
 
 test("F4: write out, toggle, and print without page chrome (AC-17 to AC-20)", async ({ page }) => {
@@ -121,4 +155,19 @@ test("the progress bar stays visible while scrolling (AC-42)", async ({ page }) 
   const box = await page.locator(".progress").boundingBox();
   expect(box!.y).toBeLessThanOrEqual(1);
   await expect(page.locator(".progress-count")).toBeInViewport();
+});
+
+test("Select all from a party sets those races; Clear clears them", async ({ page }) => {
+  await lookUp(page, "80001");
+  page.on("dialog", (d) => d.accept());
+  const senate = page.locator(".ballot-item", { hasText: "United States Senator" }).locator(".item-choice");
+  await page.getByLabel("Party").selectOption("Party B");
+  await page.getByRole("button", { name: "Select all" }).click();
+  await expect(senate).toHaveText("Blake Sample Party B");
+  // Switching parties replaces the earlier picks.
+  await page.getByLabel("Party").selectOption("Party A");
+  await page.getByRole("button", { name: "Select all" }).click();
+  await expect(senate).toHaveText("Avery Sample Party A");
+  await page.getByRole("button", { name: "Clear" }).click();
+  await expect(page.locator(".progress-count")).toHaveText("0 of 10 decided");
 });
