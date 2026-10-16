@@ -25,4 +25,5 @@ checked_by:
 checked_at:
 groups: []
 measures: {}
-spot_check: {}
+spot_check: {skipped: "Pilot, no second checker available; testers report errors in sessions"}
+publish_unverified: {by: "Bob Rose", reason: "Pilot: testers review real ballots while verification continues"}

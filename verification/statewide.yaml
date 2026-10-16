@@ -25,7 +25,8 @@ groups: []
 #  - {group: state, count: ...}
 measures: {}
 #  amendment-81: "Shall there be an amendment ..."
-spot_check: {}
+spot_check: {skipped: "Pilot, no second checker available; testers report errors in sessions"}
 #  by: Second Person
 #  at: 2026-10-15
 #  items_checked: 13
+publish_unverified: {by: "Bob Rose", reason: "Pilot: testers review real ballots while verification continues"}

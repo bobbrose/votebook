@@ -1,0 +1,526 @@
+{
+  "$defs": {
+    "candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "type": "string"
+        },
+        "incumbent": {
+          "type": "boolean"
+        },
+        "links": {
+          "items": {
+            "$ref": "#/$defs/link"
+          },
+          "type": "array"
+        },
+        "name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "order": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "party": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "party",
+        "order",
+        "links"
+      ],
+      "type": "object"
+    },
+    "county": {
+      "additionalProperties": false,
+      "properties": {
+        "county_fips": {
+          "pattern": "^08\\d{3}$",
+          "type": "string"
+        },
+        "coverage": {
+          "$ref": "#/$defs/coverage"
+        },
+        "districts": {
+          "items": {
+            "$ref": "#/$defs/district"
+          },
+          "type": "array"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/$defs/item"
+          },
+          "type": "array"
+        },
+        "name": {
+          "type": "string"
+        },
+        "statewide_order": {
+          "items": {
+            "pattern": "^[a-z0-9][a-z0-9-]*$",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "county_fips",
+        "name",
+        "coverage",
+        "districts",
+        "items",
+        "statewide_order"
+      ],
+      "type": "object"
+    },
+    "coverage": {
+      "additionalProperties": false,
+      "if": {
+        "properties": {
+          "status": {
+            "const": "verified_complete"
+          }
+        }
+      },
+      "properties": {
+        "source": {
+          "pattern": "^https://",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "verified_complete",
+            "unverified",
+            "statewide_only"
+          ]
+        },
+        "verified_at": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "type": "string"
+        },
+        "verified_by": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "then": {
+        "required": [
+          "source",
+          "verified_at",
+          "verified_by"
+        ]
+      },
+      "type": "object"
+    },
+    "district": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "name"
+      ],
+      "type": "object"
+    },
+    "item": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "measure"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "ballot_text"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "retention"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "judge",
+              "court"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "candidate_contest"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "ranked",
+              "candidates",
+              "write_in"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "candidate_contest"
+              },
+              "ranked": {
+                "const": false
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "vote_for"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "candidate_contest"
+              },
+              "ranked": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": [
+                "vote_for"
+              ]
+            },
+            "required": [
+              "max_ranks",
+              "seats",
+              "rcv_instructions"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "ballot_order": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "ballot_text": {
+          "additionalProperties": false,
+          "properties": {
+            "source": {
+              "pattern": "^https://",
+              "type": "string"
+            },
+            "table": {
+              "additionalProperties": false,
+              "properties": {
+                "caption": {
+                  "type": "string"
+                },
+                "header": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "rows": {
+                  "items": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "caption",
+                "header",
+                "rows",
+                "note"
+              ],
+              "type": "object"
+            },
+            "text": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "text",
+            "source"
+          ],
+          "type": "object"
+        },
+        "candidates": {
+          "items": {
+            "$ref": "#/$defs/candidate"
+          },
+          "type": "array"
+        },
+        "choices": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 2,
+          "type": "array"
+        },
+        "court": {
+          "type": "string"
+        },
+        "district_id": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "pattern": "^[a-z0-9][a-z0-9-]*$",
+              "type": "string"
+            }
+          ]
+        },
+        "group": {
+          "enum": [
+            "federal",
+            "state",
+            "legislature",
+            "judges",
+            "county",
+            "city",
+            "special_districts",
+            "measures"
+          ]
+        },
+        "id": {
+          "pattern": "^[a-z0-9][a-z0-9-]*$",
+          "type": "string"
+        },
+        "judge": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "measure",
+            "retention",
+            "candidate_contest"
+          ]
+        },
+        "links": {
+          "$ref": "#/$defs/links"
+        },
+        "max_ranks": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "ranked": {
+          "type": "boolean"
+        },
+        "rcv_instructions": {
+          "additionalProperties": false,
+          "properties": {
+            "source": {
+              "pattern": "^https://",
+              "type": "string"
+            },
+            "text": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "text",
+            "source"
+          ],
+          "type": "object"
+        },
+        "seats": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "title": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "vote_for": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "write_in": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "group",
+        "ballot_order",
+        "district_id",
+        "title",
+        "links",
+        "provenance"
+      ],
+      "type": "object"
+    },
+    "link": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "url": {
+          "pattern": "^https://",
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "url"
+      ],
+      "type": "object"
+    },
+    "links": {
+      "additionalProperties": false,
+      "properties": {
+        "explainers": {
+          "items": {
+            "$ref": "#/$defs/link"
+          },
+          "type": "array"
+        },
+        "official": {
+          "items": {
+            "$ref": "#/$defs/link"
+          },
+          "type": "array"
+        },
+        "oppose": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/link"
+            }
+          ]
+        },
+        "support": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/link"
+            }
+          ]
+        }
+      },
+      "required": [
+        "official",
+        "explainers",
+        "support",
+        "oppose"
+      ],
+      "type": "object"
+    },
+    "provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "pattern": "^https://",
+          "type": "string"
+        },
+        "verified_at": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "verified_at"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "data_version": {
+      "pattern": "^\\d{4}\\.\\d{2}\\.\\d{2}-\\d+$",
+      "type": "string"
+    },
+    "districts": {
+      "items": {
+        "$ref": "#/$defs/district"
+      },
+      "type": "array"
+    },
+    "election_id": {
+      "pattern": "^co-\\d{4}-\\d{2}-\\d{2}$",
+      "type": "string"
+    },
+    "items": {
+      "items": {
+        "$ref": "#/$defs/item"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "data_version",
+    "election_id",
+    "districts",
+    "items"
+  ],
+  "type": "object"
+}
