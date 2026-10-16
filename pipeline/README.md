@@ -64,6 +64,12 @@ groups:                          # group runs in printed order, with counts
 measures:                        # certified ballot text, copied from a different official source
   boulder-city-2c: "Shall ..."
 spot_check: {by: Second Person, at: 2026-10-15, items_checked: 3}   # at least 10 percent, different person
+# Pilot only: spot_check: {skipped: "reason"}   # the build accepts it and prints a SKIPPED line
+# Publish before verifying (owner decision, written by a person, never by an agent):
+# publish_unverified: {by: "Name", reason: "why"}
+#   Verification failures for this scope print as UNVERIFIED lines instead of failing the build.
+#   The county ships with coverage "unverified" and every item says "not verified yet" in the app.
+#   Schema, structure and hash errors still fail. Remove it once the record is signed.
 ```
 
 ## Checks (each fails the build)

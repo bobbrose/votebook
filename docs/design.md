@@ -261,7 +261,7 @@ Single message and the state's official link. No ballot content. (REQ-02)
 - **RcvInstructions (R1):** disclosure with official instructions, source link, and the entry point to the counting example.
 - **CountingExample (R1):** static step-through of fictional rounds with Previous and Next, and the "Example only" banner on every step.
 - **SidesRow:** two equal columns for For and Against, always rendered together.
-- **CoverageLabel:** status, date, source link; two variants.
+- **CoverageLabel:** status, date, source link; three variants. "Not yet checked against the official sample ballot. Compare with the county's sample ballot before you vote." for a county published unverified, with the same warning border as statewide-only. When statewide items are unverified, one line under the labels: "Statewide items are not yet checked against official sources. Compare with the Blue Book and your county's sample ballot before you vote." Each unverified item's ProvenanceLine reads "not verified yet".
 - **ProvenanceLine:** source link and verified date.
 - **NoteField:** a borderless one-line field showing "Notes" in light italic until tapped, so it takes little space and doesn't look like a vote. When tapped it shows a light border and grows as the voter types. Autosaves; "Saved on this device" shows only while editing. Its accessible name is "Notes".
 - **PrivacyStrip:** visible only in private session mode, pinned directly under the ProgressBar. First line always: "Private session: nothing is kept on this computer." Second line once there is a decision or note: the erase warning from F6, with "Write out your ballot" (and "save to file" in R1) as links. Never mentions saving without saying where.

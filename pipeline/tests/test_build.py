@@ -282,6 +282,19 @@ def test_fails_when_spot_check_too_small(world: World, capsys) -> None:
     fails_with(world, capsys, "needs at least 1")
 
 
+def test_builds_when_spot_check_skipped_with_reason(world: World, capsys) -> None:
+    world.parts["verification/08013.yaml"]["spot_check"] = {"skipped": "pilot, no second checker"}
+    world.write()
+    assert world.build() == 0
+    assert "SKIPPED  county 08013: spot check skipped: pilot, no second checker" in capsys.readouterr().out
+
+
+def test_fails_when_spot_check_skipped_without_reason(world: World, capsys) -> None:
+    world.parts["verification/08013.yaml"]["spot_check"] = {"skipped": ""}
+    world.write()
+    fails_with(world, capsys, "spot check skipped with no reason")
+
+
 def test_fails_on_schema_error(world: World, capsys) -> None:
     world.parts[f"sources/{ELECTION}/statewide.yaml"]["items"][0]["group"] = "galactic"
     world.write()
@@ -319,3 +332,43 @@ def test_draft_mode_writes_data_marked_draft_even_when_checks_fail(world: World,
     assert counties["counties"]["08013"]["coverage"] == {"status": "draft"}
     assert counties["data_version"] == "draft"
     assert not (world.root / "data").exists()  # the real output is untouched
+
+
+def unsigned(record: dict) -> dict:
+    return {**record, "checked_by": None, "checked_at": None, "groups": [], "measures": {}, "spot_check": {}}
+
+
+def test_publish_unverified_builds_and_labels_the_scope_unverified(world: World, capsys) -> None:
+    decision = {"by": "Owner", "reason": "pilot testers review it"}
+    world.parts["verification/08013.yaml"] = {**unsigned(county_record()), "publish_unverified": decision}
+    world.parts["verification/statewide.yaml"] = {**unsigned(statewide_record()), "publish_unverified": decision}
+    world.write()
+    assert world.build() == 0
+    out = capsys.readouterr().out
+    assert "UNVERIFIED  county 08013: published unverified by Owner: pilot testers review it" in out
+    assert "UNVERIFIED    county 08013: verification record is missing checked_by" in out
+    boulder = world.data("counties.json")["counties"]["08013"]
+    assert boulder["coverage"] == {"status": "unverified", "source": "https://example.org/boulder-sample.pdf"}
+    assert boulder["items"][0]["provenance"]["verified_at"] == "0000-00-00"
+    assert world.data("statewide.json")["items"][0]["provenance"]["verified_at"] == "0000-00-00"
+
+
+def test_publish_unverified_needs_a_name_and_reason(world: World, capsys) -> None:
+    world.parts["verification/08013.yaml"] = {**unsigned(county_record()), "publish_unverified": {"by": "Owner"}}
+    world.write()
+    fails_with(world, capsys, "publish_unverified needs both by and reason")
+
+
+def test_publish_unverified_does_not_hide_data_errors(world: World, capsys) -> None:
+    world.parts["verification/08013.yaml"] = {**unsigned(county_record()),
+                                              "publish_unverified": {"by": "Owner", "reason": "pilot"}}
+    world.parts[f"sources/{ELECTION}/08013.yaml"]["ballot"][2]["group"] = "galactic"
+    world.write()
+    fails_with(world, capsys, "schema: ")
+
+
+def test_a_verified_scope_ignores_publish_unverified(world: World) -> None:
+    world.parts["verification/08013.yaml"]["publish_unverified"] = {"by": "Owner", "reason": "not needed"}
+    world.write()
+    assert world.build() == 0
+    assert world.data("counties.json")["counties"]["08013"]["coverage"]["status"] == "verified_complete"

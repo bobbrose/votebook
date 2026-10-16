@@ -60,6 +60,15 @@ export function CoverageLabel({ county }: { county: County }) {
       </p>
     );
   }
+  if (c.status === "unverified") {
+    return (
+      <p class="coverage partial">
+        {county.name} County · <strong>Not yet checked against the official sample ballot.</strong> Compare with{" "}
+        {c.source ? <a href={c.source} target="_blank" rel="noopener noreferrer">the county's sample ballot</a> : "your county's sample ballot"}{" "}
+        before you vote.
+      </p>
+    );
+  }
   if (c.status === "draft") {
     return <p class="coverage draft">{county.name} County · DRAFT: local items not verified yet (development data)</p>;
   }
@@ -69,6 +78,11 @@ export function CoverageLabel({ county }: { county: County }) {
       county clerk's sample ballot for local races and questions.
     </p>
   );
+}
+
+/** True when the item's data hasn't been checked by a person yet (published unverified, PRD AC-27). */
+export function isUnverified(p: Provenance): boolean {
+  return p.verified_at.startsWith("0000");
 }
 
 export function ProvenanceLine({ p }: { p: Provenance }) {

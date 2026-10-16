@@ -42,9 +42,51 @@ class Result:
     counties: dict[str, Any] | None = None
     zip_index: dict[str, Any] | None = None
     errors: list[str] = field(default_factory=list)
+    skipped: list[str] = field(default_factory=list)
+    unverified: list[str] = field(default_factory=list)
 
     def err(self, where: str, msg: str) -> None:
         self.errors.append(f"{where}: {msg}")
+
+    def skip(self, where: str, msg: str) -> None:
+        self.skipped.append(f"{where}: {msg}")
+
+
+def publish_decision(record: dict[str, Any] | None) -> dict[str, str] | None:
+    """A person's recorded decision to publish a scope before it is verified: {by, reason}."""
+    d = (record or {}).get("publish_unverified")
+    return d if isinstance(d, dict) else None
+
+
+def verify_scope(where: str, printed: list[dict[str, Any]], record: dict[str, Any] | None, res: Result) -> bool:
+    """Run the verification checks for one scope. Returns True when the scope is verified.
+
+    If the record carries publish_unverified with a name and a reason, verification failures are
+    reported as UNVERIFIED lines instead of failing the build, and the scope is published labeled
+    unverified (PRD AC-27). Only a person writes that decision, like the rest of the record.
+    """
+    sub = Result()
+    check_verification(where, printed, record, sub)
+    res.skipped += sub.skipped
+    if not sub.errors:
+        return True
+    decision = publish_decision(record)
+    if decision is None:
+        res.errors += sub.errors
+        return False
+    by, reason = str(decision.get("by") or "").strip(), str(decision.get("reason") or "").strip()
+    if not by or not reason:
+        res.err(where, "publish_unverified needs both by and reason")
+        res.errors += sub.errors
+        return False
+    res.unverified.append(f"{where}: published unverified by {by}: {reason}")
+    res.unverified += [f"  {e}" for e in sub.errors]
+    return False
+
+
+def mark_unverified(items: list[dict[str, Any]]) -> None:
+    for it in items:
+        it["provenance"] = {**it["provenance"], "verified_at": UNVERIFIED_DATE}
 
 
 class _Loader(yaml.SafeLoader):
@@ -163,10 +205,15 @@ def check_verification(where: str, printed: list[dict[str, Any]], record: dict[s
     for mid in certified:
         if mid not in measures:
             res.err(where, f"{mid}: in the verification record but not on the ballot")
-    # Spot check by a second person.
+    # Spot check by a second person. A person may skip it for the pilot by recording a reason.
     spot = record.get("spot_check") or {}
     need = math.ceil(SPOT_CHECK_SHARE * len(printed))
-    if spot:
+    if "skipped" in spot:
+        if not str(spot["skipped"] or "").strip():
+            res.err(where, "spot check skipped with no reason")
+        else:
+            res.skip(where, f"spot check skipped: {spot['skipped']}")
+    elif spot:
         if spot.get("by") == record.get("checked_by"):
             res.err(where, "spot check must be done by a second person")
         if (spot.get("items_checked") or 0) < need:
@@ -198,7 +245,8 @@ def compile_election(root: Path, election_id: str, data_version: str) -> Result:
     for n, it in enumerate(sw_items, start=1):
         it["ballot_order"] = n * STATEWIDE_STEP
     check_items("statewide", sw_items, res)
-    check_verification("statewide", sw_items, sw_record, res)
+    if not verify_scope("statewide", sw_items, sw_record, res):
+        mark_unverified(sw_items)
     sw_by_id = {it["id"]: it for it in sw_items}
     res.statewide = {
         "schema_version": schemas.SCHEMA_VERSION, "data_version": data_version, "election_id": election_id,
@@ -287,11 +335,16 @@ def compile_county(fips: str, raw: dict[str, Any], sw_by_id: dict[str, dict[str,
         if it["id"] in sw_by_id:
             res.err(where, f"local item id {it['id']} collides with a statewide item")
 
-    check_verification(where, printed, record, res)
+    verified = verify_scope(where, printed, record, res)
     coverage: dict[str, Any] = {"status": "statewide_only"}
-    if record and record.get("checked_by") and record.get("checked_at"):
+    if verified and record and record.get("checked_by") and record.get("checked_at"):
         coverage = {"status": "verified_complete", "source": record.get("sample_ballot", ""),
                     "verified_at": str(record.get("checked_at", "")), "verified_by": str(record.get("checked_by", ""))}
+    elif not verified and publish_decision(record) and not any(e.startswith(f"{where}:") for e in res.errors):
+        mark_unverified(local)
+        coverage = {"status": "unverified", "source": record.get("sample_ballot") or ""}
+        if not coverage["source"]:
+            del coverage["source"]
     return {
         "county_fips": fips, "name": raw.get("name", ""), "coverage": coverage,
         "districts": raw.get("districts") or [], "items": local, "statewide_order": statewide_order,

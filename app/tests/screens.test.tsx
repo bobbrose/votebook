@@ -9,9 +9,9 @@ import { fixture } from "./data";
 let api: ReturnType<typeof useApp>;
 function Spy() { api = useApp(); return null; }
 
-async function open(zip: string, route: string) {
+async function open(zip: string, route: string, data = fixture()) {
   location.hash = "#/";
-  render(<AppProvider initialData={fixture()}><Spy /><App /></AppProvider>);
+  render(<AppProvider initialData={data}><Spy /><App /></AppProvider>);
   await act(() => api.setZip(zip));
   await act(() => { location.hash = route; window.dispatchEvent(new HashChangeEvent("hashchange")); });
 }
@@ -119,5 +119,19 @@ describe("ballot and home", () => {
     await act(() => void fireEvent.click(screen.getByText("Delete")));
     await waitFor(() => expect(api.user.choices).toEqual({}));
     expect(api.user.scope.zip).toBeNull();
+  });
+});
+
+describe("data published before it is verified (AC-27)", () => {
+  it("labels an unverified county and unverified statewide items, and says not verified on each item", async () => {
+    const data = fixture();
+    data.counties.counties["08001"].coverage = { status: "unverified", source: "https://example.org/alpha.pdf" };
+    for (const it of data.statewide.items) it.provenance.verified_at = "0000-00-00";
+    await open("80001", "#/ballot", data);
+    expect(screen.getByText("Not yet checked against the official sample ballot.")).toBeTruthy();
+    expect(screen.getByText("Statewide items are not yet checked against official sources.")).toBeTruthy();
+    expect(screen.queryByText(/Verified complete/)).toBeNull();
+    await act(() => { location.hash = "#/item/amendment-1"; window.dispatchEvent(new HashChangeEvent("hashchange")); });
+    expect(screen.getByText(/not verified yet/)).toBeTruthy();
   });
 });

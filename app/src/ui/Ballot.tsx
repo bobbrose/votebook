@@ -5,7 +5,7 @@ import { clearCandidates, ordinal, countsTowardProgress, fillByParty, isDecided,
 import { useApp } from "../state";
 import type { Choice, Group, Item } from "../types";
 import { CandidateChooser, RankedChooser, VoteControl, retentionQuestion } from "./ItemDetail";
-import { CoverageLabel, NoteField, ProgressBar, go } from "./parts";
+import { CoverageLabel, NoteField, ProgressBar, go, isUnverified } from "./parts";
 
 export const GROUP_HEADINGS: Record<Group, string> = {
   federal: "Federal", state: "State", legislature: "Legislature", special_districts: "Special districts",
@@ -197,6 +197,12 @@ export function Ballot() {
             anywhere in this ZIP. Your own ballot will have some of them, not all.</p>
         </section>
         {lookup.counties.map((c) => <CoverageLabel key={c.county_fips} county={c} />)}
+        {app.data.statewide.items.some((i) => isUnverified(i.provenance)) && (
+          <p class="coverage partial">
+            <strong>Statewide items are not yet checked against official sources.</strong> Compare with the{" "}
+            <a href={LINKS.blueBook.url} target="_blank" rel="noopener noreferrer">Blue Book</a> and your county's sample ballot before you vote.
+          </p>
+        )}
         <PartyFillBar />
         <input type="search" class="ballot-filter" placeholder="Search the ballot" aria-label="Search the ballot"
                value={query} onInput={(e) => { filter = (e.target as HTMLInputElement).value; setQuery(filter); }} />

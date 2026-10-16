@@ -179,6 +179,10 @@ def main(argv: list[str] | None = None) -> int:
     summary = (f"{args.election} data {final_version}: {len(res.statewide['items'])} statewide items, "
                f"{len(counties)} counties ({len(verified)} verified: {', '.join(verified) or 'none'}), "
                f"{len(res.zip_index['zips'])} ZIPs, counties.json {size:,} bytes compressed")
+    for s in res.skipped:
+        print(f"SKIPPED  {s}")
+    for u in res.unverified:
+        print(f"UNVERIFIED  {u}")
     if args.check:
         print(f"OK  {summary}")
         return 0

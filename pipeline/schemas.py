@@ -127,7 +127,7 @@ DEFS = {
         "required": ["status"],
         "additionalProperties": False,
         "properties": {
-            "status": {"enum": ["verified_complete", "statewide_only"]},
+            "status": {"enum": ["verified_complete", "unverified", "statewide_only"]},
             "source": _URL,
             "verified_at": _DATE,
             "verified_by": {"type": "string"},

@@ -51,7 +51,7 @@ export type Item = Measure | Retention | Contest;
 
 export interface District { id: string; type: string; name: string }
 
-export type CoverageStatus = "verified_complete" | "statewide_only" | "draft";
+export type CoverageStatus = "verified_complete" | "unverified" | "statewide_only" | "draft";
 
 export interface County {
   county_fips: string;

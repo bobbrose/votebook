@@ -73,7 +73,7 @@ Storage and portability
 - REQ-19: Choices can move to another device by a QR code generated and read on the devices, with no server involved.
 
 Trust
-- REQ-20: Each county shows a coverage label: "Verified complete" with source and date, or "Statewide items only".
+- REQ-20: Each county shows a coverage label: "Verified complete" with source and date, "Not yet checked against the official sample ballot" when a person has chosen to publish it before verification, or "Statewide items only".
 - REQ-21: Each item shows provenance: a link to its official source and the date it was verified.
 - REQ-22: A visible "Report an error" path and a public changelog of data corrections.
 - REQ-23: A plain-language privacy page describes exactly what the app does and does not do with data.
@@ -147,7 +147,7 @@ Storage
 - AC-26: WHEN a voter scans a transfer QR code from another device, the system SHALL import the choices with no network request. (REQ-19, NFR-01)
 
 Trust
-- AC-27: WHEN a county's local items are not verified, the system SHALL show "Statewide items only" for that county and SHALL NOT show unverified local items as complete. (REQ-20)
+- AC-27: WHEN a county's local items are not verified, the system SHALL show "Statewide items only" for that county, unless a person has recorded a decision with a name and reason to publish it unverified, in which case the system SHALL show its items with a "Not yet checked" label on the county and "not verified yet" on each item. The system SHALL NOT show unverified items as verified. (REQ-20, REQ-21)
 - AC-28: WHEN an item is shown, the system SHALL show its source link and verified date. (REQ-21, NFR-07)
 - AC-29: WHEN a voter chooses "Report an error", the system SHALL open a report path that does not require an account on the site. (REQ-22)
 - AC-30: WHEN a data correction is published, the changelog SHALL list the item, the change and the date. (REQ-22)
@@ -176,14 +176,14 @@ Quality
 
 ## Release scope
 
-**Pilot (starts October 16, 2026, for the November 3, 2026 general election; invited testers only).** Ballots went out October 2 (per vision). Starting the pilot on October 16 gives testers about two and a half weeks to use it on their real ballots before Election Day. The pilot is a user-testing release for a small invited group, not a public launch, and is not promoted to partners. Includes lookup in research mode (REQ-01, REQ-02, REQ-05), research links and official measure text (REQ-06, REQ-07, REQ-08), decisions and notes (REQ-09 to REQ-12), party select and ballot search (REQ-24, REQ-25), write-out (REQ-13, REQ-14), local storage and private session (REQ-15 to REQ-17), coverage and provenance labels (REQ-20, REQ-21) and the privacy page (REQ-23). NFRs: all except NFR-08; NFR-05 is checked with automated tools only, and NFR-04 targets are measured and reported but do not block. Testers report errors directly to the project during moderated sessions. Guided narrowing (REQ-04) is left out of the pilot: the pilot is research mode only, says so at the top of the ballot, and keeps the "Depends on your district" tags. Boulder's ballot has a ranked-choice mayor race, so the pilot includes simple ranking (AC-14, AC-47, AC-49, AC-50, AC-58): one rank menu per candidate. The counting example (AC-48) and ranked write-ins wait for Release 1. Incumbent markers (AC-57) show only where an official source has been recorded and checked. Data: statewide items for all counties, Boulder and Larimer verified complete.
+**Pilot (starts October 16, 2026, for the November 3, 2026 general election; invited testers only).** Ballots went out October 2 (per vision). Starting the pilot on October 16 gives testers about two and a half weeks to use it on their real ballots before Election Day. The pilot is a user-testing release for a small invited group, not a public launch, and is not promoted to partners. Includes lookup in research mode (REQ-01, REQ-02, REQ-05), research links and official measure text (REQ-06, REQ-07, REQ-08), decisions and notes (REQ-09 to REQ-12), party select and ballot search (REQ-24, REQ-25), write-out (REQ-13, REQ-14), local storage and private session (REQ-15 to REQ-17), coverage and provenance labels (REQ-20, REQ-21) and the privacy page (REQ-23). NFRs: all except NFR-08; NFR-05 is checked with automated tools only, and NFR-04 targets are measured and reported but do not block. Testers report errors directly to the project during moderated sessions. Guided narrowing (REQ-04) is left out of the pilot: the pilot is research mode only, says so at the top of the ballot, and keeps the "Depends on your district" tags. Boulder's ballot has a ranked-choice mayor race, so the pilot includes simple ranking (AC-14, AC-47, AC-49, AC-50, AC-58): one rank menu per candidate. The counting example (AC-48) and ranked write-ins wait for Release 1. Incumbent markers (AC-57) show only where an official source has been recorded and checked. Data: statewide items for all counties, Boulder and Larimer verified complete, or published labeled "Not yet checked" by the owner's recorded decision (AC-27) while verification continues.
 
 **Release 1 (November 2, 2027 coordinated election, public).** Adds guided narrowing (REQ-04, AC-06), the ranked-choice counting example and ranked write-ins (REQ-10, AC-48), encrypted save and open file (REQ-18), the public error report path and changelog (REQ-22), precise mode (REQ-03), QR transfer (REQ-19), the manual screen-reader pass for NFR-05, reproducible-build verification (NFR-08), and all 64 counties verified. Lessons from the pilot feed a PRD revision before Release 1 planning.
 
 ## Open questions
 
 - Q1: Resolved (critique D1). The 2026 cycle is an invited-tester pilot starting October 16, 2026; Release 1 targets the November 2027 coordinated election. See Release scope.
-- Q2: Resolved (critique D5). Until a county is verified, it shows statewide items only, per AC-27. Licensed data labeled unverified is not used, because the vision rules out showing a partial ballot as if it were complete.
+- Q2: Resolved (critique D5), revised 2026-10-16. Until a county is verified, it shows statewide items only, per AC-27, unless the owner records a decision to publish its draft data labeled "Not yet checked". This is a vote explorer, not a voting machine: getting testers onto real ballots outweighs checking every item first, as long as the labels say plainly what isn't checked. Licensed data is still not used.
 - Q3: How do primaries and special elections fit? The data model allows multiple elections, and Release 1 covers the 2027 odd-year coordinated election.
 - Q4: Can the Secretary of State or clerks share ballot data or precinct ballot styles directly?
 - Q5: Who would sit on a cross-spectrum review panel for project-written measure descriptions, and what is the process? Until a panel exists, REQ-08 limits measures to official text (critique D3). No panel members are identified yet.
